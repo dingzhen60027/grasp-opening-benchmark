@@ -1,0 +1,13 @@
+label,planner,task_id,family,level,split,seed,status,planning_seconds,over_budget,nominal_valid,task_success_rate,collision_rate,episodes,path_joint_length_rad,ee_path_length_m,payload_min_clearance_m
+RRT-Connect (300 s),rrt_connect,lathe_easy_dev_00,lathe,easy,dev,0,timeout,270.002,False,False,0.0,,,,,
+RRT-Connect (300 s),rrt_connect,lathe_easy_dev_01,lathe,easy,dev,0,timeout,270.002,False,False,0.0,,,,,
+RRT-Connect (300 s),rrt_connect,lathe_hard_dev_00,lathe,hard,dev,0,timeout,270.001,False,False,0.0,,,,,
+RRT-Connect (300 s),rrt_connect,lathe_hard_dev_01,lathe,hard,dev,0,solved,275.264,False,True,0.203125,0.796875,64,8.31019789852413,2.1988435452538853,0.00048722344106541223
+RRT-Connect (300 s),rrt_connect,lathe_medium_dev_00,lathe,medium,dev,0,solved,158.961,False,True,0.609375,0.390625,64,7.980477855890919,2.9140517635335748,0.002255291049485109
+RRT-Connect (300 s),rrt_connect,lathe_medium_dev_01,lathe,medium,dev,0,timeout,270.002,False,False,0.0,,,,,
+RRT-Connect (300 s),rrt_connect,rebar_easy_dev_00,rebar,easy,dev,0,timeout,270.001,False,False,0.0,,,,,
+RRT-Connect (300 s),rrt_connect,rebar_easy_dev_01,rebar,easy,dev,0,timeout,270.002,False,False,0.0,,,,,
+RRT-Connect (300 s),rrt_connect,rebar_hard_dev_00,rebar,hard,dev,0,timeout,270.002,False,False,0.0,,,,,
+RRT-Connect (300 s),rrt_connect,rebar_hard_dev_01,rebar,hard,dev,0,timeout,270.0,False,False,0.0,,,,,
+RRT-Connect (300 s),rrt_connect,rebar_medium_dev_00,rebar,medium,dev,0,timeout,270.001,False,False,0.0,,,,,
+RRT-Connect (300 s),rrt_connect,rebar_medium_dev_01,rebar,medium,dev,0,timeout,270.001,False,False,0.0,,,,,

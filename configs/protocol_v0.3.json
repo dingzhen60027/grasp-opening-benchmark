@@ -1,0 +1,57 @@
+{
+  "suite": "gosuite",
+  "version": "0.3.0",
+  "data": "data/suite_v0.3",
+  "robot": "UR5e + Robotiq 2F-85 (manufacturer models, assets/ur5e_robotiq)",
+  "families": {
+    "rack": "deliver a hollow tube into the requested bay of a three-bay rack; guide ears; two saddles (TAPOM PD analogue)",
+    "rebar": "thread a bar through 2-4 coaxial stirrup windows; neighbouring window often occupied (TAPOM RA analogue)",
+    "lathe": "carry a bar through a machine door and insert it into a side-facing chuck bore (machine tending)",
+    "tote": "lower a vertically held rod into one cell of a divided kitting tote among neighbouring parts"
+  },
+  "levels": {"easy": {"clearance_per_side_m": 0.020}, "medium": {"clearance_per_side_m": 0.010}, "hard": {"clearance_per_side_m": 0.005}},
+  "splits": {"dev": 2, "test": 6, "unit": "one sampled geometry per task", "per": "family x level", "total_tasks": 96},
+  "split_policy": "tune any planner parameter on dev only; test is frozen by the SHA-256 hashes in the manifest",
+  "task_semantics": {
+    "validity": "no robot-environment, payload-environment, robot self or payload-arm contact; keep-in rules per state",
+    "keep_in": "payload parts inside a restricted box must lie inside the allowed box (e.g. only the target bay may be entered)",
+    "portals": "a payload reference point crosses each declared opening, inside its rectangle, in order",
+    "goal": "payload pose region around the nominal goal (10-12 mm, 5 deg); q_goal_reference is one IK solution",
+    "placement": "rack only: centreline over both saddles, 2-20 mm pre-release gap"
+  },
+  "uncertainty": {
+    "model": "T_WO = T_WE @ [Exp_SO3(phi), delta_t] @ T_EO, TCP frame, one fixed draw per execution",
+    "translation_std_m": 0.002,
+    "rotation_std_deg": 1.0,
+    "calibrated": false,
+    "scale_sweep": [0, 0.5, 1.0, 1.5, 2.0],
+    "ablations": ["combined", "translation_only", "rotation_only"]
+  },
+  "evaluation": {
+    "joint_step_rad": 0.0025,
+    "episodes_main": 256,
+    "episodes_headline": 1024,
+    "common_random_numbers": "evaluation draws come from rng([evaluation_seed, 0]) and are identical for every method",
+    "planning_samples": "planners may only use rng([evaluation_seed, 1, seed]) via PlanningProblem.planning_errors",
+    "episode_failure": "first payload-environment or payload-arm contact, or any violated task rule",
+    "interval": "Clopper-Pearson per run; bootstrap over tasks for aggregates"
+  },
+  "planning": {
+    "seeds": [0, 1, 2, 3, 4],
+    "budget_seconds_main": 120,
+    "budget_seconds_hard_subset": 600,
+    "budget_note": "a 30 s dev smoke run solved few rebar/lathe tasks with RRT-Connect; report a budget sweep {30, 120, 600} if compute allows",
+    "robust_variant_semantics": "margin / scenario conditions apply to all states except the given start and goal configurations",
+    "planning_failure_counts_as_task_failure": true,
+    "witness_access": "forbidden except for the labelled reference oracle"
+  },
+  "metrics": ["planning success", "task success (unconditional)", "collision rate given a valid path", "planning time",
+              "joint and TCP path length", "minimum nominal payload clearance"],
+  "scope": {
+    "kinematic_only": true,
+    "contact_dynamics_or_slip": false,
+    "tracking_error": false,
+    "continuous_collision_certificate": false,
+    "real_robot": false
+  }
+}

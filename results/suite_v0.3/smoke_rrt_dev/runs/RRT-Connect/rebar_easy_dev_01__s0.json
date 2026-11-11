@@ -1,0 +1,30 @@
+{
+ "task_id": "rebar_easy_dev_01",
+ "family": "rebar",
+ "level": "easy",
+ "split": "dev",
+ "label": "RRT-Connect",
+ "planner": "rrt_connect",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 30,
+ "task_sha256": "8b35bee6af9eb66181b5592477779932865ab12b44ba892024a8a729a2689193",
+ "planning_seconds": 27.000473231077194,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 577,
+  "tree_nodes": 210,
+  "wall_seconds": 27.00023303180933,
+  "collision_checks": 10368
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

@@ -1,0 +1,30 @@
+{
+ "task_id": "lathe_medium_dev_01",
+ "family": "lathe",
+ "level": "medium",
+ "split": "dev",
+ "label": "RRT-Connect (300 s)",
+ "planner": "rrt_connect",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 300,
+ "task_sha256": "685c94d8cff8f3f8841b204735c225ba9132986738d9fa8c9cda5a8fbadf1e67",
+ "planning_seconds": 270.0019534258172,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 7123,
+  "tree_nodes": 1736,
+  "wall_seconds": 270.0017449762672,
+  "collision_checks": 110648
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

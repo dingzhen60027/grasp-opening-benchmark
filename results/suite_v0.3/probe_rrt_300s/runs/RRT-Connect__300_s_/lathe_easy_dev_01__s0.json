@@ -1,0 +1,30 @@
+{
+ "task_id": "lathe_easy_dev_01",
+ "family": "lathe",
+ "level": "easy",
+ "split": "dev",
+ "label": "RRT-Connect (300 s)",
+ "planner": "rrt_connect",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 300,
+ "task_sha256": "4b06d3d02ecddf34badcc7824a2bb1be223604f00236ae7a346c810caa931ff7",
+ "planning_seconds": 270.0016541928053,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 6657,
+  "tree_nodes": 1646,
+  "wall_seconds": 270.00139779783785,
+  "collision_checks": 112566
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

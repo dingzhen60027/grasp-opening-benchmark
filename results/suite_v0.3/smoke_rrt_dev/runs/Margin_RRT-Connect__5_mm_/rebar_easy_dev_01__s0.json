@@ -1,0 +1,32 @@
+{
+ "task_id": "rebar_easy_dev_01",
+ "family": "rebar",
+ "level": "easy",
+ "split": "dev",
+ "label": "Margin RRT-Connect (5 mm)",
+ "planner": "rrt_connect",
+ "params": {
+  "margin": 0.005
+ },
+ "seed": 0,
+ "budget_seconds": 30,
+ "task_sha256": "8b35bee6af9eb66181b5592477779932865ab12b44ba892024a8a729a2689193",
+ "planning_seconds": 27.003115698695183,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "margin_m": 0.005,
+  "scenarios": 0,
+  "risk": 0.0,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 609,
+  "tree_nodes": 204,
+  "wall_seconds": 27.003034056164324,
+  "collision_checks": 10558
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

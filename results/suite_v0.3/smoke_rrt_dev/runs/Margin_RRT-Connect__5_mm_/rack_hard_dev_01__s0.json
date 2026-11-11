@@ -1,0 +1,32 @@
+{
+ "task_id": "rack_hard_dev_01",
+ "family": "rack",
+ "level": "hard",
+ "split": "dev",
+ "label": "Margin RRT-Connect (5 mm)",
+ "planner": "rrt_connect",
+ "params": {
+  "margin": 0.005
+ },
+ "seed": 0,
+ "budget_seconds": 30,
+ "task_sha256": "f048f2762db6ffc35b378cf04546adaa52f5f6eba588b00922f8027382d0c48a",
+ "planning_seconds": 27.00235389638692,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "margin_m": 0.005,
+  "scenarios": 0,
+  "risk": 0.0,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 735,
+  "tree_nodes": 240,
+  "wall_seconds": 27.00228027254343,
+  "collision_checks": 10234
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

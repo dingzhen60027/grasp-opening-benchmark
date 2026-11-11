@@ -1,0 +1,30 @@
+{
+ "task_id": "rack_easy_dev_01",
+ "family": "rack",
+ "level": "easy",
+ "split": "dev",
+ "label": "RRT-Connect",
+ "planner": "rrt_connect",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 30,
+ "task_sha256": "672edf961acf913ba15868d2941b68dacb6eefddcf8120686fb52d52679cd5d6",
+ "planning_seconds": 27.002595651894808,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 593,
+  "tree_nodes": 208,
+  "wall_seconds": 27.002269105054438,
+  "collision_checks": 10675
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

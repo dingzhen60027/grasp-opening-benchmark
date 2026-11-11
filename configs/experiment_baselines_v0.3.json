@@ -1,0 +1,22 @@
+{
+  "name": "baselines_v0.3",
+  "description": "Main baseline table: nominal, margin-inflated and scenario RRT-Connect on the frozen test split",
+  "suite": "data/suite_v0.3",
+  "output": "results/suite_v0.3/baselines",
+  "split": "test",
+  "families": null,
+  "levels": null,
+  "seeds": [0, 1, 2, 3, 4],
+  "budget_seconds": 120,
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step": 0.0025,
+  "workers": 20,
+  "planners": [
+    {"label": "RRT-Connect", "planner": "rrt_connect", "params": {}},
+    {"label": "Margin RRT-Connect (5 mm)", "planner": "rrt_connect", "params": {"margin": 0.005}},
+    {"label": "Scenario RRT-Connect (N=8, risk 0.25)", "planner": "rrt_connect", "params": {"scenarios": 8, "risk": 0.25}}
+  ],
+  "notes": "Tune margin / scenario count on the dev split first. Add your own planner as {\"label\": ..., \"planner\": \"my_package.my_module:plan\", \"params\": {...}}."
+}

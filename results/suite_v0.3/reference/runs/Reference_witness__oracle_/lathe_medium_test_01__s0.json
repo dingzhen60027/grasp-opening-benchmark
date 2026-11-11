@@ -1,0 +1,66 @@
+{
+ "task_id": "lathe_medium_test_01",
+ "family": "lathe",
+ "level": "medium",
+ "split": "test",
+ "label": "Reference witness (oracle)",
+ "planner": "reference",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 1,
+ "task_sha256": "b397e71235491df77b580069eb8af3d09f9365607898516381dc74464c8623f4",
+ "planning_seconds": 9.3923881649971e-06,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_medium_test_01",
+  "family": "lathe",
+  "level": "medium",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 11519655,
+  "path_joint_length_rad": 9.032123534472568,
+  "ee_path_length_m": 1.6642801788947745,
+  "payload_min_clearance_m": 0.009982281960714968,
+  "payload_clearance_p05_m": 0.026109968158727317,
+  "trajectory_states": 3055,
+  "collision_count": 27,
+  "collision_rate": 0.10546875,
+  "collision_ci95": [
+   0.07066363859226807,
+   0.1497341743496298
+  ],
+  "success_count": 229,
+  "success_rate": 0.89453125,
+  "success_ci95": [
+   0.8502658256503702,
+   0.9293363614077319
+  ],
+  "failures_by_reason": {
+   "payload_environment": 27
+  },
+  "colliding_obstacles": {
+   "chuck_jaw_xp": 7,
+   "chuck_jaw_zp": 6,
+   "chuck_jaw_xn": 8,
+   "chuck_jaw_zn": 6
+  },
+  "wall_seconds": 51.49019530694932,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111101111011101111111111111111111110111111110111111111111111110111101111111111111111101111111001111010110111110111111111111011111110111111111011101111111111111111111111111111111111010111011111111111111111111111111111111011111111111111111111111111111000010",
+  "episode_collision": "0000010000100010000000000000000000001000000001000000000000000001000010000000000000000010000000110000101001000001000000000000100000001000000000100010000000000000000000000000000000000101000100000000000000000000000000000000100000000000000000000000000000111101"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.3/witnesses/lathe/test/lathe_medium_test_01.npy",
+ "trajectory_sha256": "ddc7359ccebcc2516dd667923ba4840db66e0ac51f81f4f908a7db2910d5c9ac",
+ "task_success_rate": 0.89453125
+}

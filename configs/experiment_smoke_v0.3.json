@@ -1,0 +1,21 @@
+{
+  "name": "smoke_v0.3",
+  "description": "Pipeline smoke test: RRT-Connect variants on the dev split with a short budget and few episodes",
+  "suite": "data/suite_v0.3",
+  "output": "results/suite_v0.3/smoke_rrt_dev",
+  "split": "dev",
+  "families": null,
+  "levels": null,
+  "seeds": [0],
+  "budget_seconds": 30,
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step": 0.0025,
+  "workers": 20,
+  "planners": [
+    {"label": "RRT-Connect", "planner": "rrt_connect", "params": {}},
+    {"label": "Margin RRT-Connect (5 mm)", "planner": "rrt_connect", "params": {"margin": 0.005}},
+    {"label": "Scenario RRT-Connect (N=8, risk 0.25)", "planner": "rrt_connect", "params": {"scenarios": 8, "risk": 0.25}}
+  ]
+}

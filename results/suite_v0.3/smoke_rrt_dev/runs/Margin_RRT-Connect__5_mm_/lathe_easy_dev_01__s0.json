@@ -1,0 +1,32 @@
+{
+ "task_id": "lathe_easy_dev_01",
+ "family": "lathe",
+ "level": "easy",
+ "split": "dev",
+ "label": "Margin RRT-Connect (5 mm)",
+ "planner": "rrt_connect",
+ "params": {
+  "margin": 0.005
+ },
+ "seed": 0,
+ "budget_seconds": 30,
+ "task_sha256": "4b06d3d02ecddf34badcc7824a2bb1be223604f00236ae7a346c810caa931ff7",
+ "planning_seconds": 27.000091718509793,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "margin_m": 0.005,
+  "scenarios": 0,
+  "risk": 0.0,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 529,
+  "tree_nodes": 160,
+  "wall_seconds": 27.000027020461857,
+  "collision_checks": 10774
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

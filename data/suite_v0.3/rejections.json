@@ -1,0 +1,428 @@
+{
+ "rack_easy_dev_00": [],
+ "rack_easy_dev_01": [],
+ "rack_easy_test_00": [],
+ "rack_easy_test_01": [],
+ "rack_easy_test_02": [],
+ "rack_easy_test_03": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 5,
+   "u": 1.0
+  }
+ ],
+ "rack_easy_test_04": [],
+ "rack_easy_test_05": [],
+ "rack_medium_dev_00": [],
+ "rack_medium_dev_01": [],
+ "rack_medium_test_00": [],
+ "rack_medium_test_01": [],
+ "rack_medium_test_02": [],
+ "rack_medium_test_03": [],
+ "rack_medium_test_04": [],
+ "rack_medium_test_05": [],
+ "rack_hard_dev_00": [],
+ "rack_hard_dev_01": [],
+ "rack_hard_test_00": [],
+ "rack_hard_test_01": [],
+ "rack_hard_test_02": [],
+ "rack_hard_test_03": [],
+ "rack_hard_test_04": [],
+ "rack_hard_test_05": [],
+ "rebar_easy_dev_00": [],
+ "rebar_easy_dev_01": [],
+ "rebar_easy_test_00": [],
+ "rebar_easy_test_01": [],
+ "rebar_easy_test_02": [],
+ "rebar_easy_test_03": [],
+ "rebar_easy_test_04": [],
+ "rebar_easy_test_05": [],
+ "rebar_medium_dev_00": [],
+ "rebar_medium_dev_01": [],
+ "rebar_medium_test_00": [],
+ "rebar_medium_test_01": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.6909090909090909
+  }
+ ],
+ "rebar_medium_test_02": [],
+ "rebar_medium_test_03": [],
+ "rebar_medium_test_04": [],
+ "rebar_medium_test_05": [],
+ "rebar_hard_dev_00": [],
+ "rebar_hard_dev_01": [],
+ "rebar_hard_test_00": [
+  {
+   "attempt": 0,
+   "reason": "robot_self",
+   "segment": 2,
+   "u": 0.611111111111111,
+   "detail": {
+    "links": [
+     "upper_arm_link",
+     "robotiq_85_left_finger_link"
+    ]
+   }
+  }
+ ],
+ "rebar_hard_test_01": [],
+ "rebar_hard_test_02": [],
+ "rebar_hard_test_03": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.6603773584905661
+  }
+ ],
+ "rebar_hard_test_04": [],
+ "rebar_hard_test_05": [],
+ "lathe_easy_dev_00": [],
+ "lathe_easy_dev_01": [],
+ "lathe_easy_test_00": [],
+ "lathe_easy_test_01": [
+  {
+   "attempt": 0,
+   "reason": "payload_robot",
+   "segment": 1,
+   "u": 0.9254658385093167,
+   "detail": {
+    "link": "upper_arm_link"
+   }
+  }
+ ],
+ "lathe_easy_test_02": [
+  {
+   "attempt": 0,
+   "reason": "payload_robot",
+   "segment": 1,
+   "u": 0.7682926829268293,
+   "detail": {
+    "link": "upper_arm_link"
+   }
+  }
+ ],
+ "lathe_easy_test_03": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9294871794871794
+  },
+  {
+   "attempt": 1,
+   "reason": "payload_robot",
+   "segment": 1,
+   "u": 0.8076923076923077,
+   "detail": {
+    "link": "upper_arm_link"
+   }
+  }
+ ],
+ "lathe_easy_test_04": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9671052631578947
+  }
+ ],
+ "lathe_easy_test_05": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9407894736842105
+  },
+  {
+   "attempt": 1,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9225352112676056
+  },
+  {
+   "attempt": 2,
+   "reason": "payload_robot",
+   "segment": 1,
+   "u": 0.6097560975609756,
+   "detail": {
+    "link": "upper_arm_link"
+   }
+  },
+  {
+   "attempt": 3,
+   "reason": "payload_robot",
+   "segment": 1,
+   "u": 0.670807453416149,
+   "detail": {
+    "link": "upper_arm_link"
+   }
+  }
+ ],
+ "lathe_medium_dev_00": [],
+ "lathe_medium_dev_01": [],
+ "lathe_medium_test_00": [],
+ "lathe_medium_test_01": [],
+ "lathe_medium_test_02": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.940119760479042
+  }
+ ],
+ "lathe_medium_test_03": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9934210526315789
+  },
+  {
+   "attempt": 1,
+   "reason": "payload_robot",
+   "segment": 1,
+   "u": 0.7419354838709677,
+   "detail": {
+    "link": "upper_arm_link"
+   }
+  }
+ ],
+ "lathe_medium_test_04": [],
+ "lathe_medium_test_05": [],
+ "lathe_hard_dev_00": [],
+ "lathe_hard_dev_01": [],
+ "lathe_hard_test_00": [
+  {
+   "attempt": 0,
+   "reason": "robot_environment",
+   "segment": 1,
+   "u": 0.9683544303797468,
+   "detail": {
+    "obstacle": "front_wall_left",
+    "link": "robotiq_85_right_knuckle_link"
+   }
+  },
+  {
+   "attempt": 1,
+   "reason": "payload_robot",
+   "segment": 1,
+   "u": 0.7672955974842768,
+   "detail": {
+    "link": "upper_arm_link"
+   }
+  },
+  {
+   "attempt": 2,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9407894736842105
+  }
+ ],
+ "lathe_hard_test_01": [
+  {
+   "attempt": 0,
+   "reason": "payload_robot",
+   "segment": 1,
+   "u": 0.8786127167630058,
+   "detail": {
+    "link": "upper_arm_link"
+   }
+  }
+ ],
+ "lathe_hard_test_02": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.926829268292683
+  },
+  {
+   "attempt": 1,
+   "reason": "robot_environment",
+   "segment": 1,
+   "u": 0.9251700680272108,
+   "detail": {
+    "obstacle": "front_wall_left",
+    "link": "robotiq_85_right_finger_link"
+   }
+  }
+ ],
+ "lathe_hard_test_03": [
+  {
+   "attempt": 0,
+   "reason": "payload_robot",
+   "segment": 1,
+   "u": 0.888888888888889,
+   "detail": {
+    "link": "upper_arm_link"
+   }
+  },
+  {
+   "attempt": 1,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9407894736842105
+  },
+  {
+   "attempt": 2,
+   "reason": "payload_robot",
+   "segment": 1,
+   "u": 0.8011695906432748,
+   "detail": {
+    "link": "upper_arm_link"
+   }
+  }
+ ],
+ "lathe_hard_test_04": [
+  {
+   "attempt": 0,
+   "reason": "payload_robot",
+   "segment": 1,
+   "u": 0.8300653594771242,
+   "detail": {
+    "link": "upper_arm_link"
+   }
+  },
+  {
+   "attempt": 1,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9320987654320987
+  },
+  {
+   "attempt": 2,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9518072289156627
+  }
+ ],
+ "lathe_hard_test_05": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9451219512195123
+  }
+ ],
+ "tote_easy_dev_00": [],
+ "tote_easy_dev_01": [],
+ "tote_easy_test_00": [
+  {
+   "attempt": 0,
+   "reason": "layout_overlap:tote_table/source_leg_0.52_-0.17"
+  },
+  {
+   "attempt": 1,
+   "reason": "layout_overlap:divider_y0/source_table"
+  },
+  {
+   "attempt": 2,
+   "reason": "layout_overlap:divider_x0/source_table"
+  },
+  {
+   "attempt": 3,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.8833333333333334
+  }
+ ],
+ "tote_easy_test_01": [],
+ "tote_easy_test_02": [],
+ "tote_easy_test_03": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9251336898395721
+  },
+  {
+   "attempt": 1,
+   "reason": "layout_overlap:tote_table/robot_base_plate"
+  }
+ ],
+ "tote_easy_test_04": [],
+ "tote_easy_test_05": [],
+ "tote_medium_dev_00": [],
+ "tote_medium_dev_01": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.995
+  }
+ ],
+ "tote_medium_test_00": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.8705882352941177
+  }
+ ],
+ "tote_medium_test_01": [],
+ "tote_medium_test_02": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.8923076923076924
+  }
+ ],
+ "tote_medium_test_03": [],
+ "tote_medium_test_04": [],
+ "tote_medium_test_05": [
+  {
+   "attempt": 0,
+   "reason": "layout_overlap:tote_table/source_leg_0.52_-0.17"
+  }
+ ],
+ "tote_hard_dev_00": [],
+ "tote_hard_dev_01": [],
+ "tote_hard_test_00": [],
+ "tote_hard_test_01": [],
+ "tote_hard_test_02": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9109947643979058
+  },
+  {
+   "attempt": 1,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.8584905660377358
+  },
+  {
+   "attempt": 2,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.961904761904762
+  },
+  {
+   "attempt": 3,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.888235294117647
+  }
+ ],
+ "tote_hard_test_03": [
+  {
+   "attempt": 0,
+   "reason": "layout_overlap:tote_table/source_leg_0.52_-0.17"
+  },
+  {
+   "attempt": 1,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9679144385026738
+  }
+ ],
+ "tote_hard_test_04": [],
+ "tote_hard_test_05": []
+}

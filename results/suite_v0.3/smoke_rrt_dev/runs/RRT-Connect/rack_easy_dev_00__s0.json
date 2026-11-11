@@ -1,0 +1,78 @@
+{
+ "task_id": "rack_easy_dev_00",
+ "family": "rack",
+ "level": "easy",
+ "split": "dev",
+ "label": "RRT-Connect",
+ "planner": "rrt_connect",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 30,
+ "task_sha256": "2c3509ee120a2634b438932cf441cd997157e9c6eb79beda82608919b7703c8a",
+ "planning_seconds": 16.657366765663028,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 133,
+  "tree_nodes": 49,
+  "time_to_first_solution": 6.901626016013324,
+  "raw_waypoints": 30,
+  "waypoints": 3,
+  "shortcut_attempts": 43,
+  "wall_seconds": 16.65709891822189,
+  "collision_checks": 5926
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_easy_dev_00",
+  "family": "rack",
+  "level": "easy",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 262647383,
+  "path_joint_length_rad": 2.7319816619037054,
+  "ee_path_length_m": 1.0334272770296498,
+  "payload_min_clearance_m": 0.008966883424994842,
+  "payload_clearance_p05_m": 0.013699443941784262,
+  "trajectory_states": 864,
+  "collision_count": 14,
+  "collision_rate": 0.21875,
+  "collision_ci95": [
+   0.12506827371524634,
+   0.3396963118152601
+  ],
+  "success_count": 43,
+  "success_rate": 0.671875,
+  "success_ci95": [
+   0.5431232132214405,
+   0.7841280011062753
+  ],
+  "failures_by_reason": {
+   "placement_height": 6,
+   "payload_environment": 14,
+   "keep_in": 1
+  },
+  "colliding_obstacles": {
+   "target_saddle_1": 8,
+   "deck_3": 4,
+   "target_guide_1_r": 2
+  },
+  "wall_seconds": 6.288174851797521,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0101110101101110111111000111001100111000011111101110101111110111",
+  "episode_collision": "0000001010010001000000111000010011000011000000010001000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/RRT-Connect/rack_easy_dev_00__s0.npy",
+ "trajectory_sha256": "50ba163bffa4557bc16161ddb408688cd5b0cbe44871207d9011a0c65ff0e5fb",
+ "task_success_rate": 0.671875
+}

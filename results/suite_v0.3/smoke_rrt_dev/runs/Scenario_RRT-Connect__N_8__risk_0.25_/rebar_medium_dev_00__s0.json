@@ -1,0 +1,33 @@
+{
+ "task_id": "rebar_medium_dev_00",
+ "family": "rebar",
+ "level": "medium",
+ "split": "dev",
+ "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+ "planner": "rrt_connect",
+ "params": {
+  "scenarios": 8,
+  "risk": 0.25
+ },
+ "seed": 0,
+ "budget_seconds": 30,
+ "task_sha256": "6d18ef4997d8974460c277262e32deedea7db9fcd73d977a2c77db0b632e87d3",
+ "planning_seconds": 27.00382946897298,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "margin_m": 0.0,
+  "scenarios": 8,
+  "risk": 0.25,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 433,
+  "tree_nodes": 148,
+  "wall_seconds": 27.003761388361454,
+  "collision_checks": 6114
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

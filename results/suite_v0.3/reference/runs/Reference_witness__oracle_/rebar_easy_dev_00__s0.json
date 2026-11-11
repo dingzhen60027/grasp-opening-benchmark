@@ -1,0 +1,65 @@
+{
+ "task_id": "rebar_easy_dev_00",
+ "family": "rebar",
+ "level": "easy",
+ "split": "dev",
+ "label": "Reference witness (oracle)",
+ "planner": "reference",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 1,
+ "task_sha256": "7a87c6d3521a3df309b4a6c232046284a606d85cd098adc14b819985cc0a36e7",
+ "planning_seconds": 8.888542652130127e-06,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rebar_easy_dev_00",
+  "family": "rebar",
+  "level": "easy",
+  "split": "dev",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3988078393,
+  "path_joint_length_rad": 6.579805326950183,
+  "ee_path_length_m": 1.1901354481337396,
+  "payload_min_clearance_m": 0.019991494369506833,
+  "payload_clearance_p05_m": 0.0199949812412262,
+  "trajectory_states": 2175,
+  "collision_count": 12,
+  "collision_rate": 0.046875,
+  "collision_ci95": [
+   0.024452343969436963,
+   0.08044902822855146
+  ],
+  "success_count": 242,
+  "success_rate": 0.9453125,
+  "success_ci95": [
+   0.9099452021659431,
+   0.9697828246470755
+  ],
+  "failures_by_reason": {
+   "payload_environment": 12,
+   "goal_position": 2
+  },
+  "colliding_obstacles": {
+   "stirrup_0": 11,
+   "longitudinal_11": 1
+  },
+  "wall_seconds": 30.91961150150746,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0111011111110111111111111111111011111111111111111111111111111111111111111101111011111111111111101111111111011111101111101111111111111001111111111111111111111111111111111111111111011111111111111111111101111111111111111111111111111111111111111111111111111111",
+  "episode_collision": "1000000000001000000000000000000100000000000000000000000000000000000000000010000100000000000000010000000000000000010000010000000000000110000000000000000000000000000000000000000000100000000000000000000010000000000000000000000000000000000000000000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.3/witnesses/rebar/dev/rebar_easy_dev_00.npy",
+ "trajectory_sha256": "5e9528c8d6b84c7976428eff6757b85dfd2d6b29bcb3e5a8bd5a66032f087ffe",
+ "task_success_rate": 0.9453125
+}

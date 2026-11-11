@@ -1,0 +1,1142 @@
+[
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "all",
+  "level": "all",
+  "runs": 24,
+  "tasks": 24,
+  "planning_success": 0.125,
+  "task_success": 0.09244791666666667,
+  "task_success_ci95": [
+   0.0,
+   0.20377604166666666
+  ],
+  "collision_given_valid": 0.11979166666666667,
+  "planning_seconds_median": 28.476,
+  "path_joint_length_median": 2.7711616371878076,
+  "ee_path_length_median": 1.0739885088570142,
+  "min_clearance_median_mm": 8.000007963180545,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "all",
+  "level": "easy",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 0.375,
+  "task_success": 0.27734375,
+  "task_success_ci95": [
+   0.056640625,
+   0.548828125
+  ],
+  "collision_given_valid": 0.11979166666666667,
+  "planning_seconds_median": 28.476,
+  "path_joint_length_median": 2.7711616371878076,
+  "ee_path_length_median": 1.0739885088570142,
+  "min_clearance_median_mm": 8.000007963180545,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "all",
+  "level": "medium",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "all",
+  "level": "hard",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "lathe",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "lathe",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "lathe",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "lathe",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "rack",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.16666666666666666,
+  "task_success": 0.07552083333333333,
+  "task_success_ci95": [
+   0.0,
+   0.2265625
+  ],
+  "collision_given_valid": 0.125,
+  "planning_seconds_median": 23.38,
+  "path_joint_length_median": 2.7711616371878076,
+  "ee_path_length_median": 1.0739885088570142,
+  "min_clearance_median_mm": 8.000007963180545,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "rack",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.5,
+  "task_success": 0.2265625,
+  "task_success_ci95": [
+   0.0,
+   0.453125
+  ],
+  "collision_given_valid": 0.125,
+  "planning_seconds_median": 23.38,
+  "path_joint_length_median": 2.7711616371878076,
+  "ee_path_length_median": 1.0739885088570142,
+  "min_clearance_median_mm": 8.000007963180545,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "rack",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "rack",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "rebar",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "rebar",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "rebar",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "rebar",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "tote",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.3333333333333333,
+  "task_success": 0.2942708333333333,
+  "task_success_ci95": [
+   0.0,
+   0.5963541666666666
+  ],
+  "collision_given_valid": 0.1171875,
+  "planning_seconds_median": 30.4995,
+  "path_joint_length_median": 4.789042171499859,
+  "ee_path_length_median": 1.1595252678418286,
+  "min_clearance_median_mm": 6.770586873129548,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "tote",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 1.0,
+  "task_success": 0.8828125,
+  "task_success_ci95": [
+   0.859375,
+   0.90625
+  ],
+  "collision_given_valid": 0.1171875,
+  "planning_seconds_median": 30.4995,
+  "path_joint_length_median": 4.789042171499859,
+  "ee_path_length_median": 1.1595252678418286,
+  "min_clearance_median_mm": 6.770586873129548,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "tote",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Margin RRT-Connect (5 mm)",
+  "family": "tote",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "all",
+  "level": "all",
+  "runs": 24,
+  "tasks": 24,
+  "planning_success": 0.16666666666666666,
+  "task_success": 0.08984375,
+  "task_success_ci95": [
+   0.018229166666666668,
+   0.1751627604166665
+  ],
+  "collision_given_valid": 0.41796875,
+  "planning_seconds_median": 25.3065,
+  "path_joint_length_median": 2.8622683565764486,
+  "ee_path_length_median": 1.0683092593457917,
+  "min_clearance_median_mm": 3.48072408150785,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "all",
+  "level": "easy",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 0.375,
+  "task_success": 0.201171875,
+  "task_success_ci95": [
+   0.0546875,
+   0.380859375
+  ],
+  "collision_given_valid": 0.4270833333333333,
+  "planning_seconds_median": 28.652,
+  "path_joint_length_median": 2.760369555826835,
+  "ee_path_length_median": 1.093529564386003,
+  "min_clearance_median_mm": 2.4339703248281856,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "all",
+  "level": "medium",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 0.125,
+  "task_success": 0.068359375,
+  "task_success_ci95": [
+   0.0,
+   0.205078125
+  ],
+  "collision_given_valid": 0.390625,
+  "planning_seconds_median": 21.961,
+  "path_joint_length_median": 2.964167157326062,
+  "ee_path_length_median": 1.0430889543055806,
+  "min_clearance_median_mm": 4.527477838187514,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "all",
+  "level": "hard",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "lathe",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "lathe",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "lathe",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "lathe",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "rack",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.3333333333333333,
+  "task_success": 0.203125,
+  "task_success_ci95": [
+   0.0,
+   0.4270833333333333
+  ],
+  "collision_given_valid": 0.3046875,
+  "planning_seconds_median": 19.308999999999997,
+  "path_joint_length_median": 2.848074409614884,
+  "ee_path_length_median": 1.0382581156676152,
+  "min_clearance_median_mm": 6.747180631591178,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "rack",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.5,
+  "task_success": 0.3359375,
+  "task_success_ci95": [
+   0.0,
+   0.671875
+  ],
+  "collision_given_valid": 0.21875,
+  "planning_seconds_median": 16.657,
+  "path_joint_length_median": 2.7319816619037054,
+  "ee_path_length_median": 1.0334272770296498,
+  "min_clearance_median_mm": 8.966883424994842,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "rack",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.5,
+  "task_success": 0.2734375,
+  "task_success_ci95": [
+   0.0,
+   0.546875
+  ],
+  "collision_given_valid": 0.390625,
+  "planning_seconds_median": 21.961,
+  "path_joint_length_median": 2.964167157326062,
+  "ee_path_length_median": 1.0430889543055806,
+  "min_clearance_median_mm": 4.527477838187514,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "rack",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "rebar",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "rebar",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "rebar",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "rebar",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "tote",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.3333333333333333,
+  "task_success": 0.15625,
+  "task_success_ci95": [
+   0.0,
+   0.3229166666666667
+  ],
+  "collision_given_valid": 0.53125,
+  "planning_seconds_median": 31.314,
+  "path_joint_length_median": 5.705275492910529,
+  "ee_path_length_median": 1.1770731350176384,
+  "min_clearance_median_mm": 1.9852807582974759,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "tote",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 1.0,
+  "task_success": 0.46875,
+  "task_success_ci95": [
+   0.4375,
+   0.5
+  ],
+  "collision_given_valid": 0.53125,
+  "planning_seconds_median": 31.314,
+  "path_joint_length_median": 5.705275492910529,
+  "ee_path_length_median": 1.1770731350176384,
+  "min_clearance_median_mm": 1.9852807582974759,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "tote",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect",
+  "family": "tote",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "all",
+  "level": "all",
+  "runs": 24,
+  "tasks": 24,
+  "planning_success": 0.16666666666666666,
+  "task_success": 0.11263020833333333,
+  "task_success_ci95": [
+   0.022786458333333332,
+   0.21744791666666666
+  ],
+  "collision_given_valid": 0.26953125,
+  "planning_seconds_median": 26.4165,
+  "path_joint_length_median": 3.1134757268806985,
+  "ee_path_length_median": 1.03376407162961,
+  "min_clearance_median_mm": 5.170869781727277,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "all",
+  "level": "easy",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 0.375,
+  "task_success": 0.26953125,
+  "task_success_ci95": [
+   0.080078125,
+   0.5
+  ],
+  "collision_given_valid": 0.22916666666666666,
+  "planning_seconds_median": 24.669,
+  "path_joint_length_median": 3.199775919382823,
+  "ee_path_length_median": 1.0324474559246186,
+  "min_clearance_median_mm": 5.612459874714352,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "all",
+  "level": "medium",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 0.125,
+  "task_success": 0.068359375,
+  "task_success_ci95": [
+   0.0,
+   0.205078125
+  ],
+  "collision_given_valid": 0.390625,
+  "planning_seconds_median": 29.393,
+  "path_joint_length_median": 3.027175534378574,
+  "ee_path_length_median": 1.038263145933657,
+  "min_clearance_median_mm": 4.729279688740203,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "all",
+  "level": "hard",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "lathe",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "lathe",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "lathe",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "lathe",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "rack",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.5,
+  "task_success": 0.3125,
+  "task_success_ci95": [
+   0.09114583333333333,
+   0.5494791666666666
+  ],
+  "collision_given_valid": 0.3020833333333333,
+  "planning_seconds_median": 28.164,
+  "path_joint_length_median": 3.027175534378574,
+  "ee_path_length_median": 1.0350806873346015,
+  "min_clearance_median_mm": 4.729279688740203,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "rack",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 1.0,
+  "task_success": 0.6640625,
+  "task_success_ci95": [
+   0.640625,
+   0.6875
+  ],
+  "collision_given_valid": 0.2578125,
+  "planning_seconds_median": 24.067500000000003,
+  "path_joint_length_median": 2.9750167056601424,
+  "ee_path_length_median": 1.03376407162961,
+  "min_clearance_median_mm": 4.555982050185022,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "rack",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.5,
+  "task_success": 0.2734375,
+  "task_success_ci95": [
+   0.0,
+   0.546875
+  ],
+  "collision_given_valid": 0.390625,
+  "planning_seconds_median": 29.393,
+  "path_joint_length_median": 3.027175534378574,
+  "ee_path_length_median": 1.038263145933657,
+  "min_clearance_median_mm": 4.729279688740203,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "rack",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "rebar",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "rebar",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "rebar",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "rebar",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "tote",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.16666666666666666,
+  "task_success": 0.13802083333333334,
+  "task_success_ci95": [
+   0.0,
+   0.4140625
+  ],
+  "collision_given_valid": 0.171875,
+  "planning_seconds_median": 24.669,
+  "path_joint_length_median": 3.32591781171417,
+  "ee_path_length_median": 0.8717558483552339,
+  "min_clearance_median_mm": 5.934065577350078,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "tote",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.5,
+  "task_success": 0.4140625,
+  "task_success_ci95": [
+   0.0,
+   0.828125
+  ],
+  "collision_given_valid": 0.171875,
+  "planning_seconds_median": 24.669,
+  "path_joint_length_median": 3.32591781171417,
+  "ee_path_length_median": 0.8717558483552339,
+  "min_clearance_median_mm": 5.934065577350078,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "tote",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+  "family": "tote",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ }
+]

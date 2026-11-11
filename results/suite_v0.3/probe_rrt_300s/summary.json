@@ -1,0 +1,230 @@
+[
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "all",
+  "level": "all",
+  "runs": 12,
+  "tasks": 12,
+  "planning_success": 0.16666666666666666,
+  "task_success": 0.06770833333333333,
+  "task_success_ci95": [
+   0.0,
+   0.16927083333333334
+  ],
+  "collision_given_valid": 0.59375,
+  "planning_seconds_median": 217.1125,
+  "path_joint_length_median": 8.145337877207524,
+  "ee_path_length_median": 2.55644765439373,
+  "min_clearance_median_mm": 1.3712572452752607,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "all",
+  "level": "easy",
+  "runs": 4,
+  "tasks": 4,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "all",
+  "level": "medium",
+  "runs": 4,
+  "tasks": 4,
+  "planning_success": 0.25,
+  "task_success": 0.15234375,
+  "task_success_ci95": [
+   0.0,
+   0.45703125
+  ],
+  "collision_given_valid": 0.390625,
+  "planning_seconds_median": 158.961,
+  "path_joint_length_median": 7.980477855890919,
+  "ee_path_length_median": 2.9140517635335748,
+  "min_clearance_median_mm": 2.255291049485109,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "all",
+  "level": "hard",
+  "runs": 4,
+  "tasks": 4,
+  "planning_success": 0.25,
+  "task_success": 0.05078125,
+  "task_success_ci95": [
+   0.0,
+   0.15234375
+  ],
+  "collision_given_valid": 0.796875,
+  "planning_seconds_median": 275.264,
+  "path_joint_length_median": 8.31019789852413,
+  "ee_path_length_median": 2.1988435452538853,
+  "min_clearance_median_mm": 0.4872234410654122,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "lathe",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.3333333333333333,
+  "task_success": 0.13541666666666666,
+  "task_success_ci95": [
+   0.0,
+   0.3385416666666667
+  ],
+  "collision_given_valid": 0.59375,
+  "planning_seconds_median": 217.1125,
+  "path_joint_length_median": 8.145337877207524,
+  "ee_path_length_median": 2.55644765439373,
+  "min_clearance_median_mm": 1.3712572452752607,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "lathe",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "lathe",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.5,
+  "task_success": 0.3046875,
+  "task_success_ci95": [
+   0.0,
+   0.609375
+  ],
+  "collision_given_valid": 0.390625,
+  "planning_seconds_median": 158.961,
+  "path_joint_length_median": 7.980477855890919,
+  "ee_path_length_median": 2.9140517635335748,
+  "min_clearance_median_mm": 2.255291049485109,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "lathe",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.5,
+  "task_success": 0.1015625,
+  "task_success_ci95": [
+   0.0,
+   0.203125
+  ],
+  "collision_given_valid": 0.796875,
+  "planning_seconds_median": 275.264,
+  "path_joint_length_median": 8.31019789852413,
+  "ee_path_length_median": 2.1988435452538853,
+  "min_clearance_median_mm": 0.4872234410654122,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "rebar",
+  "level": "all",
+  "runs": 6,
+  "tasks": 6,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "rebar",
+  "level": "easy",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "rebar",
+  "level": "medium",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ },
+ {
+  "label": "RRT-Connect (300 s)",
+  "family": "rebar",
+  "level": "hard",
+  "runs": 2,
+  "tasks": 2,
+  "planning_success": 0.0,
+  "task_success": 0.0,
+  "task_success_ci95": [
+   0.0,
+   0.0
+  ],
+  "collision_given_valid": NaN,
+  "planning_seconds_median": NaN,
+  "path_joint_length_median": NaN,
+  "ee_path_length_median": NaN,
+  "min_clearance_median_mm": NaN,
+  "over_budget": 0
+ }
+]

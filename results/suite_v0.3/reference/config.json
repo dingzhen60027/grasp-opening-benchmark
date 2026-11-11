@@ -1,0 +1,25 @@
+{
+ "name": "reference_witnesses_v0.3",
+ "description": "B0 oracle: execute every scripted feasibility witness under the common grasp perturbations (difficulty calibration, not a method)",
+ "suite": "data/suite_v0.3",
+ "output": "results/suite_v0.3/reference",
+ "split": null,
+ "families": null,
+ "levels": null,
+ "seeds": [
+  0
+ ],
+ "budget_seconds": 1,
+ "episodes": 256,
+ "uncertainty_scale": 1.0,
+ "mode": "combined",
+ "joint_step": 0.0025,
+ "workers": 20,
+ "planners": [
+  {
+   "label": "Reference witness (oracle)",
+   "planner": "reference",
+   "params": {}
+  }
+ ]
+}

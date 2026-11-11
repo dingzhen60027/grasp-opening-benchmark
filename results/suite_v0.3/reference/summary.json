@@ -1,0 +1,382 @@
+[
+ {
+  "label": "Reference witness (oracle)",
+  "family": "all",
+  "level": "all",
+  "runs": 96,
+  "tasks": 96,
+  "planning_success": 1.0,
+  "task_success": 0.69091796875,
+  "task_success_ci95": [
+   0.6345601399739583,
+   0.7383687337239584
+  ],
+  "collision_given_valid": 0.2913818359375,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 6.675617397660996,
+  "ee_path_length_median": 1.3176871172416582,
+  "min_clearance_median_mm": 8.000002244517173,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "all",
+  "level": "easy",
+  "runs": 32,
+  "tasks": 32,
+  "planning_success": 1.0,
+  "task_success": 0.93408203125,
+  "task_success_ci95": [
+   0.900390625,
+   0.9643585205078125
+  ],
+  "collision_given_valid": 0.0394287109375,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 6.663814107807099,
+  "ee_path_length_median": 1.3335245106566176,
+  "min_clearance_median_mm": 13.988651331070272,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "all",
+  "level": "medium",
+  "runs": 32,
+  "tasks": 32,
+  "planning_success": 1.0,
+  "task_success": 0.7608642578125,
+  "task_success_ci95": [
+   0.7024993896484375,
+   0.8161773681640624
+  ],
+  "collision_given_valid": 0.2227783203125,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 6.524775992257279,
+  "ee_path_length_median": 1.3206576894722857,
+  "min_clearance_median_mm": 8.991211272998848,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "all",
+  "level": "hard",
+  "runs": 32,
+  "tasks": 32,
+  "planning_success": 1.0,
+  "task_success": 0.3778076171875,
+  "task_success_ci95": [
+   0.3349578857421875,
+   0.41773071289062497
+  ],
+  "collision_given_valid": 0.6119384765625,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 6.929102011275834,
+  "ee_path_length_median": 1.3002141554316986,
+  "min_clearance_median_mm": 4.9955732697921365,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "lathe",
+  "level": "all",
+  "runs": 24,
+  "tasks": 24,
+  "planning_success": 1.0,
+  "task_success": 0.8006184895833334,
+  "task_success_ci95": [
+   0.6990559895833334,
+   0.8920939127604166
+  ],
+  "collision_given_valid": 0.1982421875,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 8.556682617170269,
+  "ee_path_length_median": 1.5116864936729892,
+  "min_clearance_median_mm": 9.99553612869646,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "lathe",
+  "level": "easy",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.99658203125,
+  "task_success_ci95": [
+   0.994140625,
+   0.9990234375
+  ],
+  "collision_given_valid": 0.0,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 8.483868211835652,
+  "ee_path_length_median": 1.4682977904625731,
+  "min_clearance_median_mm": 19.990876521970957,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "lathe",
+  "level": "medium",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.93115234375,
+  "task_success_ci95": [
+   0.90916748046875,
+   0.9560668945312499
+  ],
+  "collision_given_valid": 0.06884765625,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 8.647205232406968,
+  "ee_path_length_median": 1.5322737636764416,
+  "min_clearance_median_mm": 9.99553612869646,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "lathe",
+  "level": "hard",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.47412109375,
+  "task_success_ci95": [
+   0.4365234375,
+   0.52001953125
+  ],
+  "collision_given_valid": 0.52587890625,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 8.56171747887987,
+  "ee_path_length_median": 1.51694952534839,
+  "min_clearance_median_mm": 4.995398702569146,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "rack",
+  "level": "all",
+  "runs": 24,
+  "tasks": 24,
+  "planning_success": 1.0,
+  "task_success": 0.59912109375,
+  "task_success_ci95": [
+   0.5305867513020833,
+   0.6671549479166666
+  ],
+  "collision_given_valid": 0.3351236979166667,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 7.42753361184967,
+  "ee_path_length_median": 1.6089987981722413,
+  "min_clearance_median_mm": 7.999994897842413,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "rack",
+  "level": "easy",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.783203125,
+  "task_success_ci95": [
+   0.75634765625,
+   0.8125244140624999
+  ],
+  "collision_given_valid": 0.1259765625,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 8.002351827079877,
+  "ee_path_length_median": 1.7078302239937706,
+  "min_clearance_median_mm": 8.00000190263237,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "rack",
+  "level": "medium",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.6259765625,
+  "task_success_ci95": [
+   0.599609375,
+   0.65576171875
+  ],
+  "collision_given_valid": 0.30859375,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 7.442240743839218,
+  "ee_path_length_median": 1.6089987981722413,
+  "min_clearance_median_mm": 8.000000035762795,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "rack",
+  "level": "hard",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.38818359375,
+  "task_success_ci95": [
+   0.35740966796875,
+   0.41455078125
+  ],
+  "collision_given_valid": 0.57080078125,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 7.130838951138501,
+  "ee_path_length_median": 1.5585369614231719,
+  "min_clearance_median_mm": 4.995745633976612,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "rebar",
+  "level": "all",
+  "runs": 24,
+  "tasks": 24,
+  "planning_success": 1.0,
+  "task_success": 0.583984375,
+  "task_success_ci95": [
+   0.45604248046875,
+   0.7101236979166666
+  ],
+  "collision_given_valid": 0.4140625,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 6.365282244459954,
+  "ee_path_length_median": 1.1608537454643861,
+  "min_clearance_median_mm": 9.992167653195553,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "rebar",
+  "level": "easy",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.96240234375,
+  "task_success_ci95": [
+   0.951171875,
+   0.97509765625
+  ],
+  "collision_given_valid": 0.03173828125,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 6.4220787830170725,
+  "ee_path_length_median": 1.2055173467368745,
+  "min_clearance_median_mm": 19.992362499237046,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "rebar",
+  "level": "medium",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.5869140625,
+  "task_success_ci95": [
+   0.55712890625,
+   0.61865234375
+  ],
+  "collision_given_valid": 0.4130859375,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 6.2374575252163,
+  "ee_path_length_median": 1.1270609496676771,
+  "min_clearance_median_mm": 9.992167653195553,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "rebar",
+  "level": "hard",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.20263671875,
+  "task_success_ci95": [
+   0.17626953125,
+   0.228515625
+  ],
+  "collision_given_valid": 0.79736328125,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 6.488563682713637,
+  "ee_path_length_median": 1.1608537454643861,
+  "min_clearance_median_mm": 4.9925305095403685,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "tote",
+  "level": "all",
+  "runs": 24,
+  "tasks": 24,
+  "planning_success": 1.0,
+  "task_success": 0.7799479166666666,
+  "task_success_ci95": [
+   0.6770467122395833,
+   0.8750122070312499
+  ],
+  "collision_given_valid": 0.21809895833333334,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 4.136179180943188,
+  "ee_path_length_median": 1.032091119846817,
+  "min_clearance_median_mm": 7.999994401334256,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "tote",
+  "level": "easy",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.994140625,
+  "task_success_ci95": [
+   0.98974609375,
+   0.998046875
+  ],
+  "collision_given_valid": 0.0,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 3.720025371175833,
+  "ee_path_length_median": 1.0186689908026139,
+  "min_clearance_median_mm": 8.000000259626592,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "tote",
+  "level": "medium",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.8994140625,
+  "task_success_ci95": [
+   0.87548828125,
+   0.91943359375
+  ],
+  "collision_given_valid": 0.1005859375,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 4.222664615550461,
+  "ee_path_length_median": 1.022464562115996,
+  "min_clearance_median_mm": 8.00000347877415,
+  "over_budget": 0
+ },
+ {
+  "label": "Reference witness (oracle)",
+  "family": "tote",
+  "level": "hard",
+  "runs": 8,
+  "tasks": 8,
+  "planning_success": 1.0,
+  "task_success": 0.4462890625,
+  "task_success_ci95": [
+   0.408203125,
+   0.48585205078124993
+  ],
+  "collision_given_valid": 0.5537109375,
+  "planning_seconds_median": 0.0,
+  "path_joint_length_median": 4.345116552374674,
+  "ee_path_length_median": 1.0775505033972685,
+  "min_clearance_median_mm": 4.995682021488182,
+  "over_budget": 0
+ }
+]

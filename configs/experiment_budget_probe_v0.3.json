@@ -1,0 +1,19 @@
+{
+  "name": "budget_probe_v0.3",
+  "description": "Solvability probe: plain RRT-Connect with a 300 s budget on the rebar and lathe dev tasks (none solved at 30 s)",
+  "suite": "data/suite_v0.3",
+  "output": "results/suite_v0.3/probe_rrt_300s",
+  "split": "dev",
+  "families": ["rebar", "lathe"],
+  "levels": null,
+  "seeds": [0],
+  "budget_seconds": 300,
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step": 0.0025,
+  "workers": 12,
+  "planners": [
+    {"label": "RRT-Connect (300 s)", "planner": "rrt_connect", "params": {}}
+  ]
+}

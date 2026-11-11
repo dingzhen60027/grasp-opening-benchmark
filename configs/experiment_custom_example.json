@@ -1,0 +1,19 @@
+{
+  "name": "custom_planner_example",
+  "description": "How to run your own planner: 'planner' is 'package.module:function' (here the template in examples/custom_planner.py)",
+  "suite": "data/suite_v0.3",
+  "output": "reports/custom_planner_example",
+  "split": "dev",
+  "families": null,
+  "levels": null,
+  "seeds": [0],
+  "budget_seconds": 10,
+  "episodes": 32,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step": 0.0025,
+  "workers": 8,
+  "planners": [
+    {"label": "Direct joint interpolation", "planner": "examples.custom_planner:plan", "params": {"margin": 0.0}}
+  ]
+}

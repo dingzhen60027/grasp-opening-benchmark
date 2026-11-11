@@ -1,0 +1,79 @@
+{
+ "task_id": "rack_easy_dev_00",
+ "family": "rack",
+ "level": "easy",
+ "split": "dev",
+ "label": "Margin RRT-Connect (5 mm)",
+ "planner": "rrt_connect",
+ "params": {
+  "margin": 0.005
+ },
+ "seed": 0,
+ "budget_seconds": 30,
+ "task_sha256": "2c3509ee120a2634b438932cf441cd997157e9c6eb79beda82608919b7703c8a",
+ "planning_seconds": 23.38007052242756,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "margin_m": 0.005,
+  "scenarios": 0,
+  "risk": 0.0,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 272,
+  "tree_nodes": 90,
+  "time_to_first_solution": 13.673617918975651,
+  "raw_waypoints": 22,
+  "waypoints": 4,
+  "shortcut_attempts": 31,
+  "wall_seconds": 23.379980446770787,
+  "collision_checks": 8065
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_easy_dev_00",
+  "family": "rack",
+  "level": "easy",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 262647383,
+  "path_joint_length_rad": 2.7711616371878076,
+  "ee_path_length_m": 1.0739885088570142,
+  "payload_min_clearance_m": 0.008000007963180546,
+  "payload_clearance_p05_m": 0.02718970357487391,
+  "trajectory_states": 865,
+  "collision_count": 8,
+  "collision_rate": 0.125,
+  "collision_ci95": [
+   0.055542791179602057,
+   0.23152630596600407
+  ],
+  "success_count": 29,
+  "success_rate": 0.453125,
+  "success_ci95": [
+   0.3282071145037181,
+   0.5825236846839525
+  ],
+  "failures_by_reason": {
+   "keep_in": 21,
+   "payload_environment": 8,
+   "placement_height": 5,
+   "goal_position": 1
+  },
+  "colliding_obstacles": {
+   "target_saddle_1": 8
+  },
+  "wall_seconds": 6.715924427844584,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0001110101101110001101110001000100111000001110000100100011100110",
+  "episode_collision": "0000001000010001000000000000010010000011000000000001000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/Margin_RRT-Connect__5_mm_/rack_easy_dev_00__s0.npy",
+ "trajectory_sha256": "bc9cc9d21db06561df58e23a520173d31a412c4a98ecb3bf3cb04ca494a6c997",
+ "task_success_rate": 0.453125
+}

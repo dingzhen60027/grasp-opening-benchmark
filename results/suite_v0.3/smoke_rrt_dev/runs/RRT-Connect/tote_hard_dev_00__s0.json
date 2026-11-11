@@ -1,0 +1,30 @@
+{
+ "task_id": "tote_hard_dev_00",
+ "family": "tote",
+ "level": "hard",
+ "split": "dev",
+ "label": "RRT-Connect",
+ "planner": "rrt_connect",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 30,
+ "task_sha256": "0ea2bb5b24fefd6f8db7a8c76bd7e3cfa844214b0b8667b09835625450718d98",
+ "planning_seconds": 27.000897702760994,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 601,
+  "tree_nodes": 238,
+  "wall_seconds": 27.000780696049333,
+  "collision_checks": 10929
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

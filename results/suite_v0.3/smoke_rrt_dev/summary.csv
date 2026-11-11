@@ -1,0 +1,61 @@
+label,family,level,runs,tasks,planning_success,task_success,collision_given_valid,planning_seconds_median,path_joint_length_median,ee_path_length_median,min_clearance_median_mm,over_budget,task_success_ci_low,task_success_ci_high
+Margin RRT-Connect (5 mm),all,all,24,24,0.125,0.09244791666666667,0.11979166666666667,28.476,2.7711616371878076,1.0739885088570142,8.000007963180545,0,0.0,0.20377604166666666
+Margin RRT-Connect (5 mm),all,easy,8,8,0.375,0.27734375,0.11979166666666667,28.476,2.7711616371878076,1.0739885088570142,8.000007963180545,0,0.056640625,0.548828125
+Margin RRT-Connect (5 mm),all,medium,8,8,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),all,hard,8,8,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),lathe,all,6,6,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),lathe,easy,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),lathe,medium,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),lathe,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),rack,all,6,6,0.16666666666666666,0.07552083333333333,0.125,23.38,2.7711616371878076,1.0739885088570142,8.000007963180545,0,0.0,0.2265625
+Margin RRT-Connect (5 mm),rack,easy,2,2,0.5,0.2265625,0.125,23.38,2.7711616371878076,1.0739885088570142,8.000007963180545,0,0.0,0.453125
+Margin RRT-Connect (5 mm),rack,medium,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),rack,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),rebar,all,6,6,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),rebar,easy,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),rebar,medium,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),rebar,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),tote,all,6,6,0.3333333333333333,0.2942708333333333,0.1171875,30.4995,4.789042171499859,1.1595252678418286,6.770586873129548,0,0.0,0.5963541666666666
+Margin RRT-Connect (5 mm),tote,easy,2,2,1.0,0.8828125,0.1171875,30.4995,4.789042171499859,1.1595252678418286,6.770586873129548,0,0.859375,0.90625
+Margin RRT-Connect (5 mm),tote,medium,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+Margin RRT-Connect (5 mm),tote,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,all,all,24,24,0.16666666666666666,0.08984375,0.41796875,25.3065,2.8622683565764486,1.0683092593457917,3.48072408150785,0,0.018229166666666668,0.1751627604166665
+RRT-Connect,all,easy,8,8,0.375,0.201171875,0.4270833333333333,28.652,2.760369555826835,1.093529564386003,2.4339703248281856,0,0.0546875,0.380859375
+RRT-Connect,all,medium,8,8,0.125,0.068359375,0.390625,21.961,2.964167157326062,1.0430889543055806,4.527477838187514,0,0.0,0.205078125
+RRT-Connect,all,hard,8,8,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,lathe,all,6,6,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,lathe,easy,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,lathe,medium,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,lathe,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,rack,all,6,6,0.3333333333333333,0.203125,0.3046875,19.308999999999997,2.848074409614884,1.0382581156676152,6.747180631591178,0,0.0,0.4270833333333333
+RRT-Connect,rack,easy,2,2,0.5,0.3359375,0.21875,16.657,2.7319816619037054,1.0334272770296498,8.966883424994842,0,0.0,0.671875
+RRT-Connect,rack,medium,2,2,0.5,0.2734375,0.390625,21.961,2.964167157326062,1.0430889543055806,4.527477838187514,0,0.0,0.546875
+RRT-Connect,rack,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,rebar,all,6,6,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,rebar,easy,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,rebar,medium,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,rebar,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,tote,all,6,6,0.3333333333333333,0.15625,0.53125,31.314,5.705275492910529,1.1770731350176384,1.9852807582974759,0,0.0,0.3229166666666667
+RRT-Connect,tote,easy,2,2,1.0,0.46875,0.53125,31.314,5.705275492910529,1.1770731350176384,1.9852807582974759,0,0.4375,0.5
+RRT-Connect,tote,medium,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+RRT-Connect,tote,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",all,all,24,24,0.16666666666666666,0.11263020833333333,0.26953125,26.4165,3.1134757268806985,1.03376407162961,5.170869781727277,0,0.022786458333333332,0.21744791666666666
+"Scenario RRT-Connect (N=8, risk 0.25)",all,easy,8,8,0.375,0.26953125,0.22916666666666666,24.669,3.199775919382823,1.0324474559246186,5.612459874714352,0,0.080078125,0.5
+"Scenario RRT-Connect (N=8, risk 0.25)",all,medium,8,8,0.125,0.068359375,0.390625,29.393,3.027175534378574,1.038263145933657,4.729279688740203,0,0.0,0.205078125
+"Scenario RRT-Connect (N=8, risk 0.25)",all,hard,8,8,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",lathe,all,6,6,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",lathe,easy,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",lathe,medium,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",lathe,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",rack,all,6,6,0.5,0.3125,0.3020833333333333,28.164,3.027175534378574,1.0350806873346015,4.729279688740203,0,0.09114583333333333,0.5494791666666666
+"Scenario RRT-Connect (N=8, risk 0.25)",rack,easy,2,2,1.0,0.6640625,0.2578125,24.067500000000003,2.9750167056601424,1.03376407162961,4.555982050185022,0,0.640625,0.6875
+"Scenario RRT-Connect (N=8, risk 0.25)",rack,medium,2,2,0.5,0.2734375,0.390625,29.393,3.027175534378574,1.038263145933657,4.729279688740203,0,0.0,0.546875
+"Scenario RRT-Connect (N=8, risk 0.25)",rack,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",rebar,all,6,6,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",rebar,easy,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",rebar,medium,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",rebar,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",tote,all,6,6,0.16666666666666666,0.13802083333333334,0.171875,24.669,3.32591781171417,0.8717558483552339,5.934065577350078,0,0.0,0.4140625
+"Scenario RRT-Connect (N=8, risk 0.25)",tote,easy,2,2,0.5,0.4140625,0.171875,24.669,3.32591781171417,0.8717558483552339,5.934065577350078,0,0.0,0.828125
+"Scenario RRT-Connect (N=8, risk 0.25)",tote,medium,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0
+"Scenario RRT-Connect (N=8, risk 0.25)",tote,hard,2,2,0.0,0.0,nan,nan,nan,nan,nan,0,0.0,0.0

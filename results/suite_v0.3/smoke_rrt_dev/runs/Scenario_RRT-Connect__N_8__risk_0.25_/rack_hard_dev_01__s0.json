@@ -1,0 +1,33 @@
+{
+ "task_id": "rack_hard_dev_01",
+ "family": "rack",
+ "level": "hard",
+ "split": "dev",
+ "label": "Scenario RRT-Connect (N=8, risk 0.25)",
+ "planner": "rrt_connect",
+ "params": {
+  "scenarios": 8,
+  "risk": 0.25
+ },
+ "seed": 0,
+ "budget_seconds": 30,
+ "task_sha256": "f048f2762db6ffc35b378cf04546adaa52f5f6eba588b00922f8027382d0c48a",
+ "planning_seconds": 27.003629067912698,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "margin_m": 0.0,
+  "scenarios": 8,
+  "risk": 0.25,
+  "step_rad": 0.25,
+  "resolution_rad": 0.005,
+  "iterations": 449,
+  "tree_nodes": 142,
+  "wall_seconds": 27.00353954732418,
+  "collision_checks": 6050
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}
