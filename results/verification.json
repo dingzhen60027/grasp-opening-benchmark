@@ -1,0 +1,112 @@
+{
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-48-generic-x86_64-with-glibc2.35",
+  "tests_passed": 9,
+  "test_command": "bash tools/python.sh -m pytest -q tests",
+  "pip_check": "No broken requirements found.",
+  "test_output": ".........                                                                [100%]\n",
+  "nominal_audit": {
+    "nominal_total": 60,
+    "nominal_valid": 60,
+    "uncertainty_dev_tasks": 30
+  },
+  "portability": {
+    "instances": 15,
+    "all_match": true,
+    "comparisons": [
+      {
+        "id": "single_opening_easy_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "single_opening_medium_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "single_opening_hard_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "deep_tunnel_easy_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "deep_tunnel_medium_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "deep_tunnel_hard_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "offset_pair_easy_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "offset_pair_medium_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "offset_pair_hard_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "shelf_entry_easy_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "shelf_entry_medium_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "shelf_entry_hard_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "turning_pair_easy_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "turning_pair_medium_000",
+        "scene_match": true,
+        "trajectory_match": true
+      },
+      {
+        "id": "turning_pair_hard_000",
+        "scene_match": true,
+        "trajectory_match": true
+      }
+    ]
+  },
+  "video": {
+    "file": "previews/detour_single_hard/replay.mp4",
+    "frames": 120,
+    "fps": 20,
+    "width": 800,
+    "height": 608
+  },
+  "source_hashes": {
+    "gobench/preview_suite.py": "2202c082c46bd05e71311399eb4b0425daf299dd163c366258592ef2a2cfff87",
+    "gobench/world.py": "d1c3001263cc0c1868a9003c02873eeb433443693d16b2a7c3dadb44d95680c4",
+    "gobench/render.py": "e4906eb17e061d0395ceee0f315b4f3daa13b545fc8ac4078302ccff36b9ea01",
+    "gobench/demo_detour.py": "87ce3381c58c68416ec363d3c093ce31b0e229eca849037d1b3cb4c4532ddbca",
+    "gobench/audit.py": "7a568c64251529ea592a23b3d17659ebf49ef2fa43bba47b50264f57ccafe772",
+    "gobench/__init__.py": "0a6590bb372e07d23429518055499182a3f3c2cecfa086682dbf22bcf868d427",
+    "gobench/generate.py": "c2cad099d1dd33a359bd242aab5cfd0cdb2c462b29bf8070bbb3ff01127f9765",
+    "gobench/evaluate.py": "8ee31d29b5ab52c534d1b3bd267cd286715e9c1518e706972a71c345da98da84",
+    "gobench/plan.py": "56b779b012d432cab23e440712fee7d1841b6645e055614bd018077396f6034f"
+  }
+}

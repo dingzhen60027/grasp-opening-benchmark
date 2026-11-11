@@ -1,0 +1,1302 @@
+{
+  "nominal": [
+    {
+      "id": "single_opening_easy_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 275
+    },
+    {
+      "id": "single_opening_easy_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 275
+    },
+    {
+      "id": "single_opening_easy_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 281
+    },
+    {
+      "id": "single_opening_easy_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 269
+    },
+    {
+      "id": "single_opening_medium_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 269
+    },
+    {
+      "id": "single_opening_medium_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 279
+    },
+    {
+      "id": "single_opening_medium_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 271
+    },
+    {
+      "id": "single_opening_medium_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 275
+    },
+    {
+      "id": "single_opening_hard_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 271
+    },
+    {
+      "id": "single_opening_hard_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 279
+    },
+    {
+      "id": "single_opening_hard_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 275
+    },
+    {
+      "id": "single_opening_hard_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 275
+    },
+    {
+      "id": "deep_tunnel_easy_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 253
+    },
+    {
+      "id": "deep_tunnel_easy_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 253
+    },
+    {
+      "id": "deep_tunnel_easy_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 251
+    },
+    {
+      "id": "deep_tunnel_easy_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 251
+    },
+    {
+      "id": "deep_tunnel_medium_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 251
+    },
+    {
+      "id": "deep_tunnel_medium_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 261
+    },
+    {
+      "id": "deep_tunnel_medium_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 257
+    },
+    {
+      "id": "deep_tunnel_medium_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 261
+    },
+    {
+      "id": "deep_tunnel_hard_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 259
+    },
+    {
+      "id": "deep_tunnel_hard_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 253
+    },
+    {
+      "id": "deep_tunnel_hard_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 253
+    },
+    {
+      "id": "deep_tunnel_hard_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 253
+    },
+    {
+      "id": "offset_pair_easy_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 291
+    },
+    {
+      "id": "offset_pair_easy_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 301
+    },
+    {
+      "id": "offset_pair_easy_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 295
+    },
+    {
+      "id": "offset_pair_easy_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 297
+    },
+    {
+      "id": "offset_pair_medium_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 295
+    },
+    {
+      "id": "offset_pair_medium_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 297
+    },
+    {
+      "id": "offset_pair_medium_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 293
+    },
+    {
+      "id": "offset_pair_medium_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 291
+    },
+    {
+      "id": "offset_pair_hard_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 299
+    },
+    {
+      "id": "offset_pair_hard_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 287
+    },
+    {
+      "id": "offset_pair_hard_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 295
+    },
+    {
+      "id": "offset_pair_hard_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 295
+    },
+    {
+      "id": "shelf_entry_easy_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 271
+    },
+    {
+      "id": "shelf_entry_easy_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 271
+    },
+    {
+      "id": "shelf_entry_easy_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 267
+    },
+    {
+      "id": "shelf_entry_easy_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 267
+    },
+    {
+      "id": "shelf_entry_medium_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 271
+    },
+    {
+      "id": "shelf_entry_medium_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 275
+    },
+    {
+      "id": "shelf_entry_medium_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 275
+    },
+    {
+      "id": "shelf_entry_medium_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 269
+    },
+    {
+      "id": "shelf_entry_hard_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 271
+    },
+    {
+      "id": "shelf_entry_hard_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 269
+    },
+    {
+      "id": "shelf_entry_hard_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 277
+    },
+    {
+      "id": "shelf_entry_hard_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 277
+    },
+    {
+      "id": "turning_pair_easy_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 275
+    },
+    {
+      "id": "turning_pair_easy_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 263
+    },
+    {
+      "id": "turning_pair_easy_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 251
+    },
+    {
+      "id": "turning_pair_easy_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 255
+    },
+    {
+      "id": "turning_pair_medium_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 259
+    },
+    {
+      "id": "turning_pair_medium_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 263
+    },
+    {
+      "id": "turning_pair_medium_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 269
+    },
+    {
+      "id": "turning_pair_medium_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 279
+    },
+    {
+      "id": "turning_pair_hard_000",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 263
+    },
+    {
+      "id": "turning_pair_hard_001",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 257
+    },
+    {
+      "id": "turning_pair_hard_002",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 261
+    },
+    {
+      "id": "turning_pair_hard_003",
+      "nominal_valid": true,
+      "reason": null,
+      "states": 263
+    }
+  ],
+  "uncertainty": [
+    {
+      "status": "evaluated",
+      "task_id": "single_opening_easy_000",
+      "family": "single_opening",
+      "difficulty": "easy",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261105052,
+      "trajectory_states": 275,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 1,
+      "collision_rate": 0.00390625,
+      "collision_rate_ci95": [
+        9.889279722355371e-05,
+        0.021570890352533498
+      ],
+      "task_success_count": 255,
+      "task_success_rate": 0.99609375,
+      "task_success_ci95": [
+        0.9784291096474665,
+        0.9999011072027765
+      ],
+      "path_joint_length_rad": 1.3917901359664595,
+      "wall_seconds": 3.517780978232622,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "facbdacaef2ec0bee353df11ad15c334fe1636dfbec40a99ef9ef5056c88bf8a",
+      "trajectory_sha256": "47ba244dff1f272489b45358676387c645ad70e108a6c74c8558f7fe83e1c30e"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "single_opening_easy_001",
+      "family": "single_opening",
+      "difficulty": "easy",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261105152,
+      "trajectory_states": 275,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 0,
+      "collision_rate": 0.0,
+      "collision_rate_ci95": [
+        0.0,
+        0.014306362729039375
+      ],
+      "task_success_count": 256,
+      "task_success_rate": 1.0,
+      "task_success_ci95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "path_joint_length_rad": 1.3685439871047589,
+      "wall_seconds": 3.5143160689622164,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "fe40ec6d334b5aefe135fffdb4271a5be3c24782b808dd3f340ce01ab93c405b",
+      "trajectory_sha256": "920d10a0aa811b2f5c4fb4a96e4989a14c35fdc2d0c78f7ce26c885025619034"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "single_opening_medium_000",
+      "family": "single_opening",
+      "difficulty": "medium",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261115052,
+      "trajectory_states": 269,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 33,
+      "collision_rate": 0.12890625,
+      "collision_rate_ci95": [
+        0.09042083411624686,
+        0.1762455944331089
+      ],
+      "task_success_count": 223,
+      "task_success_rate": 0.87109375,
+      "task_success_ci95": [
+        0.8237544055668911,
+        0.9095791658837531
+      ],
+      "path_joint_length_rad": 1.3893875418905082,
+      "wall_seconds": 3.083990407176316,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "eec2f3c049a4d7c5bfb08eafc6f9d5b9b80c88c61e4d238509f74f79bedaa40a",
+      "trajectory_sha256": "5efe0234cc9d9d8a26a774a34ce7a4b9e54be027f409beb83c112f007db0065d"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "single_opening_medium_001",
+      "family": "single_opening",
+      "difficulty": "medium",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261115152,
+      "trajectory_states": 279,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 21,
+      "collision_rate": 0.08203125,
+      "collision_rate_ci95": [
+        0.05149507782981351,
+        0.12266053070019516
+      ],
+      "task_success_count": 235,
+      "task_success_rate": 0.91796875,
+      "task_success_ci95": [
+        0.8773394692998049,
+        0.9485049221701864
+      ],
+      "path_joint_length_rad": 1.3844104939914308,
+      "wall_seconds": 3.31213731598109,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "40d5da88ef70bb99ab63e1dc3ddb2daf45d633caf362b04d096da511e10f7af7",
+      "trajectory_sha256": "49a7889541425abd4d86f5a5d3c03d6746bc3dfb61f1ee5b9d30d07f01fe4fda"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "single_opening_hard_000",
+      "family": "single_opening",
+      "difficulty": "hard",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261125052,
+      "trajectory_states": 271,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 128,
+      "collision_rate": 0.5,
+      "collision_rate_ci95": [
+        0.4371086489403644,
+        0.5628913510596356
+      ],
+      "task_success_count": 128,
+      "task_success_rate": 0.5,
+      "task_success_ci95": [
+        0.4371086489403644,
+        0.5628913510596356
+      ],
+      "path_joint_length_rad": 1.36784953643705,
+      "wall_seconds": 2.452083071693778,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "1d3e1b8d289cfdc66e64dab179c33898eeb4a17b4d6aa26131748703ac14dcf2",
+      "trajectory_sha256": "c54a2826693f8cf5039940fe2929ade135d07eb376b64e42b7dd9e9dc0c997e7"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "single_opening_hard_001",
+      "family": "single_opening",
+      "difficulty": "hard",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261125153,
+      "trajectory_states": 279,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 105,
+      "collision_rate": 0.41015625,
+      "collision_rate_ci95": [
+        0.3493046774031853,
+        0.4731130697358676
+      ],
+      "task_success_count": 151,
+      "task_success_rate": 0.58984375,
+      "task_success_ci95": [
+        0.5268869302641324,
+        0.6506953225968146
+      ],
+      "path_joint_length_rad": 1.4330152685933686,
+      "wall_seconds": 2.629060567356646,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "bb1d856822535aed5327920201a6905a4433c065584602300f1e211085a72985",
+      "trajectory_sha256": "944ca90b11fccfd934eebe3a6f7e78a47ce66ff39e40d133f7946b0a24a41259"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "deep_tunnel_easy_000",
+      "family": "deep_tunnel",
+      "difficulty": "easy",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261205052,
+      "trajectory_states": 253,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 2,
+      "collision_rate": 0.0078125,
+      "collision_rate_ci95": [
+        0.0009475342881075709,
+        0.027934914204054754
+      ],
+      "task_success_count": 254,
+      "task_success_rate": 0.9921875,
+      "task_success_ci95": [
+        0.9720650857959452,
+        0.9990524657118924
+      ],
+      "path_joint_length_rad": 1.381185572809285,
+      "wall_seconds": 3.1778313033282757,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "2e732df514df8000645ff9bec7830c2ea3a52d1f3a4c2ef94997e4df772f7037",
+      "trajectory_sha256": "3ddbfecb1ae46d3ba1a099cf6948c12287ad9bc2eb324e6c768ea55ddbf7106a"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "deep_tunnel_easy_001",
+      "family": "deep_tunnel",
+      "difficulty": "easy",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261205152,
+      "trajectory_states": 253,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 0,
+      "collision_rate": 0.0,
+      "collision_rate_ci95": [
+        0.0,
+        0.014306362729039375
+      ],
+      "task_success_count": 256,
+      "task_success_rate": 1.0,
+      "task_success_ci95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "path_joint_length_rad": 1.4253100665661913,
+      "wall_seconds": 3.151682671159506,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "80d227a9793e644a329b5f97924c0fe4615c141cad624c7a6f40f18beeb73892",
+      "trajectory_sha256": "cb36fd311bb60cfff94e5c23c7048d232fe0c3d5f39dbb0dfaa59145a6073f13"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "deep_tunnel_medium_000",
+      "family": "deep_tunnel",
+      "difficulty": "medium",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261215052,
+      "trajectory_states": 251,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 18,
+      "collision_rate": 0.0703125,
+      "collision_rate_ci95": [
+        0.0422012419302363,
+        0.10884934667326522
+      ],
+      "task_success_count": 238,
+      "task_success_rate": 0.9296875,
+      "task_success_ci95": [
+        0.8911506533267348,
+        0.9577987580697637
+      ],
+      "path_joint_length_rad": 1.4197907398784797,
+      "wall_seconds": 2.915323260240257,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "97ce981fcbfc27ef983fbd4344f4c6dbbb2eaa73e46f510edb121549e70c59ab",
+      "trajectory_sha256": "3d74ee008097eb5c04cd2ba563c6c981d8eb61f55214d8070891a05649e1a313"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "deep_tunnel_medium_001",
+      "family": "deep_tunnel",
+      "difficulty": "medium",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261215152,
+      "trajectory_states": 261,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 35,
+      "collision_rate": 0.13671875,
+      "collision_rate_ci95": [
+        0.09711171684771895,
+        0.18498149603988287
+      ],
+      "task_success_count": 221,
+      "task_success_rate": 0.86328125,
+      "task_success_ci95": [
+        0.8150185039601171,
+        0.9028882831522811
+      ],
+      "path_joint_length_rad": 1.407450898611747,
+      "wall_seconds": 2.830634237267077,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "d6f5acbdca1588ccf9ac4b36068e597d02b33b09644a7fd49ade8a45929331d1",
+      "trajectory_sha256": "7018a2ed6f5c6a1883bfac4dfeb6757ff4a091496cdd81364d6c4bf810c0af74"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "deep_tunnel_hard_000",
+      "family": "deep_tunnel",
+      "difficulty": "hard",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261225052,
+      "trajectory_states": 259,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 123,
+      "collision_rate": 0.48046875,
+      "collision_rate_ci95": [
+        0.41785238177313777,
+        0.5435425003379224
+      ],
+      "task_success_count": 133,
+      "task_success_rate": 0.51953125,
+      "task_success_ci95": [
+        0.45645749966207766,
+        0.5821476182268622
+      ],
+      "path_joint_length_rad": 1.4068017935328512,
+      "wall_seconds": 2.034846253693104,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "5bf71379be3e30f2e819504de9b0bc53835229d3d6a53923e4a4fcf4733028a8",
+      "trajectory_sha256": "0bb192bde1b5135887866eecdfdf768ced078d4fa1c8b418d258f5c6e2a5510a"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "deep_tunnel_hard_001",
+      "family": "deep_tunnel",
+      "difficulty": "hard",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261225152,
+      "trajectory_states": 253,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 128,
+      "collision_rate": 0.5,
+      "collision_rate_ci95": [
+        0.4371086489403644,
+        0.5628913510596356
+      ],
+      "task_success_count": 128,
+      "task_success_rate": 0.5,
+      "task_success_ci95": [
+        0.4371086489403644,
+        0.5628913510596356
+      ],
+      "path_joint_length_rad": 1.3264751826913566,
+      "wall_seconds": 1.941261230967939,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "d3e5e7034ffc36d98b8a246738ad107313e1a0d56d28a60fdd9516c7bc80e49e",
+      "trajectory_sha256": "1eb0e4101e0a0c38d86eb34f7eca97830d417731c9e68d2b5b0116ba83631ccc"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "offset_pair_easy_000",
+      "family": "offset_pair",
+      "difficulty": "easy",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261305052,
+      "trajectory_states": 291,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 0,
+      "collision_rate": 0.0,
+      "collision_rate_ci95": [
+        0.0,
+        0.014306362729039375
+      ],
+      "task_success_count": 256,
+      "task_success_rate": 1.0,
+      "task_success_ci95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "path_joint_length_rad": 1.494491381257663,
+      "wall_seconds": 4.140731672756374,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "54bd8c4505f445cf1dc240812c3b3be10ed5e46f3992ed58198f4128b66c8ab0",
+      "trajectory_sha256": "97bd0ec2be3e8400041a2577d5d3b2fd86f17cc9548251dee56e9a274f7678b0"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "offset_pair_easy_001",
+      "family": "offset_pair",
+      "difficulty": "easy",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261305152,
+      "trajectory_states": 301,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 0,
+      "collision_rate": 0.0,
+      "collision_rate_ci95": [
+        0.0,
+        0.014306362729039375
+      ],
+      "task_success_count": 256,
+      "task_success_rate": 1.0,
+      "task_success_ci95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "path_joint_length_rad": 1.5224526872897597,
+      "wall_seconds": 4.248759865760803,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "750fd2ac9a9e6708917cd02b334495a9b32f13416359064e3a42ccdc4f4582d8",
+      "trajectory_sha256": "2fa7f130e867d7aeebb2b8dfd37f3e29ef6ac463d2928fd0de6ee1b0d6747929"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "offset_pair_medium_000",
+      "family": "offset_pair",
+      "difficulty": "medium",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261315052,
+      "trajectory_states": 295,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 49,
+      "collision_rate": 0.19140625,
+      "collision_rate_ci95": [
+        0.14508720780372478,
+        0.2450272371281425
+      ],
+      "task_success_count": 207,
+      "task_success_rate": 0.80859375,
+      "task_success_ci95": [
+        0.7549727628718574,
+        0.8549127921962753
+      ],
+      "path_joint_length_rad": 1.4607900435323593,
+      "wall_seconds": 3.549164959229529,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "9de4cf4da4e09e95f76d8fb2f6f6d1fcdced2ddef841fc2a8381f3fa751c040d",
+      "trajectory_sha256": "2532fcc7042c4431b44a0cf46b145719b32d7a669297518de4d54e6a0091e566"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "offset_pair_medium_001",
+      "family": "offset_pair",
+      "difficulty": "medium",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261315152,
+      "trajectory_states": 297,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 20,
+      "collision_rate": 0.078125,
+      "collision_rate_ci95": [
+        0.04837229150657822,
+        0.11808012478450235
+      ],
+      "task_success_count": 236,
+      "task_success_rate": 0.921875,
+      "task_success_ci95": [
+        0.8819198752154976,
+        0.9516277084934218
+      ],
+      "path_joint_length_rad": 1.4142685401477406,
+      "wall_seconds": 3.9736362043768167,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "d202ea74db17434374217edeb69fca6c16c0af452e81e390737bb58c11bf0510",
+      "trajectory_sha256": "dad1971583b443d7692d0f7d6490f2cd2eebdcd2cd839fb21a50c3a0601a82fd"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "offset_pair_hard_000",
+      "family": "offset_pair",
+      "difficulty": "hard",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261325052,
+      "trajectory_states": 299,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 131,
+      "collision_rate": 0.51171875,
+      "collision_rate_ci95": [
+        0.4487068479030513,
+        0.5744562280442491
+      ],
+      "task_success_count": 125,
+      "task_success_rate": 0.48828125,
+      "task_success_ci95": [
+        0.4255437719557508,
+        0.5512931520969486
+      ],
+      "path_joint_length_rad": 1.540116608244232,
+      "wall_seconds": 2.660972284153104,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "6da5b0886d998de3807353d5036e8280f0bb812228a00c396f656f9680a49bdb",
+      "trajectory_sha256": "a93e8d8795abfd11d14a3d579edd271b65adc5881a05e38d7e1b07edcc48d3b8"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "offset_pair_hard_001",
+      "family": "offset_pair",
+      "difficulty": "hard",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261325152,
+      "trajectory_states": 287,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 132,
+      "collision_rate": 0.515625,
+      "collision_rate_ci95": [
+        0.4525803207375859,
+        0.5783037774852513
+      ],
+      "task_success_count": 124,
+      "task_success_rate": 0.484375,
+      "task_success_ci95": [
+        0.42169622251474875,
+        0.5474196792624141
+      ],
+      "path_joint_length_rad": 1.4639477813881057,
+      "wall_seconds": 2.6593330539762974,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "259791e796f7ea6fbdb69802916586682dda1b335e8bf2fb2151f4c8b2338286",
+      "trajectory_sha256": "6cdba7bd4ff88f40f444fcd541aa027b084574dc3968fb859b1f4f95d2b2f934"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "shelf_entry_easy_000",
+      "family": "shelf_entry",
+      "difficulty": "easy",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261405052,
+      "trajectory_states": 271,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 0,
+      "collision_rate": 0.0,
+      "collision_rate_ci95": [
+        0.0,
+        0.014306362729039375
+      ],
+      "task_success_count": 256,
+      "task_success_rate": 1.0,
+      "task_success_ci95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "path_joint_length_rad": 1.4091491223738446,
+      "wall_seconds": 3.6733942106366158,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "505735f9cad81a296fce3c936b273b728b5447f4937f4544f3d37bfa6fe7dde0",
+      "trajectory_sha256": "1177610e2da1528e0cbadd94f707f78658e6b355c00082ff3428f0fb158781cf"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "shelf_entry_easy_001",
+      "family": "shelf_entry",
+      "difficulty": "easy",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261405152,
+      "trajectory_states": 271,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 0,
+      "collision_rate": 0.0,
+      "collision_rate_ci95": [
+        0.0,
+        0.014306362729039375
+      ],
+      "task_success_count": 256,
+      "task_success_rate": 1.0,
+      "task_success_ci95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "path_joint_length_rad": 1.4200818504069812,
+      "wall_seconds": 3.6448324089869857,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "c80317623c9628c27e4e55add979cb5cb4b4ec43919c7a3e14be0472addcf5bf",
+      "trajectory_sha256": "801df36904062da6ce43ceecce38d967d8272bcfc903d6b7851da0c27a98c7f1"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "shelf_entry_medium_000",
+      "family": "shelf_entry",
+      "difficulty": "medium",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261415052,
+      "trajectory_states": 271,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 27,
+      "collision_rate": 0.10546875,
+      "collision_rate_ci95": [
+        0.07066363859226807,
+        0.1497341743496298
+      ],
+      "task_success_count": 229,
+      "task_success_rate": 0.89453125,
+      "task_success_ci95": [
+        0.8502658256503702,
+        0.9293363614077319
+      ],
+      "path_joint_length_rad": 1.4025947588156813,
+      "wall_seconds": 3.38290988560766,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "df33ebe8d1137596cb28d884e6a461704c8e059201ee636f343e468de9eaf0dc",
+      "trajectory_sha256": "d674f734cc054ab85101ae06538b4149aba06b069cd66afe72d1395b68261d2a"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "shelf_entry_medium_001",
+      "family": "shelf_entry",
+      "difficulty": "medium",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261415152,
+      "trajectory_states": 275,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 38,
+      "collision_rate": 0.1484375,
+      "collision_rate_ci95": [
+        0.10723342066909336,
+        0.19800275845036922
+      ],
+      "task_success_count": 218,
+      "task_success_rate": 0.8515625,
+      "task_success_ci95": [
+        0.8019972415496308,
+        0.8927665793309066
+      ],
+      "path_joint_length_rad": 1.3660287472301316,
+      "wall_seconds": 3.411918096244335,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "550e79bcd7149a5058738ac2901c889c06d237fd1a137a2f23cfa380c722bf6a",
+      "trajectory_sha256": "043020d028ebf98599d90a92824ddc879e338b40eb975837a692c0db6440e5e8"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "shelf_entry_hard_000",
+      "family": "shelf_entry",
+      "difficulty": "hard",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261425052,
+      "trajectory_states": 271,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 123,
+      "collision_rate": 0.48046875,
+      "collision_rate_ci95": [
+        0.41785238177313777,
+        0.5435425003379224
+      ],
+      "task_success_count": 133,
+      "task_success_rate": 0.51953125,
+      "task_success_ci95": [
+        0.45645749966207766,
+        0.5821476182268622
+      ],
+      "path_joint_length_rad": 1.4018048641950598,
+      "wall_seconds": 2.5108146714046597,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "ca9c28d76561e59e2402aa97bb0240e3ef87c8f502b1e1b3a7a116db06571c18",
+      "trajectory_sha256": "514e61cc451c6367e7a2521c4469a240241d35f584a76fab80ee7f86d10d679a"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "shelf_entry_hard_001",
+      "family": "shelf_entry",
+      "difficulty": "hard",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261425152,
+      "trajectory_states": 269,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 121,
+      "collision_rate": 0.47265625,
+      "collision_rate_ci95": [
+        0.41017584056391504,
+        0.5357770126732704
+      ],
+      "task_success_count": 135,
+      "task_success_rate": 0.52734375,
+      "task_success_ci95": [
+        0.4642229873267296,
+        0.5898241594360849
+      ],
+      "path_joint_length_rad": 1.3964155798533433,
+      "wall_seconds": 2.4985946072265506,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "23327feb095ca33682c1ea204ab5cfa9f372d03d99432355bae1601c664fed0d",
+      "trajectory_sha256": "c19fceb133166477791e9626d1dd5e0fe63d9cd6a5843667f19259d4c4c24adf"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "turning_pair_easy_000",
+      "family": "turning_pair",
+      "difficulty": "easy",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261505052,
+      "trajectory_states": 275,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 0,
+      "collision_rate": 0.0,
+      "collision_rate_ci95": [
+        0.0,
+        0.014306362729039375
+      ],
+      "task_success_count": 256,
+      "task_success_rate": 1.0,
+      "task_success_ci95": [
+        0.9856936372709606,
+        1.0
+      ],
+      "path_joint_length_rad": 1.4429846397119928,
+      "wall_seconds": 3.9563667932525277,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "457f2bb0529f7495f9f919caa4d52a38e43d0d7c5610363fd9e017a280e056fc",
+      "trajectory_sha256": "00fc73598adcfaa9ce4c0eaf7badfe199e7fb95fae97c1b0dbe4416417e9f483"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "turning_pair_easy_001",
+      "family": "turning_pair",
+      "difficulty": "easy",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261505152,
+      "trajectory_states": 263,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 1,
+      "collision_rate": 0.00390625,
+      "collision_rate_ci95": [
+        9.889279722355371e-05,
+        0.021570890352533498
+      ],
+      "task_success_count": 255,
+      "task_success_rate": 0.99609375,
+      "task_success_ci95": [
+        0.9784291096474665,
+        0.9999011072027765
+      ],
+      "path_joint_length_rad": 1.446775879787889,
+      "wall_seconds": 3.7166923861950636,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "0cbe02b155cf2c5ba29e1c754a7c3c9ed7ead9e5bd39de1d9e45eacc409f257c",
+      "trajectory_sha256": "50bf5861c43e32bed29f2c18e01664245a6a167f2f383cc41bbee7007fd91761"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "turning_pair_medium_000",
+      "family": "turning_pair",
+      "difficulty": "medium",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261515052,
+      "trajectory_states": 259,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 33,
+      "collision_rate": 0.12890625,
+      "collision_rate_ci95": [
+        0.09042083411624686,
+        0.1762455944331089
+      ],
+      "task_success_count": 223,
+      "task_success_rate": 0.87109375,
+      "task_success_ci95": [
+        0.8237544055668911,
+        0.9095791658837531
+      ],
+      "path_joint_length_rad": 1.4116256579068007,
+      "wall_seconds": 3.3266187561675906,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "462da2d38593e1a90707781118c9d149054ab78d05e7b0365e404b4572120506",
+      "trajectory_sha256": "255293b3091a95a768667e65639a378e13420147ba7dc2874ded2fff49fd7045"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "turning_pair_medium_001",
+      "family": "turning_pair",
+      "difficulty": "medium",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261515152,
+      "trajectory_states": 263,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 21,
+      "collision_rate": 0.08203125,
+      "collision_rate_ci95": [
+        0.05149507782981351,
+        0.12266053070019516
+      ],
+      "task_success_count": 235,
+      "task_success_rate": 0.91796875,
+      "task_success_ci95": [
+        0.8773394692998049,
+        0.9485049221701864
+      ],
+      "path_joint_length_rad": 1.4180102225039461,
+      "wall_seconds": 3.4919433696195483,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "20f16f95502c8ad72a0e01fc04baefa1d60aa15696ec7d3e358fcac95fa7d130",
+      "trajectory_sha256": "095917b6e637c795b3766ba69d207071e8595d9a9a4d49b72a2ab57bd07f0252"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "turning_pair_hard_000",
+      "family": "turning_pair",
+      "difficulty": "hard",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261525052,
+      "trajectory_states": 263,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 177,
+      "collision_rate": 0.69140625,
+      "collision_rate_ci95": [
+        0.6308858119378596,
+        0.7474301484246394
+      ],
+      "task_success_count": 79,
+      "task_success_rate": 0.30859375,
+      "task_success_ci95": [
+        0.2525698515753606,
+        0.36911418806214036
+      ],
+      "path_joint_length_rad": 1.4262714519252135,
+      "wall_seconds": 1.9035377902910113,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "d5d09de8867ebc5badfa8d74f716cf6665fc1506ac2f37152d061a3b1ade3a0e",
+      "trajectory_sha256": "63cd1c225ede232ff9f856e9f5f704d657919fb72b3936d7282331c3182ccabf"
+    },
+    {
+      "status": "evaluated",
+      "task_id": "turning_pair_hard_001",
+      "family": "turning_pair",
+      "difficulty": "hard",
+      "split": "dev",
+      "episodes": 256,
+      "mode": "combined",
+      "uncertainty_scale": 1.0,
+      "seed": 261525152,
+      "trajectory_states": 257,
+      "joint_step_max_rad": 0.005,
+      "collision_count": 174,
+      "collision_rate": 0.6796875,
+      "collision_rate_ci95": [
+        0.6187376816733912,
+        0.7364178461457851
+      ],
+      "task_success_count": 82,
+      "task_success_rate": 0.3203125,
+      "task_success_ci95": [
+        0.26358215385421485,
+        0.3812623183266088
+      ],
+      "path_joint_length_rad": 1.4922832054987227,
+      "wall_seconds": 1.6946241799741983,
+      "qualification": "Empirical discrete kinematic evaluation; not a continuous or worst-case robustness certificate",
+      "source": "generator nominal feasibility witness; not a competitive planner result",
+      "scene_sha256": "ac8958af7442e840664e5999ecebfb2a45fa59d9d008617df6dae3ae7dabb409",
+      "trajectory_sha256": "484d835c62627515534ff64e47595f2ff216a3d0529246e42627e198506ef89b"
+    }
+  ],
+  "counts": {
+    "nominal_total": 60,
+    "nominal_valid": 60,
+    "uncertainty_dev_tasks": 30
+  },
+  "test_policy": "Test set only checked for nominal construction feasibility; no uncertain test outcomes used during development"
+}

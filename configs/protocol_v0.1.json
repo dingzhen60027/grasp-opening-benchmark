@@ -1,0 +1,103 @@
+{
+  "version": "0.1.0",
+  "status": "synthetic pilot; no real-grasp calibration",
+  "robot": "UR5e with a synthetic rigid parallel-jaw fixture",
+  "families": [
+    "single_opening",
+    "deep_tunnel",
+    "offset_pair",
+    "shelf_entry",
+    "turning_pair"
+  ],
+  "nominal_gap_m": {
+    "easy": 0.025,
+    "medium": 0.012,
+    "hard": 0.006
+  },
+  "instances_per_family_and_gap": 4,
+  "split": {
+    "dev": 30,
+    "test": 30,
+    "unit": "whole geometry instance",
+    "ood": false
+  },
+  "payload_box_size_m": {
+    "x": 0.035,
+    "y_range": [
+      0.32,
+      0.44
+    ],
+    "z": 0.045
+  },
+  "grasp_offset_y_range_m": [
+    -0.035,
+    0.035
+  ],
+  "execution_uncertainty": {
+    "distribution": "independent Gaussian, fixed for entire episode",
+    "translation_std_m": [
+      0.003,
+      0.003,
+      0.003
+    ],
+    "rotation_vector_std_rad": [
+      0.03490658503988659,
+      0.03490658503988659,
+      0.03490658503988659
+    ],
+    "scale_sweep": [
+      0,
+      0.5,
+      1,
+      2
+    ],
+    "ablations": [
+      "combined",
+      "translation_only",
+      "rotation_only"
+    ],
+    "frame": "EE frame; perturbation left-multiplies nominal T_EO",
+    "within_trajectory_resampling": false,
+    "measured_from_hardware": false
+  },
+  "construction_validation": {
+    "joint_step_rad": 0.01,
+    "independent_audit_joint_step_rad": 0.005,
+    "requires_whole_nominal_path": true
+  },
+  "evaluation": {
+    "joint_step_rad": 0.00125,
+    "collision_event": "any collision over an entire execution episode",
+    "interval": "two-sided 95% Clopper-Pearson, per instance and method",
+    "pilot_episodes_per_dev_witness": 256,
+    "example_planner_episodes": 512,
+    "suggested_formal_planning_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "suggested_formal_budget_seconds": 600,
+    "suggested_formal_episodes_per_path": 1024,
+    "common_error_samples_across_methods": true,
+    "planning_and_evaluation_samples_must_be_disjoint": true,
+    "test_set_uncertainty_evaluated_in_pilot": false,
+    "planning_failure_is_task_failure": true,
+    "conditional_collision_rate_requires_number_of_returned_paths": true,
+    "pilot_joint_step_rad": 0.005
+  },
+  "scope": {
+    "static_obstacles": true,
+    "joint_tracking_error": false,
+    "grasp_slip_dynamics": false,
+    "force_or_torque_limits_validated": false,
+    "continuous_collision_certificate": false,
+    "robust_feasibility_of_every_instance": "unknown"
+  }
+}

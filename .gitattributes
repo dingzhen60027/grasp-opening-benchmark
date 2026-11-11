@@ -1,0 +1,9 @@
+# Preserve exact model bytes and keep generated evidence out of source-language statistics.
+assets/** linguist-vendored
+data/** linguist-generated
+results/** linguist-generated
+previews/** linguist-generated
+*.obj binary
+*.stl binary
+*.npy binary
+*.mp4 binary

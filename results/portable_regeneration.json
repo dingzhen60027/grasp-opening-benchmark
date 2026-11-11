@@ -1,0 +1,81 @@
+{
+  "instances": 15,
+  "all_match": true,
+  "comparisons": [
+    {
+      "id": "single_opening_easy_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "single_opening_medium_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "single_opening_hard_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "deep_tunnel_easy_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "deep_tunnel_medium_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "deep_tunnel_hard_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "offset_pair_easy_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "offset_pair_medium_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "offset_pair_hard_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "shelf_entry_easy_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "shelf_entry_medium_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "shelf_entry_hard_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "turning_pair_easy_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "turning_pair_medium_000",
+      "scene_match": true,
+      "trajectory_match": true
+    },
+    {
+      "id": "turning_pair_hard_000",
+      "scene_match": true,
+      "trajectory_match": true
+    }
+  ]
+}

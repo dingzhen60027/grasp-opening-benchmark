@@ -1,0 +1,71 @@
+{
+  "central_bay_store": {
+    "nominal_valid": true,
+    "reason": null,
+    "states": 2214,
+    "joint_step_max_rad": 0.0025,
+    "scene_sha256": "dc8fe8099327910db584b6935a23b6f29eb911847ecd1bd42d6e2e7b0d3d818b",
+    "witness_sha256": "72717012912d5e03cfec6150b604847d24d906dcbe68f684a15a64f2c6e234d0",
+    "open_hand_retreat": {
+      "status": "passed",
+      "states": 317,
+      "joint_step_max_rad": 0.0025,
+      "gripper_exit_clearance_m": 0.14765445249026632,
+      "scope": "Open-gripper retreat after assumed 8 mm lowering; release transition/dynamics not simulated"
+    }
+  },
+  "central_bay_retrieve": {
+    "nominal_valid": true,
+    "reason": null,
+    "states": 2214,
+    "joint_step_max_rad": 0.0025,
+    "scene_sha256": "949a40aef14ad07b554029e23b484de322fcccb3d43d38a45c31764454f71742",
+    "witness_sha256": "63d231aedc5f821e2e35e5638a44668ff2d1728ab66847514359d5ca315ef819"
+  },
+  "side_bay_store": {
+    "nominal_valid": true,
+    "reason": null,
+    "states": 2650,
+    "joint_step_max_rad": 0.0025,
+    "scene_sha256": "ae9191744f35ef947967b9e56d477834925fc42afce797e5b9c393dddd26b13d",
+    "witness_sha256": "c51723e33b99e82166edf0b4c892111852dd07f9f8d5dd929ee8341fab930aa4",
+    "open_hand_retreat": {
+      "status": "passed",
+      "states": 294,
+      "joint_step_max_rad": 0.0025,
+      "gripper_exit_clearance_m": 0.14765445326889015,
+      "scope": "Open-gripper retreat after assumed 8 mm lowering; release transition/dynamics not simulated"
+    }
+  },
+  "side_bay_retrieve": {
+    "nominal_valid": true,
+    "reason": null,
+    "states": 2650,
+    "joint_step_max_rad": 0.0025,
+    "scene_sha256": "ea2c31a263dbf14f54f386a2251e98b4a8af34560d1df023b1a155054a2a3433",
+    "witness_sha256": "32334138a182d729bbab17854b5abe4d400a615e2805c880734ef964f2d8316e"
+  },
+  "deep_bay_store": {
+    "nominal_valid": true,
+    "reason": null,
+    "states": 1686,
+    "joint_step_max_rad": 0.0025,
+    "scene_sha256": "ad1f79e8d4402a7915bf4103ee97655ebb68ed071c2f34b2e673cb28613607be",
+    "witness_sha256": "9014c78d01ce12ae233f44e349b6babdd8878ae0fbbabaac5b5b4626c4212034",
+    "open_hand_retreat": {
+      "status": "passed",
+      "states": 256,
+      "joint_step_max_rad": 0.0025,
+      "gripper_exit_clearance_m": 0.147654460230779,
+      "scope": "Open-gripper retreat after assumed 8 mm lowering; release transition/dynamics not simulated"
+    }
+  },
+  "deep_bay_retrieve": {
+    "nominal_valid": true,
+    "reason": null,
+    "states": 1686,
+    "joint_step_max_rad": 0.0025,
+    "scene_sha256": "76598e44ff668c5c81785e6cded6092e68b4893486a04fd27fcdfc474eab9042",
+    "witness_sha256": "eee4089812992385182b820f0bfddd92599a2b96f759f41144c7ec5f61765d4b"
+  }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "task_id": "single_opening_hard_001",
+    "seed": 251125152,
+    "reason": "robot_environment"
+  },
+  {
+    "task_id": "offset_pair_medium_002",
+    "seed": 251315252,
+    "reason": "robot_environment"
+  },
+  {
+    "task_id": "offset_pair_hard_003",
+    "seed": 251325352,
+    "reason": "robot_environment"
+  },
+  {
+    "task_id": "shelf_entry_hard_003",
+    "seed": 251425352,
+    "reason": "robot_environment"
+  },
+  {
+    "task_id": "shelf_entry_hard_003",
+    "seed": 251425353,
+    "reason": "robot_environment"
+  }
+]

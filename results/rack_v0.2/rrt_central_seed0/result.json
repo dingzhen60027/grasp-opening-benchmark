@@ -1,0 +1,13 @@
+{
+  "method": "rrt_connect",
+  "status": "solved",
+  "scene_id": "central_bay_store",
+  "seed": 0,
+  "budget_seconds": 30.0,
+  "margin_m": 0.0,
+  "collision_checks": 946,
+  "wall_seconds": 3.362004378810525,
+  "path_states": 703,
+  "witness_used": false,
+  "scene_sha256": "dc8fe8099327910db584b6935a23b6f29eb911847ecd1bd42d6e2e7b0d3d818b"
+}

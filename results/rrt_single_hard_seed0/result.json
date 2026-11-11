@@ -1,0 +1,13 @@
+{
+  "method": "rrt_connect",
+  "status": "solved",
+  "scene_id": "single_opening_hard_000",
+  "seed": 0,
+  "budget_seconds": 20.0,
+  "margin_m": 0,
+  "collision_checks": 108,
+  "wall_seconds": 0.24960541259497404,
+  "path_states": 137,
+  "witness_used": false,
+  "scene_sha256": "1d3e1b8d289cfdc66e64dab179c33898eeb4a17b4d6aa26131748703ac14dcf2"
+}

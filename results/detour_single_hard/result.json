@@ -1,0 +1,10 @@
+{
+  "method": "fixed_lift_yaw_single_gate_control",
+  "status": "nominal_valid",
+  "task_id": "single_opening_hard_000",
+  "lift_m": 0.045,
+  "yaw_rad": 0.45,
+  "witness_used": false,
+  "robust_guarantee": false,
+  "path_states": 186
+}

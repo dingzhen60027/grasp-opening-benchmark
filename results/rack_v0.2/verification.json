@@ -1,0 +1,10 @@
+{
+  "tests_passed": 16,
+  "rack_specific_tests_passed": 7,
+  "asset_hashes_verified": true,
+  "urdf_mesh_paths_verified": true,
+  "result_scene_hashes_verified": true,
+  "code_compileall": "passed",
+  "video_visual_inspection": "passed",
+  "video_duration_seconds": 7.5
+}

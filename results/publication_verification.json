@@ -1,0 +1,12 @@
+{
+  "snapshot_date": "2026-11-10",
+  "scope": "Independent public repository preparation",
+  "tests_passed": 16,
+  "test_command": "bash tools/python.sh -m pytest -q tests",
+  "asset_hashes_verified": 77,
+  "task_manifests_verified": 66,
+  "rack_nominal_tasks_passed": 6,
+  "open_hand_exits_passed": 3,
+  "content_scan": "No credentials, home paths or temporary paths detected in publishable text files",
+  "ci_status_at_packaging": "Not enabled: publisher credential lacks workflow scope. Template and instructions are in docs/CI_SETUP.md. Local checks passed."
+}
