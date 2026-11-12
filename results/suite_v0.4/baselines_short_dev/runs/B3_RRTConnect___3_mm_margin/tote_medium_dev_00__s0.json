@@ -1,0 +1,81 @@
+{
+ "task_id": "tote_medium_dev_00",
+ "family": "tote",
+ "level": "medium",
+ "split": "dev",
+ "label": "B3 RRTConnect + 3 mm margin",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "margin": 0.003
+ },
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "f1f0b49d5a4577c5366f3c0318c9e339127e2189a7fb6ca9fdaddf3d9c7172fa",
+ "planning_seconds": 85.53676332719624,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.003,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 68.50392872001976,
+  "raw_waypoints": 19,
+  "shortcut_attempts": 113,
+  "waypoints": 4,
+  "wall_seconds": 85.53673021122813,
+  "collision_checks": 35166
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "tote_medium_dev_00",
+  "family": "tote",
+  "level": "medium",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 642849643,
+  "path_joint_length_rad": 3.2178822340412174,
+  "ee_path_length_m": 1.1672091838234675,
+  "payload_min_clearance_m": 0.003381403913409353,
+  "payload_clearance_p05_m": 0.007564079416115398,
+  "trajectory_states": 834,
+  "collision_count": 28,
+  "collision_rate": 0.4375,
+  "collision_ci95": [
+   0.31373475354849606,
+   0.5672410999335402
+  ],
+  "success_count": 36,
+  "success_rate": 0.5625,
+  "success_ci95": [
+   0.4327589000664598,
+   0.686265246451504
+  ],
+  "failures_by_reason": {
+   "payload_environment": 28
+  },
+  "colliding_obstacles": {
+   "lid_flap": 25,
+   "divider_x1": 2,
+   "cell_ledge": 1
+  },
+  "wall_seconds": 4.41414737328887,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111010011010001001111101001110011000001010010101110011111010",
+  "episode_collision": "0000000101100101110110000010110001100111110101101010001100000101"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B3_RRTConnect___3_mm_margin/tote_medium_dev_00__s0.npy",
+ "trajectory_sha256": "9fc2ba6748f3ddfc1b7c134eb8c02f4ae619abab6dc4950617a9feb0534061a6",
+ "task_success_rate": 0.5625
+}

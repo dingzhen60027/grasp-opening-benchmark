@@ -1,0 +1,34 @@
+{
+ "task_id": "rebar_hard_dev_01",
+ "family": "rebar",
+ "level": "hard",
+ "split": "dev",
+ "label": "B2 BIT*",
+ "planner": "ompl",
+ "params": {
+  "planner": "BITstar"
+ },
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "112c453c4ba5fdbe54d81be8d4b52c7c9301f1235142be124ae52ab592384749",
+ "planning_seconds": 76.06439954973757,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "ompl_planner": "BITstar",
+  "range": null,
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Timeout",
+  "solve_seconds": 76.01416165940464,
+  "wall_seconds": 76.06436790246516,
+  "collision_checks": 28302
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

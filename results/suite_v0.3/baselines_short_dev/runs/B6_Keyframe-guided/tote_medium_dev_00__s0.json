@@ -1,0 +1,86 @@
+{
+ "task_id": "tote_medium_dev_00",
+ "family": "tote",
+ "level": "medium",
+ "split": "dev",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "55b0258ca2ea103a27a5f9608f7bc10dc598b7b041c75a8f8b75ed3b9f3688e6",
+ "planning_seconds": 85.54065106716007,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 5.5006208112463355,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 2188,
+   "waypoints": 3
+  },
+  "insertion_states": 41,
+  "wall_seconds": 85.54063128400594,
+  "collision_checks": 33116
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "tote_medium_dev_00",
+  "family": "tote",
+  "level": "medium",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 642849643,
+  "path_joint_length_rad": 11.642330852263566,
+  "ee_path_length_m": 4.729100983220509,
+  "payload_min_clearance_m": 0.0026047675556526073,
+  "payload_clearance_p05_m": 0.009999955185229554,
+  "trajectory_states": 2762,
+  "collision_count": 20,
+  "collision_rate": 0.3125,
+  "collision_ci95": [
+   0.20242147258013002,
+   0.44059436681746184
+  ],
+  "success_count": 44,
+  "success_rate": 0.6875,
+  "success_ci95": [
+   0.5594056331825381,
+   0.79757852741987
+  ],
+  "failures_by_reason": {
+   "payload_environment": 20
+  },
+  "colliding_obstacles": {
+   "kitted_part_10": 16,
+   "divider_y1": 1,
+   "divider_y0": 2,
+   "divider_x0": 1
+  },
+  "wall_seconds": 9.94838101323694,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111111101010101111011101111111011010011010010101110111011000",
+  "episode_collision": "0000000000010101010000100010000000100101100101101010001000100111"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/tote_medium_dev_00__s0.npy",
+ "trajectory_sha256": "16938350ae1fd4d560f950a1820eeb135348f5bd21093774a8fd612729d542ce",
+ "task_success_rate": 0.6875
+}

@@ -159,6 +159,33 @@ def test_scenario_check_counts_colliding_grasp_samples_against_the_risk_bound():
         prob.close()
 
 
+@pytest.mark.parametrize('family', sorted(FAMILIES))
+def test_guided_keyframes_retract_along_the_declared_openings(family):
+    from gosuite.planners.guided import keyframes
+    from gosuite.task import reference_points
+    from gosuite.geometry import inverse, apply
+    scene, _, _ = load(f'{family}_medium_dev_00')
+    goal = np.asarray(scene['task']['goal']['object_pose'])
+    frames = keyframes(scene, goal, .04)
+    np.testing.assert_allclose(frames[-1], goal)
+    first = scene['task']['portals'][0]
+    ref = reference_points(frames[0][None], scene['payload']['size'], first.get('point', 'front'))
+    assert np.isclose(apply(inverse(np.asarray(first['pose'])), ref)[0, 0], -.04, atol=1e-6)
+    for f in frames:  # every keyframe keeps the goal orientation (aligned entry)
+        np.testing.assert_allclose(f[:3, :3], goal[:3, :3], atol=1e-9)
+
+
+def test_ompl_baseline_runs_inside_a_harness_worker(tmp_path):
+    pytest.importorskip('ompl')
+    import multiprocessing
+    entry = next(e for e in MANIFEST['tasks'] if e['id'] == 'rack_easy_dev_00')
+    cfg = dict(budget_seconds=8, episodes=4, uncertainty_scale=1., mode='combined', joint_step=.0025, _seed=0)
+    spec = dict(label='OMPL', planner='ompl', params=dict(planner='RRTConnect', range=.25))
+    with multiprocessing.get_context('fork').Pool(1, maxtasksperchild=1) as pool:  # OMPL stays out of this process
+        dest, rec = pool.apply(run_one, ((entry, cfg, SUITE, spec, tmp_path),))
+    assert dest.exists() and rec['status'] in ('solved', 'approximate', 'timeout') and not rec['over_budget']
+
+
 def test_layout_conflict_is_detected():
     scene, _, _ = load('tote_medium_dev_00')
     s = copy.deepcopy(scene)

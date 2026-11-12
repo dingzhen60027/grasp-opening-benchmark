@@ -1,0 +1,65 @@
+{
+ "task_id": "lathe_medium_dev_01",
+ "family": "lathe",
+ "level": "medium",
+ "split": "dev",
+ "label": "B0 Reference (oracle)",
+ "planner": "reference",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "685c94d8cff8f3f8841b204735c225ba9132986738d9fa8c9cda5a8fbadf1e67",
+ "planning_seconds": 6.352458149194717e-05,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_medium_dev_01",
+  "family": "lathe",
+  "level": "medium",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 1721544176,
+  "path_joint_length_rad": 8.618657639105328,
+  "ee_path_length_m": 1.5111752115655799,
+  "payload_min_clearance_m": 0.0099962332267494,
+  "payload_clearance_p05_m": 0.0254865249223258,
+  "trajectory_states": 2899,
+  "collision_count": 3,
+  "collision_rate": 0.046875,
+  "collision_ci95": [
+   0.009773074954456552,
+   0.13093573724140584
+  ],
+  "success_count": 61,
+  "success_rate": 0.953125,
+  "success_ci95": [
+   0.8690642627585942,
+   0.9902269250455434
+  ],
+  "failures_by_reason": {
+   "payload_environment": 3
+  },
+  "colliding_obstacles": {
+   "chuck_jaw_xn": 1,
+   "chuck_jaw_zp": 1,
+   "chuck_jaw_zn": 1
+  },
+  "wall_seconds": 21.377263121306896,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111110111111110101111111111111111111111111111111111111111111",
+  "episode_collision": "0000000001000000001010000000000000000000000000000000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.3/witnesses/lathe/dev/lathe_medium_dev_01.npy",
+ "trajectory_sha256": "831d50441ddb4c6da47915f9266ab5df2b306ef3e1fe1dfa169a8aacc391c4df",
+ "task_success_rate": 0.953125
+}

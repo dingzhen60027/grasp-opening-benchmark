@@ -53,8 +53,9 @@ def run_one(job):
                   budget_seconds=cfg['budget_seconds'], task_sha256=entry['sha256'])
     problem = PlanningProblem(scene, cfg.get('uncertainty_scale', 1.), cfg.get('mode', 'combined'), cfg.get('joint_step', .0025))
     try:
-        if spec['planner'] == 'reference':
-            problem.witness = np.load(suite / entry['witness_file'])
+        if spec['planner'] in ('reference', 'reference_nominal'):
+            key = 'witness_file' if spec['planner'] == 'reference' else 'witness_nominal_file'
+            problem.witness = np.load(suite / entry[key])
         planner = load_planner(spec['planner'])
         begin = time.perf_counter()
         try:
@@ -74,9 +75,10 @@ def run_one(job):
     record['nominal_valid'] = False
     if record['path_found']:
         path = np.asarray(result.path, dtype=float)
-        if spec['planner'] == 'reference':  # the path IS the stored witness; point at it instead of duplicating it
-            record['trajectory'] = str(Path(suite) / entry['witness_file'])
-            record['trajectory_sha256'] = entry['witness_sha256']
+        if spec['planner'] in ('reference', 'reference_nominal'):  # the path IS a stored witness: point at it
+            key = 'witness_file' if spec['planner'] == 'reference' else 'witness_nominal_file'
+            record['trajectory'] = str(Path(suite) / entry[key])
+            record['trajectory_sha256'] = entry[key.replace('_file', '_sha256')]
         else:
             traj = out / 'trajectories' / slug(spec['label']) / f"{entry['id']}__s{record['seed']}.npy"
             traj.parent.mkdir(parents=True, exist_ok=True)
@@ -124,14 +126,15 @@ def run(config_path, output=None, workers=None, limit=None):
         tasks = tasks[:limit]
     jobs = []
     for spec in cfg['planners']:
-        seeds = [0] if spec['planner'] == 'reference' else cfg['seeds']
+        seeds = [0] if spec['planner'] in ('reference', 'reference_nominal') else cfg['seeds']
         for entry in tasks:
             for seed in seeds:
                 if not run_path(out, spec, entry, seed).exists():
                     jobs.append((entry, dict(cfg, _seed=seed), suite, spec, out))
     print(f'{len(jobs)} runs to do ({len(tasks)} tasks, {len(cfg["planners"])} planner entries); output {out}', flush=True)
     begin = time.perf_counter()
-    with Pool(workers or cfg.get('workers', 8), maxtasksperchild=20) as pool:
+    # One process per run: isolates planner state (e.g. OMPL's process-wide RNG seed) and memory.
+    with Pool(workers or cfg.get('workers', 8), maxtasksperchild=1) as pool:
         for k, (dest, rec) in enumerate(pool.imap_unordered(run_one, jobs), 1):
             ex = rec['execution']
             tail = f"exec success {ex['success_rate']:.2f}" if ex else rec['status']

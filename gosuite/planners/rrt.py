@@ -14,12 +14,13 @@ risk under grasp error is not the planner's choice.  If the conditions make the 
 goal infeasible, the run ends as a planning failure (counted as task failure).
 
 The planner connects ``q_start`` to ``q_goal_reference`` (one IK solution of the goal region);
-it does not sample the goal region.  Edges are checked at ``resolution`` rad per joint; 10% of the
-budget is reserved for re-validating the final path at the evaluation step.
+it does not sample the goal region.  Edges are checked at ``resolution`` rad per joint.  The harness
+validates the returned path at the evaluation step (validate=True also re-checks inside the budget).
 """
 import time
 import numpy as np
 from ..planning import PlanResult
+from .common import shortcut
 
 TRAPPED, ADVANCED, REACHED = 0, 1, 2
 
@@ -51,7 +52,7 @@ class _Tree:
 
 
 def plan(problem, seed=0, budget=60., margin=0., scenarios=0, risk=0., step=.25, resolution=.005, goal_bias=.05,
-         smoothing_fraction=.25, validation_reserve=.1, **_):
+         smoothing_fraction=.25, validation_reserve=.05, validate=False, **_):
     rng = np.random.default_rng(seed)
     begin = time.perf_counter()
     deadline = begin + (1 - validation_reserve) * budget
@@ -115,14 +116,8 @@ def plan(problem, seed=0, budget=60., margin=0., scenarios=0, risk=0., step=.25,
     first_solution = time.perf_counter() - begin
     raw_waypoints = len(path)
     smooth_until = min(deadline, time.perf_counter() + smoothing_fraction * budget)
-    attempts = 0
-    while len(path) > 2 and time.perf_counter() < smooth_until:
-        attempts += 1
-        i, j = sorted(rng.choice(len(path), 2, replace=False))
-        if j - i > 1 and edge(path[i], path[j]):
-            path = path[:i + 1] + path[j:]
-    path = np.array(path)
-    report, _ = problem.validate(path)
+    path, attempts = shortcut(path, valid, resolution, smooth_until, rng)
+    report, _ = problem.validate(path) if validate else (dict(valid=True), None)
     if not report['valid']:
         return finish('post_validation_failed', None, tree_nodes=nodes, time_to_first_solution=first_solution,
                       validation=report.get('reason'))

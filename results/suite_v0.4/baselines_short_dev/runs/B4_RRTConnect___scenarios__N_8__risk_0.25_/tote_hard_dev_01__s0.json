@@ -1,0 +1,37 @@
+{
+ "task_id": "tote_hard_dev_01",
+ "family": "tote",
+ "level": "hard",
+ "split": "dev",
+ "label": "B4 RRTConnect + scenarios (N=8, risk 0.25)",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "scenarios": 8,
+  "risk": 0.25
+ },
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "280060e42b04ae3e951baffa06f3dfdc9559cacc66d99c9064a70220d470168a",
+ "planning_seconds": 72.96414198540151,
+ "over_budget": false,
+ "status": "approximate",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 8,
+  "risk": 0.25,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Approximate solution",
+  "solve_seconds": 72.91476591303945,
+  "wall_seconds": 72.9641153300181,
+  "collision_checks": 17762
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

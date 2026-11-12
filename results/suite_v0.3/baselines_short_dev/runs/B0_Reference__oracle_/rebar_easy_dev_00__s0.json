@@ -1,0 +1,64 @@
+{
+ "task_id": "rebar_easy_dev_00",
+ "family": "rebar",
+ "level": "easy",
+ "split": "dev",
+ "label": "B0 Reference (oracle)",
+ "planner": "reference",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "7a87c6d3521a3df309b4a6c232046284a606d85cd098adc14b819985cc0a36e7",
+ "planning_seconds": 3.209151327610016e-05,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rebar_easy_dev_00",
+  "family": "rebar",
+  "level": "easy",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3988078393,
+  "path_joint_length_rad": 6.579805326950183,
+  "ee_path_length_m": 1.1901354481337396,
+  "payload_min_clearance_m": 0.019991494369506833,
+  "payload_clearance_p05_m": 0.0199949812412262,
+  "trajectory_states": 2175,
+  "collision_count": 3,
+  "collision_rate": 0.046875,
+  "collision_ci95": [
+   0.009773074954456552,
+   0.13093573724140584
+  ],
+  "success_count": 60,
+  "success_rate": 0.9375,
+  "success_ci95": [
+   0.8476365265773033,
+   0.9827099726189448
+  ],
+  "failures_by_reason": {
+   "payload_environment": 3,
+   "goal_position": 1
+  },
+  "colliding_obstacles": {
+   "stirrup_0": 3
+  },
+  "wall_seconds": 13.294161031022668,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0111011111110111111111111111111011111111111111111111111111111111",
+  "episode_collision": "1000000000001000000000000000000100000000000000000000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.3/witnesses/rebar/dev/rebar_easy_dev_00.npy",
+ "trajectory_sha256": "5e9528c8d6b84c7976428eff6757b85dfd2d6b29bcb3e5a8bd5a66032f087ffe",
+ "task_success_rate": 0.9375
+}

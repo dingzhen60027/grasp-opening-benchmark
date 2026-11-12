@@ -1,0 +1,66 @@
+{
+ "task_id": "rack_medium_dev_00",
+ "family": "rack",
+ "level": "medium",
+ "split": "dev",
+ "label": "B0 Reference (oracle)",
+ "planner": "reference",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "d2b3cc0f972b0570776e2cb1fb25fe9cb13e591de8a2de1c54f13a3d827ffdd5",
+ "planning_seconds": 8.798576891422272e-05,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_medium_dev_00",
+  "family": "rack",
+  "level": "medium",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3978793049,
+  "path_joint_length_rad": 5.863387403106563,
+  "ee_path_length_m": 1.317355676366022,
+  "payload_min_clearance_m": 0.008000008320808416,
+  "payload_clearance_p05_m": 0.009994656411615337,
+  "trajectory_states": 2031,
+  "collision_count": 14,
+  "collision_rate": 0.21875,
+  "collision_ci95": [
+   0.12506827371524634,
+   0.3396963118152601
+  ],
+  "success_count": 43,
+  "success_rate": 0.671875,
+  "success_ci95": [
+   0.5431232132214405,
+   0.7841280011062753
+  ],
+  "failures_by_reason": {
+   "payload_environment": 14,
+   "placement_height": 7
+  },
+  "colliding_obstacles": {
+   "target_guide_0_l": 4,
+   "target_saddle_1": 5,
+   "target_guide_0_r": 5
+  },
+  "wall_seconds": 11.553918997757137,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1110100110011111101101111011110111011000100111001001111111011101",
+  "episode_collision": "0001011001000000010010000000001000000111010000100010000000100000"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.3/witnesses/rack/dev/rack_medium_dev_00.npy",
+ "trajectory_sha256": "df253221301e6ca0dfde810713d7b4bd1a6905028c8a3a3497d6fe27db7f596f",
+ "task_success_rate": 0.671875
+}

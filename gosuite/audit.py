@@ -21,6 +21,11 @@ def audit_one(job):
     task_file, witness_file = suite / entry['file'], suite / entry['witness_file']
     out = dict(id=entry['id'], sha256_ok=hashlib.sha256(task_file.read_bytes()).hexdigest() == entry['sha256'],
                witness_sha256_ok=hashlib.sha256(witness_file.read_bytes()).hexdigest() == entry['witness_sha256'])
+    extra = []
+    if 'witness_nominal_file' in entry:
+        nominal_file = suite / entry['witness_nominal_file']
+        out['witness_nominal_sha256_ok'] = hashlib.sha256(nominal_file.read_bytes()).hexdigest() == entry['witness_nominal_sha256']
+        extra.append(('nominal', nominal_file))
     scene = json.loads(task_file.read_text())
     out['missing_fields'] = [k for k in REQUIRED if k not in scene]
     world = SuiteWorld(scene)
@@ -29,6 +34,10 @@ def audit_one(job):
         report, dense, _, _ = validate_path(world, scene, np.load(witness_file), DEFAULT_JOINT_STEP)
         out.update(nominal_valid=report['valid'], reason=report['reason'], states=len(dense),
                    seconds=round(time.perf_counter() - begin, 2))
+        for name, path in extra:
+            r2 = validate_path(world, scene, np.load(path), DEFAULT_JOINT_STEP)[0]
+            out[f'{name}_witness_valid'] = r2['valid']
+            out['nominal_valid'] = out['nominal_valid'] and r2['valid'] and out.get('witness_nominal_sha256_ok', True)
     finally:
         world.close()
     out['ok'] = out['sha256_ok'] and out['witness_sha256_ok'] and not out['missing_fields'] and out['nominal_valid']

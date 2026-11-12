@@ -1,0 +1,2804 @@
+{
+ "episodes": 256,
+ "headroom": {
+  "rack/easy": {
+   "tasks": 8,
+   "reference_success": 0.931640625,
+   "goal_failure": 0.06201171875,
+   "path_failure": 0.00634765625,
+   "bound": 0.93798828125,
+   "region_bound": 0.939453125,
+   "straight_success": 0.89990234375,
+   "goal_reasons": {
+    "contact:target": 70,
+    "goal_tolerance": 28,
+    "placement": 27,
+    "contact:bracket": 2
+   }
+  },
+  "all/easy": {
+   "tasks": 32,
+   "reference_success": 0.9605712890625,
+   "goal_failure": 0.034912109375,
+   "path_failure": 0.0045166015625,
+   "bound": 0.965087890625,
+   "region_bound": 0.9681396484375,
+   "straight_success": 0.937255859375,
+   "goal_reasons": {
+    "contact:target": 70,
+    "goal_tolerance": 110,
+    "placement": 58,
+    "contact:bracket": 2,
+    "contact:side": 1,
+    "contact:fixture": 45
+   }
+  },
+  "rack/all": {
+   "tasks": 24,
+   "reference_success": 0.87890625,
+   "goal_failure": 0.10725911458333333,
+   "path_failure": 0.013834635416666666,
+   "bound": 0.8927408854166666,
+   "region_bound": 0.9034830729166666,
+   "straight_success": 0.7132161458333334,
+   "goal_reasons": {
+    "contact:target": 190,
+    "goal_tolerance": 56,
+    "placement": 116,
+    "contact:bracket": 295,
+    "contact:deck": 2
+   }
+  },
+  "all/all": {
+   "tasks": 96,
+   "reference_success": 0.9102376302083334,
+   "goal_failure": 0.072021484375,
+   "path_failure": 0.017740885416666668,
+   "bound": 0.927978515625,
+   "region_bound": 0.935791015625,
+   "straight_success": 0.7715250651041666,
+   "goal_reasons": {
+    "contact:target": 190,
+    "goal_tolerance": 252,
+    "placement": 177,
+    "contact:bracket": 295,
+    "contact:deck": 2,
+    "contact:side": 200,
+    "contact:tie": 54,
+    "contact:fixture": 126,
+    "contact:chip": 175,
+    "contact:coolant": 36,
+    "contact:cell": 208,
+    "contact:lid": 55
+   }
+  },
+  "rack/medium": {
+   "tasks": 8,
+   "reference_success": 0.900390625,
+   "goal_failure": 0.08740234375,
+   "path_failure": 0.01220703125,
+   "bound": 0.91259765625,
+   "region_bound": 0.93017578125,
+   "straight_success": 0.728515625,
+   "goal_reasons": {
+    "contact:deck": 2,
+    "contact:bracket": 50,
+    "contact:target": 72,
+    "placement": 40,
+    "goal_tolerance": 15
+   }
+  },
+  "all/medium": {
+   "tasks": 32,
+   "reference_success": 0.9342041015625,
+   "goal_failure": 0.0467529296875,
+   "path_failure": 0.01904296875,
+   "bound": 0.9532470703125,
+   "region_bound": 0.960693359375,
+   "straight_success": 0.7991943359375,
+   "goal_reasons": {
+    "contact:deck": 2,
+    "contact:bracket": 50,
+    "contact:target": 72,
+    "placement": 69,
+    "goal_tolerance": 84,
+    "contact:side": 23,
+    "contact:tie": 2,
+    "contact:fixture": 41,
+    "contact:chip": 3,
+    "contact:cell": 37
+   }
+  },
+  "rack/hard": {
+   "tasks": 8,
+   "reference_success": 0.8046875,
+   "goal_failure": 0.17236328125,
+   "path_failure": 0.02294921875,
+   "bound": 0.82763671875,
+   "region_bound": 0.8408203125,
+   "straight_success": 0.51123046875,
+   "goal_reasons": {
+    "contact:bracket": 243,
+    "placement": 49,
+    "contact:target": 48,
+    "goal_tolerance": 13
+   }
+  },
+  "all/hard": {
+   "tasks": 32,
+   "reference_success": 0.8359375,
+   "goal_failure": 0.1343994140625,
+   "path_failure": 0.0296630859375,
+   "bound": 0.8656005859375,
+   "region_bound": 0.8785400390625,
+   "straight_success": 0.578125,
+   "goal_reasons": {
+    "contact:bracket": 243,
+    "placement": 50,
+    "contact:target": 48,
+    "goal_tolerance": 58,
+    "contact:side": 176,
+    "contact:tie": 52,
+    "contact:coolant": 36,
+    "contact:fixture": 40,
+    "contact:chip": 172,
+    "contact:cell": 171,
+    "contact:lid": 55
+   }
+  },
+  "rebar/easy": {
+   "tasks": 8,
+   "reference_success": 0.96630859375,
+   "goal_failure": 0.02685546875,
+   "path_failure": 0.0068359375,
+   "bound": 0.97314453125,
+   "region_bound": 0.9736328125,
+   "straight_success": 0.9208984375,
+   "goal_reasons": {
+    "goal_tolerance": 54,
+    "contact:side": 1
+   }
+  },
+  "rebar/all": {
+   "tasks": 24,
+   "reference_success": 0.9051106770833334,
+   "goal_failure": 0.064453125,
+   "path_failure": 0.030436197916666668,
+   "bound": 0.935546875,
+   "region_bound": 0.947265625,
+   "straight_success": 0.7439778645833334,
+   "goal_reasons": {
+    "goal_tolerance": 142,
+    "contact:side": 200,
+    "contact:tie": 54
+   }
+  },
+  "rebar/medium": {
+   "tasks": 8,
+   "reference_success": 0.916015625,
+   "goal_failure": 0.0390625,
+   "path_failure": 0.044921875,
+   "bound": 0.9609375,
+   "region_bound": 0.96435546875,
+   "straight_success": 0.7548828125,
+   "goal_reasons": {
+    "contact:side": 23,
+    "goal_tolerance": 55,
+    "contact:tie": 2
+   }
+  },
+  "rebar/hard": {
+   "tasks": 8,
+   "reference_success": 0.8330078125,
+   "goal_failure": 0.12744140625,
+   "path_failure": 0.03955078125,
+   "bound": 0.87255859375,
+   "region_bound": 0.90380859375,
+   "straight_success": 0.55615234375,
+   "goal_reasons": {
+    "contact:side": 176,
+    "goal_tolerance": 33,
+    "contact:tie": 52
+   }
+  },
+  "lathe/easy": {
+   "tasks": 8,
+   "reference_success": 0.951171875,
+   "goal_failure": 0.048828125,
+   "path_failure": 0.0,
+   "bound": 0.951171875,
+   "region_bound": 0.9609375,
+   "straight_success": 0.93798828125,
+   "goal_reasons": {
+    "placement": 31,
+    "contact:fixture": 45,
+    "goal_tolerance": 24
+   }
+  },
+  "lathe/all": {
+   "tasks": 24,
+   "reference_success": 0.9124348958333334,
+   "goal_failure": 0.07259114583333333,
+   "path_failure": 0.014973958333333334,
+   "bound": 0.9274088541666666,
+   "region_bound": 0.9353841145833334,
+   "straight_success": 0.7721354166666666,
+   "goal_reasons": {
+    "placement": 61,
+    "contact:fixture": 126,
+    "goal_tolerance": 48,
+    "contact:chip": 175,
+    "contact:coolant": 36
+   }
+  },
+  "lathe/medium": {
+   "tasks": 8,
+   "reference_success": 0.94873046875,
+   "goal_failure": 0.0419921875,
+   "path_failure": 0.00927734375,
+   "bound": 0.9580078125,
+   "region_bound": 0.96630859375,
+   "straight_success": 0.81201171875,
+   "goal_reasons": {
+    "contact:fixture": 41,
+    "placement": 29,
+    "goal_tolerance": 13,
+    "contact:chip": 3
+   }
+  },
+  "lathe/hard": {
+   "tasks": 8,
+   "reference_success": 0.83740234375,
+   "goal_failure": 0.126953125,
+   "path_failure": 0.03564453125,
+   "bound": 0.873046875,
+   "region_bound": 0.87890625,
+   "straight_success": 0.56640625,
+   "goal_reasons": {
+    "contact:coolant": 36,
+    "contact:fixture": 40,
+    "contact:chip": 172,
+    "placement": 1,
+    "goal_tolerance": 11
+   }
+  },
+  "tote/easy": {
+   "tasks": 8,
+   "reference_success": 0.9931640625,
+   "goal_failure": 0.001953125,
+   "path_failure": 0.0048828125,
+   "bound": 0.998046875,
+   "region_bound": 0.99853515625,
+   "straight_success": 0.990234375,
+   "goal_reasons": {
+    "goal_tolerance": 4
+   }
+  },
+  "tote/all": {
+   "tasks": 24,
+   "reference_success": 0.9444986979166666,
+   "goal_failure": 0.043782552083333336,
+   "path_failure": 0.01171875,
+   "bound": 0.9562174479166666,
+   "region_bound": 0.95703125,
+   "straight_success": 0.8567708333333334,
+   "goal_reasons": {
+    "goal_tolerance": 6,
+    "contact:cell": 208,
+    "contact:lid": 55
+   }
+  },
+  "tote/medium": {
+   "tasks": 8,
+   "reference_success": 0.9716796875,
+   "goal_failure": 0.0185546875,
+   "path_failure": 0.009765625,
+   "bound": 0.9814453125,
+   "region_bound": 0.98193359375,
+   "straight_success": 0.9013671875,
+   "goal_reasons": {
+    "contact:cell": 37,
+    "goal_tolerance": 1
+   }
+  },
+  "tote/hard": {
+   "tasks": 8,
+   "reference_success": 0.86865234375,
+   "goal_failure": 0.11083984375,
+   "path_failure": 0.0205078125,
+   "bound": 0.88916015625,
+   "region_bound": 0.890625,
+   "straight_success": 0.6787109375,
+   "goal_reasons": {
+    "contact:cell": 171,
+    "contact:lid": 55,
+    "goal_tolerance": 1
+   }
+  }
+ },
+ "headroom_tasks": [
+  {
+   "id": "rack_easy_dev_00",
+   "family": "rack",
+   "level": "easy",
+   "split": "dev",
+   "reference_success": 0.94140625,
+   "straight_success": 0.890625,
+   "goal_failure": 0.05859375,
+   "bound": 0.94140625,
+   "path_failure": 0.0,
+   "region_bound": 0.94140625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:target": 10,
+    "goal_tolerance": 4,
+    "placement": 1
+   }
+  },
+  {
+   "id": "rack_easy_dev_01",
+   "family": "rack",
+   "level": "easy",
+   "split": "dev",
+   "reference_success": 0.9375,
+   "straight_success": 0.91796875,
+   "goal_failure": 0.0625,
+   "bound": 0.9375,
+   "path_failure": 0.0,
+   "region_bound": 0.94921875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "placement": 2,
+    "goal_tolerance": 6,
+    "contact:target": 8
+   }
+  },
+  {
+   "id": "rack_easy_test_00",
+   "family": "rack",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.93359375,
+   "straight_success": 0.88671875,
+   "goal_failure": 0.05078125,
+   "bound": 0.94921875,
+   "path_failure": 0.015625,
+   "region_bound": 0.94921875,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "placement": 4,
+    "contact:target": 8,
+    "contact:bracket": 1
+   }
+  },
+  {
+   "id": "rack_easy_test_01",
+   "family": "rack",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.91015625,
+   "straight_success": 0.86328125,
+   "goal_failure": 0.0859375,
+   "bound": 0.9140625,
+   "path_failure": 0.00390625,
+   "region_bound": 0.9140625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 7,
+    "contact:target": 10,
+    "contact:bracket": 1,
+    "placement": 4
+   }
+  },
+  {
+   "id": "rack_easy_test_02",
+   "family": "rack",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.94921875,
+   "straight_success": 0.9375,
+   "goal_failure": 0.03515625,
+   "bound": 0.96484375,
+   "path_failure": 0.015625,
+   "region_bound": 0.96484375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "placement": 2,
+    "contact:target": 6,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "rack_easy_test_03",
+   "family": "rack",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.953125,
+   "straight_success": 0.94140625,
+   "goal_failure": 0.04296875,
+   "bound": 0.95703125,
+   "path_failure": 0.00390625,
+   "region_bound": 0.95703125,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:target": 6,
+    "placement": 2,
+    "goal_tolerance": 3
+   }
+  },
+  {
+   "id": "rack_easy_test_04",
+   "family": "rack",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.91796875,
+   "straight_success": 0.87109375,
+   "goal_failure": 0.08203125,
+   "bound": 0.91796875,
+   "path_failure": 0.0,
+   "region_bound": 0.91796875,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "placement": 7,
+    "contact:target": 11,
+    "goal_tolerance": 3
+   }
+  },
+  {
+   "id": "rack_easy_test_05",
+   "family": "rack",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.91015625,
+   "straight_success": 0.890625,
+   "goal_failure": 0.078125,
+   "bound": 0.921875,
+   "path_failure": 0.01171875,
+   "region_bound": 0.921875,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "placement": 5,
+    "contact:target": 11,
+    "goal_tolerance": 4
+   }
+  },
+  {
+   "id": "rack_medium_dev_00",
+   "family": "rack",
+   "level": "medium",
+   "split": "dev",
+   "reference_success": 0.9296875,
+   "straight_success": 0.80078125,
+   "goal_failure": 0.06640625,
+   "bound": 0.93359375,
+   "path_failure": 0.00390625,
+   "region_bound": 0.93359375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:deck": 1,
+    "contact:bracket": 8,
+    "contact:target": 6,
+    "placement": 1,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "rack_medium_dev_01",
+   "family": "rack",
+   "level": "medium",
+   "split": "dev",
+   "reference_success": 0.8828125,
+   "straight_success": 0.7109375,
+   "goal_failure": 0.109375,
+   "bound": 0.890625,
+   "path_failure": 0.0078125,
+   "region_bound": 0.93359375,
+   "region_offset_mm": [
+    0,
+    4,
+    2
+   ],
+   "goal_reasons": {
+    "contact:target": 7,
+    "contact:bracket": 13,
+    "placement": 7,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "rack_medium_test_00",
+   "family": "rack",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.8984375,
+   "straight_success": 0.71484375,
+   "goal_failure": 0.1015625,
+   "bound": 0.8984375,
+   "path_failure": 0.0,
+   "region_bound": 0.921875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "placement": 7,
+    "contact:bracket": 6,
+    "contact:target": 9,
+    "goal_tolerance": 4
+   }
+  },
+  {
+   "id": "rack_medium_test_01",
+   "family": "rack",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.91796875,
+   "straight_success": 0.71875,
+   "goal_failure": 0.07421875,
+   "bound": 0.92578125,
+   "path_failure": 0.0078125,
+   "region_bound": 0.93359375,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:target": 9,
+    "placement": 5,
+    "contact:bracket": 4,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "rack_medium_test_02",
+   "family": "rack",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.8984375,
+   "straight_success": 0.73828125,
+   "goal_failure": 0.0859375,
+   "bound": 0.9140625,
+   "path_failure": 0.015625,
+   "region_bound": 0.9453125,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:bracket": 5,
+    "contact:target": 9,
+    "goal_tolerance": 4,
+    "placement": 4
+   }
+  },
+  {
+   "id": "rack_medium_test_03",
+   "family": "rack",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.90234375,
+   "straight_success": 0.7578125,
+   "goal_failure": 0.078125,
+   "bound": 0.921875,
+   "path_failure": 0.01953125,
+   "region_bound": 0.953125,
+   "region_offset_mm": [
+    0,
+    0,
+    4
+   ],
+   "goal_reasons": {
+    "placement": 6,
+    "contact:target": 11,
+    "contact:bracket": 2,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "rack_medium_test_04",
+   "family": "rack",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.91015625,
+   "straight_success": 0.703125,
+   "goal_failure": 0.08203125,
+   "bound": 0.91796875,
+   "path_failure": 0.0078125,
+   "region_bound": 0.921875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:bracket": 6,
+    "placement": 4,
+    "goal_tolerance": 3,
+    "contact:target": 8
+   }
+  },
+  {
+   "id": "rack_medium_test_05",
+   "family": "rack",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.86328125,
+   "straight_success": 0.68359375,
+   "goal_failure": 0.1015625,
+   "bound": 0.8984375,
+   "path_failure": 0.03515625,
+   "region_bound": 0.8984375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:target": 13,
+    "placement": 6,
+    "contact:bracket": 6,
+    "contact:deck": 1
+   }
+  },
+  {
+   "id": "rack_hard_dev_00",
+   "family": "rack",
+   "level": "hard",
+   "split": "dev",
+   "reference_success": 0.77734375,
+   "straight_success": 0.46875,
+   "goal_failure": 0.21875,
+   "bound": 0.78125,
+   "path_failure": 0.00390625,
+   "region_bound": 0.78515625,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:bracket": 40,
+    "placement": 7,
+    "contact:target": 8,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "rack_hard_dev_01",
+   "family": "rack",
+   "level": "hard",
+   "split": "dev",
+   "reference_success": 0.77734375,
+   "straight_success": 0.421875,
+   "goal_failure": 0.1875,
+   "bound": 0.8125,
+   "path_failure": 0.03515625,
+   "region_bound": 0.82421875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "placement": 8,
+    "contact:bracket": 32,
+    "goal_tolerance": 3,
+    "contact:target": 5
+   }
+  },
+  {
+   "id": "rack_hard_test_00",
+   "family": "rack",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.84765625,
+   "straight_success": 0.5703125,
+   "goal_failure": 0.1484375,
+   "bound": 0.8515625,
+   "path_failure": 0.00390625,
+   "region_bound": 0.86328125,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:bracket": 29,
+    "placement": 3,
+    "contact:target": 6
+   }
+  },
+  {
+   "id": "rack_hard_test_01",
+   "family": "rack",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.84765625,
+   "straight_success": 0.515625,
+   "goal_failure": 0.140625,
+   "bound": 0.859375,
+   "path_failure": 0.01171875,
+   "region_bound": 0.875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:bracket": 24,
+    "contact:target": 4,
+    "goal_tolerance": 2,
+    "placement": 6
+   }
+  },
+  {
+   "id": "rack_hard_test_02",
+   "family": "rack",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.78125,
+   "straight_success": 0.49609375,
+   "goal_failure": 0.203125,
+   "bound": 0.796875,
+   "path_failure": 0.015625,
+   "region_bound": 0.8046875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "placement": 11,
+    "goal_tolerance": 4,
+    "contact:target": 8,
+    "contact:bracket": 29
+   }
+  },
+  {
+   "id": "rack_hard_test_03",
+   "family": "rack",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.8359375,
+   "straight_success": 0.5234375,
+   "goal_failure": 0.1484375,
+   "bound": 0.8515625,
+   "path_failure": 0.015625,
+   "region_bound": 0.8671875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:bracket": 25,
+    "contact:target": 7,
+    "placement": 5,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "rack_hard_test_04",
+   "family": "rack",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.82421875,
+   "straight_success": 0.546875,
+   "goal_failure": 0.1640625,
+   "bound": 0.8359375,
+   "path_failure": 0.01171875,
+   "region_bound": 0.85546875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:bracket": 32,
+    "placement": 4,
+    "goal_tolerance": 1,
+    "contact:target": 5
+   }
+  },
+  {
+   "id": "rack_hard_test_05",
+   "family": "rack",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.74609375,
+   "straight_success": 0.546875,
+   "goal_failure": 0.16796875,
+   "bound": 0.83203125,
+   "path_failure": 0.0859375,
+   "region_bound": 0.8515625,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "placement": 5,
+    "contact:bracket": 32,
+    "contact:target": 5,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "rebar_easy_dev_00",
+   "family": "rebar",
+   "level": "easy",
+   "split": "dev",
+   "reference_success": 0.97265625,
+   "straight_success": 0.8984375,
+   "goal_failure": 0.0234375,
+   "bound": 0.9765625,
+   "path_failure": 0.00390625,
+   "region_bound": 0.9765625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 6
+   }
+  },
+  {
+   "id": "rebar_easy_dev_01",
+   "family": "rebar",
+   "level": "easy",
+   "split": "dev",
+   "reference_success": 0.96875,
+   "straight_success": 0.91796875,
+   "goal_failure": 0.0234375,
+   "bound": 0.9765625,
+   "path_failure": 0.0078125,
+   "region_bound": 0.9765625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 6
+   }
+  },
+  {
+   "id": "rebar_easy_test_00",
+   "family": "rebar",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.9453125,
+   "straight_success": 0.88671875,
+   "goal_failure": 0.04296875,
+   "bound": 0.95703125,
+   "path_failure": 0.01171875,
+   "region_bound": 0.9609375,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 11
+   }
+  },
+  {
+   "id": "rebar_easy_test_01",
+   "family": "rebar",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.95703125,
+   "straight_success": 0.9296875,
+   "goal_failure": 0.03125,
+   "bound": 0.96875,
+   "path_failure": 0.01171875,
+   "region_bound": 0.96875,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 8
+   }
+  },
+  {
+   "id": "rebar_easy_test_02",
+   "family": "rebar",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.99609375,
+   "straight_success": 0.9375,
+   "goal_failure": 0.00390625,
+   "bound": 0.99609375,
+   "path_failure": 0.0,
+   "region_bound": 0.99609375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "rebar_easy_test_03",
+   "family": "rebar",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.94921875,
+   "straight_success": 0.9296875,
+   "goal_failure": 0.04296875,
+   "bound": 0.95703125,
+   "path_failure": 0.0078125,
+   "region_bound": 0.95703125,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 10,
+    "contact:side": 1
+   }
+  },
+  {
+   "id": "rebar_easy_test_04",
+   "family": "rebar",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.98828125,
+   "straight_success": 0.95703125,
+   "goal_failure": 0.00390625,
+   "bound": 0.99609375,
+   "path_failure": 0.0078125,
+   "region_bound": 0.99609375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "rebar_easy_test_05",
+   "family": "rebar",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.953125,
+   "straight_success": 0.91015625,
+   "goal_failure": 0.04296875,
+   "bound": 0.95703125,
+   "path_failure": 0.00390625,
+   "region_bound": 0.95703125,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 11
+   }
+  },
+  {
+   "id": "rebar_medium_dev_00",
+   "family": "rebar",
+   "level": "medium",
+   "split": "dev",
+   "reference_success": 0.89453125,
+   "straight_success": 0.7421875,
+   "goal_failure": 0.0546875,
+   "bound": 0.9453125,
+   "path_failure": 0.05078125,
+   "region_bound": 0.96875,
+   "region_offset_mm": [
+    0,
+    0,
+    -2
+   ],
+   "goal_reasons": {
+    "contact:side": 3,
+    "goal_tolerance": 11
+   }
+  },
+  {
+   "id": "rebar_medium_dev_01",
+   "family": "rebar",
+   "level": "medium",
+   "split": "dev",
+   "reference_success": 0.96875,
+   "straight_success": 0.7421875,
+   "goal_failure": 0.015625,
+   "bound": 0.984375,
+   "path_failure": 0.015625,
+   "region_bound": 0.984375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:side": 2,
+    "goal_tolerance": 2
+   }
+  },
+  {
+   "id": "rebar_medium_test_00",
+   "family": "rebar",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.91796875,
+   "straight_success": 0.73828125,
+   "goal_failure": 0.04296875,
+   "bound": 0.95703125,
+   "path_failure": 0.0390625,
+   "region_bound": 0.95703125,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 9,
+    "contact:side": 2
+   }
+  },
+  {
+   "id": "rebar_medium_test_01",
+   "family": "rebar",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.96484375,
+   "straight_success": 0.78515625,
+   "goal_failure": 0.02734375,
+   "bound": 0.97265625,
+   "path_failure": 0.0078125,
+   "region_bound": 0.97265625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 2,
+    "contact:side": 4,
+    "contact:tie": 1
+   }
+  },
+  {
+   "id": "rebar_medium_test_02",
+   "family": "rebar",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.83203125,
+   "straight_success": 0.7265625,
+   "goal_failure": 0.0546875,
+   "bound": 0.9453125,
+   "path_failure": 0.11328125,
+   "region_bound": 0.9453125,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 10,
+    "contact:side": 4
+   }
+  },
+  {
+   "id": "rebar_medium_test_03",
+   "family": "rebar",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.93359375,
+   "straight_success": 0.78125,
+   "goal_failure": 0.0234375,
+   "bound": 0.9765625,
+   "path_failure": 0.04296875,
+   "region_bound": 0.9765625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:side": 1,
+    "goal_tolerance": 5
+   }
+  },
+  {
+   "id": "rebar_medium_test_04",
+   "family": "rebar",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.91796875,
+   "straight_success": 0.77734375,
+   "goal_failure": 0.046875,
+   "bound": 0.953125,
+   "path_failure": 0.03515625,
+   "region_bound": 0.953125,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 8,
+    "contact:side": 4
+   }
+  },
+  {
+   "id": "rebar_medium_test_05",
+   "family": "rebar",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.8984375,
+   "straight_success": 0.74609375,
+   "goal_failure": 0.046875,
+   "bound": 0.953125,
+   "path_failure": 0.0546875,
+   "region_bound": 0.95703125,
+   "region_offset_mm": [
+    0,
+    0,
+    -2
+   ],
+   "goal_reasons": {
+    "contact:side": 3,
+    "goal_tolerance": 8,
+    "contact:tie": 1
+   }
+  },
+  {
+   "id": "rebar_hard_dev_00",
+   "family": "rebar",
+   "level": "hard",
+   "split": "dev",
+   "reference_success": 0.83984375,
+   "straight_success": 0.59765625,
+   "goal_failure": 0.1171875,
+   "bound": 0.8828125,
+   "path_failure": 0.04296875,
+   "region_bound": 0.94921875,
+   "region_offset_mm": [
+    0,
+    -4,
+    0
+   ],
+   "goal_reasons": {
+    "contact:side": 26,
+    "goal_tolerance": 1,
+    "contact:tie": 3
+   }
+  },
+  {
+   "id": "rebar_hard_dev_01",
+   "family": "rebar",
+   "level": "hard",
+   "split": "dev",
+   "reference_success": 0.8515625,
+   "straight_success": 0.546875,
+   "goal_failure": 0.13671875,
+   "bound": 0.86328125,
+   "path_failure": 0.01171875,
+   "region_bound": 0.8984375,
+   "region_offset_mm": [
+    0,
+    4,
+    -2
+   ],
+   "goal_reasons": {
+    "contact:side": 26,
+    "goal_tolerance": 2,
+    "contact:tie": 7
+   }
+  },
+  {
+   "id": "rebar_hard_test_00",
+   "family": "rebar",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.88671875,
+   "straight_success": 0.5859375,
+   "goal_failure": 0.109375,
+   "bound": 0.890625,
+   "path_failure": 0.00390625,
+   "region_bound": 0.9140625,
+   "region_offset_mm": [
+    0,
+    -4,
+    0
+   ],
+   "goal_reasons": {
+    "contact:side": 20,
+    "goal_tolerance": 4,
+    "contact:tie": 4
+   }
+  },
+  {
+   "id": "rebar_hard_test_01",
+   "family": "rebar",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.79296875,
+   "straight_success": 0.51171875,
+   "goal_failure": 0.15625,
+   "bound": 0.84375,
+   "path_failure": 0.05078125,
+   "region_bound": 0.8984375,
+   "region_offset_mm": [
+    0,
+    4,
+    -2
+   ],
+   "goal_reasons": {
+    "contact:side": 23,
+    "contact:tie": 12,
+    "goal_tolerance": 5
+   }
+  },
+  {
+   "id": "rebar_hard_test_02",
+   "family": "rebar",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.8125,
+   "straight_success": 0.5859375,
+   "goal_failure": 0.09765625,
+   "bound": 0.90234375,
+   "path_failure": 0.08984375,
+   "region_bound": 0.90234375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 3,
+    "contact:side": 16,
+    "contact:tie": 6
+   }
+  },
+  {
+   "id": "rebar_hard_test_03",
+   "family": "rebar",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.80859375,
+   "straight_success": 0.53125,
+   "goal_failure": 0.14453125,
+   "bound": 0.85546875,
+   "path_failure": 0.046875,
+   "region_bound": 0.875,
+   "region_offset_mm": [
+    0,
+    4,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 8,
+    "contact:side": 28,
+    "contact:tie": 1
+   }
+  },
+  {
+   "id": "rebar_hard_test_04",
+   "family": "rebar",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.87890625,
+   "straight_success": 0.55859375,
+   "goal_failure": 0.10546875,
+   "bound": 0.89453125,
+   "path_failure": 0.015625,
+   "region_bound": 0.90625,
+   "region_offset_mm": [
+    0,
+    -4,
+    0
+   ],
+   "goal_reasons": {
+    "contact:tie": 4,
+    "contact:side": 18,
+    "goal_tolerance": 5
+   }
+  },
+  {
+   "id": "rebar_hard_test_05",
+   "family": "rebar",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.79296875,
+   "straight_success": 0.53125,
+   "goal_failure": 0.15234375,
+   "bound": 0.84765625,
+   "path_failure": 0.0546875,
+   "region_bound": 0.88671875,
+   "region_offset_mm": [
+    0,
+    -4,
+    -2
+   ],
+   "goal_reasons": {
+    "contact:side": 19,
+    "contact:tie": 15,
+    "goal_tolerance": 5
+   }
+  },
+  {
+   "id": "lathe_easy_dev_00",
+   "family": "lathe",
+   "level": "easy",
+   "split": "dev",
+   "reference_success": 0.95703125,
+   "straight_success": 0.953125,
+   "goal_failure": 0.04296875,
+   "bound": 0.95703125,
+   "path_failure": 0.0,
+   "region_bound": 0.96875,
+   "region_offset_mm": [
+    0,
+    0,
+    4
+   ],
+   "goal_reasons": {
+    "placement": 2,
+    "contact:fixture": 7,
+    "goal_tolerance": 2
+   }
+  },
+  {
+   "id": "lathe_easy_dev_01",
+   "family": "lathe",
+   "level": "easy",
+   "split": "dev",
+   "reference_success": 0.93359375,
+   "straight_success": 0.921875,
+   "goal_failure": 0.06640625,
+   "bound": 0.93359375,
+   "path_failure": 0.0,
+   "region_bound": 0.9375,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "placement": 5,
+    "contact:fixture": 7,
+    "goal_tolerance": 5
+   }
+  },
+  {
+   "id": "lathe_easy_test_00",
+   "family": "lathe",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.9765625,
+   "straight_success": 0.95703125,
+   "goal_failure": 0.0234375,
+   "bound": 0.9765625,
+   "path_failure": 0.0,
+   "region_bound": 0.9765625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:fixture": 4,
+    "placement": 2
+   }
+  },
+  {
+   "id": "lathe_easy_test_01",
+   "family": "lathe",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.94921875,
+   "straight_success": 0.9375,
+   "goal_failure": 0.05078125,
+   "bound": 0.94921875,
+   "path_failure": 0.0,
+   "region_bound": 0.9609375,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:fixture": 6,
+    "goal_tolerance": 4,
+    "placement": 3
+   }
+  },
+  {
+   "id": "lathe_easy_test_02",
+   "family": "lathe",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.95703125,
+   "straight_success": 0.94921875,
+   "goal_failure": 0.04296875,
+   "bound": 0.95703125,
+   "path_failure": 0.0,
+   "region_bound": 0.96875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:fixture": 7,
+    "placement": 4
+   }
+  },
+  {
+   "id": "lathe_easy_test_03",
+   "family": "lathe",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.9453125,
+   "straight_success": 0.921875,
+   "goal_failure": 0.0546875,
+   "bound": 0.9453125,
+   "path_failure": 0.0,
+   "region_bound": 0.94921875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "placement": 2,
+    "contact:fixture": 6,
+    "goal_tolerance": 6
+   }
+  },
+  {
+   "id": "lathe_easy_test_04",
+   "family": "lathe",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.9375,
+   "straight_success": 0.92578125,
+   "goal_failure": 0.0625,
+   "bound": 0.9375,
+   "path_failure": 0.0,
+   "region_bound": 0.9609375,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:fixture": 5,
+    "placement": 7,
+    "goal_tolerance": 4
+   }
+  },
+  {
+   "id": "lathe_easy_test_05",
+   "family": "lathe",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.953125,
+   "straight_success": 0.9375,
+   "goal_failure": 0.046875,
+   "bound": 0.953125,
+   "path_failure": 0.0,
+   "region_bound": 0.96484375,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "placement": 6,
+    "goal_tolerance": 3,
+    "contact:fixture": 3
+   }
+  },
+  {
+   "id": "lathe_medium_dev_00",
+   "family": "lathe",
+   "level": "medium",
+   "split": "dev",
+   "reference_success": 0.9296875,
+   "straight_success": 0.78125,
+   "goal_failure": 0.0546875,
+   "bound": 0.9453125,
+   "path_failure": 0.015625,
+   "region_bound": 0.953125,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:fixture": 6,
+    "placement": 5,
+    "goal_tolerance": 3
+   }
+  },
+  {
+   "id": "lathe_medium_dev_01",
+   "family": "lathe",
+   "level": "medium",
+   "split": "dev",
+   "reference_success": 0.96875,
+   "straight_success": 0.8515625,
+   "goal_failure": 0.03125,
+   "bound": 0.96875,
+   "path_failure": 0.0,
+   "region_bound": 0.97265625,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "placement": 4,
+    "contact:fixture": 2,
+    "goal_tolerance": 2
+   }
+  },
+  {
+   "id": "lathe_medium_test_00",
+   "family": "lathe",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.94921875,
+   "straight_success": 0.765625,
+   "goal_failure": 0.05078125,
+   "bound": 0.94921875,
+   "path_failure": 0.0,
+   "region_bound": 0.98046875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:fixture": 7,
+    "placement": 5,
+    "contact:chip": 1
+   }
+  },
+  {
+   "id": "lathe_medium_test_01",
+   "family": "lathe",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.9609375,
+   "straight_success": 0.77734375,
+   "goal_failure": 0.0390625,
+   "bound": 0.9609375,
+   "path_failure": 0.0,
+   "region_bound": 0.9609375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 2,
+    "contact:fixture": 6,
+    "contact:chip": 1,
+    "placement": 1
+   }
+  },
+  {
+   "id": "lathe_medium_test_02",
+   "family": "lathe",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.953125,
+   "straight_success": 0.8671875,
+   "goal_failure": 0.0390625,
+   "bound": 0.9609375,
+   "path_failure": 0.0078125,
+   "region_bound": 0.96875,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:fixture": 6,
+    "contact:chip": 1,
+    "placement": 2,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "lathe_medium_test_03",
+   "family": "lathe",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.95703125,
+   "straight_success": 0.8359375,
+   "goal_failure": 0.04296875,
+   "bound": 0.95703125,
+   "path_failure": 0.0,
+   "region_bound": 0.96484375,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:fixture": 7,
+    "goal_tolerance": 1,
+    "placement": 3
+   }
+  },
+  {
+   "id": "lathe_medium_test_04",
+   "family": "lathe",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.91015625,
+   "straight_success": 0.78125,
+   "goal_failure": 0.0546875,
+   "bound": 0.9453125,
+   "path_failure": 0.03515625,
+   "region_bound": 0.953125,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "placement": 5,
+    "contact:fixture": 6,
+    "goal_tolerance": 3
+   }
+  },
+  {
+   "id": "lathe_medium_test_05",
+   "family": "lathe",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.9609375,
+   "straight_success": 0.8359375,
+   "goal_failure": 0.0234375,
+   "bound": 0.9765625,
+   "path_failure": 0.015625,
+   "region_bound": 0.9765625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "placement": 4,
+    "goal_tolerance": 1,
+    "contact:fixture": 1
+   }
+  },
+  {
+   "id": "lathe_hard_dev_00",
+   "family": "lathe",
+   "level": "hard",
+   "split": "dev",
+   "reference_success": 0.79296875,
+   "straight_success": 0.55859375,
+   "goal_failure": 0.1328125,
+   "bound": 0.8671875,
+   "path_failure": 0.07421875,
+   "region_bound": 0.8671875,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:coolant": 4,
+    "contact:fixture": 10,
+    "contact:chip": 19,
+    "placement": 1
+   }
+  },
+  {
+   "id": "lathe_hard_dev_01",
+   "family": "lathe",
+   "level": "hard",
+   "split": "dev",
+   "reference_success": 0.84765625,
+   "straight_success": 0.56640625,
+   "goal_failure": 0.11328125,
+   "bound": 0.88671875,
+   "path_failure": 0.0390625,
+   "region_bound": 0.90234375,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:chip": 22,
+    "contact:fixture": 1,
+    "contact:coolant": 5,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "lathe_hard_test_00",
+   "family": "lathe",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.82421875,
+   "straight_success": 0.55078125,
+   "goal_failure": 0.140625,
+   "bound": 0.859375,
+   "path_failure": 0.03515625,
+   "region_bound": 0.859375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:chip": 26,
+    "goal_tolerance": 4,
+    "contact:coolant": 3,
+    "contact:fixture": 3
+   }
+  },
+  {
+   "id": "lathe_hard_test_01",
+   "family": "lathe",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.8515625,
+   "straight_success": 0.55859375,
+   "goal_failure": 0.1171875,
+   "bound": 0.8828125,
+   "path_failure": 0.03125,
+   "region_bound": 0.8828125,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:chip": 20,
+    "contact:fixture": 6,
+    "contact:coolant": 3,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "lathe_hard_test_02",
+   "family": "lathe",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.8515625,
+   "straight_success": 0.59765625,
+   "goal_failure": 0.12890625,
+   "bound": 0.87109375,
+   "path_failure": 0.01953125,
+   "region_bound": 0.90234375,
+   "region_offset_mm": [
+    0,
+    0,
+    2
+   ],
+   "goal_reasons": {
+    "contact:chip": 23,
+    "contact:coolant": 7,
+    "contact:fixture": 3
+   }
+  },
+  {
+   "id": "lathe_hard_test_03",
+   "family": "lathe",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.8515625,
+   "straight_success": 0.59375,
+   "goal_failure": 0.13671875,
+   "bound": 0.86328125,
+   "path_failure": 0.01171875,
+   "region_bound": 0.86328125,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:chip": 25,
+    "contact:coolant": 4,
+    "contact:fixture": 4,
+    "goal_tolerance": 2
+   }
+  },
+  {
+   "id": "lathe_hard_test_04",
+   "family": "lathe",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.83984375,
+   "straight_success": 0.5390625,
+   "goal_failure": 0.12890625,
+   "bound": 0.87109375,
+   "path_failure": 0.03125,
+   "region_bound": 0.87109375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:chip": 17,
+    "contact:coolant": 6,
+    "contact:fixture": 7,
+    "goal_tolerance": 3
+   }
+  },
+  {
+   "id": "lathe_hard_test_05",
+   "family": "lathe",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.83984375,
+   "straight_success": 0.56640625,
+   "goal_failure": 0.1171875,
+   "bound": 0.8828125,
+   "path_failure": 0.04296875,
+   "region_bound": 0.8828125,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:chip": 20,
+    "contact:fixture": 6,
+    "contact:coolant": 4
+   }
+  },
+  {
+   "id": "tote_easy_dev_00",
+   "family": "tote",
+   "level": "easy",
+   "split": "dev",
+   "reference_success": 0.98046875,
+   "straight_success": 0.98046875,
+   "goal_failure": 0.00390625,
+   "bound": 0.99609375,
+   "path_failure": 0.015625,
+   "region_bound": 0.99609375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "tote_easy_dev_01",
+   "family": "tote",
+   "level": "easy",
+   "split": "dev",
+   "reference_success": 0.9921875,
+   "straight_success": 0.9921875,
+   "goal_failure": 0.0,
+   "bound": 1.0,
+   "path_failure": 0.0078125,
+   "region_bound": 1.0,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {}
+  },
+  {
+   "id": "tote_easy_test_00",
+   "family": "tote",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 1.0,
+   "straight_success": 1.0,
+   "goal_failure": 0.0,
+   "bound": 1.0,
+   "path_failure": 0.0,
+   "region_bound": 1.0,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {}
+  },
+  {
+   "id": "tote_easy_test_01",
+   "family": "tote",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.99609375,
+   "straight_success": 0.98828125,
+   "goal_failure": 0.00390625,
+   "bound": 0.99609375,
+   "path_failure": 0.0,
+   "region_bound": 1.0,
+   "region_offset_mm": [
+    -8,
+    0,
+    -4
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "tote_easy_test_02",
+   "family": "tote",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 1.0,
+   "straight_success": 0.9921875,
+   "goal_failure": 0.0,
+   "bound": 1.0,
+   "path_failure": 0.0,
+   "region_bound": 1.0,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {}
+  },
+  {
+   "id": "tote_easy_test_03",
+   "family": "tote",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.99609375,
+   "straight_success": 0.98828125,
+   "goal_failure": 0.00390625,
+   "bound": 0.99609375,
+   "path_failure": 0.0,
+   "region_bound": 0.99609375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "tote_easy_test_04",
+   "family": "tote",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.98828125,
+   "straight_success": 0.98828125,
+   "goal_failure": 0.00390625,
+   "bound": 0.99609375,
+   "path_failure": 0.0078125,
+   "region_bound": 0.99609375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "tote_easy_test_05",
+   "family": "tote",
+   "level": "easy",
+   "split": "test",
+   "reference_success": 0.9921875,
+   "straight_success": 0.9921875,
+   "goal_failure": 0.0,
+   "bound": 1.0,
+   "path_failure": 0.0078125,
+   "region_bound": 1.0,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {}
+  },
+  {
+   "id": "tote_medium_dev_00",
+   "family": "tote",
+   "level": "medium",
+   "split": "dev",
+   "reference_success": 0.96875,
+   "straight_success": 0.9140625,
+   "goal_failure": 0.01953125,
+   "bound": 0.98046875,
+   "path_failure": 0.01171875,
+   "region_bound": 0.98046875,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:cell": 5
+   }
+  },
+  {
+   "id": "tote_medium_dev_01",
+   "family": "tote",
+   "level": "medium",
+   "split": "dev",
+   "reference_success": 0.97265625,
+   "straight_success": 0.87890625,
+   "goal_failure": 0.02734375,
+   "bound": 0.97265625,
+   "path_failure": 0.0,
+   "region_bound": 0.97265625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:cell": 7
+   }
+  },
+  {
+   "id": "tote_medium_test_00",
+   "family": "tote",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.97265625,
+   "straight_success": 0.94921875,
+   "goal_failure": 0.0234375,
+   "bound": 0.9765625,
+   "path_failure": 0.00390625,
+   "region_bound": 0.9765625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:cell": 6
+   }
+  },
+  {
+   "id": "tote_medium_test_01",
+   "family": "tote",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.97265625,
+   "straight_success": 0.921875,
+   "goal_failure": 0.015625,
+   "bound": 0.984375,
+   "path_failure": 0.01171875,
+   "region_bound": 0.984375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:cell": 4
+   }
+  },
+  {
+   "id": "tote_medium_test_02",
+   "family": "tote",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.98046875,
+   "straight_success": 0.921875,
+   "goal_failure": 0.01171875,
+   "bound": 0.98828125,
+   "path_failure": 0.0078125,
+   "region_bound": 0.98828125,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:cell": 3
+   }
+  },
+  {
+   "id": "tote_medium_test_03",
+   "family": "tote",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.9765625,
+   "straight_success": 0.88671875,
+   "goal_failure": 0.01953125,
+   "bound": 0.98046875,
+   "path_failure": 0.00390625,
+   "region_bound": 0.98046875,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:cell": 5
+   }
+  },
+  {
+   "id": "tote_medium_test_04",
+   "family": "tote",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.95703125,
+   "straight_success": 0.8515625,
+   "goal_failure": 0.01171875,
+   "bound": 0.98828125,
+   "path_failure": 0.03125,
+   "region_bound": 0.9921875,
+   "region_offset_mm": [
+    0,
+    0,
+    -2
+   ],
+   "goal_reasons": {
+    "contact:cell": 2,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "tote_medium_test_05",
+   "family": "tote",
+   "level": "medium",
+   "split": "test",
+   "reference_success": 0.97265625,
+   "straight_success": 0.88671875,
+   "goal_failure": 0.01953125,
+   "bound": 0.98046875,
+   "path_failure": 0.0078125,
+   "region_bound": 0.98046875,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:cell": 5
+   }
+  },
+  {
+   "id": "tote_hard_dev_00",
+   "family": "tote",
+   "level": "hard",
+   "split": "dev",
+   "reference_success": 0.9140625,
+   "straight_success": 0.71484375,
+   "goal_failure": 0.0859375,
+   "bound": 0.9140625,
+   "path_failure": 0.0,
+   "region_bound": 0.9140625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:cell": 17,
+    "contact:lid": 5
+   }
+  },
+  {
+   "id": "tote_hard_dev_01",
+   "family": "tote",
+   "level": "hard",
+   "split": "dev",
+   "reference_success": 0.87109375,
+   "straight_success": 0.6484375,
+   "goal_failure": 0.08984375,
+   "bound": 0.91015625,
+   "path_failure": 0.0390625,
+   "region_bound": 0.9140625,
+   "region_offset_mm": [
+    0,
+    0,
+    -2
+   ],
+   "goal_reasons": {
+    "contact:cell": 15,
+    "contact:lid": 8
+   }
+  },
+  {
+   "id": "tote_hard_test_00",
+   "family": "tote",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.875,
+   "straight_success": 0.703125,
+   "goal_failure": 0.1015625,
+   "bound": 0.8984375,
+   "path_failure": 0.0234375,
+   "region_bound": 0.8984375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:cell": 19,
+    "contact:lid": 7
+   }
+  },
+  {
+   "id": "tote_hard_test_01",
+   "family": "tote",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.8828125,
+   "straight_success": 0.6953125,
+   "goal_failure": 0.08984375,
+   "bound": 0.91015625,
+   "path_failure": 0.02734375,
+   "region_bound": 0.91015625,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:lid": 9,
+    "contact:cell": 14
+   }
+  },
+  {
+   "id": "tote_hard_test_02",
+   "family": "tote",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.85546875,
+   "straight_success": 0.7109375,
+   "goal_failure": 0.10546875,
+   "bound": 0.89453125,
+   "path_failure": 0.0390625,
+   "region_bound": 0.8984375,
+   "region_offset_mm": [
+    -8,
+    0,
+    -4
+   ],
+   "goal_reasons": {
+    "contact:cell": 23,
+    "contact:lid": 3,
+    "goal_tolerance": 1
+   }
+  },
+  {
+   "id": "tote_hard_test_03",
+   "family": "tote",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.8671875,
+   "straight_success": 0.61328125,
+   "goal_failure": 0.12890625,
+   "bound": 0.87109375,
+   "path_failure": 0.00390625,
+   "region_bound": 0.87109375,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:cell": 25,
+    "contact:lid": 8
+   }
+  },
+  {
+   "id": "tote_hard_test_04",
+   "family": "tote",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.84375,
+   "straight_success": 0.6875,
+   "goal_failure": 0.140625,
+   "bound": 0.859375,
+   "path_failure": 0.015625,
+   "region_bound": 0.86328125,
+   "region_offset_mm": [
+    0,
+    0,
+    -2
+   ],
+   "goal_reasons": {
+    "contact:cell": 32,
+    "contact:lid": 4
+   }
+  },
+  {
+   "id": "tote_hard_test_05",
+   "family": "tote",
+   "level": "hard",
+   "split": "test",
+   "reference_success": 0.83984375,
+   "straight_success": 0.65625,
+   "goal_failure": 0.14453125,
+   "bound": 0.85546875,
+   "path_failure": 0.015625,
+   "region_bound": 0.85546875,
+   "region_offset_mm": [
+    0,
+    0,
+    0
+   ],
+   "goal_reasons": {
+    "contact:cell": 26,
+    "contact:lid": 11
+   }
+  }
+ ],
+ "step_convergence": [
+  {
+   "id": "rack_easy_dev_00",
+   "success_step_0025": 0.94140625,
+   "success_step_00125": 0.94140625,
+   "differing_episodes": 0
+  },
+  {
+   "id": "rack_medium_dev_00",
+   "success_step_0025": 0.9296875,
+   "success_step_00125": 0.9296875,
+   "differing_episodes": 0
+  },
+  {
+   "id": "rack_hard_dev_00",
+   "success_step_0025": 0.77734375,
+   "success_step_00125": 0.77734375,
+   "differing_episodes": 0
+  },
+  {
+   "id": "rebar_easy_dev_00",
+   "success_step_0025": 0.97265625,
+   "success_step_00125": 0.97265625,
+   "differing_episodes": 0
+  },
+  {
+   "id": "rebar_medium_dev_00",
+   "success_step_0025": 0.89453125,
+   "success_step_00125": 0.89453125,
+   "differing_episodes": 0
+  },
+  {
+   "id": "rebar_hard_dev_00",
+   "success_step_0025": 0.83984375,
+   "success_step_00125": 0.83984375,
+   "differing_episodes": 0
+  },
+  {
+   "id": "lathe_easy_dev_00",
+   "success_step_0025": 0.95703125,
+   "success_step_00125": 0.95703125,
+   "differing_episodes": 0
+  },
+  {
+   "id": "lathe_medium_dev_00",
+   "success_step_0025": 0.9296875,
+   "success_step_00125": 0.9296875,
+   "differing_episodes": 0
+  },
+  {
+   "id": "lathe_hard_dev_00",
+   "success_step_0025": 0.79296875,
+   "success_step_00125": 0.79296875,
+   "differing_episodes": 0
+  },
+  {
+   "id": "tote_easy_dev_00",
+   "success_step_0025": 0.98046875,
+   "success_step_00125": 0.98046875,
+   "differing_episodes": 0
+  },
+  {
+   "id": "tote_medium_dev_00",
+   "success_step_0025": 0.96875,
+   "success_step_00125": 0.96875,
+   "differing_episodes": 0
+  },
+  {
+   "id": "tote_hard_dev_00",
+   "success_step_0025": 0.9140625,
+   "success_step_00125": 0.9140625,
+   "differing_episodes": 0
+  }
+ ],
+ "sensitivity": {
+  "rack/easy": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 1.0,
+    "1.0": 0.939453125,
+    "1.5": 0.701171875,
+    "2.0": 0.49609375,
+    "3.0": 0.201171875
+   },
+   "translation_only": 1.0,
+   "rotation_only": 0.951171875
+  },
+  "rack/medium": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 0.998046875,
+    "1.0": 0.90625,
+    "1.5": 0.71875,
+    "2.0": 0.46484375,
+    "3.0": 0.17578125
+   },
+   "translation_only": 1.0,
+   "rotation_only": 0.94921875
+  },
+  "rack/hard": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 0.982421875,
+    "1.0": 0.77734375,
+    "1.5": 0.48828125,
+    "2.0": 0.28515625,
+    "3.0": 0.107421875
+   },
+   "translation_only": 0.998046875,
+   "rotation_only": 0.8359375
+  },
+  "rack/all": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 0.9934895833333334,
+    "1.0": 0.8743489583333334,
+    "1.5": 0.6360677083333334,
+    "2.0": 0.4153645833333333,
+    "3.0": 0.16145833333333334
+   },
+   "translation_only": 0.9993489583333334,
+   "rotation_only": 0.912109375
+  },
+  "rebar/easy": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 1.0,
+    "1.0": 0.970703125,
+    "1.5": 0.783203125,
+    "2.0": 0.568359375,
+    "3.0": 0.240234375
+   },
+   "translation_only": 1.0,
+   "rotation_only": 0.990234375
+  },
+  "rebar/medium": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 1.0,
+    "1.0": 0.931640625,
+    "1.5": 0.681640625,
+    "2.0": 0.447265625,
+    "3.0": 0.1796875
+   },
+   "translation_only": 1.0,
+   "rotation_only": 0.939453125
+  },
+  "rebar/hard": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 1.0,
+    "1.0": 0.845703125,
+    "1.5": 0.611328125,
+    "2.0": 0.390625,
+    "3.0": 0.1328125
+   },
+   "translation_only": 0.998046875,
+   "rotation_only": 0.900390625
+  },
+  "rebar/all": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 1.0,
+    "1.0": 0.916015625,
+    "1.5": 0.6920572916666666,
+    "2.0": 0.46875,
+    "3.0": 0.18424479166666666
+   },
+   "translation_only": 0.9993489583333334,
+   "rotation_only": 0.943359375
+  },
+  "lathe/easy": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 0.998046875,
+    "1.0": 0.9453125,
+    "1.5": 0.748046875,
+    "2.0": 0.53125,
+    "3.0": 0.21484375
+   },
+   "translation_only": 1.0,
+   "rotation_only": 0.958984375
+  },
+  "lathe/medium": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 1.0,
+    "1.0": 0.94921875,
+    "1.5": 0.791015625,
+    "2.0": 0.521484375,
+    "3.0": 0.18359375
+   },
+   "translation_only": 1.0,
+   "rotation_only": 0.966796875
+  },
+  "lathe/hard": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 0.99609375,
+    "1.0": 0.8203125,
+    "1.5": 0.587890625,
+    "2.0": 0.390625,
+    "3.0": 0.14453125
+   },
+   "translation_only": 0.994140625,
+   "rotation_only": 0.861328125
+  },
+  "lathe/all": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 0.998046875,
+    "1.0": 0.9049479166666666,
+    "1.5": 0.708984375,
+    "2.0": 0.4811197916666667,
+    "3.0": 0.18098958333333334
+   },
+   "translation_only": 0.998046875,
+   "rotation_only": 0.9290364583333334
+  },
+  "tote/easy": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 1.0,
+    "1.0": 0.986328125,
+    "1.5": 0.888671875,
+    "2.0": 0.71875,
+    "3.0": 0.291015625
+   },
+   "translation_only": 1.0,
+   "rotation_only": 0.99609375
+  },
+  "tote/medium": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 1.0,
+    "1.0": 0.970703125,
+    "1.5": 0.818359375,
+    "2.0": 0.599609375,
+    "3.0": 0.287109375
+   },
+   "translation_only": 1.0,
+   "rotation_only": 0.990234375
+  },
+  "tote/hard": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 1.0,
+    "1.0": 0.892578125,
+    "1.5": 0.67578125,
+    "2.0": 0.48828125,
+    "3.0": 0.189453125
+   },
+   "translation_only": 0.998046875,
+   "rotation_only": 0.94921875
+  },
+  "tote/all": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 1.0,
+    "1.0": 0.9498697916666666,
+    "1.5": 0.7942708333333334,
+    "2.0": 0.6022135416666666,
+    "3.0": 0.255859375
+   },
+   "translation_only": 0.9993489583333334,
+   "rotation_only": 0.978515625
+  },
+  "all/easy": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 0.99951171875,
+    "1.0": 0.96044921875,
+    "1.5": 0.7802734375,
+    "2.0": 0.57861328125,
+    "3.0": 0.23681640625
+   },
+   "translation_only": 1.0,
+   "rotation_only": 0.97412109375
+  },
+  "all/medium": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 0.99951171875,
+    "1.0": 0.939453125,
+    "1.5": 0.75244140625,
+    "2.0": 0.50830078125,
+    "3.0": 0.20654296875
+   },
+   "translation_only": 1.0,
+   "rotation_only": 0.96142578125
+  },
+  "all/hard": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 0.99462890625,
+    "1.0": 0.833984375,
+    "1.5": 0.5908203125,
+    "2.0": 0.388671875,
+    "3.0": 0.1435546875
+   },
+   "translation_only": 0.9970703125,
+   "rotation_only": 0.88671875
+  },
+  "all/all": {
+   "combined": {
+    "0.0": 1.0,
+    "0.5": 0.9978841145833334,
+    "1.0": 0.9112955729166666,
+    "1.5": 0.7078450520833334,
+    "2.0": 0.4918619791666667,
+    "3.0": 0.19563802083333334
+   },
+   "translation_only": 0.9990234375,
+   "rotation_only": 0.9407552083333334
+  }
+ },
+ "sensitivity_monotone": true,
+ "descriptor_correlation": {
+  "design_clearance_m": {
+   "spearman_rho": 0.7758854382130141,
+   "p_value": 1.6446644564960788e-20
+  },
+  "tip_sensitivity": {
+   "spearman_rho": 0.8554920955680011,
+   "p_value": 1.2967202973598524e-28
+  },
+  "lever_arm_m": {
+   "spearman_rho": -0.32359810392917154,
+   "p_value": 0.0012996195991642513
+  },
+  "payload_length_m": {
+   "spearman_rho": -0.32359810392917154,
+   "p_value": 0.0012996195991642513
+  },
+  "min_nominal_clearance_m": {
+   "spearman_rho": 0.5829281079445371,
+   "p_value": 4.621716922788522e-10
+  },
+  "constrained_path_length_m": {
+   "spearman_rho": -0.6443949070978567,
+   "p_value": 1.4018268687908104e-12
+  },
+  "portals": {
+   "spearman_rho": -0.03115188836079722,
+   "p_value": 0.7631859223789224
+  }
+ },
+ "tip_sensitivity_within_family": {
+  "rack": {
+   "spearman_rho": 0.8924229570949541,
+   "p_value": 4.643248637066705e-09
+  },
+  "rebar": {
+   "spearman_rho": 0.900152464902914,
+   "p_value": 2.121856775627446e-09
+  },
+  "lathe": {
+   "spearman_rho": 0.7672214559967715,
+   "p_value": 1.2177264336803047e-05
+  },
+  "tote": {
+   "spearman_rho": 0.9441823324559225,
+   "p_value": 4.356692286237152e-12
+  }
+ },
+ "variance": {
+  "rack/easy": {
+   "between_task_sd": 0.016962817135681544,
+   "within_task_binomial_se_256": 0.015772599219256368
+  },
+  "rack/medium": {
+   "between_task_sd": 0.020564202871303883,
+   "within_task_binomial_se_256": 0.018717403688240316
+  },
+  "rack/hard": {
+   "between_task_sd": 0.038782478468513515,
+   "within_task_binomial_se_256": 0.024777567297588426
+  },
+  "rebar/easy": {
+   "between_task_sd": 0.018551015849127998,
+   "within_task_binomial_se_256": 0.011277101971974813
+  },
+  "rebar/medium": {
+   "between_task_sd": 0.043598270054965645,
+   "within_task_binomial_se_256": 0.01733527380217358
+  },
+  "rebar/hard": {
+   "between_task_sd": 0.03704323287890159,
+   "within_task_binomial_se_256": 0.023310555952283724
+  },
+  "lathe/easy": {
+   "between_task_sd": 0.013369585436061315,
+   "within_task_binomial_se_256": 0.013469284967476753
+  },
+  "lathe/medium": {
+   "between_task_sd": 0.019412305225514223,
+   "within_task_binomial_se_256": 0.013784185687235094
+  },
+  "lathe/hard": {
+   "between_task_sd": 0.02023697110000544,
+   "within_task_binomial_se_256": 0.023062386384544567
+  },
+  "tote/easy": {
+   "between_task_sd": 0.006519710628095939,
+   "within_task_binomial_se_256": 0.005149790445712366
+  },
+  "tote/medium": {
+   "between_task_sd": 0.006845895170973938,
+   "within_task_binomial_se_256": 0.010367895232983334
+  },
+  "tote/hard": {
+   "between_task_sd": 0.02370913093994496,
+   "within_task_binomial_se_256": 0.021111261198820213
+  }
+ }
+}

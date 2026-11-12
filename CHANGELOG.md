@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.4.0-dev — 2026-11-11
+
+- Validation of v0.3 (`gosuite.validate`): reproducible and numerically stable, with a valid difficulty measure, but 93% of reference failures happen at the goal state. The best achievable success was 72.8% against 69.1% for the oracle, leaving too little room to show robust planning (docs/BENCHMARK_ASSESSMENT_v0.3.md).
+- New v0.4 suite (`SUITE_v0.4.md`, `data/suite_v0.4`): the same four applications, rebuilt so that the risk is planner-controllable. Level-controlled obstacles near the opening are passed by the payload tip (largest lever arm); goals keep 25–45 mm slack.
+- Two oracle witnesses per task: a risk-aware one (cross-entropy search on planning-stream draws, `gosuite/robust.py`) and a straight one. Their gap on the evaluation draws measures the headroom.
+- Baselines: OMPL adapter (RRTConnect, BIT\*, ...; margin, scenario and clearance-cost options), a keyframe-guided planner and deadline-bounded shortcutting. The report gains a feasible-episode (path-attributable) success column.
+- The validation report generator (headroom, step convergence, sensitivity, descriptors, variance) runs on both suites.
+- Results (validation): at the hard level the risk-aware oracle beats the straight one by 25.8 points (13.5 at medium); goal-state failure at hard is 13.4%. The keyframe-guided baseline matches the straight oracle (about 77%).
+- Reproducibility: v0.4 regenerates byte-identically. The v0.3 data was produced by the generator at commit 3c8dba0; the current generator adds metadata fields, so regenerate v0.3 from that commit for byte-identical files.
+
 ## v0.3.0-dev — 2026-11-11
 
 - New multi-environment suite `gosuite` (`SUITE_v0.3.md`): four application families (rack bay delivery, rebar cage threading, lathe chuck loading, kitting tote insertion) x three clearance levels (20 / 10 / 5 mm per side) x 2 dev + 6 test geometries = 96 tasks.

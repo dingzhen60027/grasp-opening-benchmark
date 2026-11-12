@@ -1,0 +1,554 @@
+{
+ "rack_easy_dev_00": [],
+ "rack_easy_dev_01": [],
+ "rack_easy_test_00": [],
+ "rack_easy_test_01": [],
+ "rack_easy_test_02": [],
+ "rack_easy_test_03": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 5,
+   "u": 1.0
+  }
+ ],
+ "rack_easy_test_04": [],
+ "rack_easy_test_05": [],
+ "rack_medium_dev_00": [
+  {
+   "attempt": 0,
+   "reason": "robot_environment",
+   "segment": 4,
+   "u": 1.0,
+   "detail": {
+    "obstacle": "source_cradle_1",
+    "link": "wrist_3_link"
+   }
+  }
+ ],
+ "rack_medium_dev_01": [],
+ "rack_medium_test_00": [
+  {
+   "attempt": 0,
+   "reason": "robot_environment",
+   "segment": 5,
+   "u": 0.1357142857142857,
+   "detail": {
+    "obstacle": "source_cradle_1",
+    "link": "wrist_3_link"
+   }
+  }
+ ],
+ "rack_medium_test_01": [],
+ "rack_medium_test_02": [],
+ "rack_medium_test_03": [],
+ "rack_medium_test_04": [],
+ "rack_medium_test_05": [],
+ "rack_hard_dev_00": [],
+ "rack_hard_dev_01": [],
+ "rack_hard_test_00": [],
+ "rack_hard_test_01": [],
+ "rack_hard_test_02": [],
+ "rack_hard_test_03": [],
+ "rack_hard_test_04": [],
+ "rack_hard_test_05": [],
+ "rebar_easy_dev_00": [],
+ "rebar_easy_dev_01": [],
+ "rebar_easy_test_00": [],
+ "rebar_easy_test_01": [],
+ "rebar_easy_test_02": [],
+ "rebar_easy_test_03": [],
+ "rebar_easy_test_04": [],
+ "rebar_easy_test_05": [
+  {
+   "attempt": 0,
+   "reason": "robust_witness_not_trackable"
+  }
+ ],
+ "rebar_medium_dev_00": [],
+ "rebar_medium_dev_01": [],
+ "rebar_medium_test_00": [],
+ "rebar_medium_test_01": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.65
+  },
+  {
+   "attempt": 1,
+   "reason": "robot_environment",
+   "segment": 4,
+   "u": 0.3263157894736842,
+   "detail": {
+    "obstacle": "source_table",
+    "link": "upper_arm_link"
+   }
+  }
+ ],
+ "rebar_medium_test_02": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.6304347826086957
+  },
+  {
+   "attempt": 1,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.686046511627907
+  },
+  {
+   "attempt": 2,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.6491228070175439
+  }
+ ],
+ "rebar_medium_test_03": [],
+ "rebar_medium_test_04": [],
+ "rebar_medium_test_05": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.7142857142857142
+  },
+  {
+   "attempt": 1,
+   "reason": "robot_self",
+   "segment": 2,
+   "u": 0.6338797814207651,
+   "detail": {
+    "links": [
+     "upper_arm_link",
+     "robotiq_85_left_finger_tip_link"
+    ]
+   }
+  },
+  {
+   "attempt": 2,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.6947368421052631
+  }
+ ],
+ "rebar_hard_dev_00": [],
+ "rebar_hard_dev_01": [],
+ "rebar_hard_test_00": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.6271186440677966
+  }
+ ],
+ "rebar_hard_test_01": [],
+ "rebar_hard_test_02": [
+  {
+   "attempt": 0,
+   "reason": "design:lap bar too deep for the bar length / cage"
+  }
+ ],
+ "rebar_hard_test_03": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.6457142857142857
+  }
+ ],
+ "rebar_hard_test_04": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.7666666666666667
+  },
+  {
+   "attempt": 1,
+   "reason": "ik",
+   "segment": 2,
+   "u": 0.695364238410596
+  }
+ ],
+ "rebar_hard_test_05": [],
+ "lathe_easy_dev_00": [
+  {
+   "attempt": 0,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.40476190476190477,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  }
+ ],
+ "lathe_easy_dev_01": [
+  {
+   "attempt": 0,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.3953488372093023,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  },
+  {
+   "attempt": 1,
+   "reason": "robot_self",
+   "segment": 4,
+   "u": 0.8378378378378379,
+   "detail": {
+    "links": [
+     "upper_arm_link",
+     "wrist_2_link"
+    ]
+   }
+  },
+  {
+   "attempt": 2,
+   "reason": "robust_witness_not_trackable"
+  },
+  {
+   "attempt": 3,
+   "reason": "incidental_clearance:front_wall_left"
+  },
+  {
+   "attempt": 4,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.6153846153846154,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  }
+ ],
+ "lathe_easy_test_00": [
+  {
+   "attempt": 0,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.5384615384615384,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  },
+  {
+   "attempt": 1,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.47619047619047616,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  }
+ ],
+ "lathe_easy_test_01": [
+  {
+   "attempt": 0,
+   "reason": "robot_self",
+   "segment": 4,
+   "u": 0.7027027027027027,
+   "detail": {
+    "links": [
+     "upper_arm_link",
+     "wrist_2_link"
+    ]
+   }
+  }
+ ],
+ "lathe_easy_test_02": [],
+ "lathe_easy_test_03": [],
+ "lathe_easy_test_04": [
+  {
+   "attempt": 0,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.42857142857142855,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  },
+  {
+   "attempt": 1,
+   "reason": "robot_self",
+   "segment": 4,
+   "u": 0.8064516129032258,
+   "detail": {
+    "links": [
+     "upper_arm_link",
+     "wrist_2_link"
+    ]
+   }
+  }
+ ],
+ "lathe_easy_test_05": [
+  {
+   "attempt": 0,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.5789473684210527,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  },
+  {
+   "attempt": 1,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.41463414634146345,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  }
+ ],
+ "lathe_medium_dev_00": [],
+ "lathe_medium_dev_01": [
+  {
+   "attempt": 0,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.5945945945945946,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  }
+ ],
+ "lathe_medium_test_00": [
+  {
+   "attempt": 0,
+   "reason": "incidental_clearance:front_wall_left"
+  }
+ ],
+ "lathe_medium_test_01": [
+  {
+   "attempt": 0,
+   "reason": "robot_self",
+   "segment": 4,
+   "u": 0.675,
+   "detail": {
+    "links": [
+     "upper_arm_link",
+     "wrist_2_link"
+    ]
+   }
+  }
+ ],
+ "lathe_medium_test_02": [],
+ "lathe_medium_test_03": [
+  {
+   "attempt": 0,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.37209302325581395,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  }
+ ],
+ "lathe_medium_test_04": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 3,
+   "u": 0.9047619047619048
+  },
+  {
+   "attempt": 1,
+   "reason": "incidental_clearance:front_wall_left"
+  }
+ ],
+ "lathe_medium_test_05": [
+  {
+   "attempt": 0,
+   "reason": "design:pre-insertion pose inside the inner reach limit"
+  }
+ ],
+ "lathe_hard_dev_00": [
+  {
+   "attempt": 0,
+   "reason": "robot_self",
+   "segment": 4,
+   "u": 0.875,
+   "detail": {
+    "links": [
+     "upper_arm_link",
+     "wrist_2_link"
+    ]
+   }
+  }
+ ],
+ "lathe_hard_dev_01": [],
+ "lathe_hard_test_00": [
+  {
+   "attempt": 0,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.45,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  },
+  {
+   "attempt": 1,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.5238095238095237,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  },
+  {
+   "attempt": 2,
+   "reason": "payload_environment",
+   "segment": 2,
+   "u": 0.4318181818181818,
+   "detail": {
+    "obstacle": "front_wall_left"
+   }
+  },
+  {
+   "attempt": 3,
+   "reason": "robot_self",
+   "segment": 4,
+   "u": 0.8484848484848485,
+   "detail": {
+    "links": [
+     "upper_arm_link",
+     "wrist_2_link"
+    ]
+   }
+  },
+  {
+   "attempt": 4,
+   "reason": "design:pre-insertion pose inside the inner reach limit"
+  }
+ ],
+ "lathe_hard_test_01": [],
+ "lathe_hard_test_02": [],
+ "lathe_hard_test_03": [
+  {
+   "attempt": 0,
+   "reason": "incidental_clearance:front_wall_left"
+  },
+  {
+   "attempt": 1,
+   "reason": "robust_witness_not_trackable"
+  },
+  {
+   "attempt": 2,
+   "reason": "robust_witness_not_trackable"
+  }
+ ],
+ "lathe_hard_test_04": [],
+ "lathe_hard_test_05": [],
+ "tote_easy_dev_00": [
+  {
+   "attempt": 0,
+   "reason": "design:ledge too far below the gripper at the goal"
+  },
+  {
+   "attempt": 1,
+   "reason": "design:ledge too far below the gripper at the goal"
+  }
+ ],
+ "tote_easy_dev_01": [],
+ "tote_easy_test_00": [],
+ "tote_easy_test_01": [],
+ "tote_easy_test_02": [],
+ "tote_easy_test_03": [
+  {
+   "attempt": 0,
+   "reason": "design:ledge too far below the gripper at the goal"
+  }
+ ],
+ "tote_easy_test_04": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.983695652173913
+  }
+ ],
+ "tote_easy_test_05": [],
+ "tote_medium_dev_00": [],
+ "tote_medium_dev_01": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9906103286384976
+  }
+ ],
+ "tote_medium_test_00": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.8978494623655915
+  }
+ ],
+ "tote_medium_test_01": [],
+ "tote_medium_test_02": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9471153846153847
+  },
+  {
+   "attempt": 1,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.8223350253807106
+  }
+ ],
+ "tote_medium_test_03": [],
+ "tote_medium_test_04": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9447513812154695
+  },
+  {
+   "attempt": 1,
+   "reason": "layout_overlap:tote_table/source_leg_0.52_-0.17"
+  }
+ ],
+ "tote_medium_test_05": [],
+ "tote_hard_dev_00": [],
+ "tote_hard_dev_01": [],
+ "tote_hard_test_00": [],
+ "tote_hard_test_01": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9273743016759777
+  },
+  {
+   "attempt": 1,
+   "reason": "layout_overlap:tote_table/source_leg_0.52_-0.17"
+  },
+  {
+   "attempt": 2,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9463414634146341
+  }
+ ],
+ "tote_hard_test_02": [
+  {
+   "attempt": 0,
+   "reason": "ik",
+   "segment": 1,
+   "u": 0.9223300970873786
+  }
+ ],
+ "tote_hard_test_03": [],
+ "tote_hard_test_04": [],
+ "tote_hard_test_05": []
+}

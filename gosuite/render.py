@@ -21,9 +21,16 @@ from .task import reference_points
 from .world import SuiteWorld
 
 HIDE_FOR_CLOSEUP = {'lathe': ('roof', 'front_wall_top'), 'rack': ('deck_3', 'beam_3_0', 'beam_3_1', 'rear_guard')}
+HIDE_FOR_CLOSEUP_V04 = dict(HIDE_FOR_CLOSEUP, lathe=('roof', 'front_wall_top', 'side_wall_pos', 'side_wall_neg', 'front_wall_left', 'front_wall_right'))
 HIDDEN_NOTE = {'lathe': 'machine roof and door lintel hidden', 'rack': 'upper shelf hidden'}
+HIDDEN_NOTE_V04 = dict(HIDDEN_NOTE, lathe='machine roof and walls hidden')
 FAMILY_TITLE = {'rack': 'F1 Rack bay delivery', 'rebar': 'F2 Rebar cage threading', 'lathe': 'F3 Lathe chuck loading',
                 'tote': 'F4 Kitting tote insertion'}
+FAMILY_TITLE_V04 = dict(FAMILY_TITLE, lathe='F3 Machine tending (axial loading)')
+
+
+def is_v04(scene):
+    return scene.get('generator', {}).get('suite_version') == 'v0.4'
 
 
 def font(size, bold=False):
@@ -74,6 +81,11 @@ def cameras(scene):
     lateral = np.array([-a_h[1], a_h[0], 0.])
     if fam == 'tote':
         close = (np.r_[g[:2] - .30 * radial + .22 * side, g[2] + .55], np.r_[g[:2], g[2] - .05])
+    elif fam == 'lathe' and is_v04(scene):
+        door = np.asarray(scene['task']['portals'][0]['pose'])
+        mid = door[:3, 3] + .14 * door[:3, 0]
+        mid[2] = g[2]
+        close = (mid + .62 * lateral + .18 * up - .05 * door[:3, 0], mid + .02 * door[:3, 0])
     elif fam == 'lathe':
         door = np.asarray(scene['task']['portals'][0]['pose'])[:3, 0]
         close = (g + .30 * door + .72 * up - .10 * axis, g + .04 * axis)
@@ -99,7 +111,8 @@ def annotate(img, title, footer):
 def footer_text(scene, hidden=False):
     ds = scene['design']
     c = 1000 * ds['clearance_per_side_m']
-    note = f"  |  {HIDDEN_NOTE[scene['family']]}" if hidden and scene['family'] in HIDDEN_NOTE else ''
+    notes = HIDDEN_NOTE_V04 if is_v04(scene) else HIDDEN_NOTE
+    note = f"  |  {notes[scene['family']]}" if hidden and scene['family'] in notes else ''
     return f"{scene['id']}  |  clearance {c:.0f} mm/side at {ds['tightest_feature']}  |  payload {1000 * scene['payload']['size'][0]:.0f} mm{note}"
 
 
@@ -116,7 +129,7 @@ def render_task(job):
         (wide_eye, wide_t), (close_eye, close_t) = cameras(scene)
         start = snapshot(world, path[idx[0]], wide_eye, wide_t, width, height)
         aligned = snapshot(world, path[idx[1]], wide_eye, wide_t, width, height)
-        for name in HIDE_FOR_CLOSEUP.get(fam, ()):
+        for name in (HIDE_FOR_CLOSEUP_V04 if is_v04(scene) else HIDE_FOR_CLOSEUP).get(fam, ()):
             for body, n in list(world.names.items()):
                 if n == name:
                     p.removeBody(body, physicsClientId=world.cid)
@@ -124,8 +137,9 @@ def render_task(job):
         goal = snapshot(world, path[idx[3]], close_eye, close_t, width, height)
     finally:
         world.close()
-    hidden = fam in HIDE_FOR_CLOSEUP
-    panels = [annotate(start, f'1  Payload grasped at the source  -  {FAMILY_TITLE[fam]}', footer_text(scene)),
+    hidden = fam in (HIDE_FOR_CLOSEUP_V04 if is_v04(scene) else HIDE_FOR_CLOSEUP)
+    titles = FAMILY_TITLE_V04 if is_v04(scene) else FAMILY_TITLE
+    panels = [annotate(start, f'1  Payload grasped at the source  -  {titles[fam]}', footer_text(scene)),
               annotate(aligned, '2  Aligned in front of the opening', footer_text(scene)),
               annotate(inside, '3  Inside the constrained passage', footer_text(scene, hidden)),
               annotate(goal, '4  Goal pose reached', footer_text(scene, hidden))]
@@ -178,10 +192,12 @@ def main():
         by = {(f, l): i for i, f, l in done}
         for fam in families:
             Image.open(tasks / f"{by[(fam, 'medium')]}_workflow.png").save(out / f'{fam}_workflow.png', optimize=True)
+        version = manifest.get('suite_version', 'v0.3')
         grid([Image.open(tasks / f"{by[(f, 'medium')]}_inside.png") for f in families], 2, (a.width, a.height),
-             'gosuite v0.3 - four application families (medium level, test split)').save(out / 'overview.png', optimize=True)
+             f'gosuite {version} - four application families (medium level, test split)').save(out / 'overview.png', optimize=True)
         grid([Image.open(tasks / f"{by[(f, l)]}_goal.png") for f in families for l in levels], 3, (a.width * 2 // 3, a.height * 2 // 3),
-             'Difficulty levels: clearance per side 20 / 10 / 5 mm (columns), one row per family').save(out / 'levels.png', optimize=True)
+             'Difficulty levels: clearance ' + ' / '.join(f"{1000 * manifest['levels'][l]['clearance_per_side_m']:.0f}" for l in levels)
+             + ' mm per side (columns), one row per family').save(out / 'levels.png', optimize=True)
     print('rendered', len(done), 'tasks into', out)
 
 

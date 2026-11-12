@@ -54,11 +54,11 @@ def horizontal_source(lever):
     return obs, start
 
 
-def vertical_source(lever, yaw=0.):
+def vertical_source(lever, yaw=0., holder_height=.10):
     """Source table with a vertical holder; the rod hangs from the gripper, 80 mm above the holder."""
     obs = source_table()
-    holder_top = SOURCE_TABLE_TOP + .10
-    obs.append(box_at('source_holder', [.28, -.42, SOURCE_TABLE_TOP + .05], [.08, .08, .10], ORANGE, 'source_fixture'))
+    holder_top = SOURCE_TABLE_TOP + holder_height
+    obs.append(box_at('source_holder', [.28, -.42, SOURCE_TABLE_TOP + holder_height / 2], [.08, .08, holder_height], ORANGE, 'source_fixture'))
     for k, (x, y) in enumerate([(.16, -.44), (.40, -.34)]):
         obs.append(box_at(f'source_waiting_rod_{k}', [x, y, SOURCE_TABLE_TOP + .13], [.036, .036, .26], NEIGHBOR, 'source_stock'))
     start = tool_down([.28, -.42, holder_top + .08 + lever], yaw)

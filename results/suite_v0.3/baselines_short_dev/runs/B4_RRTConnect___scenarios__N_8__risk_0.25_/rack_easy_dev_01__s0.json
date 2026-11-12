@@ -1,0 +1,82 @@
+{
+ "task_id": "rack_easy_dev_01",
+ "family": "rack",
+ "level": "easy",
+ "split": "dev",
+ "label": "B4 RRTConnect + scenarios (N=8, risk 0.25)",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "scenarios": 8,
+  "risk": 0.25
+ },
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "672edf961acf913ba15868d2941b68dacb6eefddcf8120686fb52d52679cd5d6",
+ "planning_seconds": 85.55071324389428,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 8,
+  "risk": 0.25,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 6.640447808429599,
+  "raw_waypoints": 18,
+  "shortcut_attempts": 232,
+  "waypoints": 4,
+  "wall_seconds": 85.55068258754909,
+  "collision_checks": 20023
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_easy_dev_01",
+  "family": "rack",
+  "level": "easy",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 1902361908,
+  "path_joint_length_rad": 2.7900677364427544,
+  "ee_path_length_m": 0.9308181027584685,
+  "payload_min_clearance_m": 0.0030509328342726016,
+  "payload_clearance_p05_m": 0.004817809557608963,
+  "trajectory_states": 848,
+  "collision_count": 32,
+  "collision_rate": 0.5,
+  "collision_ci95": [
+   0.37232286289560673,
+   0.6276771371043932
+  ],
+  "success_count": 30,
+  "success_rate": 0.46875,
+  "success_ci95": [
+   0.34279652893962054,
+   0.5976901554016487
+  ],
+  "failures_by_reason": {
+   "payload_environment": 32,
+   "placement_height": 2
+  },
+  "colliding_obstacles": {
+   "target_guide_1_r": 19,
+   "target_guide_0_l": 13
+  },
+  "wall_seconds": 4.335600338876247,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1000001110101100001010001010100010101011101111001110100100000111",
+  "episode_collision": "0101110001010011110101110101011101010100010000110001011011011000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B4_RRTConnect___scenarios__N_8__risk_0.25_/rack_easy_dev_01__s0.npy",
+ "trajectory_sha256": "55b753938ba26814b17a27713ebf6cbfdca1967862066f97d81dcb27952a4092",
+ "task_success_rate": 0.46875
+}

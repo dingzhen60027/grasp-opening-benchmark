@@ -1,0 +1,110 @@
+{
+  "suite": "gosuite",
+  "version": "0.4.0",
+  "data": "data/suite_v0.4",
+  "robot": "UR5e + Robotiq 2F-85 (manufacturer models, assets/ur5e_robotiq)",
+  "families": {
+    "rack": "deliver a tube into a bay past intruding brackets (shallow and deep, opposite sides) onto saddles with slack",
+    "rebar": "thread a bar into a cage through generous stirrups past a tie hook (above) and a lap bar (side)",
+    "lathe": "load a bar axially through a machine door onto a fixture pad past a coolant nozzle (above) and a chip-guard lip (below)",
+    "tote": "lower a rod into a roomy tote cell past a half-open lid flap (rim) and a cell ledge (lower, opposite side)"
+  },
+  "levels": {
+    "easy": {
+      "clearance_of_goal_line_at_intrusions_m": 0.016
+    },
+    "medium": {
+      "clearance_of_goal_line_at_intrusions_m": 0.01
+    },
+    "hard": {
+      "clearance_of_goal_line_at_intrusions_m": 0.006
+    }
+  },
+  "splits": {
+    "dev": 2,
+    "test": 6,
+    "unit": "one sampled geometry per task",
+    "per": "family x level",
+    "total_tasks": 96
+  },
+  "split_policy": "tune any planner parameter on dev only; test is frozen by the SHA-256 hashes in the manifest",
+  "task_semantics": {
+    "validity": "no robot-environment, payload-environment, robot self or payload-arm contact; keep-in rules per state",
+    "keep_in": "payload parts inside a restricted box must lie inside the allowed box (e.g. only the target bay may be entered)",
+    "portals": "a payload reference point crosses each declared opening, inside its rectangle, in order",
+    "goal": "payload pose region around the nominal goal (10-12 mm, 5 deg); q_goal_reference is one IK solution",
+    "placement": "rack only: centreline over both saddles, 2-20 mm pre-release gap"
+  },
+  "uncertainty": {
+    "model": "T_WO = T_WE @ [Exp_SO3(phi), delta_t] @ T_EO, TCP frame, one fixed draw per execution",
+    "translation_std_m": 0.002,
+    "rotation_std_deg": 1.0,
+    "calibrated": false,
+    "scale_sweep": [
+      0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "ablations": [
+      "combined",
+      "translation_only",
+      "rotation_only"
+    ]
+  },
+  "evaluation": {
+    "joint_step_rad": 0.0025,
+    "episodes_main": 256,
+    "episodes_headline": 1024,
+    "common_random_numbers": "evaluation draws come from rng([evaluation_seed, 0]) and are identical for every method",
+    "planning_samples": "planners may only use rng([evaluation_seed, 1, seed]) via PlanningProblem.planning_errors",
+    "episode_failure": "first payload-environment or payload-arm contact, or any violated task rule",
+    "interval": "Clopper-Pearson per run; bootstrap over tasks for aggregates"
+  },
+  "planning": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "budget_seconds_main": 120,
+    "budget_seconds_hard_subset": 600,
+    "budget_note": "a 30 s dev smoke run solved few rebar/lathe tasks with RRT-Connect; report a budget sweep {30, 120, 600} if compute allows",
+    "robust_variant_semantics": "margin / scenario conditions apply to all states except the given start and goal configurations",
+    "planning_failure_counts_as_task_failure": true,
+    "witness_access": "forbidden except for the labelled reference oracle"
+  },
+  "metrics": [
+    "planning success",
+    "task success (unconditional)",
+    "collision rate given a valid path",
+    "planning time",
+    "joint and TCP path length",
+    "minimum nominal payload clearance"
+  ],
+  "scope": {
+    "kinematic_only": true,
+    "contact_dynamics_or_slip": false,
+    "tracking_error": false,
+    "continuous_collision_certificate": false,
+    "real_robot": false
+  },
+  "design_principle": "level-controlled intrusions sit near the opening and are passed by the payload TIP (largest lever arm) during insertion; at the goal only short-lever points are next to them and goals keep 25-30 mm slack, so the risk lives in the path, not in the goal state",
+  "witnesses": {
+    "reference": "risk-optimised insertion (cross-entropy search on planning-stream draws, seed 9001)",
+    "reference_nominal": "straight insertion along the goal line",
+    "evaluation": "both on the common evaluation draws"
+  },
+  "acceptance": {
+    "goal_state_failure_hard_max": 0.15,
+    "risk_aware_minus_straight_witness_min_points": 15,
+    "levels": [
+      "medium",
+      "hard"
+    ],
+    "stability": "step convergence, monotone sensitivity, descriptor validity, reproducibility"
+  }
+}

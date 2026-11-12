@@ -1,0 +1,177 @@
+{
+ "task_id": "rack_hard_dev_00",
+ "family": "rack",
+ "level": "hard",
+ "split": "dev",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "207e07234818f1c8ae81314f57d7b96a9dd0f2d7d9049f921f25790751ff097e",
+ "planning_seconds": 17.709000261500478,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 0,
+     "u": 0.9850746268656716
+    }
+   },
+   {
+    "approach_m": 0.07,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 0,
+     "u": 0.9290780141843972
+    }
+   },
+   {
+    "approach_m": 0.1,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 0,
+     "u": 0.8791946308724832
+    }
+   },
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.02,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 0.9925373134328358
+    }
+   },
+   {
+    "approach_m": 0.07,
+    "lift_m": 0.02,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 0.9361702127659575
+    }
+   },
+   {
+    "approach_m": 0.1,
+    "lift_m": 0.02,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 0.8926174496644295
+    }
+   },
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.03,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 1.0
+    }
+   },
+   {
+    "approach_m": 0.07,
+    "lift_m": 0.03,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 0.9432624113475178
+    }
+   },
+   {
+    "approach_m": 0.1,
+    "lift_m": 0.03,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 0.8993288590604027
+    }
+   },
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.04,
+    "keyframes": 3,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 5.530518555082381,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 2,
+   "waypoints": 2
+  },
+  "insertion_states": 146,
+  "wall_seconds": 17.708971700631082,
+  "collision_checks": 3812
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_hard_dev_00",
+  "family": "rack",
+  "level": "hard",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 4133360043,
+  "path_joint_length_rad": 5.5623365884704175,
+  "ee_path_length_m": 1.2694144299528438,
+  "payload_min_clearance_m": 0.004995418179461765,
+  "payload_clearance_p05_m": 0.0049972516787124745,
+  "trajectory_states": 1547,
+  "collision_count": 39,
+  "collision_rate": 0.609375,
+  "collision_ci95": [
+   0.47931542900088486,
+   0.7289644784402727
+  ],
+  "success_count": 23,
+  "success_rate": 0.359375,
+  "success_ci95": [
+   0.2431902910312127,
+   0.48903740183877037
+  ],
+  "failures_by_reason": {
+   "payload_environment": 39,
+   "placement_height": 2
+  },
+  "colliding_obstacles": {
+   "target_guide_0_l": 19,
+   "target_guide_0_r": 17,
+   "target_saddle_1": 2,
+   "target_guide_1_r": 1
+  },
+  "wall_seconds": 9.187813151627779,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0001111000100101100100010100100010100110011000010010010011000000",
+  "episode_collision": "1110000110011010011001101011011101011001100111101101101100111111"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/rack_hard_dev_00__s0.npy",
+ "trajectory_sha256": "874873be0c29c126ddf2f3da9603ed436bcf1c84906b7e49bee5b3aabdc64056",
+ "task_success_rate": 0.359375
+}

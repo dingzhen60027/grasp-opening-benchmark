@@ -27,16 +27,22 @@ def main():
         result=json.loads(file.read_text())
         if 'scene_sha256' in result:
             assert result['scene_sha256']==hashes[result.get('task_id',result.get('scene_id'))],file
-    # v0.3 suite: task and witness hashes, and every recorded run must point at the current task bytes.
-    suite=ROOT/'data/suite_v0.3';m=json.loads((suite/'manifest.json').read_text());suite_count=run_count=0
-    for entry in m['tasks']:
-        assert sha(suite/entry['file'])==entry['sha256'],entry['id']
-        assert sha(suite/entry['witness_file'])==entry['witness_sha256'],entry['id'];suite_count+=1
-    hashes={e['id']:e['sha256'] for e in m['tasks']}
-    for file in (ROOT/'results/suite_v0.3').glob('*/runs/*/*.json'):
-        record=json.loads(file.read_text())
-        assert record['task_sha256']==hashes[record['task_id']],file;run_count+=1
-    print(f'Verified {asset_count} asset hashes, {task_count} legacy tasks, {suite_count} v0.3 tasks, '
-          f'{run_count} v0.3 run records and recorded rack source hashes.')
+    # gosuite suites: task and witness hashes; every recorded run must point at the current task bytes.
+    counts={}
+    for version in ['v0.3','v0.4']:
+        suite=ROOT/'data'/f'suite_{version}';m=json.loads((suite/'manifest.json').read_text());n_tasks=n_runs=0
+        for entry in m['tasks']:
+            assert sha(suite/entry['file'])==entry['sha256'],entry['id']
+            assert sha(suite/entry['witness_file'])==entry['witness_sha256'],entry['id']
+            if 'witness_nominal_file' in entry:
+                assert sha(suite/entry['witness_nominal_file'])==entry['witness_nominal_sha256'],entry['id']
+            n_tasks+=1
+        hashes={e['id']:e['sha256'] for e in m['tasks']}
+        for file in (ROOT/'results'/f'suite_{version}').glob('*/runs/*/*.json'):
+            record=json.loads(file.read_text())
+            assert record['task_sha256']==hashes[record['task_id']],file;n_runs+=1
+        counts[version]=(n_tasks,n_runs)
+    print(f'Verified {asset_count} asset hashes, {task_count} legacy tasks, '
+          + ', '.join(f'{v}: {a} tasks and {b} run records' for v,(a,b) in counts.items()) + ', and recorded rack source hashes.')
 
 if __name__=='__main__':main()

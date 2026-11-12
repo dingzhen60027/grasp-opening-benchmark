@@ -1,0 +1,30 @@
+{
+  "name": "reference_witnesses_v0.4",
+  "description": "Both v0.4 oracles on every task: risk-aware witness and straight witness (difficulty and headroom calibration, not methods)",
+  "suite": "data/suite_v0.4",
+  "output": "results/suite_v0.4/reference",
+  "split": null,
+  "families": null,
+  "levels": null,
+  "seeds": [
+    0
+  ],
+  "budget_seconds": 1,
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step": 0.0025,
+  "workers": 20,
+  "planners": [
+    {
+      "label": "Reference (risk-aware oracle)",
+      "planner": "reference",
+      "params": {}
+    },
+    {
+      "label": "Reference (straight oracle)",
+      "planner": "reference_nominal",
+      "params": {}
+    }
+  ]
+}

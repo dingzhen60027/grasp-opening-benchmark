@@ -1,0 +1,66 @@
+{
+ "task_id": "lathe_easy_dev_00",
+ "family": "lathe",
+ "level": "easy",
+ "split": "dev",
+ "label": "Reference (risk-aware oracle)",
+ "planner": "reference",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 1,
+ "task_sha256": "08f14f22c313d343194a164d7f75d69529283b3329fb6c60e8ddcf04bb43a234",
+ "planning_seconds": 2.340320497751236e-05,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_easy_dev_00",
+  "family": "lathe",
+  "level": "easy",
+  "split": "dev",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 2126708647,
+  "path_joint_length_rad": 6.36767489496206,
+  "ee_path_length_m": 1.3463883645817631,
+  "payload_min_clearance_m": 0.013999995946884178,
+  "payload_clearance_p05_m": 0.01586438118430078,
+  "trajectory_states": 2135,
+  "collision_count": 8,
+  "collision_rate": 0.03125,
+  "collision_ci95": [
+   0.013586185897148498,
+   0.06064405087196582
+  ],
+  "success_count": 245,
+  "success_rate": 0.95703125,
+  "success_ci95": [
+   0.9244190662295707,
+   0.9783579593956968
+  ],
+  "failures_by_reason": {
+   "placement_height": 1,
+   "payload_environment": 8,
+   "goal_position": 2
+  },
+  "colliding_obstacles": {
+   "fixture_pad": 7,
+   "coolant_nozzle": 1
+  },
+  "wall_seconds": 21.3490072209388,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111111111111111111111111111111111111101110111111111111110110111111111111111111111111111111111111111111111111111111010111110111111111111111111111111111111110111111111111011111111111111111011111111111111111111101111111111111111111111111111111111111111111",
+  "episode_collision": "0000000000000000000000000000000000000000000001000000000000001001000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000001000000000000000000000000000000100000000000000000000010000000000000000000000000000000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.4/witnesses/lathe/dev/lathe_easy_dev_00.npy",
+ "trajectory_sha256": "a52264624305d2438e05572c4ab56dd1902cc97ed468ab6d49f5a26f815f6141",
+ "task_success_rate": 0.95703125
+}

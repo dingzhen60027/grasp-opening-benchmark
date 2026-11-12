@@ -1,0 +1,66 @@
+{
+ "task_id": "rack_medium_dev_01",
+ "family": "rack",
+ "level": "medium",
+ "split": "dev",
+ "label": "B0 Reference (oracle)",
+ "planner": "reference",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "e2c5e84d9327ea1f8c0fbf3a278d19ecefe4bce6327408ea64d183ed2dc61cd7",
+ "planning_seconds": 8.39531421661377e-05,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_medium_dev_01",
+  "family": "rack",
+  "level": "medium",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 2419569605,
+  "path_joint_length_rad": 8.870906976603239,
+  "ee_path_length_m": 1.8458599006691303,
+  "payload_min_clearance_m": 0.007999992060661326,
+  "payload_clearance_p05_m": 0.009997684348384607,
+  "trajectory_states": 2997,
+  "collision_count": 19,
+  "collision_rate": 0.296875,
+  "collision_ci95": [
+   0.18911737023672603,
+   0.42417079913545613
+  ],
+  "success_count": 39,
+  "success_rate": 0.609375,
+  "success_ci95": [
+   0.47931542900088486,
+   0.7289644784402727
+  ],
+  "failures_by_reason": {
+   "payload_environment": 19,
+   "placement_height": 6
+  },
+  "colliding_obstacles": {
+   "target_guide_0_r": 7,
+   "target_saddle_1": 4,
+   "target_guide_0_l": 8
+  },
+  "wall_seconds": 13.470674749463797,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1110111101101110000010111011111111101101111000101110101000000110",
+  "episode_collision": "0001000000010000011101000100000000000010000111000001010011111001"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.3/witnesses/rack/dev/rack_medium_dev_01.npy",
+ "trajectory_sha256": "e772b68578a4c371598f7f29ca635f6325386454260701530b946f46782a3e80",
+ "task_success_rate": 0.609375
+}

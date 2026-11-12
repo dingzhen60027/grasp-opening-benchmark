@@ -1,0 +1,35 @@
+{
+ "task_id": "rack_easy_dev_01",
+ "family": "rack",
+ "level": "easy",
+ "split": "dev",
+ "label": "B5 BIT* + clearance cost",
+ "planner": "ompl",
+ "params": {
+  "planner": "BITstar",
+  "objective": "clearance"
+ },
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "672edf961acf913ba15868d2941b68dacb6eefddcf8120686fb52d52679cd5d6",
+ "planning_seconds": 75.32348774466664,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "ompl_planner": "BITstar",
+  "range": null,
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "clearance",
+  "resolution_rad": 0.005,
+  "ompl_status": "Timeout",
+  "solve_seconds": 75.27379102259874,
+  "wall_seconds": 75.32345999684185,
+  "collision_checks": 29421
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

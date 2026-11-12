@@ -1,0 +1,85 @@
+{
+ "task_id": "rack_medium_dev_00",
+ "family": "rack",
+ "level": "medium",
+ "split": "dev",
+ "label": "B4 RRTConnect + scenarios (N=8, risk 0.25)",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "scenarios": 8,
+  "risk": 0.25
+ },
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "d2b3cc0f972b0570776e2cb1fb25fe9cb13e591de8a2de1c54f13a3d827ffdd5",
+ "planning_seconds": 85.55369603261352,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 8,
+  "risk": 0.25,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 14.188461198471487,
+  "raw_waypoints": 20,
+  "shortcut_attempts": 239,
+  "waypoints": 4,
+  "wall_seconds": 85.55366866104305,
+  "collision_checks": 20391
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_medium_dev_00",
+  "family": "rack",
+  "level": "medium",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3978793049,
+  "path_joint_length_rad": 2.7204128346994274,
+  "ee_path_length_m": 0.9877224853241038,
+  "payload_min_clearance_m": 0.0034900332287732356,
+  "payload_clearance_p05_m": 0.01797220948777024,
+  "trajectory_states": 864,
+  "collision_count": 16,
+  "collision_rate": 0.25,
+  "collision_ci95": [
+   0.1501555740852728,
+   0.3739904568818191
+  ],
+  "success_count": 42,
+  "success_rate": 0.65625,
+  "success_ci95": [
+   0.5269769612216835,
+   0.7705367575006611
+  ],
+  "failures_by_reason": {
+   "payload_environment": 16,
+   "placement_height": 6
+  },
+  "colliding_obstacles": {
+   "target_guide_0_l": 3,
+   "target_guide_1_l": 1,
+   "target_saddle_1": 5,
+   "target_guide_1_r": 5,
+   "deck_3": 2
+  },
+  "wall_seconds": 4.934393561445177,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1010100110011111101011111011110111011000100111001001111111011101",
+  "episode_collision": "0101011001000000010100000000001000000111010000100010000000100010"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B4_RRTConnect___scenarios__N_8__risk_0.25_/rack_medium_dev_00__s0.npy",
+ "trajectory_sha256": "dc840979f7e5d5143836dafdde3ffd745c73864439e6e33915f731e0b3b8e102",
+ "task_success_rate": 0.65625
+}

@@ -1,0 +1,79 @@
+{
+ "task_id": "tote_easy_dev_01",
+ "family": "tote",
+ "level": "easy",
+ "split": "dev",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "bab8943398fc526acadb69bd992d67bb5b4b51d5c318478bf4ffb4d4ff36739f",
+ "planning_seconds": 85.54301844350994,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 6.264428026042879,
+   "raw_waypoints": 4,
+   "shortcut_attempts": 2277,
+   "waypoints": 3
+  },
+  "insertion_states": 36,
+  "wall_seconds": 85.54298906028271,
+  "collision_checks": 35530
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "tote_easy_dev_01",
+  "family": "tote",
+  "level": "easy",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3042141514,
+  "path_joint_length_rad": 12.032773849567194,
+  "ee_path_length_m": 4.991808568720701,
+  "payload_min_clearance_m": 0.008795682887057408,
+  "payload_clearance_p05_m": 0.027007672647373963,
+  "trajectory_states": 2902,
+  "collision_count": 0,
+  "collision_rate": 0.0,
+  "collision_ci95": [
+   0.0,
+   0.05600908938663656
+  ],
+  "success_count": 64,
+  "success_rate": 1.0,
+  "success_ci95": [
+   0.9439909106133635,
+   1.0
+  ],
+  "failures_by_reason": {},
+  "colliding_obstacles": {},
+  "wall_seconds": 13.240794667042792,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111111111111111111111111111111111111111111111111111111111111",
+  "episode_collision": "0000000000000000000000000000000000000000000000000000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/tote_easy_dev_01__s0.npy",
+ "trajectory_sha256": "32282a7673657cf181d30a3214befa10a11da6621993b1f686fb11bc64bb2183",
+ "task_success_rate": 1.0
+}

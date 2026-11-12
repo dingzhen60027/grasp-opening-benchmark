@@ -1,0 +1,64 @@
+{
+ "task_id": "tote_hard_test_05",
+ "family": "tote",
+ "level": "hard",
+ "split": "test",
+ "label": "Reference (straight oracle)",
+ "planner": "reference_nominal",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 1,
+ "task_sha256": "687526038a128f219f5844a385bc323d9435ed36a1c8a1f8fce25f59901005d0",
+ "planning_seconds": 2.1993182599544525e-05,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "tote_hard_test_05",
+  "family": "tote",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 2174536872,
+  "path_joint_length_rad": 4.9066194626036586,
+  "ee_path_length_m": 1.2146968818846986,
+  "payload_min_clearance_m": 0.005999000976904284,
+  "payload_clearance_p05_m": 0.0059991246373365704,
+  "trajectory_states": 1659,
+  "collision_count": 88,
+  "collision_rate": 0.34375,
+  "collision_ci95": [
+   0.285729076431232,
+   0.4054373564992318
+  ],
+  "success_count": 168,
+  "success_rate": 0.65625,
+  "success_ci95": [
+   0.5945626435007683,
+   0.714270923568768
+  ],
+  "failures_by_reason": {
+   "payload_environment": 88
+  },
+  "colliding_obstacles": {
+   "cell_ledge": 50,
+   "lid_flap": 38
+  },
+  "wall_seconds": 14.024975813925266,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0111000101110111111110110111111111011110001111111100011110100110101111111010011100110111101001110010111100111011010110001111000110110111001111111110101110110111011011011010111110111011101011100001110011101101111111100100101101100011011101011010110001010110",
+  "episode_collision": "1000111010001000000001001000000000100001110000000011100001011001010000000101100011001000010110001101000011000100101001110000111001001000110000000001010001001000100100100101000001000100010100011110001100010010000000011011010010011100100010100101001110101001"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.4/witnesses_nominal/tote/test/tote_hard_test_05.npy",
+ "trajectory_sha256": "55c4e4f69e097bb9e3aa583af567d751afb8af5b28e623ed0d47993e9f37a2d6",
+ "task_success_rate": 0.65625
+}

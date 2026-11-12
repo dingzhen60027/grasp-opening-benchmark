@@ -1,0 +1,86 @@
+{
+ "task_id": "rack_hard_dev_01",
+ "family": "rack",
+ "level": "hard",
+ "split": "dev",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "ade505b24c3b113e96dc05a0d05caf83fd62400d322a886dc254a89527e29234",
+ "planning_seconds": 85.54225098714232,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 4.946435715071857,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 570,
+   "waypoints": 3
+  },
+  "insertion_states": 142,
+  "wall_seconds": 85.54221751261503,
+  "collision_checks": 33997
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_hard_dev_01",
+  "family": "rack",
+  "level": "hard",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 1648912217,
+  "path_joint_length_rad": 13.214441400670296,
+  "ee_path_length_m": 2.9564772772118744,
+  "payload_min_clearance_m": 0.00599574348903094,
+  "payload_clearance_p05_m": 0.005998157477146443,
+  "trajectory_states": 4515,
+  "collision_count": 34,
+  "collision_rate": 0.53125,
+  "collision_ci95": [
+   0.40230984459835123,
+   0.6572034710603795
+  ],
+  "success_count": 28,
+  "success_rate": 0.4375,
+  "success_ci95": [
+   0.31373475354849606,
+   0.5672410999335402
+  ],
+  "failures_by_reason": {
+   "payload_environment": 34,
+   "placement_height": 2
+  },
+  "colliding_obstacles": {
+   "bracket_shallow": 17,
+   "target_guide_0_r": 2,
+   "bracket_deep": 15
+  },
+  "wall_seconds": 21.30187605600804,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1000001110010000100110110110110100000010010011101011010000100111",
+  "episode_collision": "0110110001101111011001001001000011111101101100010100101111011000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/rack_hard_dev_01__s0.npy",
+ "trajectory_sha256": "0a5acc04fc1555b8373d2f7059d3bf3b79a7232c34875cdb796375af98250582",
+ "task_success_rate": 0.4375
+}

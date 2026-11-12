@@ -67,6 +67,110 @@ def success_by_family_level(out, label=None, metric='task_success', filename='ta
     return out / filename
 
 
+STRAIGHT_COLOR, ROBUST_COLOR, OBSTACLE_COLOR = '#eb6834', '#2a78d6', '#c9c7c0'
+
+
+def witness_comparison(suite, task_ids, out, filename='witness_comparison.png'):
+    """Payload-tip offset from the goal line vs insertion depth, straight vs risk-aware witness (v0.4)."""
+    import numpy as np
+    from matplotlib.patches import Rectangle
+    from .world import SuiteWorld
+    suite, out = Path(suite), Path(out)
+    manifest = {e['id']: e for e in json.loads((suite / 'manifest.json').read_text())['tasks']}
+    fig, axes = plt.subplots(1, len(task_ids), figsize=(3.3 * len(task_ids), 3.5), dpi=170, squeeze=False)
+    fig.patch.set_facecolor(SURFACE)
+    for ax, tid in zip(axes[0], task_ids):
+        entry = manifest[tid]
+        scene = json.loads((suite / entry['file']).read_text())
+        frame = np.asarray(scene['design']['insertion_frame'])
+        goal = np.asarray(scene['task']['goal']['object_pose'])
+        plane = _one_sided_plane(scene, frame, goal)
+        L = scene['payload']['size'][0]
+        world = SuiteWorld(scene)
+        try:
+            curves = {}
+            for kind, key in (('straight', 'witness_nominal_file'), ('risk-aware', 'witness_file')):
+                tips = []
+                for q in np.load(suite / entry[key])[::3]:
+                    world.set_q(q)
+                    pose = world.place_payload()
+                    tips.append(pose[:3, :3] @ np.array([L / 2, 0, 0]) + pose[:3, 3])
+                tips = np.array(tips)
+                depth = tips @ frame[:3, 0]
+                lateral = (tips - goal[:3, 3]) @ frame[:3, plane]
+                keep = depth > min(scene['design']['control_depths']) - .15
+                lat_mm = 1000 * lateral[keep]
+                lat_mm[np.abs(lat_mm) > 60] = np.nan   # the descent / approach before the insertion
+                curves[kind] = (depth[keep], lat_mm)
+        finally:
+            world.close()
+        x0 = min(scene['design']['control_depths'])
+        _style_axes(ax)
+        for o in scene['obstacles']:
+            if o.get('role') != 'intrusion':
+                continue
+            corners = _box_corners(o)
+            d = corners @ frame[:3, 0]
+            lat = 1000 * ((corners - goal[:3, 3]) @ frame[:3, plane])
+            if lat.min() < 0 < lat.max():   # constrains the other plane: not drawn here
+                continue
+            lat = np.clip(lat, -60, 60)
+            ax.add_patch(Rectangle((1000 * (d.min() - x0), lat.min()), 1000 * (d.max() - d.min()), lat.max() - lat.min(),
+                                   facecolor=OBSTACLE_COLOR, edgecolor='none', zorder=1))
+        for kind, color in (('straight', STRAIGHT_COLOR), ('risk-aware', ROBUST_COLOR)):
+            d, lat = curves[kind]
+            ax.plot(1000 * (d - x0), lat, color=color, linewidth=2, label=f'{kind} witness', zorder=3)
+        ax.axhline(0, color=GRID, linewidth=1, zorder=0)
+        ax.set_ylim(-60, 60)
+        ax.set_title(f"{tid}\n(clearance {1000 * scene['design']['clearance_per_side_m']:.0f} mm/side)", fontsize=8.5, color=INK)
+        ax.set_xlabel('tip depth past the first obstacle (mm)', fontsize=8, color=INK2)
+    axes[0][0].set_ylabel('tip offset from the goal line (mm)', fontsize=8, color=INK2)
+    axes[0][0].legend(loc='lower left', frameon=False, fontsize=7.5, labelcolor=INK)
+    fig.suptitle('Straight vs risk-aware insertion: the tip steers away from obstacles it passes with a long lever arm',
+                 x=.02, ha='left', fontsize=10.5, color=INK, fontweight='bold')
+    fig.subplots_adjust(left=.07, right=.99, top=.78, bottom=.17, wspace=.28)
+    fig.savefig(out / filename, facecolor=SURFACE)
+    plt.close(fig)
+    return out / filename
+
+
+def _box_corners(item):
+    import numpy as np
+    pose = np.asarray(item['pose'])
+    pts = []
+    for prt in item.get('parts') or [dict(size=item['size'], center=[0, 0, 0])]:
+        half = np.asarray(prt['size']) / 2
+        local = np.array([[sx, sy, sz] for sx in (-1, 1) for sy in (-1, 1) for sz in (-1, 1)]) * half + prt.get('center', [0, 0, 0])
+        pts.append(local @ pose[:3, :3].T + pose[:3, 3])
+    return np.vstack(pts)
+
+
+def _one_sided_plane(scene, frame, goal):
+    """Deviation plane ('y' -> 1, 'z' -> 2) in which most intrusions lie entirely on one side of the goal line."""
+    import numpy as np
+    best, score = 1, -1
+    for name in scene['design']['deviation_planes']:
+        axis = {'y': 1, 'z': 2}[name]
+        n = 0
+        for o in scene['obstacles']:
+            if o.get('role') == 'intrusion':
+                lat = (_box_corners(o) - goal[:3, 3]) @ frame[:3, axis]
+                n += not (lat.min() < 0 < lat.max())
+        if n > score:
+            best, score = axis, n
+    return best
+
+
+def _style_axes(ax):
+    ax.set_facecolor(SURFACE)
+    ax.yaxis.grid(True, color=GRID, linewidth=.6, zorder=0)
+    for side in ('top', 'right'):
+        ax.spines[side].set_visible(False)
+    for side in ('left', 'bottom'):
+        ax.spines[side].set_color(GRID)
+    ax.tick_params(length=0, labelsize=7.5, colors=INK2)
+
+
 def main():
     ap = argparse.ArgumentParser(description='Plot an experiment summary.')
     ap.add_argument('output')

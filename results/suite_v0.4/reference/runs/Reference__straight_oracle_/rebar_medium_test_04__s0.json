@@ -1,0 +1,65 @@
+{
+ "task_id": "rebar_medium_test_04",
+ "family": "rebar",
+ "level": "medium",
+ "split": "test",
+ "label": "Reference (straight oracle)",
+ "planner": "reference_nominal",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 1,
+ "task_sha256": "c1c7258a3420f991e7d37e13491e49146eaabfa7e492fa703553cd76ddf266ad",
+ "planning_seconds": 2.3385509848594666e-05,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rebar_medium_test_04",
+  "family": "rebar",
+  "level": "medium",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 1279098041,
+  "path_joint_length_rad": 6.631680728264515,
+  "ee_path_length_m": 1.3332266891350975,
+  "payload_min_clearance_m": 0.009994105112570591,
+  "payload_clearance_p05_m": 0.00999620654949592,
+  "trajectory_states": 2215,
+  "collision_count": 54,
+  "collision_rate": 0.2109375,
+  "collision_ci95": [
+   0.16261703487571286,
+   0.26608598714375586
+  ],
+  "success_count": 199,
+  "success_rate": 0.77734375,
+  "success_ci95": [
+   0.7213606439085632,
+   0.826781565042911
+  ],
+  "failures_by_reason": {
+   "payload_environment": 54,
+   "goal_position": 3
+  },
+  "colliding_obstacles": {
+   "tie_hook": 31,
+   "side_clip": 23
+  },
+  "wall_seconds": 23.903964288532734,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1110111111010011101011001101111101101100111111110011111111111111101010011011111111111110111111011111111111011111011001111001111101111011111011111001111110111110100111111111111001111111111011100101111110111101011111111010111011101111011111101111101110111000",
+  "episode_collision": "0001000000101100010100110010000010010011000000001100000000000000000101100100000000000001000000100000000000100000100110000110000000000100000000000110000001000001011000000000000110000000000100011010000001000010100000000101000100010000100000010000010001000111"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.4/witnesses_nominal/rebar/test/rebar_medium_test_04.npy",
+ "trajectory_sha256": "fb3df8f36917a6e0c6d8669b473873df8ba417565c631a078134664b60f7d2b6",
+ "task_success_rate": 0.77734375
+}

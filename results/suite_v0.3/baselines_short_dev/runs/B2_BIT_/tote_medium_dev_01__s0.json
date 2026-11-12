@@ -1,0 +1,34 @@
+{
+ "task_id": "tote_medium_dev_01",
+ "family": "tote",
+ "level": "medium",
+ "split": "dev",
+ "label": "B2 BIT*",
+ "planner": "ompl",
+ "params": {
+  "planner": "BITstar"
+ },
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "0b42c1848b974ab7b160a8a65a262b87f57097ace021118ca56f112186dd2346",
+ "planning_seconds": 73.97558248788118,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "ompl_planner": "BITstar",
+  "range": null,
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Timeout",
+  "solve_seconds": 73.92750157602131,
+  "wall_seconds": 73.97555597126484,
+  "collision_checks": 27900
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

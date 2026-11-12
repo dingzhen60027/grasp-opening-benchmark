@@ -1,0 +1,81 @@
+{
+ "task_id": "lathe_easy_dev_01",
+ "family": "lathe",
+ "level": "easy",
+ "split": "dev",
+ "label": "B3 RRTConnect + 3 mm margin",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "margin": 0.003
+ },
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "5a1038373942ebc5f33cd23bc798c9a5a2044ea055e6341ab3c94319b7c17265",
+ "planning_seconds": 85.5462342929095,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.003,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 46.15162317361683,
+  "raw_waypoints": 30,
+  "shortcut_attempts": 191,
+  "waypoints": 6,
+  "wall_seconds": 85.54620653577149,
+  "collision_checks": 33729
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_easy_dev_01",
+  "family": "lathe",
+  "level": "easy",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 1024376706,
+  "path_joint_length_rad": 3.619839051347451,
+  "ee_path_length_m": 1.1570008843106458,
+  "payload_min_clearance_m": 0.0036376360323255577,
+  "payload_clearance_p05_m": 0.004365291567265265,
+  "trajectory_states": 1134,
+  "collision_count": 25,
+  "collision_rate": 0.390625,
+  "collision_ci95": [
+   0.27103552155972727,
+   0.5206845709991151
+  ],
+  "success_count": 39,
+  "success_rate": 0.609375,
+  "success_ci95": [
+   0.47931542900088486,
+   0.7289644784402727
+  ],
+  "failures_by_reason": {
+   "payload_environment": 25
+  },
+  "colliding_obstacles": {
+   "chip_guard_lip": 20,
+   "coolant_nozzle": 2,
+   "machine_bed": 3
+  },
+  "wall_seconds": 5.653990942053497,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0111101101011111111010100011110110111101010001100101101110001100",
+  "episode_collision": "1000010010100000000101011100001001000010101110011010010001110011"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B3_RRTConnect___3_mm_margin/lathe_easy_dev_01__s0.npy",
+ "trajectory_sha256": "c59a4eddfe8788db4a728a93da7f04e60eaeaaada791d50f292137c8850778fc",
+ "task_success_rate": 0.609375
+}

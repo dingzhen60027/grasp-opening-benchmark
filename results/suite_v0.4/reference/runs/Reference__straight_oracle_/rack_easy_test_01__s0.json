@@ -1,0 +1,68 @@
+{
+ "task_id": "rack_easy_test_01",
+ "family": "rack",
+ "level": "easy",
+ "split": "test",
+ "label": "Reference (straight oracle)",
+ "planner": "reference_nominal",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 1,
+ "task_sha256": "ae9d301843b26285f73199967e05bb4e25582a199c3da210a55b090eb67f5c05",
+ "planning_seconds": 3.1338073313236237e-05,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_easy_test_01",
+  "family": "rack",
+  "level": "easy",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3171508973,
+  "path_joint_length_rad": 9.22726149848583,
+  "ee_path_length_m": 1.8993110956592525,
+  "payload_min_clearance_m": 0.013999993109219204,
+  "payload_clearance_p05_m": 0.015997536442669085,
+  "trajectory_states": 3127,
+  "collision_count": 28,
+  "collision_rate": 0.109375,
+  "collision_ci95": [
+   0.0739202552053246,
+   0.15418752971930533
+  ],
+  "success_count": 221,
+  "success_rate": 0.86328125,
+  "success_ci95": [
+   0.8150185039601171,
+   0.9028882831522811
+  ],
+  "failures_by_reason": {
+   "goal_position": 3,
+   "payload_environment": 28,
+   "placement_height": 4
+  },
+  "colliding_obstacles": {
+   "bracket_shallow": 9,
+   "bracket_deep": 8,
+   "target_saddle_1": 10,
+   "target_guide_0_l": 1
+  },
+  "wall_seconds": 45.5597357256338,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1011110111111110111111111111111111111010011111011111111111111111101011111011111011111111111111101111011111111111011011111111101111110111101111111001111110111111101010011111111111011111111111111111111111111110111101101110111111101111111011111111111110110110",
+  "episode_collision": "0000001000000001000000000000000000000101100000100000000000000000010100000100000100000000000000010000100000000000100100000000010000001000000000000010000001000000000100100000000000100000000000000000000000000000000010010001000000010000000100000000000000001001"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.4/witnesses_nominal/rack/test/rack_easy_test_01.npy",
+ "trajectory_sha256": "e5a3e06678486490ebb705470faac98a63dc28045084dcf5b0c21a0137f4bed5",
+ "task_success_rate": 0.86328125
+}

@@ -1,0 +1,34 @@
+{
+ "task_id": "lathe_hard_dev_00",
+ "family": "lathe",
+ "level": "hard",
+ "split": "dev",
+ "label": "B2 BIT*",
+ "planner": "ompl",
+ "params": {
+  "planner": "BITstar"
+ },
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "65ad5812723f7da5358bc875a69ebddeb9bedd60bc8cdbe8102bdad5bf941ff2",
+ "planning_seconds": 74.29175378195941,
+ "over_budget": false,
+ "status": "timeout",
+ "planner_info": {
+  "ompl_planner": "BITstar",
+  "range": null,
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Timeout",
+  "solve_seconds": 74.24349598865956,
+  "wall_seconds": 74.29172370582819,
+  "collision_checks": 27966
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

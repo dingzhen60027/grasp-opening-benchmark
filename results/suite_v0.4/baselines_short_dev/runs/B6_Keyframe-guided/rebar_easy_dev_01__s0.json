@@ -1,0 +1,85 @@
+{
+ "task_id": "rebar_easy_dev_01",
+ "family": "rebar",
+ "level": "easy",
+ "split": "dev",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "50a8dd0757cfb32afbc133d5ca391de5a2cbe134c103759d1cd7ce5b9a72faa5",
+ "planning_seconds": 5.741262214258313,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 4,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 4.291795618832111,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 2,
+   "waypoints": 2
+  },
+  "insertion_states": 113,
+  "wall_seconds": 5.741239661350846,
+  "collision_checks": 2307
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rebar_easy_dev_01",
+  "family": "rebar",
+  "level": "easy",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3788670389,
+  "path_joint_length_rad": 4.851204682670812,
+  "ee_path_length_m": 1.3615101493632762,
+  "payload_min_clearance_m": 0.015993475100388857,
+  "payload_clearance_p05_m": 0.015996116961553748,
+  "trajectory_states": 1273,
+  "collision_count": 4,
+  "collision_rate": 0.0625,
+  "collision_ci95": [
+   0.01729002738105528,
+   0.15236347342269677
+  ],
+  "success_count": 59,
+  "success_rate": 0.921875,
+  "success_ci95": [
+   0.8270216709957924,
+   0.9741461598320319
+  ],
+  "failures_by_reason": {
+   "payload_environment": 4,
+   "goal_position": 1
+  },
+  "colliding_obstacles": {
+   "tie_hook": 2,
+   "side_clip": 2
+  },
+  "wall_seconds": 9.952946067787707,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111111111111111101001111111111111111111011111111111111011111",
+  "episode_collision": "0000000000000000000010110000000000000000000000000000000000100000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/rebar_easy_dev_01__s0.npy",
+ "trajectory_sha256": "fc93f11ae081ceab438f821dc167d9561a871bf897b31b5984f65250c95fd696",
+ "task_success_rate": 0.921875
+}

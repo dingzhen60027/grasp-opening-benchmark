@@ -1,0 +1,25 @@
+{
+  "name": "baselines_short_v0.3",
+  "description": "Short test of the selected baselines on the dev split (1 seed, 90 s, 64 episodes): solvability, timing and pipeline check before the full test-split experiment",
+  "suite": "data/suite_v0.3",
+  "output": "results/suite_v0.3/baselines_short_dev",
+  "split": "dev",
+  "families": null,
+  "levels": null,
+  "seeds": [0],
+  "budget_seconds": 90,
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step": 0.0025,
+  "workers": 20,
+  "planners": [
+    {"label": "B0 Reference (oracle)", "planner": "reference", "params": {}},
+    {"label": "B1 RRTConnect", "planner": "ompl", "params": {"planner": "RRTConnect", "range": 0.25}},
+    {"label": "B2 BIT*", "planner": "ompl", "params": {"planner": "BITstar"}},
+    {"label": "B3 RRTConnect + 3 mm margin", "planner": "ompl", "params": {"planner": "RRTConnect", "range": 0.25, "margin": 0.003}},
+    {"label": "B4 RRTConnect + scenarios (N=8, risk 0.25)", "planner": "ompl", "params": {"planner": "RRTConnect", "range": 0.25, "scenarios": 8, "risk": 0.25}},
+    {"label": "B5 BIT* + clearance cost", "planner": "ompl", "params": {"planner": "BITstar", "objective": "clearance"}},
+    {"label": "B6 Keyframe-guided", "planner": "guided", "params": {}}
+  ]
+}

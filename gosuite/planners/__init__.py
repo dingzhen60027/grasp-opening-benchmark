@@ -2,16 +2,19 @@
 
 Built-ins
 ---------
-reference    Scripted feasibility witness (oracle; NOT a method, reads the witness).
-rrt_connect  Seeded joint-space RRT-Connect with shortcut smoothing.  Options:
-             margin=<m>     payload-environment safety margin (TAPOM-style inflation),
-             scenarios=<n>  every state must also be valid for n planning-time grasp samples
-                            (scenario / particle style uncertainty-aware baseline).
+reference    Feasibility witness (oracle; NOT a method).  In v0.4 this is the risk-optimised witness;
+reference_nominal  the straight v0.4 witness (oracle of a risk-unaware insertion along the goal line).
+rrt_connect  Pure-Python seeded RRT-Connect with shortcut smoothing (no extra dependency).
+ompl         OMPL planners (RRTConnect, BITstar, EITstar, PRM, KPIECE1, STRIDE, ...), with optional
+             margin (obstacle inflation), scenarios/risk (chance-constraint approximation) and a
+             clearance-integral objective.  Needs `pip install ompl==1.7.0`.
+guided       Keyframe-guided planner: keyframes from the declared openings + OMPL transfer.
 """
 import importlib
-from . import reference, rrt
+from . import guided, ompl_planner, reference, rrt
 
-PLANNERS = {'reference': reference.plan, 'rrt_connect': rrt.plan}
+PLANNERS = {'reference': reference.plan, 'reference_nominal': reference.plan, 'rrt_connect': rrt.plan,
+            'ompl': ompl_planner.plan, 'guided': guided.plan}
 
 
 def load_planner(spec):

@@ -8,6 +8,10 @@ Metric definitions (per run = one planner entry, task and seed):
 * task success       - fraction of evaluation episodes that are collision-free and satisfy every
                        task rule; a planning failure counts as 0 (unconditional);
 * collision | valid  - mean episode collision rate over runs with a valid nominal path;
+* feasible-episode success (path-attributable) - task success counted only on episodes whose
+                       GOAL state is itself feasible under the drawn grasp error (from
+                       gosuite.validate's goal_feasibility.json); episodes lost at the goal are lost by
+                       every path, so this isolates what the planner's path adds or loses;
 * times / lengths    - medians over runs with a valid nominal path.
 
 Confidence intervals for task success are 95% percentile bootstraps over TASKS (seed results of
@@ -27,14 +31,29 @@ def load_runs(out):
     return [json.loads(p.read_text()) for p in sorted(Path(out, 'runs').rglob('*.json'))]
 
 
-def flat(rec):
+def feasible_success(rec, feasibility):
+    """Success rate on the episodes whose goal state is feasible (CRN prefix: first n draws)."""
+    if feasibility is None or rec['task_id'] not in feasibility:
+        return None
+    ex = rec.get('execution') or {}
+    n = ex.get('episodes') or len(feasibility[rec['task_id']])
+    mask = [c == '0' for c in feasibility[rec['task_id']][:n]]
+    if not any(mask):
+        return None
+    if not ex:
+        return 0.
+    return sum(s == '1' for s, m in zip(ex['episode_success'], mask) if m) / sum(mask)
+
+
+def flat(rec, feasibility=None):
     ex = rec.get('execution') or {}
     return dict(label=rec['label'], planner=rec['planner'], task_id=rec['task_id'], family=rec['family'], level=rec['level'],
                 split=rec['split'], seed=rec['seed'], status=rec['status'], planning_seconds=round(rec['planning_seconds'], 3),
                 over_budget=rec['over_budget'], nominal_valid=rec['nominal_valid'], task_success_rate=rec['task_success_rate'],
                 collision_rate=ex.get('collision_rate'), episodes=ex.get('episodes'),
                 path_joint_length_rad=ex.get('path_joint_length_rad'), ee_path_length_m=ex.get('ee_path_length_m'),
-                payload_min_clearance_m=ex.get('payload_min_clearance_m'))
+                payload_min_clearance_m=ex.get('payload_min_clearance_m'),
+                feasible_episode_success=feasible_success(rec, feasibility))
 
 
 def bootstrap(per_task, n=2000, seed=0):
@@ -58,14 +77,26 @@ def summarise(rows):
                 task_success=float(np.mean([r['task_success_rate'] for r in rows])),
                 task_success_ci95=bootstrap(per_task),
                 collision_given_valid=float(np.mean([r['collision_rate'] for r in valid])) if valid else float('nan'),
+                feasible_episode_success=(float(np.mean([r['feasible_episode_success'] for r in rows if r['feasible_episode_success'] is not None]))
+                                          if any(r['feasible_episode_success'] is not None for r in rows) else float('nan')),
                 planning_seconds_median=med('planning_seconds'), path_joint_length_median=med('path_joint_length_rad'),
                 ee_path_length_median=med('ee_path_length_m'), min_clearance_median_mm=1000 * med('payload_min_clearance_m'),
                 over_budget=int(sum(r['over_budget'] for r in rows)))
 
 
-def report(out, quiet=False):
+def find_feasibility(out, path=None):
+    candidates = [path] if path else [Path(out).parent / 'validation' / 'goal_feasibility.json',
+                                      Path('results/suite_v0.3/validation/goal_feasibility.json')]
+    for c in candidates:
+        if c and Path(c).exists():
+            return json.loads(Path(c).read_text())
+    return None
+
+
+def report(out, quiet=False, feasibility=None):
     out = Path(out)
-    rows = [flat(r) for r in load_runs(out)]
+    feas = find_feasibility(out, feasibility)
+    rows = [flat(r, feas) for r in load_runs(out)]
     if not rows:
         raise SystemExit(f'no runs under {out}/runs')
     with open(out / 'runs.csv', 'w', newline='') as fh:
@@ -97,12 +128,13 @@ def report(out, quiet=False):
     (out / 'summary.json').write_text(json.dumps(summary, indent=1) + '\n')
     lines = ['# Experiment summary', '', f'Runs: {len(rows)}. Task success counts planning failures as 0; '
              'CI = 95% bootstrap over tasks. Collision | valid = mean episode collision rate of valid paths.', '']
-    lines += ['| Planner | Family | Level | Runs | Planning success | Task success [95% CI] | Collision \\| valid | '
-              'Plan time (s, median) | Min clearance (mm, median) |', '|---|---|---|---:|---:|---:|---:|---:|---:|']
+    lines += ['| Planner | Family | Level | Runs | Planning success | Task success [95% CI] | Feasible-episode success | '
+              'Collision \\| valid | Plan time (s, median) | Min clearance (mm, median) |', '|---|---|---|---:|---:|---:|---:|---:|---:|---:|']
     for s in summary:
         lo, hi = s['task_success_ci95']
         lines.append(f"| {s['label']} | {s['family']} | {s['level']} | {s['runs']} | {100 * s['planning_success']:.0f}% | "
-                     f"{100 * s['task_success']:.1f}% [{100 * lo:.1f}, {100 * hi:.1f}] | {100 * s['collision_given_valid']:.1f}% | "
+                     f"{100 * s['task_success']:.1f}% [{100 * lo:.1f}, {100 * hi:.1f}] | {100 * s['feasible_episode_success']:.1f}% | "
+                     f"{100 * s['collision_given_valid']:.1f}% | "
                      f"{s['planning_seconds_median']:.2f} | {s['min_clearance_median_mm']:.1f} |")
     (out / 'summary.md').write_text('\n'.join(lines) + '\n')
     if not quiet:
@@ -113,7 +145,9 @@ def report(out, quiet=False):
 def main():
     ap = argparse.ArgumentParser(description='Summarise gosuite experiment runs.')
     ap.add_argument('output')
-    report(ap.parse_args().output)
+    ap.add_argument('--feasibility', help='goal_feasibility.json from gosuite.validate (default: next to the results)')
+    a = ap.parse_args()
+    report(a.output, feasibility=a.feasibility)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,66 @@
+{
+ "task_id": "lathe_medium_dev_00",
+ "family": "lathe",
+ "level": "medium",
+ "split": "dev",
+ "label": "B0 Reference (oracle)",
+ "planner": "reference",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "9f9701ab56e285e682ab1e247f71f1dd308a837a8b234f35cfb7f4a4cb3f7df2",
+ "planning_seconds": 2.5356188416481018e-05,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_medium_dev_00",
+  "family": "lathe",
+  "level": "medium",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3735519705,
+  "path_joint_length_rad": 8.80581159748281,
+  "ee_path_length_m": 1.5967650450181834,
+  "payload_min_clearance_m": 0.009994839030643519,
+  "payload_clearance_p05_m": 0.025550215589449223,
+  "trajectory_states": 2973,
+  "collision_count": 7,
+  "collision_rate": 0.109375,
+  "collision_ci95": [
+   0.04512102018711488,
+   0.2124572259554024
+  ],
+  "success_count": 57,
+  "success_rate": 0.890625,
+  "success_ci95": [
+   0.7875427740445976,
+   0.9548789798128852
+  ],
+  "failures_by_reason": {
+   "payload_environment": 7
+  },
+  "colliding_obstacles": {
+   "chuck_jaw_zp": 2,
+   "chuck_jaw_zn": 3,
+   "chuck_jaw_xn": 1,
+   "chuck_jaw_xp": 1
+  },
+  "wall_seconds": 14.421925816684961,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1101111110111111110101101111111111111111111111111111011111101111",
+  "episode_collision": "0010000001000000001010010000000000000000000000000000100000010000"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.3/witnesses/lathe/dev/lathe_medium_dev_00.npy",
+ "trajectory_sha256": "b3a79e1258ebc21b016bf7f0001f4b15bb178c087a96428cc0531dd7b61fd281",
+ "task_success_rate": 0.890625
+}

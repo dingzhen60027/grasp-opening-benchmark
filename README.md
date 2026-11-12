@@ -1,14 +1,18 @@
 # Grasp Opening Benchmark
 
-[中文说明](README.zh-CN.md) · [Suite v0.3 specification](SUITE_v0.3.md) · [Design rationale](docs/BENCHMARK_DESIGN_v0.3.md) · [Project status](PROJECT_STATUS.zh-CN.md)
+[中文说明](README.zh-CN.md) · [Suite v0.4 (current)](SUITE_v0.4.md) · [Why v0.4](docs/BENCHMARK_ASSESSMENT_v0.3.md) · [Suite v0.3](SUITE_v0.3.md) · [Project status](PROJECT_STATUS.zh-CN.md)
 
 A reproducible benchmark for transporting **grasped elongated workpieces through constrained openings under grasp-pose uncertainty**, with an experiment harness that runs baselines directly.
 
 **Status: development benchmark, not a completed robust-planning method or a published journal result.** Simulation is kinematic (PyBullet) with a UR5e and a Robotiq 2F-85 gripper; the grasp-error model is uncalibrated; there is no real-robot evidence yet.
 
-![Four application families](previews/suite_v0.3/overview.png)
+![Four application families](previews/suite_v0.4/overview.png)
 
-## v0.3 suite (current)
+## v0.4 suite (current)
+
+v0.4 puts the level-controlled obstacles where the payload tip, which has the largest lever arm, must pass them during insertion. Goals keep slack, so the risk is decided by the path rather than by the goal state. Every task stores two oracle paths: a straight insertion and a risk-optimised one. Their measured success gap is the room a robust planner has to show its value. See [SUITE_v0.4.md](SUITE_v0.4.md).
+
+## v0.3 suite (calibration and sensitivity track)
 
 | Component | Available |
 |---|---|
@@ -36,10 +40,10 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-lock.txt
 bash tools/python.sh -m pytest -q tests
 bash tools/python.sh tools/check_evidence.py
-bash tools/python.sh -m gosuite.audit --suite data/suite_v0.3
+bash tools/python.sh -m gosuite.audit --suite data/suite_v0.4
 
 # Run the baseline table (plan -> validate -> execute under common grasp errors -> tables)
-bash tools/python.sh -m gosuite.experiment --config configs/experiment_baselines_v0.3.json
+bash tools/python.sh -m gosuite.experiment --config configs/experiment_baselines_v0.4.json
 ```
 
 To add your own planner, implement `plan(problem, seed, budget, **params)` and reference it as `"module:function"` in a config. [examples/custom_planner.py](examples/custom_planner.py) is a template; the interface is described in [SUITE_v0.3.md, Section 8](SUITE_v0.3.md#8-running-experiments).

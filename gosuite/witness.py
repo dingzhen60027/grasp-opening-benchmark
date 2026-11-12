@@ -8,16 +8,17 @@ import numpy as np
 from .geometry import interpolate_pose, pose_distance
 
 
-def follow_knots(world, knots, seeds, max_jump=.25, linear_step=.004, angular_step=.025, min_steps=8):
+def follow_knots(world, knots, seeds, max_jump=.25, linear_step=.004, angular_step=.025, min_steps=8, start_q=None):
     """Track TCP knots with IK continuation. Returns (Nx6 path, None) or (None, failure dict).
 
     Each start seed is tried in turn for the first knot; the path is rejected on IK failure, on a
     joint jump larger than `max_jump` between interpolation points (branch switch) or on any
-    nominal collision at an interpolation point.
+    nominal collision at an interpolation point.  With `start_q` the first configuration is fixed
+    (used to give a second witness exactly the same start state).
     """
     failure = None
-    for attempt, seed in enumerate(seeds):
-        q = world.ik(knots[0], np.asarray(seed, dtype=float))
+    for attempt, seed in enumerate([start_q] if start_q is not None else seeds):
+        q = np.asarray(start_q, dtype=float) if start_q is not None else world.ik(knots[0], np.asarray(seed, dtype=float))
         if q is None:
             failure = dict(reason='ik_start', seed_index=attempt)
             continue

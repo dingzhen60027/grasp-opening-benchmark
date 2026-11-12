@@ -1,0 +1,66 @@
+{
+ "task_id": "rack_easy_dev_00",
+ "family": "rack",
+ "level": "easy",
+ "split": "dev",
+ "label": "Reference (risk-aware oracle)",
+ "planner": "reference",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 1,
+ "task_sha256": "a1ae4350eb7683b2c1a6d6de6fa2e167a6989fa1729a18a034c97e503e6753c4",
+ "planning_seconds": 2.1372921764850616e-05,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_easy_dev_00",
+  "family": "rack",
+  "level": "easy",
+  "split": "dev",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 262647383,
+  "path_joint_length_rad": 6.2500201977885546,
+  "ee_path_length_m": 1.3182166220568345,
+  "payload_min_clearance_m": 0.014000005221366888,
+  "payload_clearance_p05_m": 0.015709469991529022,
+  "trajectory_states": 2119,
+  "collision_count": 10,
+  "collision_rate": 0.0390625,
+  "collision_ci95": [
+   0.01888827571946002,
+   0.07066228590012934
+  ],
+  "success_count": 241,
+  "success_rate": 0.94140625,
+  "success_ci95": [
+   0.9051991415444257,
+   0.9668381679733287
+  ],
+  "failures_by_reason": {
+   "payload_environment": 10,
+   "goal_position": 4,
+   "placement_height": 1
+  },
+  "colliding_obstacles": {
+   "target_saddle_1": 9,
+   "bracket_shallow": 1
+  },
+  "wall_seconds": 33.409599845297635,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111110111111111111111110111111111111101111111111110111111111111111111111111111111111111101111111111111111111101111111110111111101111111111111111111101111111111111111111111111011111111101111111111101111111111111111111111111111111111111111101111111101011111",
+  "episode_collision": "0000001000000000000000000000000000000010000000000001000000000000000000000000000000000000010000000000000000000010000000001000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000010100000"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.4/witnesses/rack/dev/rack_easy_dev_00.npy",
+ "trajectory_sha256": "f61ce22f64dab8dfe70d69b636399cd254587b813e94effeea33604a42c2e986",
+ "task_success_rate": 0.94140625
+}

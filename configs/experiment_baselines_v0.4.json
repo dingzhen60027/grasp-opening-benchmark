@@ -1,0 +1,81 @@
+{
+  "name": "baselines_v0.4",
+  "description": "Selected baselines on the frozen v0.4 test split (5 seeds, 120 s, 256 episodes). Oracles: configs/experiment_reference_v0.4.json",
+  "suite": "data/suite_v0.4",
+  "output": "results/suite_v0.4/baselines",
+  "split": "test",
+  "families": null,
+  "levels": null,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "budget_seconds": 120,
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step": 0.0025,
+  "workers": 20,
+  "planners": [
+    {
+      "label": "B1 RRTConnect",
+      "planner": "ompl",
+      "params": {
+        "planner": "RRTConnect",
+        "range": 0.25
+      }
+    },
+    {
+      "label": "B3 RRTConnect + 3 mm margin",
+      "planner": "ompl",
+      "params": {
+        "planner": "RRTConnect",
+        "range": 0.25,
+        "margin": 0.003
+      }
+    },
+    {
+      "label": "B4 RRTConnect + scenarios (N=8, risk 0.25)",
+      "planner": "ompl",
+      "params": {
+        "planner": "RRTConnect",
+        "range": 0.25,
+        "scenarios": 8,
+        "risk": 0.25
+      }
+    },
+    {
+      "label": "B6 Keyframe-guided",
+      "planner": "guided",
+      "params": {}
+    }
+  ],
+  "optional_planners": [
+    {
+      "label": "B2 BIT*",
+      "planner": "ompl",
+      "params": {
+        "planner": "BITstar"
+      },
+      "note": "solved 0/24 dev tasks in 90 s; only worth running with a 600 s budget"
+    },
+    {
+      "label": "B5 BIT* + clearance cost",
+      "planner": "ompl",
+      "params": {
+        "planner": "BITstar",
+        "objective": "clearance"
+      },
+      "note": "solved 0/24 dev tasks in 90 s"
+    },
+    {
+      "label": "Your method",
+      "planner": "your_package.your_module:plan",
+      "params": {}
+    }
+  ],
+  "estimated_cost": "4 planners x 72 tasks x 5 seeds = 1440 runs, about 3 hours on 20 workers"
+}

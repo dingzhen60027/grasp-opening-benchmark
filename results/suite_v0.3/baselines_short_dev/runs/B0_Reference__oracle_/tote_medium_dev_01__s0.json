@@ -1,0 +1,65 @@
+{
+ "task_id": "tote_medium_dev_01",
+ "family": "tote",
+ "level": "medium",
+ "split": "dev",
+ "label": "B0 Reference (oracle)",
+ "planner": "reference",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 90,
+ "task_sha256": "0b42c1848b974ab7b160a8a65a262b87f57097ace021118ca56f112186dd2346",
+ "planning_seconds": 2.4374574422836304e-05,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "witness_used": true,
+  "oracle": true
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "tote_medium_dev_01",
+  "family": "tote",
+  "level": "medium",
+  "split": "dev",
+  "episodes": 64,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3456496533,
+  "path_joint_length_rad": 4.441244254779054,
+  "ee_path_length_m": 1.079135285063868,
+  "payload_min_clearance_m": 0.008000003364072045,
+  "payload_clearance_p05_m": 0.009999949179016745,
+  "trajectory_states": 1557,
+  "collision_count": 11,
+  "collision_rate": 0.171875,
+  "collision_ci95": [
+   0.0890489963291029,
+   0.2867536578734714
+  ],
+  "success_count": 53,
+  "success_rate": 0.828125,
+  "success_ci95": [
+   0.7132463421265286,
+   0.9109510036708971
+  ],
+  "failures_by_reason": {
+   "payload_environment": 11
+  },
+  "colliding_obstacles": {
+   "divider_y0": 7,
+   "divider_x1": 2,
+   "divider_x0": 2
+  },
+  "wall_seconds": 7.992332702502608,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111110111111111111111011111110011111110001111100111001111111",
+  "episode_collision": "0000000001000000000000000100000001100000001110000011000110000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "data/suite_v0.3/witnesses/tote/dev/tote_medium_dev_01.npy",
+ "trajectory_sha256": "3842da9269fd55b904455ab3f92d3bdc56250bbcad192bb55f1991e2c6e4c9cf",
+ "task_success_rate": 0.828125
+}
