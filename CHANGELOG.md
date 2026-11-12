@@ -6,6 +6,7 @@
 - New v0.4 suite (`SUITE_v0.4.md`, `data/suite_v0.4`): the same four applications, rebuilt so that the risk is planner-controllable. Level-controlled obstacles near the opening are passed by the payload tip (largest lever arm); goals keep 25–45 mm slack.
 - Two oracle witnesses per task: a risk-aware one (cross-entropy search on planning-stream draws, `gosuite/robust.py`) and a straight one. Their gap on the evaluation draws measures the headroom.
 - Baselines: OMPL adapter (RRTConnect, BIT\*, ...; margin, scenario and clearance-cost options), a keyframe-guided planner and deadline-bounded shortcutting. The report gains a feasible-episode (path-attributable) success column.
+- Dependencies: `ompl==1.7.0` (prebuilt wheels, no build step) is now pinned in `requirements.txt` and `requirements-lock.txt`; the OMPL and keyframe-guided baselines need it. The quick start creates the environment with `python3.10`, because the pinned scipy and pybullet have no Python 3.12 wheels.
 - The validation report generator (headroom, step convergence, sensitivity, descriptors, variance) runs on both suites.
 - Results (validation): at the hard level the risk-aware oracle beats the straight one by 25.8 points (13.5 at medium); goal-state failure at hard is 13.4%. The keyframe-guided baseline matches the straight oracle (about 77%).
 - Reproducibility: v0.4 regenerates byte-identically. The v0.3 data was produced by the generator at commit 3c8dba0; the current generator adds metadata fields, so regenerate v0.3 from that commit for byte-identical files.

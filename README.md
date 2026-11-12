@@ -36,7 +36,7 @@ Tested with Python 3.10 on Linux; no ROS, Isaac Sim, private submodules or netwo
 ```bash
 git clone https://github.com/dingzhen60027/grasp-opening-benchmark.git
 cd grasp-opening-benchmark
-python3 -m venv .venv
+python3.10 -m venv .venv
 .venv/bin/python -m pip install -r requirements-lock.txt
 bash tools/python.sh -m pytest -q tests
 bash tools/python.sh tools/check_evidence.py
