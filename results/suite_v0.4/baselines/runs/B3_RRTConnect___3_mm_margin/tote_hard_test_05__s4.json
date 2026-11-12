@@ -1,0 +1,83 @@
+{
+ "task_id": "tote_hard_test_05",
+ "family": "tote",
+ "level": "hard",
+ "split": "test",
+ "label": "B3 RRTConnect + 3 mm margin",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "margin": 0.003
+ },
+ "seed": 4,
+ "budget_seconds": 120,
+ "task_sha256": "687526038a128f219f5844a385bc323d9435ed36a1c8a1f8fce25f59901005d0",
+ "planning_seconds": 114.05692476592958,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.003,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 24.242547187954187,
+  "raw_waypoints": 26,
+  "shortcut_attempts": 1328,
+  "waypoints": 6,
+  "wall_seconds": 114.05688718054444,
+  "collision_checks": 41529
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "tote_hard_test_05",
+  "family": "tote",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 2174536872,
+  "path_joint_length_rad": 3.426827627092846,
+  "ee_path_length_m": 1.1248052200328909,
+  "payload_min_clearance_m": 0.003463843668940176,
+  "payload_clearance_p05_m": 0.005562133007210005,
+  "trajectory_states": 1019,
+  "collision_count": 117,
+  "collision_rate": 0.45703125,
+  "collision_ci95": [
+   0.3948674569873242,
+   0.5202013989451617
+  ],
+  "success_count": 139,
+  "success_rate": 0.54296875,
+  "success_ci95": [
+   0.4797986010548383,
+   0.6051325430126758
+  ],
+  "failures_by_reason": {
+   "payload_environment": 117
+  },
+  "colliding_obstacles": {
+   "cell_ledge": 37,
+   "lid_flap": 63,
+   "divider_x2": 13,
+   "source_table": 3,
+   "divider_y1": 1
+  },
+  "wall_seconds": 13.793783677741885,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111000110010111000110010111110101011110011010100100011110000110111110111000001100110111100001110100111100101011010110001101000110110011001111110100100111010110011011011000111100101011101001110011110000101101101011100000101011010010101101001010110001100110",
+  "episode_collision": "0000111001101000111001101000001010100001100101011011100001111001000001000111110011001000011110001011000011010100101001110010111001001100110000001011011000101001100100100111000011010100010110001100001111010010010100011111010100101101010010110101001110011001"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B3_RRTConnect___3_mm_margin/tote_hard_test_05__s4.npy",
+ "trajectory_sha256": "c418cb8f6632ee2b89c54ddc6c4dfc2e0d788a4a5274dde08f7085b1342e3d27",
+ "task_success_rate": 0.54296875
+}

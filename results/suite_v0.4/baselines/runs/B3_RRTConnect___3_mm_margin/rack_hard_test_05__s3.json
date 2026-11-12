@@ -1,0 +1,83 @@
+{
+ "task_id": "rack_hard_test_05",
+ "family": "rack",
+ "level": "hard",
+ "split": "test",
+ "label": "B3 RRTConnect + 3 mm margin",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "margin": 0.003
+ },
+ "seed": 3,
+ "budget_seconds": 120,
+ "task_sha256": "eb08d7feef51bd7670c14dec62a4dc43de4ba158184e0b48913beed5130dd1fc",
+ "planning_seconds": 114.0517034959048,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.003,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 88.68446501344442,
+  "raw_waypoints": 36,
+  "shortcut_attempts": 107,
+  "waypoints": 6,
+  "wall_seconds": 114.05166989658028,
+  "collision_checks": 44463
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_hard_test_05",
+  "family": "rack",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3286815184,
+  "path_joint_length_rad": 5.3575042640302755,
+  "ee_path_length_m": 1.3457302247244185,
+  "payload_min_clearance_m": 0.0037118592934602757,
+  "payload_clearance_p05_m": 0.004471427159353574,
+  "trajectory_states": 1571,
+  "collision_count": 126,
+  "collision_rate": 0.4921875,
+  "collision_ci95": [
+   0.4293950274037605,
+   0.5551629208794954
+  ],
+  "success_count": 129,
+  "success_rate": 0.50390625,
+  "success_ci95": [
+   0.4409710130283988,
+   0.5667500131554148
+  ],
+  "failures_by_reason": {
+   "payload_environment": 126,
+   "placement_height": 1
+  },
+  "colliding_obstacles": {
+   "bracket_shallow": 32,
+   "target_guide_1_l": 48,
+   "target_saddle_0": 17,
+   "bracket_deep": 29
+  },
+  "wall_seconds": 18.99253259692341,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0100100101010110111001111000010100000111010000011101101000010100100010000010100001001101011101000110011111111101001100011011011100011101101001101011010110100100101111011010101110111111001100101110100010011000111101000001100010111100011011010000100111001110",
+  "episode_collision": "1011011010101001000110000111101011111000101111100010010111101011011101111101011110110010100010111001100000000010110011100100100011100010010110010100101001011011010000100101010001000000110011010001010101100111000010111110011101000011100100101111011000110001"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B3_RRTConnect___3_mm_margin/rack_hard_test_05__s3.npy",
+ "trajectory_sha256": "a6c021eebe36a1719e9b2ded8e4adb793cfd05587d43f2fecfca89bc4d86810b",
+ "task_success_rate": 0.50390625
+}

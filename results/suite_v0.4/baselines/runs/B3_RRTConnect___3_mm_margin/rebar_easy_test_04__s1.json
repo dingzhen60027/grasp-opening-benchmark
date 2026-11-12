@@ -1,0 +1,36 @@
+{
+ "task_id": "rebar_easy_test_04",
+ "family": "rebar",
+ "level": "easy",
+ "split": "test",
+ "label": "B3 RRTConnect + 3 mm margin",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "margin": 0.003
+ },
+ "seed": 1,
+ "budget_seconds": 120,
+ "task_sha256": "1177caf3e6799e3fca62f7612db1bf14e4c6aceaecf9cb83ee39be763d5a2309",
+ "planning_seconds": 97.01665292400867,
+ "over_budget": false,
+ "status": "approximate",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.003,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Approximate solution",
+  "solve_seconds": 96.96778715308756,
+  "wall_seconds": 97.01662671286613,
+  "collision_checks": 38858
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

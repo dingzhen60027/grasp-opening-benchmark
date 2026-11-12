@@ -1,0 +1,86 @@
+{
+ "task_id": "rack_hard_test_03",
+ "family": "rack",
+ "level": "hard",
+ "split": "test",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 2,
+ "budget_seconds": 120,
+ "task_sha256": "1a8c8f3e5457f4173a5dbd51b83960a65ab4ff3fff6d6642ccccce8b81e7c47d",
+ "planning_seconds": 10.660164128057659,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 8.778506938368082,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 3,
+   "waypoints": 2
+  },
+  "insertion_states": 132,
+  "wall_seconds": 10.660145220346749,
+  "collision_checks": 3708
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_hard_test_03",
+  "family": "rack",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3692560998,
+  "path_joint_length_rad": 5.38626482530399,
+  "ee_path_length_m": 1.2206810149772989,
+  "payload_min_clearance_m": 0.005997237322077121,
+  "payload_clearance_p05_m": 0.005997686593337673,
+  "trajectory_states": 1496,
+  "collision_count": 121,
+  "collision_rate": 0.47265625,
+  "collision_ci95": [
+   0.41017584056391504,
+   0.5357770126732704
+  ],
+  "success_count": 134,
+  "success_rate": 0.5234375,
+  "success_ci95": [
+   0.46033838739278254,
+   0.5859877468960577
+  ],
+  "failures_by_reason": {
+   "payload_environment": 121,
+   "placement_height": 1
+  },
+  "colliding_obstacles": {
+   "bracket_deep": 48,
+   "bracket_shallow": 68,
+   "target_saddle_0": 5
+  },
+  "wall_seconds": 12.08067874237895,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0001010101001000111111101011001111111001001011110100111100000001001111000001101010110111011101011100100111000010110010000110010101001111001101100010001101101100100011001111101001000100101011101000111111010011001111100010001110110101001001011011111111000001",
+  "episode_collision": "1110101010110111000000010100110000000110110100001011000011111110110000111110010101001000100010100011011000111101001101111001101010110000110010011101110010010011011100110000010110110011010100010111000000101100110000011101110001001010110110100100000000111110"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/rack_hard_test_03__s2.npy",
+ "trajectory_sha256": "94e4c76729891525f0a8a8b9e546e411e06edf11cb250a03fbcc65760f14dbad",
+ "task_success_rate": 0.5234375
+}

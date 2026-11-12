@@ -1,12 +1,12 @@
 label,planner,task_id,family,level,split,seed,status,planning_seconds,over_budget,nominal_valid,task_success_rate,collision_rate,episodes,path_joint_length_rad,ee_path_length_m,payload_min_clearance_m,feasible_episode_success
-B1 RRTConnect,ompl,lathe_easy_dev_00,lathe,easy,dev,0,solved,85.55,False,True,0.21875,0.78125,64,7.7225561871588075,2.731864659267632,0.0008200942063449857,0.21875
-B1 RRTConnect,ompl,lathe_easy_dev_01,lathe,easy,dev,0,solved,85.559,False,True,0.09375,0.90625,64,3.433984679678863,1.129841076502127,0.000386835862684939,0.09523809523809523
+B1 RRTConnect,ompl,lathe_easy_dev_00,lathe,easy,dev,0,solved,85.55,False,True,0.21875,0.78125,64,7.7225561871588075,2.731864659267632,0.0008200942063449857,0.23333333333333334
+B1 RRTConnect,ompl,lathe_easy_dev_01,lathe,easy,dev,0,solved,85.559,False,True,0.09375,0.90625,64,3.433984679678863,1.129841076502127,0.000386835862684939,0.1
 B1 RRTConnect,ompl,lathe_hard_dev_00,lathe,hard,dev,0,approximate,72.854,False,False,0.0,,,,,,0.0
 B1 RRTConnect,ompl,lathe_hard_dev_01,lathe,hard,dev,0,approximate,72.807,False,False,0.0,,,,,,0.0
-B1 RRTConnect,ompl,lathe_medium_dev_00,lathe,medium,dev,0,solved,85.549,False,True,0.515625,0.484375,64,4.1497301287748,1.4408327382899033,0.003306877898023618,0.5614035087719298
-B1 RRTConnect,ompl,lathe_medium_dev_01,lathe,medium,dev,0,solved,85.548,False,True,0.40625,0.59375,64,4.486408034937503,1.3460926013794743,0.0021261722858663505,0.4262295081967213
+B1 RRTConnect,ompl,lathe_medium_dev_00,lathe,medium,dev,0,solved,85.549,False,True,0.515625,0.484375,64,4.1497301287748,1.4408327382899033,0.003306877898023618,0.5409836065573771
+B1 RRTConnect,ompl,lathe_medium_dev_01,lathe,medium,dev,0,solved,85.548,False,True,0.40625,0.59375,64,4.486408034937503,1.3460926013794743,0.0021261722858663505,0.41935483870967744
 B1 RRTConnect,ompl,rack_easy_dev_00,rack,easy,dev,0,approximate,72.955,False,False,0.0,,,,,,0.0
-B1 RRTConnect,ompl,rack_easy_dev_01,rack,easy,dev,0,solved,85.548,False,True,0.546875,0.28125,64,2.5746327971027667,0.9511182260522567,0.0066340664606201385,0.6226415094339622
+B1 RRTConnect,ompl,rack_easy_dev_01,rack,easy,dev,0,solved,85.548,False,True,0.546875,0.28125,64,2.5746327971027667,0.9511182260522567,0.0066340664606201385,0.603448275862069
 B1 RRTConnect,ompl,rack_hard_dev_00,rack,hard,dev,0,approximate,72.812,False,False,0.0,,,,,,0.0
 B1 RRTConnect,ompl,rack_hard_dev_01,rack,hard,dev,0,approximate,72.868,False,False,0.0,,,,,,0.0
 B1 RRTConnect,ompl,rack_medium_dev_00,rack,medium,dev,0,approximate,72.83,False,False,0.0,,,,,,0.0
@@ -17,14 +17,14 @@ B1 RRTConnect,ompl,rebar_hard_dev_00,rebar,hard,dev,0,approximate,72.875,False,F
 B1 RRTConnect,ompl,rebar_hard_dev_01,rebar,hard,dev,0,approximate,72.784,False,False,0.0,,,,,,0.0
 B1 RRTConnect,ompl,rebar_medium_dev_00,rebar,medium,dev,0,approximate,72.842,False,False,0.0,,,,,,0.0
 B1 RRTConnect,ompl,rebar_medium_dev_01,rebar,medium,dev,0,approximate,72.812,False,False,0.0,,,,,,0.0
-B1 RRTConnect,ompl,tote_easy_dev_00,tote,easy,dev,0,solved,85.551,False,True,0.75,0.234375,64,3.2779591084670905,1.0363342579847519,0.004851346941315265,0.7619047619047619
+B1 RRTConnect,ompl,tote_easy_dev_00,tote,easy,dev,0,solved,85.551,False,True,0.75,0.234375,64,3.2779591084670905,1.0363342579847519,0.004851346941315265,0.75
 B1 RRTConnect,ompl,tote_easy_dev_01,tote,easy,dev,0,solved,85.54,False,True,0.125,0.875,64,3.250219517727583,0.8605069858604842,0.00041542075966543484,0.125
-B1 RRTConnect,ompl,tote_hard_dev_00,tote,hard,dev,0,solved,85.562,False,True,0.078125,0.921875,64,3.74635893751507,1.2448321956323078,0.0004913625028920149,0.13333333333333333
-B1 RRTConnect,ompl,tote_hard_dev_01,tote,hard,dev,0,solved,85.549,False,True,0.1875,0.8125,64,2.587719079918168,1.067896351494181,0.0010018666924871732,0.2857142857142857
-B1 RRTConnect,ompl,tote_medium_dev_00,tote,medium,dev,0,solved,85.57,False,True,0.484375,0.515625,64,3.1670164136088106,1.1503584872788657,0.0028834477525331347,0.5535714285714286
-B1 RRTConnect,ompl,tote_medium_dev_01,tote,medium,dev,0,solved,85.561,False,True,0.578125,0.421875,64,3.323889393239562,1.1840151573866646,0.0020624545937411917,0.6981132075471698
-B3 RRTConnect + 3 mm margin,ompl,lathe_easy_dev_00,lathe,easy,dev,0,solved,85.548,False,True,0.5625,0.4375,64,2.8922412126590338,0.9068821016254671,0.006193920213810881,0.5625
-B3 RRTConnect + 3 mm margin,ompl,lathe_easy_dev_01,lathe,easy,dev,0,solved,85.546,False,True,0.609375,0.390625,64,3.619839051347451,1.1570008843106458,0.0036376360323255577,0.6190476190476191
+B1 RRTConnect,ompl,tote_hard_dev_00,tote,hard,dev,0,solved,85.562,False,True,0.078125,0.921875,64,3.74635893751507,1.2448321956323078,0.0004913625028920149,0.08333333333333333
+B1 RRTConnect,ompl,tote_hard_dev_01,tote,hard,dev,0,solved,85.549,False,True,0.1875,0.8125,64,2.587719079918168,1.067896351494181,0.0010018666924871732,0.2033898305084746
+B1 RRTConnect,ompl,tote_medium_dev_00,tote,medium,dev,0,solved,85.57,False,True,0.484375,0.515625,64,3.1670164136088106,1.1503584872788657,0.0028834477525331347,0.49206349206349204
+B1 RRTConnect,ompl,tote_medium_dev_01,tote,medium,dev,0,solved,85.561,False,True,0.578125,0.421875,64,3.323889393239562,1.1840151573866646,0.0020624545937411917,0.5873015873015873
+B3 RRTConnect + 3 mm margin,ompl,lathe_easy_dev_00,lathe,easy,dev,0,solved,85.548,False,True,0.5625,0.4375,64,2.8922412126590338,0.9068821016254671,0.006193920213810881,0.6
+B3 RRTConnect + 3 mm margin,ompl,lathe_easy_dev_01,lathe,easy,dev,0,solved,85.546,False,True,0.609375,0.390625,64,3.619839051347451,1.1570008843106458,0.0036376360323255577,0.65
 B3 RRTConnect + 3 mm margin,ompl,lathe_hard_dev_00,lathe,hard,dev,0,approximate,72.898,False,False,0.0,,,,,,0.0
 B3 RRTConnect + 3 mm margin,ompl,lathe_hard_dev_01,lathe,hard,dev,0,approximate,72.798,False,False,0.0,,,,,,0.0
 B3 RRTConnect + 3 mm margin,ompl,lathe_medium_dev_00,lathe,medium,dev,0,approximate,72.849,False,False,0.0,,,,,,0.0
@@ -41,20 +41,20 @@ B3 RRTConnect + 3 mm margin,ompl,rebar_hard_dev_00,rebar,hard,dev,0,approximate,
 B3 RRTConnect + 3 mm margin,ompl,rebar_hard_dev_01,rebar,hard,dev,0,approximate,72.896,False,False,0.0,,,,,,0.0
 B3 RRTConnect + 3 mm margin,ompl,rebar_medium_dev_00,rebar,medium,dev,0,approximate,72.776,False,False,0.0,,,,,,0.0
 B3 RRTConnect + 3 mm margin,ompl,rebar_medium_dev_01,rebar,medium,dev,0,approximate,72.868,False,False,0.0,,,,,,0.0
-B3 RRTConnect + 3 mm margin,ompl,tote_easy_dev_00,tote,easy,dev,0,solved,85.557,False,True,0.75,0.234375,64,3.2779591084670905,1.0363342579847519,0.004851346941315265,0.7619047619047619
+B3 RRTConnect + 3 mm margin,ompl,tote_easy_dev_00,tote,easy,dev,0,solved,85.557,False,True,0.75,0.234375,64,3.2779591084670905,1.0363342579847519,0.004851346941315265,0.75
 B3 RRTConnect + 3 mm margin,ompl,tote_easy_dev_01,tote,easy,dev,0,solved,85.54,False,True,0.828125,0.171875,64,4.1331485450663035,0.7451035774893864,0.0065973772706405445,0.828125
 B3 RRTConnect + 3 mm margin,ompl,tote_hard_dev_00,tote,hard,dev,0,approximate,72.854,False,False,0.0,,,,,,0.0
 B3 RRTConnect + 3 mm margin,ompl,tote_hard_dev_01,tote,hard,dev,0,approximate,72.781,False,False,0.0,,,,,,0.0
-B3 RRTConnect + 3 mm margin,ompl,tote_medium_dev_00,tote,medium,dev,0,solved,85.537,False,True,0.5625,0.4375,64,3.2178822340412174,1.1672091838234675,0.003381403913409353,0.6071428571428571
-B3 RRTConnect + 3 mm margin,ompl,tote_medium_dev_01,tote,medium,dev,0,solved,85.55,False,True,0.8125,0.171875,64,3.57118938012377,1.2636000331522823,0.003927879922657158,0.8490566037735849
+B3 RRTConnect + 3 mm margin,ompl,tote_medium_dev_00,tote,medium,dev,0,solved,85.537,False,True,0.5625,0.4375,64,3.2178822340412174,1.1672091838234675,0.003381403913409353,0.5714285714285714
+B3 RRTConnect + 3 mm margin,ompl,tote_medium_dev_01,tote,medium,dev,0,solved,85.55,False,True,0.8125,0.171875,64,3.57118938012377,1.2636000331522823,0.003927879922657158,0.8253968253968254
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,lathe_easy_dev_00,lathe,easy,dev,0,approximate,72.839,False,False,0.0,,,,,,0.0
-"B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,lathe_easy_dev_01,lathe,easy,dev,0,solved,85.549,False,True,0.75,0.25,64,3.2568845387839804,1.1208806450921063,0.006292675987542119,0.7619047619047619
+"B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,lathe_easy_dev_01,lathe,easy,dev,0,solved,85.549,False,True,0.75,0.25,64,3.2568845387839804,1.1208806450921063,0.006292675987542119,0.8
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,lathe_hard_dev_00,lathe,hard,dev,0,approximate,72.908,False,False,0.0,,,,,,0.0
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,lathe_hard_dev_01,lathe,hard,dev,0,approximate,72.888,False,False,0.0,,,,,,0.0
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,lathe_medium_dev_00,lathe,medium,dev,0,approximate,72.856,False,False,0.0,,,,,,0.0
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,lathe_medium_dev_01,lathe,medium,dev,0,approximate,72.797,False,False,0.0,,,,,,0.0
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,rack_easy_dev_00,rack,easy,dev,0,approximate,72.897,False,False,0.0,,,,,,0.0
-"B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,rack_easy_dev_01,rack,easy,dev,0,solved,85.55,False,True,0.546875,0.28125,64,2.5746327971027667,0.9511182260522567,0.0066340664606201385,0.6226415094339622
+"B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,rack_easy_dev_01,rack,easy,dev,0,solved,85.55,False,True,0.546875,0.28125,64,2.5746327971027667,0.9511182260522567,0.0066340664606201385,0.603448275862069
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,rack_hard_dev_00,rack,hard,dev,0,approximate,72.813,False,False,0.0,,,,,,0.0
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,rack_hard_dev_01,rack,hard,dev,0,approximate,72.781,False,False,0.0,,,,,,0.0
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,rack_medium_dev_00,rack,medium,dev,0,approximate,72.853,False,False,0.0,,,,,,0.0
@@ -65,33 +65,33 @@ B3 RRTConnect + 3 mm margin,ompl,tote_medium_dev_01,tote,medium,dev,0,solved,85.
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,rebar_hard_dev_01,rebar,hard,dev,0,approximate,72.816,False,False,0.0,,,,,,0.0
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,rebar_medium_dev_00,rebar,medium,dev,0,approximate,72.853,False,False,0.0,,,,,,0.0
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,rebar_medium_dev_01,rebar,medium,dev,0,approximate,72.777,False,False,0.0,,,,,,0.0
-"B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,tote_easy_dev_00,tote,easy,dev,0,solved,85.548,False,True,0.46875,0.53125,64,3.358583847782601,0.9729180288775039,0.003380772567520263,0.47619047619047616
+"B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,tote_easy_dev_00,tote,easy,dev,0,solved,85.548,False,True,0.46875,0.53125,64,3.358583847782601,0.9729180288775039,0.003380772567520263,0.46875
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,tote_easy_dev_01,tote,easy,dev,0,solved,85.553,False,True,0.6875,0.3125,64,4.253289927776471,0.7790091186712683,0.005309614385678739,0.6875
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,tote_hard_dev_00,tote,hard,dev,0,approximate,72.951,False,False,0.0,,,,,,0.0
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,tote_hard_dev_01,tote,hard,dev,0,approximate,72.964,False,False,0.0,,,,,,0.0
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,tote_medium_dev_00,tote,medium,dev,0,approximate,72.967,False,False,0.0,,,,,,0.0
 "B4 RRTConnect + scenarios (N=8, risk 0.25)",ompl,tote_medium_dev_01,tote,medium,dev,0,approximate,72.93,False,False,0.0,,,,,,0.0
-B6 Keyframe-guided,guided,lathe_easy_dev_00,lathe,easy,dev,0,solved,6.563,False,True,0.9375,0.0625,64,4.694045606832,1.0358414819710031,0.013999995946884178,0.9375
-B6 Keyframe-guided,guided,lathe_easy_dev_01,lathe,easy,dev,0,solved,7.333,False,True,0.90625,0.09375,64,5.086648785953286,1.2430719083035695,0.013999952819628342,0.9206349206349206
-B6 Keyframe-guided,guided,lathe_hard_dev_00,lathe,hard,dev,0,solved,7.173,False,True,0.640625,0.359375,64,4.7515660409660505,1.0332009948597254,0.005992377383045243,0.9333333333333333
-B6 Keyframe-guided,guided,lathe_hard_dev_01,lathe,hard,dev,0,solved,7.005,False,True,0.578125,0.421875,64,4.63471604165793,1.0810403764958618,0.005992697033502546,0.9117647058823529
-B6 Keyframe-guided,guided,lathe_medium_dev_00,lathe,medium,dev,0,solved,85.546,False,True,0.75,0.25,64,12.106747692326149,2.660531577883214,0.009991937371697731,0.8421052631578947
-B6 Keyframe-guided,guided,lathe_medium_dev_01,lathe,medium,dev,0,solved,6.866,False,True,0.84375,0.15625,64,4.560158943531606,1.2407143480947491,0.009995449832886283,0.8688524590163934
-B6 Keyframe-guided,guided,rack_easy_dev_00,rack,easy,dev,0,solved,7.635,False,True,0.921875,0.0625,64,4.659627321588677,0.9666099701851261,0.013999990320205257,0.9782608695652174
-B6 Keyframe-guided,guided,rack_easy_dev_01,rack,easy,dev,0,solved,7.723,False,True,0.875,0.109375,64,4.245126013303259,0.9195033796038299,0.013999995660903325,0.9622641509433962
-B6 Keyframe-guided,guided,rack_hard_dev_00,rack,hard,dev,0,solved,17.842,False,True,0.453125,0.53125,64,5.613419645410552,1.2781952388998459,0.005997353368144101,0.9285714285714286
-B6 Keyframe-guided,guided,rack_hard_dev_01,rack,hard,dev,0,solved,85.542,False,True,0.4375,0.53125,64,13.214441400670296,2.9564772772118744,0.00599574348903094,0.9090909090909091
-B6 Keyframe-guided,guided,rack_medium_dev_00,rack,medium,dev,0,solved,85.545,False,True,0.8125,0.1875,64,12.716589824005336,2.8919406205362765,0.009997431660419798,0.9555555555555556
-B6 Keyframe-guided,guided,rack_medium_dev_01,rack,medium,dev,0,solved,85.542,False,True,0.703125,0.25,64,13.214616065326144,2.9574554261063013,0.009994406700134297,0.8260869565217391
+B6 Keyframe-guided,guided,lathe_easy_dev_00,lathe,easy,dev,0,solved,6.563,False,True,0.9375,0.0625,64,4.694045606832,1.0358414819710031,0.013999995946884178,1.0
+B6 Keyframe-guided,guided,lathe_easy_dev_01,lathe,easy,dev,0,solved,7.333,False,True,0.90625,0.09375,64,5.086648785953286,1.2430719083035695,0.013999952819628342,0.9666666666666667
+B6 Keyframe-guided,guided,lathe_hard_dev_00,lathe,hard,dev,0,solved,7.173,False,True,0.640625,0.359375,64,4.7515660409660505,1.0332009948597254,0.005992377383045243,0.7321428571428571
+B6 Keyframe-guided,guided,lathe_hard_dev_01,lathe,hard,dev,0,solved,7.005,False,True,0.578125,0.421875,64,4.63471604165793,1.0810403764958618,0.005992697033502546,0.6379310344827587
+B6 Keyframe-guided,guided,lathe_medium_dev_00,lathe,medium,dev,0,solved,85.546,False,True,0.75,0.25,64,12.106747692326149,2.660531577883214,0.009991937371697731,0.7868852459016393
+B6 Keyframe-guided,guided,lathe_medium_dev_01,lathe,medium,dev,0,solved,6.866,False,True,0.84375,0.15625,64,4.560158943531606,1.2407143480947491,0.009995449832886283,0.8709677419354839
+B6 Keyframe-guided,guided,rack_easy_dev_00,rack,easy,dev,0,solved,7.635,False,True,0.921875,0.0625,64,4.659627321588677,0.9666099701851261,0.013999990320205257,0.9833333333333333
+B6 Keyframe-guided,guided,rack_easy_dev_01,rack,easy,dev,0,solved,7.723,False,True,0.875,0.109375,64,4.245126013303259,0.9195033796038299,0.013999995660903325,0.9655172413793104
+B6 Keyframe-guided,guided,rack_hard_dev_00,rack,hard,dev,0,solved,17.842,False,True,0.453125,0.53125,64,5.613419645410552,1.2781952388998459,0.005997353368144101,0.5918367346938775
+B6 Keyframe-guided,guided,rack_hard_dev_01,rack,hard,dev,0,solved,85.542,False,True,0.4375,0.53125,64,13.214441400670296,2.9564772772118744,0.00599574348903094,0.56
+B6 Keyframe-guided,guided,rack_medium_dev_00,rack,medium,dev,0,solved,85.545,False,True,0.8125,0.1875,64,12.716589824005336,2.8919406205362765,0.009997431660419798,0.9285714285714286
+B6 Keyframe-guided,guided,rack_medium_dev_01,rack,medium,dev,0,solved,85.542,False,True,0.703125,0.25,64,13.214616065326144,2.9574554261063013,0.009994406700134297,0.8333333333333334
 B6 Keyframe-guided,guided,rebar_easy_dev_00,rebar,easy,dev,0,solved,85.548,False,True,0.859375,0.140625,64,11.13056152725611,1.7417660685211267,0.013609514797834817,0.9016393442622951
-B6 Keyframe-guided,guided,rebar_easy_dev_01,rebar,easy,dev,0,solved,5.741,False,True,0.921875,0.0625,64,4.851204682670812,1.3615101493632762,0.015993475100388857,0.9508196721311475
-B6 Keyframe-guided,guided,rebar_hard_dev_00,rebar,hard,dev,0,solved,85.543,False,True,0.640625,0.359375,64,10.831919098473735,1.7140209423490704,0.00599418845846574,1.0
-B6 Keyframe-guided,guided,rebar_hard_dev_01,rebar,hard,dev,0,solved,85.554,False,True,0.5,0.484375,64,11.13615958981709,1.7954661677381654,0.005992783843307594,1.0
-B6 Keyframe-guided,guided,rebar_medium_dev_00,rebar,medium,dev,0,solved,6.598,False,True,0.78125,0.21875,64,4.872818056347038,1.2712984681300799,0.009994046219481242,1.0
-B6 Keyframe-guided,guided,rebar_medium_dev_01,rebar,medium,dev,0,solved,85.532,False,True,0.796875,0.203125,64,10.91176963664936,1.7800920536692502,0.007592256332663005,0.9130434782608695
-B6 Keyframe-guided,guided,tote_easy_dev_00,tote,easy,dev,0,solved,85.556,False,True,0.953125,0.046875,64,11.03736197678352,4.850365816797735,0.008000000321315858,0.9523809523809523
+B6 Keyframe-guided,guided,rebar_easy_dev_01,rebar,easy,dev,0,solved,5.741,False,True,0.921875,0.0625,64,4.851204682670812,1.3615101493632762,0.015993475100388857,0.9516129032258065
+B6 Keyframe-guided,guided,rebar_hard_dev_00,rebar,hard,dev,0,solved,85.543,False,True,0.640625,0.359375,64,10.831919098473735,1.7140209423490704,0.00599418845846574,0.7321428571428571
+B6 Keyframe-guided,guided,rebar_hard_dev_01,rebar,hard,dev,0,solved,85.554,False,True,0.5,0.484375,64,11.13615958981709,1.7954661677381654,0.005992783843307594,0.5925925925925926
+B6 Keyframe-guided,guided,rebar_medium_dev_00,rebar,medium,dev,0,solved,6.598,False,True,0.78125,0.21875,64,4.872818056347038,1.2712984681300799,0.009994046219481242,0.847457627118644
+B6 Keyframe-guided,guided,rebar_medium_dev_01,rebar,medium,dev,0,solved,85.532,False,True,0.796875,0.203125,64,10.91176963664936,1.7800920536692502,0.007592256332663005,0.8095238095238095
+B6 Keyframe-guided,guided,tote_easy_dev_00,tote,easy,dev,0,solved,85.556,False,True,0.953125,0.046875,64,11.03736197678352,4.850365816797735,0.008000000321315858,0.953125
 B6 Keyframe-guided,guided,tote_easy_dev_01,tote,easy,dev,0,solved,85.537,False,True,1.0,0.0,64,11.205284831043087,5.048065439613769,0.007999996864595935,1.0
-B6 Keyframe-guided,guided,tote_hard_dev_00,tote,hard,dev,0,solved,85.546,False,True,0.703125,0.296875,64,10.840730068188265,4.8843767216836955,0.00599672573187413,1.0
-B6 Keyframe-guided,guided,tote_hard_dev_01,tote,hard,dev,0,solved,85.532,False,True,0.65625,0.34375,64,10.90115978460161,4.949301941937702,0.005998800139657959,0.8857142857142857
-B6 Keyframe-guided,guided,tote_medium_dev_00,tote,medium,dev,0,solved,85.541,False,True,0.921875,0.078125,64,10.863192959710318,4.737865634855956,0.007999996846046189,1.0
-B6 Keyframe-guided,guided,tote_medium_dev_01,tote,medium,dev,0,solved,85.535,False,True,0.90625,0.09375,64,10.84963522035456,4.8754640267307625,0.00878426969221577,0.9811320754716981
+B6 Keyframe-guided,guided,tote_hard_dev_00,tote,hard,dev,0,solved,85.546,False,True,0.703125,0.296875,64,10.840730068188265,4.8843767216836955,0.00599672573187413,0.75
+B6 Keyframe-guided,guided,tote_hard_dev_01,tote,hard,dev,0,solved,85.532,False,True,0.65625,0.34375,64,10.90115978460161,4.949301941937702,0.005998800139657959,0.711864406779661
+B6 Keyframe-guided,guided,tote_medium_dev_00,tote,medium,dev,0,solved,85.541,False,True,0.921875,0.078125,64,10.863192959710318,4.737865634855956,0.007999996846046189,0.9365079365079365
+B6 Keyframe-guided,guided,tote_medium_dev_01,tote,medium,dev,0,solved,85.535,False,True,0.90625,0.09375,64,10.84963522035456,4.8754640267307625,0.00878426969221577,0.9206349206349206

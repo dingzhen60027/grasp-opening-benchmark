@@ -1,0 +1,85 @@
+{
+ "task_id": "tote_hard_test_01",
+ "family": "tote",
+ "level": "hard",
+ "split": "test",
+ "label": "B4 RRTConnect + scenarios (N=8, risk 0.25)",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "scenarios": 8,
+  "risk": 0.25
+ },
+ "seed": 3,
+ "budget_seconds": 120,
+ "task_sha256": "d90fc2d7d088c31840e4e0ec1236caa232c0953cc48082f68ca8d5fc0103af43",
+ "planning_seconds": 114.0525027923286,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 8,
+  "risk": 0.25,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 62.15593488141894,
+  "raw_waypoints": 21,
+  "shortcut_attempts": 271,
+  "waypoints": 7,
+  "wall_seconds": 114.05246828868985,
+  "collision_checks": 28787
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "tote_hard_test_01",
+  "family": "tote",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3659321790,
+  "path_joint_length_rad": 3.941760491773101,
+  "ee_path_length_m": 1.5944240066629298,
+  "payload_min_clearance_m": 0.0013626283539009561,
+  "payload_clearance_p05_m": 0.0032604134925945365,
+  "trajectory_states": 883,
+  "collision_count": 195,
+  "collision_rate": 0.76171875,
+  "collision_ci95": [
+   0.7047112229879152,
+   0.8125563865011853
+  ],
+  "success_count": 56,
+  "success_rate": 0.21875,
+  "success_ci95": [
+   0.16967800430447139,
+   0.2744614094600548
+  ],
+  "failures_by_reason": {
+   "payload_environment": 195,
+   "keep_in": 5
+  },
+  "colliding_obstacles": {
+   "lid_flap": 110,
+   "divider_y1": 72,
+   "divider_x1": 8,
+   "cell_ledge": 4,
+   "divider_x0": 1
+  },
+  "wall_seconds": 9.015635923482478,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0000000000101000000000000110000010000000000100000100100000000010010010000000001011110100010010010100000101100000000011000010010000011000010000000000110011000000001000011000000100001000001110001000000101000000000100000111000000000000101001000100100000000001",
+  "episode_collision": "1111111111010111111111111001111101111111111011111011011111111101101101111111110100001011101101101001111010011111111100111101101110100111101111111111001100111111110111100111111001110111110001110111111010111111111011011000111111111111010110111011011111111100"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B4_RRTConnect___scenarios__N_8__risk_0.25_/tote_hard_test_01__s3.npy",
+ "trajectory_sha256": "cfbd7abad05441f7cb59db31a503e4c326398849a4defcdee3c0d2ca131771a5",
+ "task_success_rate": 0.21875
+}

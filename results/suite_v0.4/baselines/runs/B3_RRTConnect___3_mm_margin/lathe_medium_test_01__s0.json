@@ -1,0 +1,82 @@
+{
+ "task_id": "lathe_medium_test_01",
+ "family": "lathe",
+ "level": "medium",
+ "split": "test",
+ "label": "B3 RRTConnect + 3 mm margin",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "margin": 0.003
+ },
+ "seed": 0,
+ "budget_seconds": 120,
+ "task_sha256": "58bc472bd76255e16edc273c217ee5b25410760620f6861169bfbe1ad8ece80c",
+ "planning_seconds": 114.04875726718456,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.003,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 81.67412164621055,
+  "raw_waypoints": 22,
+  "shortcut_attempts": 218,
+  "waypoints": 4,
+  "wall_seconds": 114.0487256590277,
+  "collision_checks": 44542
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_medium_test_01",
+  "family": "lathe",
+  "level": "medium",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 11519655,
+  "path_joint_length_rad": 3.083750984226932,
+  "ee_path_length_m": 1.1303614993492954,
+  "payload_min_clearance_m": 0.0030414165245772444,
+  "payload_clearance_p05_m": 0.0036053340184866076,
+  "trajectory_states": 1013,
+  "collision_count": 103,
+  "collision_rate": 0.40234375,
+  "collision_ci95": [
+   0.34176473769076976,
+   0.46521134883973414
+  ],
+  "success_count": 153,
+  "success_rate": 0.59765625,
+  "success_ci95": [
+   0.5347886511602659,
+   0.6582352623092302
+  ],
+  "failures_by_reason": {
+   "payload_environment": 103
+  },
+  "colliding_obstacles": {
+   "coolant_nozzle": 67,
+   "front_wall_right": 12,
+   "chip_guard_lip": 23,
+   "fixture_guide_l": 1
+  },
+  "wall_seconds": 10.949045191518962,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111001000011101111101101010010100110100111110111011000100101101101100010010111001101100111111001111010011111010110010000110111111000101111101001101011011011111011111100011001101101000111000101100100111100111110111110110001111101110100110101111110110000010",
+  "episode_collision": "0000110111100010000010010101101011001011000001000100111011010010010011101101000110010011000000110000101100000101001101111001000000111010000010110010100100100000100000011100110010010111000111010011011000011000001000001001110000010001011001010000001001111101"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B3_RRTConnect___3_mm_margin/lathe_medium_test_01__s0.npy",
+ "trajectory_sha256": "319eb98213b88378eab56ed4183ca2e74f5f1b7f2932ed79a0c31fb3086b720d",
+ "task_success_rate": 0.59765625
+}

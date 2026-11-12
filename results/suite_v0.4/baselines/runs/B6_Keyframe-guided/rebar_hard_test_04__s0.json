@@ -1,0 +1,85 @@
+{
+ "task_id": "rebar_hard_test_04",
+ "family": "rebar",
+ "level": "hard",
+ "split": "test",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 120,
+ "task_sha256": "8a7a90ee10b4c828e914f90c4be5b88ed3384b2ae46dc3374afbb88ec22a4028",
+ "planning_seconds": 114.04810688551515,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 5,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 4.75111501198262,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 465,
+   "waypoints": 3
+  },
+  "insertion_states": 110,
+  "wall_seconds": 114.04808393120766,
+  "collision_checks": 43501
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rebar_hard_test_04",
+  "family": "rebar",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 2024586554,
+  "path_joint_length_rad": 11.221306140634361,
+  "ee_path_length_m": 1.7754661723935758,
+  "payload_min_clearance_m": 0.00599191871675285,
+  "payload_clearance_p05_m": 0.005997261999498192,
+  "trajectory_states": 4055,
+  "collision_count": 109,
+  "collision_rate": 0.42578125,
+  "collision_ci95": [
+   0.36443117961968846,
+   0.48887007704078117
+  ],
+  "success_count": 143,
+  "success_rate": 0.55859375,
+  "success_ci95": [
+   0.49543406147399766,
+   0.6203809631187395
+  ],
+  "failures_by_reason": {
+   "payload_environment": 109,
+   "goal_position": 4
+  },
+  "colliding_obstacles": {
+   "tie_hook": 52,
+   "side_clip": 57
+  },
+  "wall_seconds": 51.84903789125383,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1100110010110101000001111000110111101111111100010001111000111011110100000100111001000111010000110111011111011100000010110000011001101101111111110111100010100111011011110011000001111101111110010000111111011110110001101111010110001000101001110001100101001011",
+  "episode_collision": "0011001101001010111110000111000000010000000011100110000111000100001011111011000110111000101111001000100000100011111101001111000110010010000000001000011101011000100100001100111110000010000001101111000000100001001110010000101001110011010110001110011010110100"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/rebar_hard_test_04__s0.npy",
+ "trajectory_sha256": "05676958b3d5b7286f2c901c812b86eee37a9fc2a7427e95d33b8474ba562744",
+ "task_success_rate": 0.55859375
+}

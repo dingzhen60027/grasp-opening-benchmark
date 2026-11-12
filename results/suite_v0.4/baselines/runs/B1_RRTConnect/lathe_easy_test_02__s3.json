@@ -1,0 +1,80 @@
+{
+ "task_id": "lathe_easy_test_02",
+ "family": "lathe",
+ "level": "easy",
+ "split": "test",
+ "label": "B1 RRTConnect",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25
+ },
+ "seed": 3,
+ "budget_seconds": 120,
+ "task_sha256": "616af8e99dda6692d94b9cb52cc56060abaa2d61ddde61dea59be05f1bd317a7",
+ "planning_seconds": 114.04991516377777,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 79.105742957443,
+  "raw_waypoints": 37,
+  "shortcut_attempts": 118,
+  "waypoints": 5,
+  "wall_seconds": 114.04988178797066,
+  "collision_checks": 43634
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_easy_test_02",
+  "family": "lathe",
+  "level": "easy",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 2093804176,
+  "path_joint_length_rad": 4.375549315181774,
+  "ee_path_length_m": 1.381356278498156,
+  "payload_min_clearance_m": 0.0010100528642075523,
+  "payload_clearance_p05_m": 0.0034190960241948327,
+  "trajectory_states": 1276,
+  "collision_count": 165,
+  "collision_rate": 0.64453125,
+  "collision_ci95": [
+   0.582533658522401,
+   0.7031384572600385
+  ],
+  "success_count": 91,
+  "success_rate": 0.35546875,
+  "success_ci95": [
+   0.2968615427399615,
+   0.41746634147759903
+  ],
+  "failures_by_reason": {
+   "payload_environment": 165
+  },
+  "colliding_obstacles": {
+   "fixture_guide_r": 13,
+   "side_wall_pos": 60,
+   "machine_bed": 92
+  },
+  "wall_seconds": 12.041668930090964,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0000110000100111010100000001110010100100101001010011000000010100101001101000110010100100010011000001100011010000000110000011110110010111000000010010001000100001100111111101000000100000001010010000010010101110000010110010101010100110000101000011000000000010",
+  "episode_collision": "1111001111011000101011111110001101011011010110101100111111101011010110010111001101011011101100111110011100101111111001111100001001101000111111101101110111011110011000000010111111011111110101101111101101010001111101001101010101011001111010111100111111111101"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B1_RRTConnect/lathe_easy_test_02__s3.npy",
+ "trajectory_sha256": "b53e03cbd1602c7dbda9a61e823c1eae2d540fc1ffd1e23a0f57edf61185230f",
+ "task_success_rate": 0.35546875
+}

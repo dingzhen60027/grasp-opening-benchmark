@@ -1,0 +1,25 @@
+{
+  "name": "v0.4 test split: oracles and baselines",
+  "description": "Main v0.4 results: both oracle witnesses and the four selected baselines on the frozen test split (72 tasks), compared on common grasp-error draws. To add a method, append its results directory, its label and the pairs to report.",
+  "results": [
+    "results/suite_v0.4/reference",
+    "results/suite_v0.4/baselines"
+  ],
+  "split": "test",
+  "methods": [
+    {"label": "Reference (risk-aware oracle)", "name": "Risk-aware oracle"},
+    {"label": "Reference (straight oracle)", "name": "Straight oracle"},
+    {"label": "B6 Keyframe-guided", "name": "B6 Keyframe-guided"},
+    {"label": "B3 RRTConnect + 3 mm margin", "name": "B3 RRTConnect + 3 mm margin"},
+    {"label": "B1 RRTConnect", "name": "B1 RRTConnect"},
+    {"label": "B4 RRTConnect + scenarios (N=8, risk 0.25)", "name": "B4 RRTConnect + scenarios"}
+  ],
+  "pairs": [
+    ["B6 Keyframe-guided", "Straight oracle"],
+    ["Risk-aware oracle", "B6 Keyframe-guided"],
+    ["Risk-aware oracle", "Straight oracle"],
+    ["B3 RRTConnect + 3 mm margin", "B1 RRTConnect"],
+    ["B4 RRTConnect + scenarios", "B1 RRTConnect"]
+  ],
+  "output": "results/suite_v0.4/comparison_test"
+}

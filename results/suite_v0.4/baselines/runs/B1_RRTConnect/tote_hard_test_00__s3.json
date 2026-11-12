@@ -1,0 +1,35 @@
+{
+ "task_id": "tote_hard_test_00",
+ "family": "tote",
+ "level": "hard",
+ "split": "test",
+ "label": "B1 RRTConnect",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25
+ },
+ "seed": 3,
+ "budget_seconds": 120,
+ "task_sha256": "da467c473ed965f199ae366bcfbdfda0c63ef37efd67dc4e5c79f4cf904dc99c",
+ "planning_seconds": 97.13907636050135,
+ "over_budget": false,
+ "status": "approximate",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Approximate solution",
+  "solve_seconds": 97.10143337864429,
+  "wall_seconds": 97.13904898520559,
+  "collision_checks": 38053
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

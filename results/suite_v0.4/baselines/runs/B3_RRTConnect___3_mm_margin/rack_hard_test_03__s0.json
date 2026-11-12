@@ -1,0 +1,36 @@
+{
+ "task_id": "rack_hard_test_03",
+ "family": "rack",
+ "level": "hard",
+ "split": "test",
+ "label": "B3 RRTConnect + 3 mm margin",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "margin": 0.003
+ },
+ "seed": 0,
+ "budget_seconds": 120,
+ "task_sha256": "1a8c8f3e5457f4173a5dbd51b83960a65ab4ff3fff6d6642ccccce8b81e7c47d",
+ "planning_seconds": 97.17854211572558,
+ "over_budget": false,
+ "status": "approximate",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.003,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Approximate solution",
+  "solve_seconds": 97.12896326743066,
+  "wall_seconds": 97.17851489037275,
+  "collision_checks": 37894
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

@@ -10,7 +10,7 @@ A reproducible benchmark for transporting **grasped elongated workpieces through
 
 ## v0.4 suite (current)
 
-v0.4 puts the level-controlled obstacles where the payload tip, which has the largest lever arm, must pass them during insertion. Goals keep slack, so the risk is decided by the path rather than by the goal state. Every task stores two oracle paths: a straight insertion and a risk-optimised one. Their measured success gap is the room a robust planner has to show its value. See [SUITE_v0.4.md](SUITE_v0.4.md).
+v0.4 puts the level-controlled obstacles where the payload tip, which has the largest lever arm, must pass them during insertion. Goals keep slack, so the risk is decided by the path rather than by the goal state. Every task stores two oracle paths: a straight insertion and a risk-optimised one. Their measured success gap is the room a robust planner has to show its value. On the frozen test split, a keyframe-guided planner that follows the openings but ignores uncertainty reaches 75.1% task success, close to the straight oracle (77.3%); the risk-aware oracle reaches 91.0% and is 27.0 points above the guided planner at the hard level. See [SUITE_v0.4.md](SUITE_v0.4.md), Section 5.
 
 ## v0.3 suite (calibration and sensitivity track)
 
@@ -55,9 +55,9 @@ To add your own planner, implement `plan(problem, seed, budget, **params)` and r
 
 ## Repository map
 
-- `gosuite/`: v0.3 suite. Generator (`generate`), scene families (`families/`), world and collision checks (`world`), task rules (`task`), evaluator (`evaluate`), audit, planning interface (`planning`), baselines (`planners/`), harness (`experiment`, `report`, `figures`) and screenshots (`render`).
-- `data/suite_v0.3/`: 96 tasks, witnesses, manifest with hashes, rejection log.
-- `configs/`: protocol and experiment configs; `results/suite_v0.3/`: audit, reference evaluation, smoke runs.
+- `gosuite/`: suites v0.3 and v0.4. Generator (`generate`), scene families (`families/`), world and collision checks (`world`), task rules (`task`), evaluator (`evaluate`), audit, planning interface (`planning`), baselines (`planners/`), harness (`experiment`, `report`, `compare`, `figures`), validation (`validate`) and screenshots (`render`).
+- `data/suite_v0.4/` (current) and `data/suite_v0.3/`: 96 tasks each, witnesses, manifest with hashes, rejection log.
+- `configs/`: protocol, experiment and comparison configs. `results/suite_v0.4/`: audit, validation, oracle and baseline runs, comparison tables; `results/suite_v0.3/`: audit, validation, reference evaluation, short baseline test and smoke runs.
 - `previews/`: simulator screenshots; `assets/`: bundled models with licenses and SHA-256 provenance.
 - `docs/`: design rationale, TAPOM reproduction status, CI template.
 
@@ -65,7 +65,6 @@ To add your own planner, implement `plan(problem, seed, budget, **params)` and r
 
 Remaining work:
 
-- run the baseline table on the frozen test split;
 - adapt TAPOM ([arXiv:2511.05052](https://arxiv.org/abs/2511.05052)) and possibly other frontier methods;
 - develop the proposed uncertainty-aware planner;
 - calibrate the grasp-error distribution;

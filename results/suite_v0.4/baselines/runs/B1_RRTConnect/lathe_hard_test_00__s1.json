@@ -1,0 +1,35 @@
+{
+ "task_id": "lathe_hard_test_00",
+ "family": "lathe",
+ "level": "hard",
+ "split": "test",
+ "label": "B1 RRTConnect",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25
+ },
+ "seed": 1,
+ "budget_seconds": 120,
+ "task_sha256": "d648d17169f0075571c896bf0d9f21f3e0ff83ab8cc5c61fa9a41b706389c002",
+ "planning_seconds": 96.99931383598596,
+ "over_budget": false,
+ "status": "approximate",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Approximate solution",
+  "solve_seconds": 96.94893021229655,
+  "wall_seconds": 96.99928931612521,
+  "collision_checks": 40338
+ },
+ "path_found": false,
+ "execution": null,
+ "nominal_valid": false,
+ "task_success_rate": 0.0
+}

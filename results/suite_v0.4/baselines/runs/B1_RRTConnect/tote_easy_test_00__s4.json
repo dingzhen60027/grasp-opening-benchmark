@@ -1,0 +1,49 @@
+{
+ "task_id": "tote_easy_test_00",
+ "family": "tote",
+ "level": "easy",
+ "split": "test",
+ "label": "B1 RRTConnect",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25
+ },
+ "seed": 4,
+ "budget_seconds": 120,
+ "task_sha256": "be7490fd9bcab01f0a10c55ce8cca4fffbb8de37f01cee0d4db4200440211491",
+ "planning_seconds": 114.04893906414509,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 23.86958385631442,
+  "raw_waypoints": 25,
+  "shortcut_attempts": 1210,
+  "waypoints": 5,
+  "wall_seconds": 114.048898271285,
+  "collision_checks": 42599
+ },
+ "path_found": true,
+ "execution": null,
+ "nominal_valid": false,
+ "trajectory": "trajectories/B1_RRTConnect/tote_easy_test_00__s4.npy",
+ "trajectory_sha256": "5a63b3e1ac4f457de070e08fc6886cca910cd60f6fb27f63092abfd741721301",
+ "nominal_failure": {
+  "valid": false,
+  "reason": "collision:payload_environment",
+  "state": 616,
+  "detail": {
+   "reason": "payload_environment",
+   "obstacle": "divider_x2"
+  }
+ },
+ "task_success_rate": 0.0
+}

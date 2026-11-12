@@ -1,0 +1,87 @@
+{
+ "task_id": "rack_hard_test_05",
+ "family": "rack",
+ "level": "hard",
+ "split": "test",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 1,
+ "budget_seconds": 120,
+ "task_sha256": "eb08d7feef51bd7670c14dec62a4dc43de4ba158184e0b48913beed5130dd1fc",
+ "planning_seconds": 14.323294419795275,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 10.1325769610703,
+   "raw_waypoints": 4,
+   "shortcut_attempts": 4,
+   "waypoints": 2
+  },
+  "insertion_states": 126,
+  "wall_seconds": 14.323269595392048,
+  "collision_checks": 4764
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_hard_test_05",
+  "family": "rack",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3286815184,
+  "path_joint_length_rad": 4.120880073914308,
+  "ee_path_length_m": 0.8934297838333527,
+  "payload_min_clearance_m": 0.005993023777697547,
+  "payload_clearance_p05_m": 0.005993927355164952,
+  "trajectory_states": 1150,
+  "collision_count": 114,
+  "collision_rate": 0.4453125,
+  "collision_ci95": [
+   0.38342549076869653,
+   0.5084804413969692
+  ],
+  "success_count": 140,
+  "success_rate": 0.546875,
+  "success_ci95": [
+   0.48370183704129716,
+   0.6089502898285364
+  ],
+  "failures_by_reason": {
+   "payload_environment": 114,
+   "goal_position": 1,
+   "placement_height": 1
+  },
+  "colliding_obstacles": {
+   "bracket_shallow": 59,
+   "bracket_deep": 47,
+   "target_saddle_0": 8
+  },
+  "wall_seconds": 16.57576263602823,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0110100100010100111101111000000110100101010100010101100000010101110110000010100101001101111111010110010111111010101100001011011100111101101001101010110100100100111111011000111110101101101100111110110010111000111101000100100010111100011111010001100111111110",
+  "episode_collision": "1001011011101011000010000111111001011010101011101010011111101010001001111101011010110010000000101001101000000101010011110100100011000010010110000101001011011011000000100111000001010010010011000001000101000111000010111011011101000011100000101110011000000001"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/rack_hard_test_05__s1.npy",
+ "trajectory_sha256": "7db15b8d0ab06d86ae6c87973bfbfde7916d86647e57fdc90b99659330032cd7",
+ "task_success_rate": 0.546875
+}

@@ -1,0 +1,83 @@
+{
+ "task_id": "tote_medium_test_03",
+ "family": "tote",
+ "level": "medium",
+ "split": "test",
+ "label": "B1 RRTConnect",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25
+ },
+ "seed": 3,
+ "budget_seconds": 120,
+ "task_sha256": "b05f32e94166544b5de0e0b4ed50532b4d81b01d5ebdd828053ac806299d7288",
+ "planning_seconds": 114.04975628200918,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 15.13843755517155,
+  "raw_waypoints": 23,
+  "shortcut_attempts": 849,
+  "waypoints": 6,
+  "wall_seconds": 114.04972075857222,
+  "collision_checks": 46950
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "tote_medium_test_03",
+  "family": "tote",
+  "level": "medium",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 484179462,
+  "path_joint_length_rad": 3.673236705510664,
+  "ee_path_length_m": 1.5411425245138801,
+  "payload_min_clearance_m": 0.0009002350608999111,
+  "payload_clearance_p05_m": 0.0037859546114079675,
+  "trajectory_states": 1073,
+  "collision_count": 187,
+  "collision_rate": 0.73046875,
+  "collision_ci95": [
+   0.671690988070581,
+   0.7838230544073859
+  ],
+  "success_count": 69,
+  "success_rate": 0.26953125,
+  "success_ci95": [
+   0.21617694559261408,
+   0.328309011929419
+  ],
+  "failures_by_reason": {
+   "payload_environment": 187
+  },
+  "colliding_obstacles": {
+   "source_waiting_rod_0": 51,
+   "divider_x2": 109,
+   "divider_y1": 15,
+   "divider_y0": 6,
+   "lid_flap": 5,
+   "cell_ledge": 1
+  },
+  "wall_seconds": 18.180726467631757,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1101010000110100000110101000001001000010000101101000000100000001000001001001000000000000000001000000000100000000001000101100100000010000000101010000010010100001000001010100000010011000100010010000011010001000000001100011100010100101000001010001111000010101",
+  "episode_collision": "0010101111001011111001010111110110111101111010010111111011111110111110110110111111111111111110111111111011111111110111010011011111101111111010101111101101011110111110101011111101100111011101101111100101110111111110011100011101011010111110101110000111101010"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B1_RRTConnect/tote_medium_test_03__s3.npy",
+ "trajectory_sha256": "e231e086126c7ccd3460b40989da1ad226789e72f1d4937a7cacff8ffea7941b",
+ "task_success_rate": 0.26953125
+}

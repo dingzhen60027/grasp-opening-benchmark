@@ -1,0 +1,86 @@
+{
+ "task_id": "rebar_hard_test_00",
+ "family": "rebar",
+ "level": "hard",
+ "split": "test",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 120,
+ "task_sha256": "c9a4837e1979757687894d0961c749f6278092d6a0793de27149f838ad736c3a",
+ "planning_seconds": 114.03577868454158,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 5,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 3.9151222947984934,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 724,
+   "waypoints": 3
+  },
+  "insertion_states": 115,
+  "wall_seconds": 114.0357583463192,
+  "collision_checks": 54480
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rebar_hard_test_00",
+  "family": "rebar",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3091440287,
+  "path_joint_length_rad": 11.164387979508502,
+  "ee_path_length_m": 1.8241581310314046,
+  "payload_min_clearance_m": 0.005994406163380962,
+  "payload_clearance_p05_m": 0.005997504454305476,
+  "trajectory_states": 4072,
+  "collision_count": 104,
+  "collision_rate": 0.40625,
+  "collision_ci95": [
+   0.34553275073410206,
+   0.4691641575734558
+  ],
+  "success_count": 149,
+  "success_rate": 0.58203125,
+  "success_ci95": [
+   0.5190007291080962,
+   0.643139798227678
+  ],
+  "failures_by_reason": {
+   "payload_environment": 104,
+   "goal_position": 3
+  },
+  "colliding_obstacles": {
+   "tie_hook": 55,
+   "side_clip": 46,
+   "stirrup_0": 3
+  },
+  "wall_seconds": 35.40977348573506,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1101101010101110011011000111010111001011011101110110111111100111110010100101111000010011100111111101100110101010011111011001101011100111110111101011110001011110010111111100101000100000000110010100010110110111110010111111001111111101101001001000001011000000",
+  "episode_collision": "0010010101010001100100111000100000100100100010001001000000011000001101011010000111100100011000000010011001010101100000100110010100011000001000010100001110100001101000000011010111011111111001101011101001001000001101000000110000000010010110110111110100111111"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/rebar_hard_test_00__s0.npy",
+ "trajectory_sha256": "96beadf956da44c6bad3d3fb83b73c51fd718d522b13dcb4eefd72fc3d992403",
+ "task_success_rate": 0.58203125
+}

@@ -1,0 +1,82 @@
+{
+ "task_id": "lathe_easy_test_05",
+ "family": "lathe",
+ "level": "easy",
+ "split": "test",
+ "label": "B4 RRTConnect + scenarios (N=8, risk 0.25)",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "scenarios": 8,
+  "risk": 0.25
+ },
+ "seed": 0,
+ "budget_seconds": 120,
+ "task_sha256": "c99e45e5424b85fc4dca13322123f20b1f9ee922116de6a8da1fe5c9f84cd57f",
+ "planning_seconds": 114.03875806648284,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 8,
+  "risk": 0.25,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 32.79994074720889,
+  "raw_waypoints": 25,
+  "shortcut_attempts": 399,
+  "waypoints": 5,
+  "wall_seconds": 114.03872488997877,
+  "collision_checks": 38933
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_easy_test_05",
+  "family": "lathe",
+  "level": "easy",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3196152168,
+  "path_joint_length_rad": 3.2139592126399825,
+  "ee_path_length_m": 1.1641005215687321,
+  "payload_min_clearance_m": 0.00010621117892971798,
+  "payload_clearance_p05_m": 0.000981610505054525,
+  "trajectory_states": 945,
+  "collision_count": 195,
+  "collision_rate": 0.76171875,
+  "collision_ci95": [
+   0.7047112229879152,
+   0.8125563865011853
+  ],
+  "success_count": 61,
+  "success_rate": 0.23828125,
+  "success_ci95": [
+   0.18744361349881472,
+   0.2952887770120848
+  ],
+  "failures_by_reason": {
+   "payload_environment": 195
+  },
+  "colliding_obstacles": {
+   "coolant_nozzle": 131,
+   "fixture_guide_l": 42,
+   "fixture_pad": 22
+  },
+  "wall_seconds": 14.353034563362598,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0000100000010000100100000101001000010001010000100000101010011111000000001000001000100000000100010010000010001001000001000100000100010001001100101000001110000000001101101000010100000000100100000000100000001000100100001000110010000010000010000000000010000001",
+  "episode_collision": "1111011111101111011011111010110111101110101111011111010101100000111111110111110111011111111011101101111101110110111110111011111011101110110011010111110001111111110010010111101011111111011011111111011111110111011011110111001101111101111101111111111101111110"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B4_RRTConnect___scenarios__N_8__risk_0.25_/lathe_easy_test_05__s0.npy",
+ "trajectory_sha256": "44ef91cd227d40e39a430a2240c82fae49b155cb43f09930ff095de0db25afd7",
+ "task_success_rate": 0.23828125
+}

@@ -12,6 +12,7 @@
    0.20377604166666666
   ],
   "collision_given_valid": 0.11979166666666667,
+  "feasible_episode_success": 0.100435195968484,
   "planning_seconds_median": 28.476,
   "path_joint_length_median": 2.7711616371878076,
   "ee_path_length_median": 1.0739885088570142,
@@ -31,6 +32,7 @@
    0.548828125
   ],
   "collision_given_valid": 0.11979166666666667,
+  "feasible_episode_success": 0.30130558790545203,
   "planning_seconds_median": 28.476,
   "path_joint_length_median": 2.7711616371878076,
   "ee_path_length_median": 1.0739885088570142,
@@ -50,6 +52,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -69,6 +72,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -88,6 +92,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -107,6 +112,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -126,6 +132,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -145,6 +152,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -164,6 +172,7 @@
    0.2265625
   ],
   "collision_given_valid": 0.125,
+  "feasible_episode_success": 0.10507246376811595,
   "planning_seconds_median": 23.38,
   "path_joint_length_median": 2.7711616371878076,
   "ee_path_length_median": 1.0739885088570142,
@@ -183,6 +192,7 @@
    0.453125
   ],
   "collision_given_valid": 0.125,
+  "feasible_episode_success": 0.31521739130434784,
   "planning_seconds_median": 23.38,
   "path_joint_length_median": 2.7711616371878076,
   "ee_path_length_median": 1.0739885088570142,
@@ -202,6 +212,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -221,6 +232,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -240,6 +252,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -259,6 +272,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -278,6 +292,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -297,6 +312,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -316,6 +332,7 @@
    0.5963541666666666
   ],
   "collision_given_valid": 0.1171875,
+  "feasible_episode_success": 0.29666832010582006,
   "planning_seconds_median": 30.4995,
   "path_joint_length_median": 4.789042171499859,
   "ee_path_length_median": 1.1595252678418286,
@@ -335,6 +352,7 @@
    0.90625
   ],
   "collision_given_valid": 0.1171875,
+  "feasible_episode_success": 0.8900049603174602,
   "planning_seconds_median": 30.4995,
   "path_joint_length_median": 4.789042171499859,
   "ee_path_length_median": 1.1595252678418286,
@@ -354,6 +372,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -373,6 +392,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -392,6 +412,7 @@
    0.1751627604166665
   ],
   "collision_given_valid": 0.41796875,
+  "feasible_episode_success": 0.1107085346215781,
   "planning_seconds_median": 25.3065,
   "path_joint_length_median": 2.8622683565764486,
   "ee_path_length_median": 1.0683092593457917,
@@ -411,6 +432,7 @@
    0.380859375
   ],
   "collision_given_valid": 0.4270833333333333,
+  "feasible_episode_success": 0.23490338164251207,
   "planning_seconds_median": 28.652,
   "path_joint_length_median": 2.760369555826835,
   "ee_path_length_median": 1.093529564386003,
@@ -430,6 +452,7 @@
    0.205078125
   ],
   "collision_given_valid": 0.390625,
+  "feasible_episode_success": 0.09722222222222222,
   "planning_seconds_median": 21.961,
   "path_joint_length_median": 2.964167157326062,
   "ee_path_length_median": 1.0430889543055806,
@@ -449,6 +472,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -468,6 +492,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -487,6 +512,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -506,6 +532,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -525,6 +552,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -544,6 +572,7 @@
    0.4270833333333333
   ],
   "collision_given_valid": 0.3046875,
+  "feasible_episode_success": 0.285426731078905,
   "planning_seconds_median": 19.308999999999997,
   "path_joint_length_median": 2.848074409614884,
   "ee_path_length_median": 1.0382581156676152,
@@ -563,6 +592,7 @@
    0.671875
   ],
   "collision_given_valid": 0.21875,
+  "feasible_episode_success": 0.4673913043478261,
   "planning_seconds_median": 16.657,
   "path_joint_length_median": 2.7319816619037054,
   "ee_path_length_median": 1.0334272770296498,
@@ -582,6 +612,7 @@
    0.546875
   ],
   "collision_given_valid": 0.390625,
+  "feasible_episode_success": 0.3888888888888889,
   "planning_seconds_median": 21.961,
   "path_joint_length_median": 2.964167157326062,
   "ee_path_length_median": 1.0430889543055806,
@@ -601,6 +632,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -620,6 +652,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -639,6 +672,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -658,6 +692,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -677,6 +712,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -696,6 +732,7 @@
    0.3229166666666667
   ],
   "collision_given_valid": 0.53125,
+  "feasible_episode_success": 0.1574074074074074,
   "planning_seconds_median": 31.314,
   "path_joint_length_median": 5.705275492910529,
   "ee_path_length_median": 1.1770731350176384,
@@ -715,6 +752,7 @@
    0.5
   ],
   "collision_given_valid": 0.53125,
+  "feasible_episode_success": 0.4722222222222222,
   "planning_seconds_median": 31.314,
   "path_joint_length_median": 5.705275492910529,
   "ee_path_length_median": 1.1770731350176384,
@@ -734,6 +772,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -753,6 +792,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -772,6 +812,7 @@
    0.21744791666666666
   ],
   "collision_given_valid": 0.26953125,
+  "feasible_episode_success": 0.13864149186871447,
   "planning_seconds_median": 26.4165,
   "path_joint_length_median": 3.1134757268806985,
   "ee_path_length_median": 1.03376407162961,
@@ -791,6 +832,7 @@
    0.5
   ],
   "collision_given_valid": 0.22916666666666666,
+  "feasible_episode_success": 0.3187022533839212,
   "planning_seconds_median": 24.669,
   "path_joint_length_median": 3.199775919382823,
   "ee_path_length_median": 1.0324474559246186,
@@ -810,6 +852,7 @@
    0.205078125
   ],
   "collision_given_valid": 0.390625,
+  "feasible_episode_success": 0.09722222222222222,
   "planning_seconds_median": 29.393,
   "path_joint_length_median": 3.027175534378574,
   "ee_path_length_median": 1.038263145933657,
@@ -829,6 +872,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -848,6 +892,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -867,6 +912,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -886,6 +932,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -905,6 +952,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -924,6 +972,7 @@
    0.5494791666666666
   ],
   "collision_given_valid": 0.3020833333333333,
+  "feasible_episode_success": 0.41654513414152466,
   "planning_seconds_median": 28.164,
   "path_joint_length_median": 3.027175534378574,
   "ee_path_length_median": 1.0350806873346015,
@@ -943,6 +992,7 @@
    0.6875
   ],
   "collision_given_valid": 0.2578125,
+  "feasible_episode_success": 0.860746513535685,
   "planning_seconds_median": 24.067500000000003,
   "path_joint_length_median": 2.9750167056601424,
   "ee_path_length_median": 1.03376407162961,
@@ -962,6 +1012,7 @@
    0.546875
   ],
   "collision_given_valid": 0.390625,
+  "feasible_episode_success": 0.3888888888888889,
   "planning_seconds_median": 29.393,
   "path_joint_length_median": 3.027175534378574,
   "ee_path_length_median": 1.038263145933657,
@@ -981,6 +1032,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -1000,6 +1052,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -1019,6 +1072,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -1038,6 +1092,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -1057,6 +1112,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -1076,6 +1132,7 @@
    0.4140625
   ],
   "collision_given_valid": 0.171875,
+  "feasible_episode_success": 0.13802083333333334,
   "planning_seconds_median": 24.669,
   "path_joint_length_median": 3.32591781171417,
   "ee_path_length_median": 0.8717558483552339,
@@ -1095,6 +1152,7 @@
    0.828125
   ],
   "collision_given_valid": 0.171875,
+  "feasible_episode_success": 0.4140625,
   "planning_seconds_median": 24.669,
   "path_joint_length_median": 3.32591781171417,
   "ee_path_length_median": 0.8717558483552339,
@@ -1114,6 +1172,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -1133,6 +1192,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,

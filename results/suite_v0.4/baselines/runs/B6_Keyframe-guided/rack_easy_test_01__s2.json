@@ -1,0 +1,88 @@
+{
+ "task_id": "rack_easy_test_01",
+ "family": "rack",
+ "level": "easy",
+ "split": "test",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 2,
+ "budget_seconds": 120,
+ "task_sha256": "ae9d301843b26285f73199967e05bb4e25582a199c3da210a55b090eb67f5c05",
+ "planning_seconds": 114.05291028134525,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 7.848627375438809,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 649,
+   "waypoints": 3
+  },
+  "insertion_states": 147,
+  "wall_seconds": 114.05287655908614,
+  "collision_checks": 42405
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_easy_test_01",
+  "family": "rack",
+  "level": "easy",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3171508973,
+  "path_joint_length_rad": 11.366597837188603,
+  "ee_path_length_m": 4.24965933205129,
+  "payload_min_clearance_m": 0.013999992470138516,
+  "payload_clearance_p05_m": 0.014000651001853657,
+  "trajectory_states": 3464,
+  "collision_count": 31,
+  "collision_rate": 0.12109375,
+  "collision_ci95": [
+   0.08377961467746282,
+   0.1674617832091539
+  ],
+  "success_count": 221,
+  "success_rate": 0.86328125,
+  "success_ci95": [
+   0.8150185039601171,
+   0.9028882831522811
+  ],
+  "failures_by_reason": {
+   "goal_position": 3,
+   "payload_environment": 31,
+   "placement_height": 1
+  },
+  "colliding_obstacles": {
+   "bracket_shallow": 9,
+   "bracket_deep": 8,
+   "target_saddle_0": 13,
+   "target_guide_0_l": 1
+  },
+  "wall_seconds": 76.97412746213377,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1011110111111110111111111111111111111010011111011111111111111111101011111011111011111111111111101111011111111111011011111111101111110111101111111001111110111111101010011111111111011111111111111111111111111110111101101110111111101111111011111111111110110110",
+  "episode_collision": "0000001000000001000000000000000000000101100000100000000000000000010100000100000100000000000000010000100000000000100100000000010000001000010000000010000001000000010100100000000000100000000000000000000000000001000010010001000000010000000100000000000000001001"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/rack_easy_test_01__s2.npy",
+ "trajectory_sha256": "6d372ac6018f1289a46cffb2cd05b4363b3846ba9d56e5baf2ed49c6daa87d6b",
+ "task_success_rate": 0.86328125
+}

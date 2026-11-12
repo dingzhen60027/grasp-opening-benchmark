@@ -12,6 +12,7 @@
    0.16927083333333334
   ],
   "collision_given_valid": 0.59375,
+  "feasible_episode_success": 0.08888028895768833,
   "planning_seconds_median": 217.1125,
   "path_joint_length_median": 8.145337877207524,
   "ee_path_length_median": 2.55644765439373,
@@ -31,6 +32,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -50,6 +52,7 @@
    0.45703125
   ],
   "collision_given_valid": 0.390625,
+  "feasible_episode_success": 0.17105263157894737,
   "planning_seconds_median": 158.961,
   "path_joint_length_median": 7.980477855890919,
   "ee_path_length_median": 2.9140517635335748,
@@ -69,6 +72,7 @@
    0.15234375
   ],
   "collision_given_valid": 0.796875,
+  "feasible_episode_success": 0.09558823529411764,
   "planning_seconds_median": 275.264,
   "path_joint_length_median": 8.31019789852413,
   "ee_path_length_median": 2.1988435452538853,
@@ -88,6 +92,7 @@
    0.3385416666666667
   ],
   "collision_given_valid": 0.59375,
+  "feasible_episode_success": 0.17776057791537667,
   "planning_seconds_median": 217.1125,
   "path_joint_length_median": 8.145337877207524,
   "ee_path_length_median": 2.55644765439373,
@@ -107,6 +112,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -126,6 +132,7 @@
    0.609375
   ],
   "collision_given_valid": 0.390625,
+  "feasible_episode_success": 0.34210526315789475,
   "planning_seconds_median": 158.961,
   "path_joint_length_median": 7.980477855890919,
   "ee_path_length_median": 2.9140517635335748,
@@ -145,6 +152,7 @@
    0.203125
   ],
   "collision_given_valid": 0.796875,
+  "feasible_episode_success": 0.19117647058823528,
   "planning_seconds_median": 275.264,
   "path_joint_length_median": 8.31019789852413,
   "ee_path_length_median": 2.1988435452538853,
@@ -164,6 +172,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -183,6 +192,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -202,6 +212,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,
@@ -221,6 +232,7 @@
    0.0
   ],
   "collision_given_valid": NaN,
+  "feasible_episode_success": 0.0,
   "planning_seconds_median": NaN,
   "path_joint_length_median": NaN,
   "ee_path_length_median": NaN,

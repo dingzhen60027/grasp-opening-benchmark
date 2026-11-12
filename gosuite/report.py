@@ -20,6 +20,7 @@ a task are averaged first), so they reflect instance variation rather than episo
 import argparse
 import csv
 import json
+import os
 from collections import defaultdict
 from pathlib import Path
 import numpy as np
@@ -85,17 +86,24 @@ def summarise(rows):
 
 
 def find_feasibility(out, path=None):
-    candidates = [path] if path else [Path(out).parent / 'validation' / 'goal_feasibility.json',
-                                      Path('results/suite_v0.3/validation/goal_feasibility.json')]
-    for c in candidates:
-        if c and Path(c).exists():
-            return json.loads(Path(c).read_text())
-    return None
+    """Goal-feasibility flags for the runs in ``out`` and the file they came from.
+
+    Uses ``path`` if given, else the suite's own validation output next to the results
+    (results/<suite>/validation/goal_feasibility.json). There is deliberately no fallback to another
+    suite's file: task ids repeat across suite versions, so a fallback would attach the wrong flags
+    silently. Without validation output the column stays empty (re-run the report after gosuite.validate).
+    """
+    c = Path(path) if path else Path(out).parent / 'validation' / 'goal_feasibility.json'
+    if not c.exists():
+        if path:
+            raise SystemExit(f'feasibility file not found: {path}')
+        return None, None
+    return json.loads(c.read_text()), c
 
 
 def report(out, quiet=False, feasibility=None):
     out = Path(out)
-    feas = find_feasibility(out, feasibility)
+    feas, feas_file = find_feasibility(out, feasibility)
     rows = [flat(r, feas) for r in load_runs(out)]
     if not rows:
         raise SystemExit(f'no runs under {out}/runs')
@@ -126,8 +134,11 @@ def report(out, quiet=False, feasibility=None):
             row['task_success_ci_low'], row['task_success_ci_high'] = s['task_success_ci95']
             w.writerow(row)
     (out / 'summary.json').write_text(json.dumps(summary, indent=1) + '\n')
+    source = (f'goal-state flags from `{os.path.relpath(feas_file, out)}`' if feas_file
+              else 'not available (no validation output next to the results; run gosuite.validate, then this report again)')
     lines = ['# Experiment summary', '', f'Runs: {len(rows)}. Task success counts planning failures as 0; '
-             'CI = 95% bootstrap over tasks. Collision | valid = mean episode collision rate of valid paths.', '']
+             'CI = 95% bootstrap over tasks. Collision | valid = mean episode collision rate of valid paths. '
+             f'Feasible-episode success: {source}.', '']
     lines += ['| Planner | Family | Level | Runs | Planning success | Task success [95% CI] | Feasible-episode success | '
               'Collision \\| valid | Plan time (s, median) | Min clearance (mm, median) |', '|---|---|---|---:|---:|---:|---:|---:|---:|---:|']
     for s in summary:

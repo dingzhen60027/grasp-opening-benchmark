@@ -1,0 +1,84 @@
+{
+ "task_id": "tote_medium_test_03",
+ "family": "tote",
+ "level": "medium",
+ "split": "test",
+ "label": "B4 RRTConnect + scenarios (N=8, risk 0.25)",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25,
+  "scenarios": 8,
+  "risk": 0.25
+ },
+ "seed": 1,
+ "budget_seconds": 120,
+ "task_sha256": "b05f32e94166544b5de0e0b4ed50532b4d81b01d5ebdd828053ac806299d7288",
+ "planning_seconds": 114.05607083532959,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 8,
+  "risk": 0.25,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 80.15188180375844,
+  "raw_waypoints": 82,
+  "shortcut_attempts": 115,
+  "waypoints": 5,
+  "wall_seconds": 114.05603354703635,
+  "collision_checks": 24567
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "tote_medium_test_03",
+  "family": "tote",
+  "level": "medium",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 484179462,
+  "path_joint_length_rad": 3.317219582103203,
+  "ee_path_length_m": 1.0119404205346934,
+  "payload_min_clearance_m": 0.004160302098008452,
+  "payload_clearance_p05_m": 0.008864901380704561,
+  "trajectory_states": 965,
+  "collision_count": 55,
+  "collision_rate": 0.21484375,
+  "collision_ci95": [
+   0.16614416071498828,
+   0.2702769948515555
+  ],
+  "success_count": 198,
+  "success_rate": 0.7734375,
+  "success_ci95": [
+   0.7171890456983341,
+   0.8232346721263859
+  ],
+  "failures_by_reason": {
+   "payload_environment": 55,
+   "keep_in": 3
+  },
+  "colliding_obstacles": {
+   "lid_flap": 9,
+   "divider_x1": 36,
+   "cell_ledge": 8,
+   "divider_y0": 2
+  },
+  "wall_seconds": 21.72747369389981,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111101111111110111111111111000111111011111110011001001011101111001101101011111111111111110101110111010111110101111001011110101111011110110111111111110111111101111111011111001100111111001110111111111011110111111111111101101011111011010111110101011110010",
+  "episode_collision": "0000000010000000001000000000000111000000100000000100110110100010000110010010100000000000000001010001000101000001010000110100001010000100001001000000000001000000010000000100000110011000000100001000000000100001000000000000010010000000100101000001010100001101"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B4_RRTConnect___scenarios__N_8__risk_0.25_/tote_medium_test_03__s1.npy",
+ "trajectory_sha256": "f66b332692e7aab4eaf948b7561b62ff963743b0a1ea464bc20eb119f4d782a1",
+ "task_success_rate": 0.7734375
+}

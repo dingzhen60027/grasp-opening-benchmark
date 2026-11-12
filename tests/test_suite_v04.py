@@ -84,3 +84,43 @@ def test_harness_runs_the_straight_witness_oracle(tmp_path):
     cfg = dict(budget_seconds=5, episodes=4, uncertainty_scale=1., mode='combined', joint_step=.0025, _seed=0)
     dest, rec = run_one((entry, cfg, SUITE, dict(label='Straight', planner='reference_nominal', params={}), tmp_path))
     assert rec['nominal_valid'] and rec['trajectory_sha256'] == entry['witness_nominal_sha256']
+
+
+# ---- reporting and comparison ------------------------------------------------------------------
+
+def test_report_never_borrows_another_suites_goal_flags(tmp_path):
+    from gosuite.report import find_feasibility
+    out = tmp_path / 'suite_vX' / 'my_method'
+    (out / 'runs').mkdir(parents=True)
+    assert find_feasibility(out) == (None, None)   # used to fall back to results/suite_v0.3 (same task ids)
+    with pytest.raises(SystemExit):
+        find_feasibility(out, tmp_path / 'missing.json')
+    flags = out.parent / 'validation' / 'goal_feasibility.json'
+    flags.parent.mkdir()
+    flags.write_text(json.dumps({'t': '01'}))
+    assert find_feasibility(out) == ({'t': '01'}, flags)
+
+
+def test_paired_comparison_averages_seeds_before_differencing():
+    from gosuite.compare import metrics, paired
+    row = lambda task, seed, s, valid=True: dict(task_id=task, seed=seed, task_success_rate=s, nominal_valid=valid, collision_rate=1 - s,
+                                                 feasible_episode_success=s, level='easy', family='rack')
+    a = [row('t1', 0, .9), row('t1', 1, .7), row('t2', 0, .5), row('t2', 1, .5)]   # task means .8 and .5
+    b = [row('t1', 0, .6), row('t2', 0, .5)]
+    d = paired(a, b)
+    assert d['tasks'] == 2 and abs(d['mean'] - .1) < 1e-12 and (d['a_higher'], d['b_higher']) == (1, 0)
+    m = metrics(a + [row('t3', 0, 0., valid=False)])
+    assert abs(m['task_success'] - (.8 + .5 + 0.) / 3) < 1e-12 and abs(m['valid_path'] - .8) < 1e-12
+    assert abs(m['collision_given_valid'] - np.mean([.1, .3, .5, .5])) < 1e-12   # invalid runs excluded
+
+
+def test_committed_comparison_is_reproducible():
+    from gosuite.compare import compare
+    cfg = json.loads((ROOT / 'configs' / 'comparison_v0.4.json').read_text())
+    committed = ROOT / cfg['output'] / 'comparison.json'
+    if not committed.exists():
+        pytest.skip('comparison not generated')
+    cfg['results'] = [str(ROOT / d) for d in cfg['results']]
+    res, old = compare(cfg), json.loads(committed.read_text())
+    for key in ('methods', 'pairs', 'by_family', 'seeds', 'episodes'):
+        assert json.dumps(res[key], sort_keys=True) == json.dumps(old[key], sort_keys=True), key

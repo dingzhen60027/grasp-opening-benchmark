@@ -12,7 +12,7 @@
    0.2662760416666667
   ],
   "collision_given_valid": 0.6207386363636364,
-  "feasible_episode_success": 0.18674581827965367,
+  "feasible_episode_success": 0.17242534573622267,
   "planning_seconds_median": 85.55,
   "path_joint_length_median": 3.323889393239562,
   "ee_path_length_median": 1.1503584872788657,
@@ -32,7 +32,7 @@
    0.40825195312499973
   ],
   "collision_given_valid": 0.615625,
-  "feasible_episode_success": 0.22794179582210242,
+  "feasible_episode_success": 0.2264727011494253,
   "planning_seconds_median": 85.55,
   "path_joint_length_median": 3.2779591084670905,
   "ee_path_length_median": 1.0363342579847519,
@@ -52,7 +52,7 @@
    0.421875
   ],
   "collision_given_valid": 0.50390625,
-  "feasible_episode_success": 0.2799147066359062,
+  "feasible_episode_success": 0.2549629405790167,
   "planning_seconds_median": 85.555,
   "path_joint_length_median": 3.736809761007181,
   "ee_path_length_median": 1.2650538793830695,
@@ -72,7 +72,7 @@
    0.080078125
   ],
   "collision_given_valid": 0.8671875,
-  "feasible_episode_success": 0.052380952380952375,
+  "feasible_episode_success": 0.03584039548022599,
   "planning_seconds_median": 85.5555,
   "path_joint_length_median": 3.167039008716619,
   "ee_path_length_median": 1.1563642735632444,
@@ -92,7 +92,7 @@
    0.3619791666666667
   ],
   "collision_given_valid": 0.69140625,
-  "feasible_episode_success": 0.2169368520344577,
+  "feasible_episode_success": 0.21561196310006467,
   "planning_seconds_median": 85.5495,
   "path_joint_length_median": 4.318069081856152,
   "ee_path_length_median": 1.3934626698346888,
@@ -112,7 +112,7 @@
    0.21875
   ],
   "collision_given_valid": 0.84375,
-  "feasible_episode_success": 0.15699404761904762,
+  "feasible_episode_success": 0.16666666666666669,
   "planning_seconds_median": 85.55449999999999,
   "path_joint_length_median": 5.578270433418835,
   "ee_path_length_median": 1.9308528678848793,
@@ -132,7 +132,7 @@
    0.515625
   ],
   "collision_given_valid": 0.5390625,
-  "feasible_episode_success": 0.49381650848432557,
+  "feasible_episode_success": 0.48016922263352724,
   "planning_seconds_median": 85.5485,
   "path_joint_length_median": 4.318069081856152,
   "ee_path_length_median": 1.3934626698346888,
@@ -172,7 +172,7 @@
    0.2734375
   ],
   "collision_given_valid": 0.28125,
-  "feasible_episode_success": 0.10377358490566037,
+  "feasible_episode_success": 0.10057471264367816,
   "planning_seconds_median": 85.548,
   "path_joint_length_median": 2.5746327971027667,
   "ee_path_length_median": 0.9511182260522567,
@@ -192,7 +192,7 @@
    0.546875
   ],
   "collision_given_valid": 0.28125,
-  "feasible_episode_success": 0.3113207547169811,
+  "feasible_episode_success": 0.3017241379310345,
   "planning_seconds_median": 85.548,
   "path_joint_length_median": 2.5746327971027667,
   "ee_path_length_median": 0.9511182260522567,
@@ -332,7 +332,7 @@
    0.5755208333333334
   ],
   "collision_given_valid": 0.6302083333333334,
-  "feasible_episode_success": 0.4262728361784965,
+  "feasible_episode_success": 0.37351470720114793,
   "planning_seconds_median": 85.55600000000001,
   "path_joint_length_median": 3.2640893130973367,
   "ee_path_length_median": 1.1091274193865233,
@@ -352,7 +352,7 @@
    0.75
   ],
   "collision_given_valid": 0.5546875,
-  "feasible_episode_success": 0.44345238095238093,
+  "feasible_episode_success": 0.4375,
   "planning_seconds_median": 85.5455,
   "path_joint_length_median": 3.2640893130973367,
   "ee_path_length_median": 0.9484206219226181,
@@ -372,7 +372,7 @@
    0.578125
   ],
   "collision_given_valid": 0.46875,
-  "feasible_episode_success": 0.6258423180592991,
+  "feasible_episode_success": 0.5396825396825397,
   "planning_seconds_median": 85.5655,
   "path_joint_length_median": 3.2454529034241864,
   "ee_path_length_median": 1.167186822332765,
@@ -392,7 +392,7 @@
    0.1875
   ],
   "collision_given_valid": 0.8671875,
-  "feasible_episode_success": 0.2095238095238095,
+  "feasible_episode_success": 0.14336158192090395,
   "planning_seconds_median": 85.5555,
   "path_joint_length_median": 3.167039008716619,
   "ee_path_length_median": 1.1563642735632444,
@@ -412,7 +412,7 @@
    0.3014322916666667
   ],
   "collision_given_valid": 0.3072916666666667,
-  "feasible_episode_success": 0.17615736841120097,
+  "feasible_episode_success": 0.17603959986772488,
   "planning_seconds_median": 85.547,
   "path_joint_length_median": 3.4245742442954303,
   "ee_path_length_median": 1.096667571147699,
@@ -432,7 +432,7 @@
    0.5879394531249997
   ],
   "collision_given_valid": 0.30859375,
-  "feasible_episode_success": 0.3464471726190476,
+  "feasible_episode_success": 0.353515625,
   "planning_seconds_median": 85.547,
   "path_joint_length_median": 3.448899079907271,
   "ee_path_length_median": 0.9716081798051095,
@@ -452,7 +452,7 @@
    0.40625
   ],
   "collision_given_valid": 0.3046875,
-  "feasible_episode_success": 0.18202493261455527,
+  "feasible_episode_success": 0.1746031746031746,
   "planning_seconds_median": 85.5435,
   "path_joint_length_median": 3.3945358070824936,
   "ee_path_length_median": 1.215404608487875,
@@ -492,7 +492,7 @@
    0.3984375
   ],
   "collision_given_valid": 0.4140625,
-  "feasible_episode_success": 0.19692460317460317,
+  "feasible_episode_success": 0.20833333333333334,
   "planning_seconds_median": 85.547,
   "path_joint_length_median": 3.2560401320032426,
   "ee_path_length_median": 1.0319414929680564,
@@ -512,7 +512,7 @@
    0.609375
   ],
   "collision_given_valid": 0.4140625,
-  "feasible_episode_success": 0.5907738095238095,
+  "feasible_episode_success": 0.625,
   "planning_seconds_median": 85.547,
   "path_joint_length_median": 3.2560401320032426,
   "ee_path_length_median": 1.0319414929680564,
@@ -732,7 +732,7 @@
    0.765625
   ],
   "collision_given_valid": 0.25390625,
-  "feasible_episode_success": 0.5077048704702006,
+  "feasible_episode_success": 0.49582506613756605,
   "planning_seconds_median": 85.545,
   "path_joint_length_median": 3.4245742442954303,
   "ee_path_length_median": 1.1017717209041096,
@@ -752,7 +752,7 @@
    0.828125
   ],
   "collision_given_valid": 0.203125,
-  "feasible_episode_success": 0.7950148809523809,
+  "feasible_episode_success": 0.7890625,
   "planning_seconds_median": 85.5485,
   "path_joint_length_median": 3.705553826766697,
   "ee_path_length_median": 0.8907189177370691,
@@ -772,7 +772,7 @@
    0.8125
   ],
   "collision_given_valid": 0.3046875,
-  "feasible_episode_success": 0.7280997304582211,
+  "feasible_episode_success": 0.6984126984126984,
   "planning_seconds_median": 85.5435,
   "path_joint_length_median": 3.3945358070824936,
   "ee_path_length_median": 1.215404608487875,
@@ -812,7 +812,7 @@
    0.20118815104166657
   ],
   "collision_given_valid": 0.34375,
-  "feasible_episode_success": 0.10617653114705002,
+  "feasible_episode_success": 0.10665409482758621,
   "planning_seconds_median": 85.5495,
   "path_joint_length_median": 3.3077341932832907,
   "ee_path_length_median": 0.9620181274648802,
@@ -832,7 +832,7 @@
    0.529296875
   ],
   "collision_given_valid": 0.34375,
-  "feasible_episode_success": 0.31852959344115006,
+  "feasible_episode_success": 0.31996228448275865,
   "planning_seconds_median": 85.5495,
   "path_joint_length_median": 3.3077341932832907,
   "ee_path_length_median": 0.9620181274648802,
@@ -892,7 +892,7 @@
    0.375
   ],
   "collision_given_valid": 0.25,
-  "feasible_episode_success": 0.12698412698412698,
+  "feasible_episode_success": 0.13333333333333333,
   "planning_seconds_median": 85.549,
   "path_joint_length_median": 3.2568845387839804,
   "ee_path_length_median": 1.1208806450921063,
@@ -912,7 +912,7 @@
    0.75
   ],
   "collision_given_valid": 0.25,
-  "feasible_episode_success": 0.38095238095238093,
+  "feasible_episode_success": 0.4,
   "planning_seconds_median": 85.549,
   "path_joint_length_median": 3.2568845387839804,
   "ee_path_length_median": 1.1208806450921063,
@@ -972,7 +972,7 @@
    0.2734375
   ],
   "collision_given_valid": 0.28125,
-  "feasible_episode_success": 0.10377358490566037,
+  "feasible_episode_success": 0.10057471264367816,
   "planning_seconds_median": 85.55,
   "path_joint_length_median": 2.5746327971027667,
   "ee_path_length_median": 0.9511182260522567,
@@ -992,7 +992,7 @@
    0.546875
   ],
   "collision_given_valid": 0.28125,
-  "feasible_episode_success": 0.3113207547169811,
+  "feasible_episode_success": 0.3017241379310345,
   "planning_seconds_median": 85.55,
   "path_joint_length_median": 2.5746327971027667,
   "ee_path_length_median": 0.9511182260522567,
@@ -1132,7 +1132,7 @@
    0.421875
   ],
   "collision_given_valid": 0.421875,
-  "feasible_episode_success": 0.1939484126984127,
+  "feasible_episode_success": 0.19270833333333334,
   "planning_seconds_median": 85.5505,
   "path_joint_length_median": 3.805936887779536,
   "ee_path_length_median": 0.875963573774386,
@@ -1152,7 +1152,7 @@
    0.6875
   ],
   "collision_given_valid": 0.421875,
-  "feasible_episode_success": 0.5818452380952381,
+  "feasible_episode_success": 0.578125,
   "planning_seconds_median": 85.5505,
   "path_joint_length_median": 3.805936887779536,
   "ee_path_length_median": 0.875963573774386,
@@ -1212,7 +1212,7 @@
    0.833984375
   ],
   "collision_given_valid": 0.22265625,
-  "feasible_episode_success": 0.9399479316872661,
+  "feasible_episode_success": 0.8318452923012171,
   "planning_seconds_median": 85.5335,
   "path_joint_length_median": 10.845182644271413,
   "ee_path_length_median": 1.7609290610951884,
@@ -1232,7 +1232,7 @@
    0.953125
   ],
   "collision_given_valid": 0.072265625,
-  "feasible_episode_success": 0.9504374887397411,
+  "feasible_episode_success": 0.9652368111084265,
   "planning_seconds_median": 7.679,
   "path_joint_length_median": 4.968926734312049,
   "ee_path_length_median": 1.3022910288334228,
@@ -1252,7 +1252,7 @@
    0.861328125
   ],
   "collision_given_valid": 0.1796875,
-  "feasible_episode_success": 0.9233469734980189,
+  "feasible_episode_success": 0.8667352554408995,
   "planning_seconds_median": 85.538,
   "path_joint_length_median": 10.88748129817984,
   "ee_path_length_median": 2.7762360992097452,
@@ -1272,7 +1272,7 @@
    0.638671875
   ],
   "collision_given_valid": 0.416015625,
-  "feasible_episode_success": 0.9460593328240388,
+  "feasible_episode_success": 0.6635638103543255,
   "planning_seconds_median": 85.537,
   "path_joint_length_median": 10.836324583330999,
   "ee_path_length_median": 1.754743555043618,
@@ -1292,7 +1292,7 @@
    0.8776692708333329
   ],
   "collision_given_valid": 0.22395833333333334,
-  "feasible_episode_success": 0.9023651136708158,
+  "feasible_episode_success": 0.8324322576882343,
   "planning_seconds_median": 7.089,
   "path_joint_length_median": 4.722805823899025,
   "ee_path_length_median": 1.1608773622953055,
@@ -1312,7 +1312,7 @@
    0.9375
   ],
   "collision_given_valid": 0.078125,
-  "feasible_episode_success": 0.9290674603174602,
+  "feasible_episode_success": 0.9833333333333334,
   "planning_seconds_median": 6.948,
   "path_joint_length_median": 4.890347196392643,
   "ee_path_length_median": 1.1394566951372864,
@@ -1332,7 +1332,7 @@
    0.84375
   ],
   "collision_given_valid": 0.203125,
-  "feasible_episode_success": 0.855478861087144,
+  "feasible_episode_success": 0.8289264939185617,
   "planning_seconds_median": 46.206,
   "path_joint_length_median": 8.333453317928878,
   "ee_path_length_median": 1.9506229629889815,
@@ -1352,7 +1352,7 @@
    0.640625
   ],
   "collision_given_valid": 0.390625,
-  "feasible_episode_success": 0.9225490196078432,
+  "feasible_episode_success": 0.6850369458128078,
   "planning_seconds_median": 7.089,
   "path_joint_length_median": 4.69314104131199,
   "ee_path_length_median": 1.0571206856777935,
@@ -1372,7 +1372,7 @@
    0.84375
   ],
   "collision_given_valid": 0.2786458333333333,
-  "feasible_episode_success": 0.9266383117080411,
+  "feasible_episode_success": 0.8104320118852137,
   "planning_seconds_median": 51.692,
   "path_joint_length_median": 9.165004734707944,
   "ee_path_length_median": 2.085067929718061,
@@ -1392,7 +1392,7 @@
    0.921875
   ],
   "collision_given_valid": 0.0859375,
-  "feasible_episode_success": 0.9702625102543068,
+  "feasible_episode_success": 0.9744252873563218,
   "planning_seconds_median": 7.679,
   "path_joint_length_median": 4.452376667445968,
   "ee_path_length_median": 0.943056674894478,
@@ -1412,7 +1412,7 @@
    0.8125
   ],
   "collision_given_valid": 0.21875,
-  "feasible_episode_success": 0.8908212560386474,
+  "feasible_episode_success": 0.8809523809523809,
   "planning_seconds_median": 85.5435,
   "path_joint_length_median": 12.96560294466574,
   "ee_path_length_median": 2.924698023321289,
@@ -1432,7 +1432,7 @@
    0.453125
   ],
   "collision_given_valid": 0.53125,
-  "feasible_episode_success": 0.9188311688311688,
+  "feasible_episode_success": 0.5759183673469388,
   "planning_seconds_median": 51.692,
   "path_joint_length_median": 9.413930523040424,
   "ee_path_length_median": 2.11733625805586,
@@ -1452,7 +1452,7 @@
    0.8541666666666666
   ],
   "collision_given_valid": 0.24479166666666666,
-  "feasible_episode_success": 0.9609170824423853,
+  "feasible_episode_success": 0.8058281889776674,
   "planning_seconds_median": 85.5375,
   "path_joint_length_median": 10.871844367561547,
   "ee_path_length_median": 1.7278935054350986,
@@ -1472,7 +1472,7 @@
    0.921875
   ],
   "collision_given_valid": 0.1015625,
-  "feasible_episode_success": 0.9262295081967213,
+  "feasible_episode_success": 0.9266261237440507,
   "planning_seconds_median": 45.6445,
   "path_joint_length_median": 7.99088310496346,
   "ee_path_length_median": 1.5516381089422016,
@@ -1492,7 +1492,7 @@
    0.796875
   ],
   "collision_given_valid": 0.2109375,
-  "feasible_episode_success": 0.9565217391304348,
+  "feasible_episode_success": 0.8284907183212268,
   "planning_seconds_median": 46.065,
   "path_joint_length_median": 7.892293846498199,
   "ee_path_length_median": 1.525695260899665,
@@ -1512,7 +1512,7 @@
    0.640625
   ],
   "collision_given_valid": 0.421875,
-  "feasible_episode_success": 1.0,
+  "feasible_episode_success": 0.6623677248677249,
   "planning_seconds_median": 85.5485,
   "path_joint_length_median": 10.984039344145412,
   "ee_path_length_median": 1.754743555043618,
@@ -1532,7 +1532,7 @@
    0.9557291666666666
   ],
   "collision_given_valid": 0.14322916666666666,
-  "feasible_episode_success": 0.9698712189278228,
+  "feasible_episode_success": 0.8786887106537531,
   "planning_seconds_median": 85.539,
   "path_joint_length_median": 10.882176372155964,
   "ee_path_length_median": 4.879920374207229,
@@ -1552,7 +1552,7 @@
    1.0
   ],
   "collision_given_valid": 0.0234375,
-  "feasible_episode_success": 0.9761904761904762,
+  "feasible_episode_success": 0.9765625,
   "planning_seconds_median": 85.54650000000001,
   "path_joint_length_median": 11.121323403913305,
   "ee_path_length_median": 4.949215628205752,
@@ -1572,7 +1572,7 @@
    0.921875
   ],
   "collision_given_valid": 0.0859375,
-  "feasible_episode_success": 0.9905660377358491,
+  "feasible_episode_success": 0.9285714285714286,
   "planning_seconds_median": 85.538,
   "path_joint_length_median": 10.85641409003244,
   "ee_path_length_median": 4.806664830793359,
@@ -1592,7 +1592,7 @@
    0.703125
   ],
   "collision_given_valid": 0.3203125,
-  "feasible_episode_success": 0.9428571428571428,
+  "feasible_episode_success": 0.7309322033898304,
   "planning_seconds_median": 85.539,
   "path_joint_length_median": 10.870944926394937,
   "ee_path_length_median": 4.916839331810699,

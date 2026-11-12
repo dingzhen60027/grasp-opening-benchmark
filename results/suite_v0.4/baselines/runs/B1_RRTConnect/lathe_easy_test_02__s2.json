@@ -1,0 +1,49 @@
+{
+ "task_id": "lathe_easy_test_02",
+ "family": "lathe",
+ "level": "easy",
+ "split": "test",
+ "label": "B1 RRTConnect",
+ "planner": "ompl",
+ "params": {
+  "planner": "RRTConnect",
+  "range": 0.25
+ },
+ "seed": 2,
+ "budget_seconds": 120,
+ "task_sha256": "616af8e99dda6692d94b9cb52cc56060abaa2d61ddde61dea59be05f1bd317a7",
+ "planning_seconds": 114.05373999942094,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "ompl_planner": "RRTConnect",
+  "range": 0.25,
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "objective": "length",
+  "resolution_rad": 0.005,
+  "ompl_status": "Exact solution",
+  "solve_seconds": 2.969318464398384,
+  "raw_waypoints": 20,
+  "shortcut_attempts": 518,
+  "waypoints": 4,
+  "wall_seconds": 114.05371379107237,
+  "collision_checks": 48869
+ },
+ "path_found": true,
+ "execution": null,
+ "nominal_valid": false,
+ "trajectory": "trajectories/B1_RRTConnect/lathe_easy_test_02__s2.npy",
+ "trajectory_sha256": "4011a4a49e6a8608de23b4e93bc8dbb2dfaddd00fc06de4a51d168658cfe4875",
+ "nominal_failure": {
+  "valid": false,
+  "reason": "collision:payload_environment",
+  "state": 700,
+  "detail": {
+   "reason": "payload_environment",
+   "obstacle": "fixture_guide_r"
+  }
+ },
+ "task_success_rate": 0.0
+}

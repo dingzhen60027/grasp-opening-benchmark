@@ -1,0 +1,85 @@
+{
+ "task_id": "lathe_medium_test_01",
+ "family": "lathe",
+ "level": "medium",
+ "split": "test",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 4,
+ "budget_seconds": 120,
+ "task_sha256": "58bc472bd76255e16edc273c217ee5b25410760620f6861169bfbe1ad8ece80c",
+ "planning_seconds": 11.159003010950983,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 6.38181918580085,
+   "raw_waypoints": 4,
+   "shortcut_attempts": 6,
+   "waypoints": 2
+  },
+  "insertion_states": 115,
+  "wall_seconds": 11.158983760513365,
+  "collision_checks": 3819
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_medium_test_01",
+  "family": "lathe",
+  "level": "medium",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 11519655,
+  "path_joint_length_rad": 4.823640909491688,
+  "ee_path_length_m": 1.1331143941798774,
+  "payload_min_clearance_m": 0.009991270732879663,
+  "payload_clearance_p05_m": 0.00999526424407961,
+  "trajectory_states": 1249,
+  "collision_count": 57,
+  "collision_rate": 0.22265625,
+  "collision_ci95": [
+   0.17321843495708897,
+   0.27863935609143675
+  ],
+  "success_count": 199,
+  "success_rate": 0.77734375,
+  "success_ci95": [
+   0.7213606439085632,
+   0.826781565042911
+  ],
+  "failures_by_reason": {
+   "payload_environment": 57
+  },
+  "colliding_obstacles": {
+   "coolant_nozzle": 34,
+   "chip_guard_lip": 22,
+   "fixture_guide_r": 1
+  },
+  "wall_seconds": 9.494562139734626,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111011010011111111111111110011110100111111110111111010100101111111111011111111101101101111111101111011111111111110010111111111111100111111111111101011011011111011111110011011100111000111001111111100111101111110111110110011111101111100111101111110110001011",
+  "episode_collision": "0000100101100000000000000001100001011000000001000000101011010000000000100000000010010010000000010000100000000000001101000000000000011000000000000010100100100000100000001100100011000111000110000000011000010000001000001001100000010000011000010000001001110100"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/lathe_medium_test_01__s4.npy",
+ "trajectory_sha256": "35cf9287e60ea72b4ca1163d10aa0ce31da2e3741829ef8805dcb490a2309fbe",
+ "task_success_rate": 0.77734375
+}

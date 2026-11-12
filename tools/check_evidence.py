@@ -1,5 +1,5 @@
 """Check bundled asset/task hashes and confirm recorded rack results match inputs."""
-import hashlib,json,xml.etree.ElementTree as ET
+import csv,hashlib,json,xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -42,7 +42,23 @@ def main():
             record=json.loads(file.read_text())
             assert record['task_sha256']==hashes[record['task_id']],file;n_runs+=1
         counts[version]=(n_tasks,n_runs)
+    # every results table's goal-feasible column must match its episodes and the SAME suite's validation flags
+    # (task ids repeat across suite versions, so flags from another suite would still look plausible)
+    n_tables=0
+    for version in ['v0.3','v0.4']:
+        res=ROOT/'results'/f'suite_{version}';flags=json.loads((res/'validation'/'goal_feasibility.json').read_text())
+        for table in sorted(res.glob('*/runs.csv')):
+            with table.open(newline='') as fh:
+                column={(r['label'],r['task_id'],r['seed']):r['feasible_episode_success'] for r in csv.DictReader(fh)}
+            for file in (table.parent/'runs').glob('*/*.json'):
+                rec=json.loads(file.read_text());ex=rec.get('execution') or {}
+                mask=[c=='0' for c in flags[rec['task_id']][:ex.get('episodes') or len(flags[rec['task_id']])]]
+                want=None if not any(mask) else (sum(s=='1' for s,m in zip(ex['episode_success'],mask) if m)/sum(mask) if ex else 0.)
+                got=column[(rec['label'],rec['task_id'],str(rec['seed']))]
+                assert (got=='' if want is None else got!='' and abs(float(got)-want)<1e-9),(file,got,want)
+            n_tables+=1
     print(f'Verified {asset_count} asset hashes, {task_count} legacy tasks, '
-          + ', '.join(f'{v}: {a} tasks and {b} run records' for v,(a,b) in counts.items()) + ', and recorded rack source hashes.')
+          + ', '.join(f'{v}: {a} tasks and {b} run records' for v,(a,b) in counts.items())
+          + f', the goal-feasible column of {n_tables} results tables, and recorded rack source hashes.')
 
 if __name__=='__main__':main()
