@@ -1,0 +1,829 @@
+{
+ "name": "v0.4 test split: proposed method (CRISP) against baselines, a recent comparator and the oracles",
+ "description": "Main results of the paper on the frozen v0.4 test split (72 tasks), all methods on the same 256 grasp-error draws per task. CRISP and CC-VPSTO: 5 seeds; baselines: 5 seeds; oracles: the stored witnesses.",
+ "split": "test",
+ "results": [
+  "results/suite_v0.4/reference",
+  "results/suite_v0.4/baselines",
+  "results/suite_v0.4/crisp"
+ ],
+ "feasibility_sources": {
+  "results/suite_v0.4/reference": "results/suite_v0.4/validation/goal_feasibility.json",
+  "results/suite_v0.4/baselines": "results/suite_v0.4/validation/goal_feasibility.json",
+  "results/suite_v0.4/crisp": "results/suite_v0.4/validation/goal_feasibility.json"
+ },
+ "seeds": {
+  "CRISP (proposed)": 5,
+  "Risk-aware oracle": 1,
+  "Straight oracle": 1,
+  "CC-VPSTO (adapted)": 5,
+  "B6 Keyframe-guided": 5,
+  "B3 RRTConnect + 3 mm margin": 5,
+  "B1 RRTConnect": 5,
+  "B4 RRTConnect + scenarios": 5
+ },
+ "episodes": [
+  256
+ ],
+ "levels": [
+  "easy",
+  "medium",
+  "hard",
+  "all"
+ ],
+ "families": [
+  "rack",
+  "rebar",
+  "lathe",
+  "tote"
+ ],
+ "methods": {
+  "CRISP (proposed)": {
+   "easy": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 1.0,
+    "task_success": 0.9528971354166665,
+    "task_success_ci95": [
+     0.9381510416666666,
+     0.9662109375
+    ],
+    "feasible_episode_success": 0.9754936406676707,
+    "collision_given_valid": 0.01865234375
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 1.0,
+    "task_success": 0.92880859375,
+    "task_success_ci95": [
+     0.9092439778645833,
+     0.9456730143229167
+    ],
+    "feasible_episode_success": 0.9604548125122835,
+    "collision_given_valid": 0.04684244791666667
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 1.0,
+    "task_success": 0.8855794270833334,
+    "task_success_ci95": [
+     0.8664371744791666,
+     0.90270263671875
+    ],
+    "feasible_episode_success": 0.9552954011323256,
+    "collision_given_valid": 0.09456380208333333
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 360,
+    "valid_path": 1.0,
+    "task_success": 0.9224283854166665,
+    "task_success_ci95": [
+     0.9098955620659722,
+     0.9332359483506946
+    ],
+    "feasible_episode_success": 0.9637479514374265,
+    "collision_given_valid": 0.05335286458333333
+   }
+  },
+  "Risk-aware oracle": {
+   "easy": {
+    "tasks": 24,
+    "runs": 24,
+    "valid_path": 1.0,
+    "task_success": 0.9606119791666666,
+    "task_success_ci95": [
+     0.9492146809895833,
+     0.9716796875
+    ],
+    "feasible_episode_success": 0.9952580173629723,
+    "collision_given_valid": 0.0224609375
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 24,
+    "valid_path": 1.0,
+    "task_success": 0.9324544270833334,
+    "task_success_ci95": [
+     0.9166625976562499,
+     0.9466145833333334
+    ],
+    "feasible_episode_success": 0.9779163075386178,
+    "collision_given_valid": 0.055338541666666664
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 24,
+    "valid_path": 1.0,
+    "task_success": 0.8365885416666666,
+    "task_success_ci95": [
+     0.8224243164062499,
+     0.84945068359375
+    ],
+    "feasible_episode_success": 0.9661674715007734,
+    "collision_given_valid": 0.15234375
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9098849826388888,
+    "task_success_ci95": [
+     0.8945298936631945,
+     0.9236667209201389
+    ],
+    "feasible_episode_success": 0.9797805988007878,
+    "collision_given_valid": 0.07671440972222222
+   }
+  },
+  "Straight oracle": {
+   "easy": {
+    "tasks": 24,
+    "runs": 24,
+    "valid_path": 1.0,
+    "task_success": 0.9383138020833334,
+    "task_success_ci95": [
+     0.9225260416666666,
+     0.95394287109375
+    ],
+    "feasible_episode_success": 0.9719266535399501,
+    "collision_given_valid": 0.05029296875
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 24,
+    "valid_path": 1.0,
+    "task_success": 0.7980143229166666,
+    "task_success_ci95": [
+     0.7685506184895833,
+     0.8282918294270832
+    ],
+    "feasible_episode_success": 0.8358254711967245,
+    "collision_given_valid": 0.19303385416666666
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 24,
+    "valid_path": 1.0,
+    "task_success": 0.5823567708333334,
+    "task_success_ci95": [
+     0.55810546875,
+     0.6082438151041667
+    ],
+    "feasible_episode_success": 0.6718660867068604,
+    "collision_given_valid": 0.41015625
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.7728949652777778,
+    "task_success_ci95": [
+     0.7325276692708333,
+     0.8075141059027777
+    ],
+    "feasible_episode_success": 0.8265394038145116,
+    "collision_given_valid": 0.2178276909722222
+   }
+  },
+  "CC-VPSTO (adapted)": {
+   "easy": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 1.0,
+    "task_success": 0.94296875,
+    "task_success_ci95": [
+     0.9250301106770833,
+     0.9582055664062499
+    ],
+    "feasible_episode_success": 0.9768809722009909,
+    "collision_given_valid": 0.043196614583333334
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 1.0,
+    "task_success": 0.8735026041666667,
+    "task_success_ci95": [
+     0.8446215820312499,
+     0.8999682617187499
+    ],
+    "feasible_episode_success": 0.9152975368488051,
+    "collision_given_valid": 0.11490885416666667
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 1.0,
+    "task_success": 0.6995768229166667,
+    "task_success_ci95": [
+     0.6476212565104167,
+     0.7487703450520832
+    ],
+    "feasible_episode_success": 0.8071732089141302,
+    "collision_given_valid": 0.2911783854166667
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 360,
+    "valid_path": 1.0,
+    "task_success": 0.8386827256944444,
+    "task_success_ci95": [
+     0.8060319010416667,
+     0.86817626953125
+    ],
+    "feasible_episode_success": 0.8997839059879753,
+    "collision_given_valid": 0.14976128472222222
+   }
+  },
+  "B6 Keyframe-guided": {
+   "easy": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 0.9583333333333334,
+    "task_success": 0.8963541666666667,
+    "task_success_ci95": [
+     0.81191162109375,
+     0.9471695963541666
+    ],
+    "feasible_episode_success": 0.92816789005451,
+    "collision_given_valid": 0.054721467391304346
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 1.0,
+    "task_success": 0.79013671875,
+    "task_success_ci95": [
+     0.76318359375,
+     0.8171549479166668
+    ],
+    "feasible_episode_success": 0.8276940153454359,
+    "collision_given_valid": 0.2015625
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 1.0,
+    "task_success": 0.5663411458333333,
+    "task_success_ci95": [
+     0.5352189127604167,
+     0.59580810546875
+    ],
+    "feasible_episode_success": 0.6534607164983863,
+    "collision_given_valid": 0.4268880208333333
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 360,
+    "valid_path": 0.9861111111111112,
+    "task_success": 0.7509440104166667,
+    "task_success_ci95": [
+     0.7073068576388888,
+     0.7922488064236111
+    ],
+    "feasible_episode_success": 0.8031075406327773,
+    "collision_given_valid": 0.2301606514084507
+   }
+  },
+  "B3 RRTConnect + 3 mm margin": {
+   "easy": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 0.375,
+    "task_success": 0.25530598958333334,
+    "task_success_ci95": [
+     0.1373917643229167,
+     0.37304850260416667
+    ],
+    "feasible_episode_success": 0.25957350444523347,
+    "collision_given_valid": 0.30572916666666666
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 0.26666666666666666,
+    "task_success": 0.1724609375,
+    "task_success_ci95": [
+     0.07691162109375,
+     0.2765681966145833
+    ],
+    "feasible_episode_success": 0.17598502688997106,
+    "collision_given_valid": 0.3529052734375
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 0.175,
+    "task_success": 0.10387369791666667,
+    "task_success_ci95": [
+     0.034830729166666664,
+     0.18286132812499992
+    ],
+    "feasible_episode_success": 0.11810554716560862,
+    "collision_given_valid": 0.4056919642857143
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 360,
+    "valid_path": 0.2722222222222222,
+    "task_success": 0.17721354166666667,
+    "task_success_ci95": [
+     0.12078857421875001,
+     0.23542236328124985
+    ],
+    "feasible_episode_success": 0.1845546928336044,
+    "collision_given_valid": 0.34255420918367346
+   }
+  },
+  "B1 RRTConnect": {
+   "easy": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 0.4,
+    "task_success": 0.19599609374999996,
+    "task_success_ci95": [
+     0.11157552083333333,
+     0.28248942057291665
+    ],
+    "feasible_episode_success": 0.19967833692727477,
+    "collision_given_valid": 0.504638671875
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 0.3333333333333333,
+    "task_success": 0.16370442708333335,
+    "task_success_ci95": [
+     0.08068440755208334,
+     0.24726562499999996
+    ],
+    "feasible_episode_success": 0.16732680657893054,
+    "collision_given_valid": 0.50859375
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 0.2,
+    "task_success": 0.07395833333333333,
+    "task_success_ci95": [
+     0.021151529947916668,
+     0.13828125
+    ],
+    "feasible_episode_success": 0.08371574540739196,
+    "collision_given_valid": 0.6290690104166666
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 360,
+    "valid_path": 0.3111111111111111,
+    "task_success": 0.14455295138888888,
+    "task_success_ci95": [
+     0.09837103949652777,
+     0.1897357855902778
+    ],
+    "feasible_episode_success": 0.15024029630453242,
+    "collision_given_valid": 0.53271484375
+   }
+  },
+  "B4 RRTConnect + scenarios": {
+   "easy": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 0.30833333333333335,
+    "task_success": 0.20983072916666667,
+    "task_success_ci95": [
+     0.10122965494791668,
+     0.3249381510416667
+    ],
+    "feasible_episode_success": 0.21232344256020266,
+    "collision_given_valid": 0.31503378378378377
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 0.20833333333333334,
+    "task_success": 0.12906901041666666,
+    "task_success_ci95": [
+     0.05914469401041667,
+     0.20657796223958333
+    ],
+    "feasible_episode_success": 0.13173790417946907,
+    "collision_given_valid": 0.37953125
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 120,
+    "valid_path": 0.10833333333333334,
+    "task_success": 0.05638020833333333,
+    "task_success_ci95": [
+     0.013216145833333333,
+     0.1120808919270833
+    ],
+    "feasible_episode_success": 0.0637450503108938,
+    "collision_given_valid": 0.4774639423076923
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 360,
+    "valid_path": 0.20833333333333334,
+    "task_success": 0.13175998263888888,
+    "task_success_ci95": [
+     0.0839211697048611,
+     0.18270480685763882
+    ],
+    "feasible_episode_success": 0.13593546568352183,
+    "collision_given_valid": 0.3646875
+   }
+  }
+ },
+ "pairs": [
+  {
+   "a": "CRISP (proposed)",
+   "b": "B6 Keyframe-guided",
+   "levels": {
+    "easy": {
+     "tasks": 24,
+     "mean": 0.05654296874999998,
+     "ci95": [
+      0.008753255208333316,
+      0.13919596354166663
+     ],
+     "a_higher": 19,
+     "b_higher": 4,
+     "p_wilcoxon": 0.0018849372863769531
+    },
+    "medium": {
+     "tasks": 24,
+     "mean": 0.138671875,
+     "ci95": [
+      0.11620361328125,
+      0.16230550130208335
+     ],
+     "a_higher": 24,
+     "b_higher": 0,
+     "p_wilcoxon": 1.1920928955078125e-07
+    },
+    "hard": {
+     "tasks": 24,
+     "mean": 0.31923828125000003,
+     "ci95": [
+      0.2898380533854167,
+      0.35192138671874995
+     ],
+     "a_higher": 24,
+     "b_higher": 0,
+     "p_wilcoxon": 1.1920928955078125e-07
+    },
+    "all": {
+     "tasks": 72,
+     "mean": 0.171484375,
+     "ci95": [
+      0.13545817057291668,
+      0.20991699218749996
+     ],
+     "a_higher": 67,
+     "b_higher": 4,
+     "p_wilcoxon": 1.6742753597382525e-12,
+     "p_holm": 8.371376798691262e-12
+    }
+   }
+  },
+  {
+   "a": "CRISP (proposed)",
+   "b": "CC-VPSTO (adapted)",
+   "levels": {
+    "easy": {
+     "tasks": 24,
+     "mean": 0.009928385416666657,
+     "ci95": [
+      0.0025065104166666677,
+      0.019173177083333312
+     ],
+     "a_higher": 18,
+     "b_higher": 4,
+     "p_wilcoxon": 0.0010914802551269531
+    },
+    "medium": {
+     "tasks": 24,
+     "mean": 0.05530598958333333,
+     "ci95": [
+      0.03603352864583335,
+      0.07656331380208335
+     ],
+     "a_higher": 21,
+     "b_higher": 3,
+     "p_wilcoxon": 1.633167266845703e-05
+    },
+    "hard": {
+     "tasks": 24,
+     "mean": 0.18600260416666667,
+     "ci95": [
+      0.14234619140625002,
+      0.23415527343749995
+     ],
+     "a_higher": 24,
+     "b_higher": 0,
+     "p_wilcoxon": 1.1920928955078125e-07
+    },
+    "all": {
+     "tasks": 72,
+     "mean": 0.08374565972222221,
+     "ci95": [
+      0.0613259548611111,
+      0.11024359809027778
+     ],
+     "a_higher": 63,
+     "b_higher": 7,
+     "p_wilcoxon": 1.595702955686832e-11,
+     "p_holm": 4.7871088670604964e-11
+    }
+   }
+  },
+  {
+   "a": "CRISP (proposed)",
+   "b": "Risk-aware oracle",
+   "levels": {
+    "easy": {
+     "tasks": 24,
+     "mean": -0.007714843750000015,
+     "ci95": [
+      -0.017223307291666688,
+      -0.000748697916666684
+     ],
+     "a_higher": 10,
+     "b_higher": 13,
+     "p_wilcoxon": 0.06503629684448242
+    },
+    "medium": {
+     "tasks": 24,
+     "mean": -0.003645833333333325,
+     "ci95": [
+      -0.019858398437499994,
+      0.012211914062499978
+     ],
+     "a_higher": 10,
+     "b_higher": 13,
+     "p_wilcoxon": 0.5599584579467773
+    },
+    "hard": {
+     "tasks": 24,
+     "mean": 0.04899088541666666,
+     "ci95": [
+      0.03411458333333333,
+      0.06295817057291664
+     ],
+     "a_higher": 23,
+     "b_higher": 1,
+     "p_wilcoxon": 1.049041748046875e-05
+    },
+    "all": {
+     "tasks": 72,
+     "mean": 0.012543402777777773,
+     "ci95": [
+      0.0030164930555555583,
+      0.022700466579861106
+     ],
+     "a_higher": 43,
+     "b_higher": 27,
+     "p_wilcoxon": 0.028808700526369937,
+     "p_holm": 0.028808700526369937
+    }
+   }
+  },
+  {
+   "a": "CRISP (proposed)",
+   "b": "Straight oracle",
+   "levels": {
+    "easy": {
+     "tasks": 24,
+     "mean": 0.014583333333333318,
+     "ci95": [
+      0.0021809895833333156,
+      0.025456542968749978
+     ],
+     "a_higher": 19,
+     "b_higher": 4,
+     "p_wilcoxon": 0.005414485931396484
+    },
+    "medium": {
+     "tasks": 24,
+     "mean": 0.13079427083333336,
+     "ci95": [
+      0.10624918619791666,
+      0.15507893880208332
+     ],
+     "a_higher": 24,
+     "b_higher": 0,
+     "p_wilcoxon": 1.1920928955078125e-07
+    },
+    "hard": {
+     "tasks": 24,
+     "mean": 0.30322265625,
+     "ci95": [
+      0.27763264973958335,
+      0.32646484374999996
+     ],
+     "a_higher": 24,
+     "b_higher": 0,
+     "p_wilcoxon": 1.1920928955078125e-07
+    },
+    "all": {
+     "tasks": 72,
+     "mean": 0.14953342013888887,
+     "ci95": [
+      0.12060384114583333,
+      0.18123046874999998
+     ],
+     "a_higher": 67,
+     "b_higher": 4,
+     "p_wilcoxon": 2.5764752850570784e-12,
+     "p_holm": 1.0305901140228314e-11
+    }
+   }
+  },
+  {
+   "a": "CC-VPSTO (adapted)",
+   "b": "B6 Keyframe-guided",
+   "levels": {
+    "easy": {
+     "tasks": 24,
+     "mean": 0.04661458333333333,
+     "ci95": [
+      -0.002250162760416673,
+      0.1301521809895833
+     ],
+     "a_higher": 15,
+     "b_higher": 8,
+     "p_wilcoxon": 0.030086994171142578
+    },
+    "medium": {
+     "tasks": 24,
+     "mean": 0.08336588541666667,
+     "ci95": [
+      0.06116455078125,
+      0.10817626953124995
+     ],
+     "a_higher": 24,
+     "b_higher": 0,
+     "p_wilcoxon": 1.1920928955078125e-07
+    },
+    "hard": {
+     "tasks": 24,
+     "mean": 0.13323567708333334,
+     "ci95": [
+      0.07529296875000001,
+      0.19046630859374994
+     ],
+     "a_higher": 23,
+     "b_higher": 1,
+     "p_wilcoxon": 3.0159950256347656e-05
+    },
+    "all": {
+     "tasks": 72,
+     "mean": 0.08773871527777778,
+     "ci95": [
+      0.05672715928819444,
+      0.12322401258680553
+     ],
+     "a_higher": 62,
+     "b_higher": 9,
+     "p_wilcoxon": 2.1701730904770886e-10,
+     "p_holm": 4.3403461809541773e-10
+    }
+   }
+  }
+ ],
+ "by_family": {
+  "rack": {
+   "easy": {
+    "CRISP (proposed)": 0.9259114583333333,
+    "Risk-aware oracle": 0.9290364583333334,
+    "Straight oracle": 0.8984375,
+    "CC-VPSTO (adapted)": 0.9158854166666667,
+    "B6 Keyframe-guided": 0.7415364583333334,
+    "B3 RRTConnect + 3 mm margin": 0.10989583333333335,
+    "B1 RRTConnect": 0.09010416666666667,
+    "B4 RRTConnect + scenarios": 0.043750000000000004
+   },
+   "medium": {
+    "CRISP (proposed)": 0.8591145833333332,
+    "Risk-aware oracle": 0.8984375,
+    "Straight oracle": 0.7194010416666666,
+    "CC-VPSTO (adapted)": 0.7981770833333335,
+    "B6 Keyframe-guided": 0.7194010416666666,
+    "B3 RRTConnect + 3 mm margin": 0.0,
+    "B1 RRTConnect": 0.0,
+    "B4 RRTConnect + scenarios": 0.0
+   },
+   "hard": {
+    "CRISP (proposed)": 0.8377604166666667,
+    "Risk-aware oracle": 0.8138020833333334,
+    "Straight oracle": 0.533203125,
+    "CC-VPSTO (adapted)": 0.6328124999999999,
+    "B6 Keyframe-guided": 0.533203125,
+    "B3 RRTConnect + 3 mm margin": 0.016796875,
+    "B1 RRTConnect": 0.0,
+    "B4 RRTConnect + scenarios": 0.0
+   }
+  },
+  "rebar": {
+   "easy": {
+    "CRISP (proposed)": 0.9575520833333333,
+    "Risk-aware oracle": 0.96484375,
+    "Straight oracle": 0.9251302083333334,
+    "CC-VPSTO (adapted)": 0.9372395833333335,
+    "B6 Keyframe-guided": 0.9220052083333333,
+    "B3 RRTConnect + 3 mm margin": 0.0,
+    "B1 RRTConnect": 0.0,
+    "B4 RRTConnect + scenarios": 0.0
+   },
+   "medium": {
+    "CRISP (proposed)": 0.9552083333333333,
+    "Risk-aware oracle": 0.9108072916666666,
+    "Straight oracle": 0.7591145833333334,
+    "CC-VPSTO (adapted)": 0.9148437499999998,
+    "B6 Keyframe-guided": 0.7537760416666667,
+    "B3 RRTConnect + 3 mm margin": 0.0,
+    "B1 RRTConnect": 0.0,
+    "B4 RRTConnect + scenarios": 0.0
+   },
+   "hard": {
+    "CRISP (proposed)": 0.9020833333333335,
+    "Risk-aware oracle": 0.8287760416666666,
+    "Straight oracle": 0.55078125,
+    "CC-VPSTO (adapted)": 0.8524739583333333,
+    "B6 Keyframe-guided": 0.5016927083333333,
+    "B3 RRTConnect + 3 mm margin": 0.0,
+    "B1 RRTConnect": 0.0,
+    "B4 RRTConnect + scenarios": 0.0
+   }
+  },
+  "lathe": {
+   "easy": {
+    "CRISP (proposed)": 0.9369791666666667,
+    "Risk-aware oracle": 0.953125,
+    "Straight oracle": 0.9381510416666666,
+    "CC-VPSTO (adapted)": 0.9359375000000001,
+    "B6 Keyframe-guided": 0.9375,
+    "B3 RRTConnect + 3 mm margin": 0.20638020833333334,
+    "B1 RRTConnect": 0.1885416666666667,
+    "B4 RRTConnect + scenarios": 0.12643229166666667
+   },
+   "medium": {
+    "CRISP (proposed)": 0.9490885416666667,
+    "Risk-aware oracle": 0.9485677083333334,
+    "Straight oracle": 0.810546875,
+    "CC-VPSTO (adapted)": 0.84921875,
+    "B6 Keyframe-guided": 0.7967447916666667,
+    "B3 RRTConnect + 3 mm margin": 0.09492187499999999,
+    "B1 RRTConnect": 0.15325520833333334,
+    "B4 RRTConnect + scenarios": 0.08372395833333333
+   },
+   "hard": {
+    "CRISP (proposed)": 0.8877604166666666,
+    "Risk-aware oracle": 0.8430989583333334,
+    "Straight oracle": 0.5677083333333334,
+    "CC-VPSTO (adapted)": 0.56640625,
+    "B6 Keyframe-guided": 0.5649739583333333,
+    "B3 RRTConnect + 3 mm margin": 0.0,
+    "B1 RRTConnect": 0.0,
+    "B4 RRTConnect + scenarios": 0.0
+   }
+  },
+  "tote": {
+   "easy": {
+    "CRISP (proposed)": 0.9911458333333333,
+    "Risk-aware oracle": 0.9954427083333334,
+    "Straight oracle": 0.9915364583333334,
+    "CC-VPSTO (adapted)": 0.9828125,
+    "B6 Keyframe-guided": 0.984375,
+    "B3 RRTConnect + 3 mm margin": 0.7049479166666667,
+    "B1 RRTConnect": 0.5053385416666667,
+    "B4 RRTConnect + scenarios": 0.6691406249999999
+   },
+   "medium": {
+    "CRISP (proposed)": 0.9518229166666666,
+    "Risk-aware oracle": 0.9720052083333334,
+    "Straight oracle": 0.9029947916666666,
+    "CC-VPSTO (adapted)": 0.9317708333333332,
+    "B6 Keyframe-guided": 0.890625,
+    "B3 RRTConnect + 3 mm margin": 0.5949218749999999,
+    "B1 RRTConnect": 0.5015625,
+    "B4 RRTConnect + scenarios": 0.43255208333333334
+   },
+   "hard": {
+    "CRISP (proposed)": 0.9147135416666666,
+    "Risk-aware oracle": 0.8606770833333334,
+    "Straight oracle": 0.677734375,
+    "CC-VPSTO (adapted)": 0.7466145833333333,
+    "B6 Keyframe-guided": 0.6654947916666667,
+    "B3 RRTConnect + 3 mm margin": 0.3986979166666667,
+    "B1 RRTConnect": 0.2958333333333334,
+    "B4 RRTConnect + scenarios": 0.2255208333333333
+   }
+  }
+ }
+}

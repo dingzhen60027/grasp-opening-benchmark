@@ -1,0 +1,141 @@
+{
+ "task_id": "rack_easy_test_00",
+ "family": "rack",
+ "level": "easy",
+ "split": "test",
+ "label": "Ablation: linearised Boole risk",
+ "planner": "crisp",
+ "params": {
+  "objective": "linear"
+ },
+ "seed": 2,
+ "budget_seconds": 120,
+ "task_sha256": "fadbc97861184fa2432fa52f1c7e3dcb690aea229d5bf81cc8febc91ac00d26e",
+ "planning_seconds": 96.7931707650423,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CRISP",
+  "objective": "linear",
+  "error_model": "combined",
+  "free_goal": true,
+  "samples": 128,
+  "knots": 6,
+  "goal_iterations": 60,
+  "goal_cost_straight": 0.11498899620040849,
+  "goal_cost": 0.08331643539917673,
+  "runs": [
+   {
+    "iterations": 87,
+    "best": 0.27600809411178207
+   }
+  ],
+  "goal_frozen": false,
+  "optimiser": "cmaes",
+  "insertion_states": 153,
+  "straight_risk": 0.1796875,
+  "straight_nominal_margin": 0.011999978271751368,
+  "evaluations": 2824,
+  "optimise_seconds": 72.00138516165316,
+  "candidates_tried": 6,
+  "realisation_failures": [
+   {
+    "reason": "robot_environment",
+    "state": 82
+   },
+   {
+    "reason": "robot_environment",
+    "state": 82
+   },
+   {
+    "reason": "robot_environment",
+    "state": 82
+   },
+   {
+    "reason": "robot_environment",
+    "state": 84
+   },
+   {
+    "reason": "robot_environment",
+    "state": 78
+   }
+  ],
+  "chosen_rank": 5,
+  "straight_used": false,
+  "predicted_risk": 0.078125,
+  "nominal_margin": 0.010491436987785015,
+  "goal_deviation_m": [
+   -0.0012100738609340572,
+   0.0020769962837779384,
+   0.003545806776477623,
+   -0.0032525827088891257,
+   -3.257234162206115e-05
+  ],
+  "max_offset_used_m": 0.03498631061251258,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 10.312987015582621,
+   "raw_waypoints": 4,
+   "shortcut_attempts": 14,
+   "waypoints": 2
+  },
+  "validation": null,
+  "certificate": {
+   "draws": 1000,
+   "failures": 88,
+   "risk": 0.088,
+   "confidence": 0.95,
+   "upper_bound": 0.10415390730887286,
+   "scope": "payload-environment contact, keep-in and final-state rules of the executed path"
+  },
+  "wall_seconds": 96.79293169640005,
+  "collision_checks": 6116
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_easy_test_00",
+  "family": "rack",
+  "level": "easy",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3729402240,
+  "path_joint_length_rad": 5.750888092428981,
+  "ee_path_length_m": 1.033701074368801,
+  "payload_min_clearance_m": 0.012270994027143023,
+  "payload_clearance_p05_m": 0.01316877252421135,
+  "trajectory_states": 1640,
+  "collision_count": 10,
+  "collision_rate": 0.0390625,
+  "collision_ci95": [
+   0.01888827571946002,
+   0.07066228590012934
+  ],
+  "success_count": 241,
+  "success_rate": 0.94140625,
+  "success_ci95": [
+   0.9051991415444257,
+   0.9668381679733287
+  ],
+  "failures_by_reason": {
+   "placement_height": 5,
+   "payload_environment": 10
+  },
+  "colliding_obstacles": {
+   "target_saddle_1": 8,
+   "bracket_shallow": 1,
+   "target_guide_0_l": 1
+  },
+  "wall_seconds": 27.87407430447638,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111101111111110111111111110111111011111111111101111111111111111011111111111111111111111111111110111111111111111111111111111111111111111111111111111111111110111111111111111101111111111111111111111110011111111111101111011111111011111011111111111111111111111",
+  "episode_collision": "0000000000000001000000000001000000000000000000010000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000010000000000000000000000001100000000000000000000000000100000100000000000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/Ablation__linearised_Boole_risk/rack_easy_test_00__s2.npy",
+ "trajectory_sha256": "b212eeff2ec37d1439e515224740676e476ead15da751eb49eb49ef7db396d79",
+ "task_success_rate": 0.94140625
+}

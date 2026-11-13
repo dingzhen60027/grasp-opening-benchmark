@@ -1,0 +1,150 @@
+{
+ "task_id": "rack_hard_test_00",
+ "family": "rack",
+ "level": "hard",
+ "split": "test",
+ "label": "CRISP, N = 256 draws",
+ "planner": "crisp",
+ "params": {
+  "samples": 256
+ },
+ "seed": 0,
+ "budget_seconds": 120,
+ "task_sha256": "4a7d687f41388d7445723e7f0fc0cd5f272775bc014e9c88e4fe9ba99f0b680d",
+ "planning_seconds": 92.28112507704645,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CRISP",
+  "objective": "chance",
+  "error_model": "combined",
+  "free_goal": true,
+  "samples": 256,
+  "knots": 6,
+  "goal_iterations": 60,
+  "goal_cost_straight": 0.16174003993320138,
+  "goal_cost": 0.03543588119865322,
+  "runs": [
+   {
+    "iterations": 56,
+    "best": 0.2341473431222128
+   }
+  ],
+  "goal_frozen": false,
+  "optimiser": "cmaes",
+  "insertion_states": 134,
+  "straight_risk": 0.44921875,
+  "straight_nominal_margin": 0.005999990359256822,
+  "evaluations": 2069,
+  "optimise_seconds": 71.91861023381352,
+  "candidates_tried": 8,
+  "realisation_failures": [
+   {
+    "reason": "robot_environment",
+    "state": 56
+   },
+   {
+    "reason": "robot_environment",
+    "state": 56
+   },
+   {
+    "reason": "robot_environment",
+    "state": 54
+   },
+   {
+    "reason": "robot_environment",
+    "state": 55
+   },
+   {
+    "reason": "robot_environment",
+    "state": 55
+   },
+   {
+    "reason": "robot_environment",
+    "state": 54
+   },
+   {
+    "reason": "robot_environment",
+    "state": 51
+   }
+  ],
+  "chosen_rank": 7,
+  "straight_used": false,
+  "predicted_risk": 0.28125,
+  "nominal_margin": 0.006116885861295195,
+  "goal_deviation_m": [
+   -0.0013296856429460217,
+   0.0002028099672410618,
+   0.0004907442841405984,
+   0.0011234309843112143,
+   -2.176415927681792e-05
+  ],
+  "max_offset_used_m": 0.012,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 6.431838436983526,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 2,
+   "waypoints": 2
+  },
+  "validation": null,
+  "certificate": {
+   "draws": 1000,
+   "failures": 258,
+   "risk": 0.258,
+   "confidence": 0.95,
+   "upper_bound": 0.28177060193794984,
+   "scope": "payload-environment contact, keep-in and final-state rules of the executed path"
+  },
+  "wall_seconds": 92.28106235712767,
+  "collision_checks": 3796
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_hard_test_00",
+  "family": "rack",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 412057889,
+  "path_joint_length_rad": 4.3718143629003325,
+  "ee_path_length_m": 0.919358218878937,
+  "payload_min_clearance_m": 0.0061153701533647326,
+  "payload_clearance_p05_m": 0.006198383251437443,
+  "trajectory_states": 1218,
+  "collision_count": 59,
+  "collision_rate": 0.23046875,
+  "collision_ci95": [
+   0.180318563799186,
+   0.28697631839977783
+  ],
+  "success_count": 194,
+  "success_rate": 0.7578125,
+  "success_ci95": [
+   0.7005639235379735,
+   0.8089847862558736
+  ],
+  "failures_by_reason": {
+   "payload_environment": 59,
+   "placement_height": 3
+  },
+  "colliding_obstacles": {
+   "bracket_deep": 33,
+   "bracket_shallow": 21,
+   "target_saddle_1": 3,
+   "target_saddle_0": 2
+  },
+  "wall_seconds": 17.00256061553955,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1110111101101111111111111011001001111111111111100011111110011010111111001111110100010111011101111010111111011101011110011101011101110110111110111111101111111111101111011111110111111110101001111110010101110110111101110111111101111101101101111111001101111100",
+  "episode_collision": "0001000010000000000000000100110110000000000000011100000001100101000000110000001010101000100010000101000000100010100001100010100010001001000001000000010000000000010000100000001000000001010010000001101010001001000010001000000010000010010010000000110010000011"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/CRISP__N___256_draws/rack_hard_test_00__s0.npy",
+ "trajectory_sha256": "196e1dea513cc655fc617d71983842bd979851e45c470af4f5a31919314d7b16",
+ "task_success_rate": 0.7578125
+}

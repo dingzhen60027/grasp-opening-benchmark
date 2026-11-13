@@ -1,0 +1,70 @@
+{
+  "name": "v0.4 test split: CRISP ablations",
+  "description": "Each ablation changes one component of CRISP (3 seeds); CRISP itself uses its first 3 seeds here so every row has the same seeds.",
+  "results": [
+    "results/suite_v0.4/crisp"
+  ],
+  "split": "test",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "methods": [
+    {
+      "label": "CRISP (proposed)",
+      "name": "CRISP (proposed)"
+    },
+    {
+      "label": "Ablation: state-wise risk",
+      "name": "State-wise risk"
+    },
+    {
+      "label": "Ablation: linearised Boole risk",
+      "name": "Linearised Boole risk"
+    },
+    {
+      "label": "Ablation: CVaR objective",
+      "name": "CVaR objective"
+    },
+    {
+      "label": "Ablation: max-clearance objective",
+      "name": "Max-clearance objective"
+    },
+    {
+      "label": "Ablation: translation-only error model",
+      "name": "Translation-only error model"
+    },
+    {
+      "label": "Ablation: fixed goal pose",
+      "name": "Fixed goal pose"
+    }
+  ],
+  "pairs": [
+    [
+      "CRISP (proposed)",
+      "State-wise risk"
+    ],
+    [
+      "CRISP (proposed)",
+      "Linearised Boole risk"
+    ],
+    [
+      "CRISP (proposed)",
+      "CVaR objective"
+    ],
+    [
+      "CRISP (proposed)",
+      "Max-clearance objective"
+    ],
+    [
+      "CRISP (proposed)",
+      "Translation-only error model"
+    ],
+    [
+      "CRISP (proposed)",
+      "Fixed goal pose"
+    ]
+  ],
+  "output": "results/suite_v0.4/comparison_crisp_ablation_test"
+}

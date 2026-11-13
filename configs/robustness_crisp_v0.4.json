@@ -1,0 +1,66 @@
+{
+  "name": "Robustness to a misspecified grasp-error model (v0.4 test split)",
+  "description": "Stored test paths (seed 0; oracles: their witnesses) re-executed under scaled and component-restricted grasp-error models. All methods planned with the protocol model (scale 1, combined).",
+  "suite": "data/suite_v0.4",
+  "split": "test",
+  "output": "results/suite_v0.4/robustness_crisp_test",
+  "workers": 20,
+  "methods": [
+    {
+      "name": "CRISP (proposed)",
+      "results": "results/suite_v0.4/crisp",
+      "label": "CRISP (proposed)",
+      "seed": 0
+    },
+    {
+      "name": "Risk-aware oracle",
+      "witness": "witness_file"
+    },
+    {
+      "name": "CC-VPSTO (adapted)",
+      "results": "results/suite_v0.4/crisp",
+      "label": "CC-VPSTO (adapted)",
+      "seed": 0
+    },
+    {
+      "name": "B6 Keyframe-guided",
+      "results": "results/suite_v0.4/baselines",
+      "label": "B6 Keyframe-guided",
+      "seed": 0
+    },
+    {
+      "name": "Straight oracle",
+      "witness": "witness_nominal_file"
+    }
+  ],
+  "conditions": [
+    {
+      "scale": 0.5,
+      "mode": "combined"
+    },
+    {
+      "scale": 0.75,
+      "mode": "combined"
+    },
+    {
+      "scale": 1.0,
+      "mode": "combined"
+    },
+    {
+      "scale": 1.5,
+      "mode": "combined"
+    },
+    {
+      "scale": 2.0,
+      "mode": "combined"
+    },
+    {
+      "scale": 1.0,
+      "mode": "translation_only"
+    },
+    {
+      "scale": 1.0,
+      "mode": "rotation_only"
+    }
+  ]
+}

@@ -5,14 +5,17 @@
 Every method is evaluated on the same grasp-error draws per task (common random numbers), so methods
 can be compared task by task. A method's score on a task is its mean over seeds. Tables report the
 mean over tasks with 95% percentile-bootstrap intervals over tasks (gosuite.report.bootstrap). A paired
-difference A - B is the mean over tasks of the per-task differences, with its own bootstrap interval.
-Metric definitions are those of gosuite.report. Writes comparison.md and comparison.json.
+difference A - B is the mean over tasks of the per-task differences, with its own bootstrap interval and a
+two-sided Wilcoxon signed-rank test over tasks; at the 'all' level the p-values of all configured pairs are
+also Holm-adjusted for multiple comparisons. Metric definitions are those of gosuite.report.
+Writes comparison.md and comparison.json.
 """
 import argparse
 import json
 from collections import defaultdict
 from pathlib import Path
 import numpy as np
+from scipy.stats import wilcoxon
 from .report import LEVEL_ORDER, bootstrap, find_feasibility, flat, load_runs
 
 FAMILY_ORDER = ['rack', 'rebar', 'lathe', 'tote']
@@ -20,7 +23,7 @@ TIE = 1e-9
 
 
 def load(cfg):
-    """Run rows per method name, restricted to the configured split and labels."""
+    """Run rows per method name, restricted to the configured split, labels and (optional) seeds."""
     names = {m['label']: m['name'] for m in cfg['methods']}
     rows, sources, origin = defaultdict(list), {}, {}
     for d in cfg['results']:
@@ -30,7 +33,7 @@ def load(cfg):
             label = rec['label']
             if origin.setdefault(label, d) != d:
                 raise SystemExit(f'label {label!r} appears in both {origin[label]} and {d}')
-            if rec['split'] == cfg['split'] and label in names:
+            if rec['split'] == cfg['split'] and label in names and (cfg.get('seeds') is None or rec['seed'] in cfg['seeds']):
                 rows[names[label]].append(flat(rec, feas))
     missing = [m['name'] for m in cfg['methods'] if not rows[m['name']]]
     if missing:
@@ -63,7 +66,20 @@ def paired(rows_a, rows_b):
     a, b = per_task(rows_a, 'task_success_rate'), per_task(rows_b, 'task_success_rate')
     diff = {t: a[t] - b[t] for t in sorted(set(a) & set(b))}
     v = np.array(list(diff.values()))
-    return dict(tasks=len(v), mean=float(v.mean()), ci95=bootstrap(diff), a_higher=int((v > TIE).sum()), b_higher=int((v < -TIE).sum()))
+    nonzero = v[np.abs(v) > TIE]
+    p = float(wilcoxon(nonzero).pvalue) if len(nonzero) >= 2 else 1.
+    return dict(tasks=len(v), mean=float(v.mean()), ci95=bootstrap(diff), a_higher=int((v > TIE).sum()), b_higher=int((v < -TIE).sum()),
+                p_wilcoxon=p)
+
+
+def holm(pvalues):
+    """Holm-Bonferroni adjusted p-values (same order as the input)."""
+    order = np.argsort(pvalues)
+    out, running = np.empty(len(pvalues)), 0.
+    for rank, i in enumerate(order):
+        running = max(running, min(1., (len(pvalues) - rank) * pvalues[i]))
+        out[i] = running
+    return out.tolist()
 
 
 def subset(rows, level='all', family='all'):
@@ -80,6 +96,8 @@ def compare(cfg):
     table = {n: {lev: metrics(subset(rows[n], lev)) for lev in levels} for n in names}
     pairs = [dict(a=a, b=b, levels={lev: paired(subset(rows[a], lev), subset(rows[b], lev)) for lev in levels})
              for a, b in cfg.get('pairs', [])]
+    for p, adj in zip(pairs, holm([p['levels']['all']['p_wilcoxon'] for p in pairs])):
+        p['levels']['all']['p_holm'] = adj
     by_family = {f: {lev: {n: metrics(subset(rows[n], lev, f))['task_success'] for n in names} for lev in levels[:-1]}
                  for f in families}
     seeds = {n: len({r['seed'] for r in rows[n]}) for n in names}
@@ -122,13 +140,16 @@ def markdown(res):
                        f"{pct(m['feasible_episode_success'])} | {pct(m['collision_given_valid'])} |")
     if res['pairs']:
         out += ['', '## Paired differences in task success (A - B, percentage points, same draws per task)', '',
-                '| A - B | Level | Mean | 95% CI | Tasks where A is higher | Tasks where B is higher | Tasks |', '|---|---|---:|---:|---:|---:|---:|']
+                'p: two-sided Wilcoxon signed-rank test over tasks; Holm: adjusted over all configured pairs (level "all").', '',
+                '| A - B | Level | Mean | 95% CI | Tasks where A is higher | Tasks where B is higher | Tasks | p | Holm |',
+                '|---|---|---:|---:|---:|---:|---:|---:|---:|']
         for p in res['pairs']:
             for lev in levels:
                 d = p['levels'][lev]
                 lo, hi = d['ci95']
+                holm_p = f"{d['p_holm']:.2g}" if 'p_holm' in d else ''
                 out.append(f"| {p['a']} - {p['b']} | {lev} | {100 * d['mean']:+.1f} | [{100 * lo:+.1f}, {100 * hi:+.1f}] | "
-                           f"{d['a_higher']} | {d['b_higher']} | {d['tasks']} |")
+                           f"{d['a_higher']} | {d['b_higher']} | {d['tasks']} | {d['p_wilcoxon']:.2g} | {holm_p} |")
     out += ['', '## Task success by family and level (%)', '', '| Family | Level | ' + ' | '.join(names) + ' |',
             '|---|---|' + '---:|' * len(names)]
     for f in res['families']:

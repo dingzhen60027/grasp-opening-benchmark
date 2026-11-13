@@ -1,5 +1,33 @@
 # Changelog
 
+## v0.4.1-dev — 2026-11-12 (proposed method)
+
+- **CRISP** (`gosuite/planners/crisp.py`, registry name `crisp`) is the proposed method: chance-optimal insertion under in-hand grasp error. It keeps the keyframe structure of the openings and optimises the insertion for the trajectory-level success probability. Its components:
+  - a task-space front/rear-end deviation parameterisation;
+  - CMA-ES with a goal-first stage and a free goal pose inside the goal region;
+  - adaptive pre-entry and shrinkage candidates for arm realisation;
+  - a Clopper-Pearson risk certificate on fresh planning draws.
+
+  It reads only the planner interface, which is tested.
+- `gosuite/risk.py`: an exact, vectorised grasp-error risk model.
+  - Separating-axis margins between oriented boxes; keep-in rules become forbidden boxes; final-state rule margins.
+  - Lossless pruning by the lever-arm displacement bound.
+  - Validated against the simulator: zero missed contacts in 1.26 M checks; conservative disagreements under 0.5 mm.
+- `gosuite/planners/ccvpsto.py`: CC-VPSTO (Brudermueller et al., IJRR 2026) re-implemented as a comparator. Its exact binomial padding reproduces the published thresholds.
+- Experiments:
+  - development on the dev split (`configs/experiment_crisp_dev_v0.4.json`);
+  - one run on the frozen test split with code hashes (`configs/experiment_crisp_v0.4.json`, `results/suite_v0.4/crisp`, 2016 runs);
+  - an anytime and sample-size study (`configs/experiment_crisp_budget_v0.4.json`);
+  - a misspecification study (`gosuite.robustness`, `configs/robustness_crisp_v0.4.json`).
+- Results on test: CRISP reaches 92.2% task success.
+  - Against B6 (75.1%): +17.1 points, p = 8e-12.
+  - Against CC-VPSTO (83.9%): +8.4 points, p = 5e-11.
+  - Against the privileged risk-aware oracle (91.0%): +1.3 points, p = 0.029.
+
+  Ablations: removing rotation from the error model costs 11.6 points, a max-clearance objective 3.0, a fixed goal 2.0. State-wise and linearised-Boole risk plan equally well, and CVaR is 0.7 points better (not selected on dev).
+- Harness: per-planner `seeds` and `budget_seconds` overrides; `gosuite.compare` reports two-sided Wilcoxon signed-rank p-values with Holm adjustment and accepts a seed filter; figures (`gosuite.crisp_figures`) and LaTeX tables (`gosuite.paper_tables`).
+- Documentation: `docs/CRISP.md` (method, theory, related work, development log, results, limitations); `paper/` (manuscript draft, references, generated tables).
+
 ## v0.4.0-dev — 2026-11-12
 
 - Validation of v0.3 (`gosuite.validate`): reproducible and numerically stable, with a valid difficulty measure, but 93% of reference failures happen at the goal state. The best achievable success was 72.8% against 69.1% for the oracle, leaving too little room to show robust planning (docs/BENCHMARK_ASSESSMENT_v0.3.md).

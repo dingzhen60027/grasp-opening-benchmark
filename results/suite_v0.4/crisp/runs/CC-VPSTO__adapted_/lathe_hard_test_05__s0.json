@@ -1,0 +1,86 @@
+{
+ "task_id": "lathe_hard_test_05",
+ "family": "lathe",
+ "level": "hard",
+ "split": "test",
+ "label": "CC-VPSTO (adapted)",
+ "planner": "ccvpsto",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 120,
+ "task_sha256": "ea3495d21037dbbf641e05054b6dd8092f3fd06f2ce9dda7f72f5b3bee991ff0",
+ "planning_seconds": 82.92399386968464,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CC-VPSTO (adapted)",
+  "samples": 100,
+  "eta": 0.05,
+  "beta": 0.05,
+  "k_thresh": 1,
+  "via_points": 5,
+  "iterations": 67,
+  "evaluations": 1625,
+  "optimise_seconds": 71.17676518298686,
+  "violations_warm_start": 51,
+  "violations_best": 39,
+  "chance_feasible": false,
+  "chosen_rank": 0,
+  "candidates_tried": 1,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 5.1235423516482115,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 2,
+   "waypoints": 2
+  },
+  "validation": null,
+  "wall_seconds": 82.9233877826482
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_hard_test_05",
+  "family": "lathe",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3909744810,
+  "path_joint_length_rad": 4.935709678253521,
+  "ee_path_length_m": 1.1583372659125282,
+  "payload_min_clearance_m": 0.004037821533292521,
+  "payload_clearance_p05_m": 0.004347858792507316,
+  "trajectory_states": 1369,
+  "collision_count": 114,
+  "collision_rate": 0.4453125,
+  "collision_ci95": [
+   0.38342549076869653,
+   0.5084804413969692
+  ],
+  "success_count": 142,
+  "success_rate": 0.5546875,
+  "success_ci95": [
+   0.4915195586030308,
+   0.6165745092313035
+  ],
+  "failures_by_reason": {
+   "payload_environment": 114
+  },
+  "colliding_obstacles": {
+   "chip_guard_lip": 91,
+   "coolant_nozzle": 21,
+   "fixture_guide_l": 2
+  },
+  "wall_seconds": 26.5128253409639,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0111011010000111010110001000100000110111100101101101111011111001111111010001101001101001101110111100000011011000110001100010001000100110100110111111111010101101010100110100000011010110110001100111100110111000100110100111111010001101101111111001111111110100",
+  "episode_collision": "1000100101111000101001110111011111001000011010010010000100000110000000101110010110010110010001000011111100100111001110011101110111011001011001000000000101010010101011001011111100101001001110011000011001000111011001011000000101110010010000000110000000001011"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/CC-VPSTO__adapted_/lathe_hard_test_05__s0.npy",
+ "trajectory_sha256": "3732aabee57c2921aa80e10bbe0f01047bbe246047dbba659fc961aac986d15f",
+ "task_success_rate": 0.5546875
+}

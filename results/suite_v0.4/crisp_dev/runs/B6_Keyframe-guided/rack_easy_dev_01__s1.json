@@ -1,0 +1,87 @@
+{
+ "task_id": "rack_easy_dev_01",
+ "family": "rack",
+ "level": "easy",
+ "split": "dev",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 1,
+ "budget_seconds": 120,
+ "task_sha256": "9cde5f06f228b28f1dc2803b6a5cfcd600c32a385ce12c6552962f3e4cd0de73",
+ "planning_seconds": 13.441298195160925,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 9.192141766659915,
+   "raw_waypoints": 4,
+   "shortcut_attempts": 4,
+   "waypoints": 2
+  },
+  "insertion_states": 130,
+  "wall_seconds": 13.441272080875933,
+  "collision_checks": 4772
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_easy_dev_01",
+  "family": "rack",
+  "level": "easy",
+  "split": "dev",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 1902361908,
+  "path_joint_length_rad": 4.245126013303259,
+  "ee_path_length_m": 0.9195033796038299,
+  "payload_min_clearance_m": 0.013999995660903325,
+  "payload_clearance_p05_m": 0.014000025660161185,
+  "trajectory_states": 1208,
+  "collision_count": 17,
+  "collision_rate": 0.06640625,
+  "collision_ci95": [
+   0.039156799438977076,
+   0.1041955690615258
+  ],
+  "success_count": 235,
+  "success_rate": 0.91796875,
+  "success_ci95": [
+   0.8773394692998049,
+   0.9485049221701864
+  ],
+  "failures_by_reason": {
+   "placement_height": 1,
+   "payload_environment": 17,
+   "goal_position": 3
+  },
+  "colliding_obstacles": {
+   "bracket_deep": 3,
+   "target_saddle_0": 9,
+   "bracket_shallow": 5
+  },
+  "wall_seconds": 21.557740952819586,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1101111110111100111011101111111111111111111111111111110111110111111111111111111011111111111110011111111111111111111111111111111110110111101111111111111111111111111110111111110011111110111111111111111011111111111111111111111111111011110111111111111111111111",
+  "episode_collision": "0000000001000011000100010000000000000000000000000000001000001000000000000000000100000000000001100000000000000000000000000000000001000000010000000000000000000000000001000000000100000001000000000000000100000000000000000000000000000100000000000000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/rack_easy_dev_01__s1.npy",
+ "trajectory_sha256": "a16793cbed8fa76cd846af7bdbf9d1ef2f01948f838352af289231228b1daad3",
+ "task_success_rate": 0.91796875
+}

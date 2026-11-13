@@ -1,0 +1,85 @@
+{
+ "task_id": "rebar_easy_test_00",
+ "family": "rebar",
+ "level": "easy",
+ "split": "test",
+ "label": "CC-VPSTO, 30 s budget",
+ "planner": "ccvpsto",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 30,
+ "task_sha256": "08a3f293e932343ae81b5cce3b7551b57c622396580c99199ab2a8b3d8902893",
+ "planning_seconds": 36.9924904378131,
+ "over_budget": true,
+ "status": "solved",
+ "planner_info": {
+  "method": "CC-VPSTO (adapted)",
+  "samples": 100,
+  "eta": 0.05,
+  "beta": 0.05,
+  "k_thresh": 1,
+  "via_points": 5,
+  "iterations": 22,
+  "evaluations": 552,
+  "optimise_seconds": 17.116653596051037,
+  "violations_warm_start": 9,
+  "violations_best": 5,
+  "chance_feasible": false,
+  "chosen_rank": 0,
+  "candidates_tried": 1,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 4.999146630056202,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 2,
+   "waypoints": 3
+  },
+  "validation": null,
+  "wall_seconds": 36.99234684929252
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rebar_easy_test_00",
+  "family": "rebar",
+  "level": "easy",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 1037473840,
+  "path_joint_length_rad": 11.56282673786173,
+  "ee_path_length_m": 1.8490450026620895,
+  "payload_min_clearance_m": 0.016003765031681577,
+  "payload_clearance_p05_m": 0.022235769960672946,
+  "trajectory_states": 4152,
+  "collision_count": 1,
+  "collision_rate": 0.00390625,
+  "collision_ci95": [
+   9.889279722355371e-05,
+   0.021570890352533498
+  ],
+  "success_count": 245,
+  "success_rate": 0.95703125,
+  "success_ci95": [
+   0.9244190662295707,
+   0.9783579593956968
+  ],
+  "failures_by_reason": {
+   "goal_position": 10,
+   "payload_environment": 1
+  },
+  "colliding_obstacles": {
+   "tie_hook": 1
+  },
+  "wall_seconds": 78.38053707778454,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111111111111111111111111011111111111111111111111111111111111011111111111111011111111111111111111111111101011111111111111101111111111101111111111110111111111111110111111111111111111111111111111111111111011111111111111111111111111111111011111111111111111",
+  "episode_collision": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/CC-VPSTO__30_s_budget/rebar_easy_test_00__s0.npy",
+ "trajectory_sha256": "f9dea99a5e161d348f9bc658dc85c6f6b057018dea5b8af1372d5a55a8eccfd0",
+ "task_success_rate": 0.95703125
+}

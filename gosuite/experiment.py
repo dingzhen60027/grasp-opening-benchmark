@@ -4,7 +4,9 @@
 
 The config names the suite, split, families, levels, seeds, budget, evaluation episodes,
 uncertainty scale/mode and a list of planner entries ``{"label", "planner", "params"}``, where
-``planner`` is a registry name (see gosuite.planners) or ``"package.module:function"``.
+``planner`` is a registry name (see gosuite.planners) or ``"package.module:function"``.  An entry may
+override the seed list with its own ``"seeds"`` (e.g. fewer seeds for ablations) and the planning budget
+with its own ``"budget_seconds"`` (anytime studies).
 
 Each (planner entry, task, seed) is one run: plan within the budget, validate the path nominally,
 then execute it under the task's common evaluation perturbations.  Results are written to
@@ -50,7 +52,7 @@ def run_one(job):
     scene = json.loads(task_file.read_text())
     record = dict(task_id=entry['id'], family=entry['family'], level=entry['level'], split=entry['split'],
                   label=spec['label'], planner=spec['planner'], params=spec.get('params', {}), seed=job_seed(job),
-                  budget_seconds=cfg['budget_seconds'], task_sha256=entry['sha256'])
+                  budget_seconds=spec.get('budget_seconds', cfg['budget_seconds']), task_sha256=entry['sha256'])
     problem = PlanningProblem(scene, cfg.get('uncertainty_scale', 1.), cfg.get('mode', 'combined'), cfg.get('joint_step', .0025))
     try:
         if spec['planner'] in ('reference', 'reference_nominal'):
@@ -59,14 +61,14 @@ def run_one(job):
         planner = load_planner(spec['planner'])
         begin = time.perf_counter()
         try:
-            result = planner(problem, seed=record['seed'], budget=cfg['budget_seconds'], **spec.get('params', {}))
+            result = planner(problem, seed=record['seed'], budget=record['budget_seconds'], **spec.get('params', {}))
             error = None
         except Exception:  # a crashing planner is a failed run, not a crashed experiment
             result, error = None, traceback.format_exc(limit=5)
         record['planning_seconds'] = time.perf_counter() - begin
     finally:
         problem.close()
-    record['over_budget'] = record['planning_seconds'] > 1.1 * cfg['budget_seconds'] + 1.
+    record['over_budget'] = record['planning_seconds'] > 1.1 * record['budget_seconds'] + 1.
     if result is None:
         record.update(status='planner_error', error=error, path_found=False)
     else:
@@ -126,7 +128,7 @@ def run(config_path, output=None, workers=None, limit=None):
         tasks = tasks[:limit]
     jobs = []
     for spec in cfg['planners']:
-        seeds = [0] if spec['planner'] in ('reference', 'reference_nominal') else cfg['seeds']
+        seeds = [0] if spec['planner'] in ('reference', 'reference_nominal') else spec.get('seeds', cfg['seeds'])
         for entry in tasks:
             for seed in seeds:
                 if not run_path(out, spec, entry, seed).exists():

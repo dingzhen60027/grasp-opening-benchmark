@@ -1,0 +1,87 @@
+{
+ "task_id": "tote_hard_test_02",
+ "family": "tote",
+ "level": "hard",
+ "split": "test",
+ "label": "CC-VPSTO (adapted)",
+ "planner": "ccvpsto",
+ "params": {},
+ "seed": 3,
+ "budget_seconds": 120,
+ "task_sha256": "46cea5a7ed9650276446268a84bfca57e1e9d30c3644bb0c8b81ef05bd2b3d06",
+ "planning_seconds": 112.63114792481065,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CC-VPSTO (adapted)",
+  "samples": 100,
+  "eta": 0.05,
+  "beta": 0.05,
+  "k_thresh": 1,
+  "via_points": 5,
+  "iterations": 200,
+  "evaluations": 4802,
+  "optimise_seconds": 54.080569587647915,
+  "violations_warm_start": 31,
+  "violations_best": 19,
+  "chance_feasible": false,
+  "chosen_rank": 0,
+  "candidates_tried": 1,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 4.823270754888654,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 1148,
+   "waypoints": 3
+  },
+  "validation": null,
+  "wall_seconds": 112.63025204837322
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "tote_hard_test_02",
+  "family": "tote",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 1176238682,
+  "path_joint_length_rad": 11.26706666126058,
+  "ee_path_length_m": 2.6081517988225604,
+  "payload_min_clearance_m": 0.005804550573860474,
+  "payload_clearance_p05_m": 0.009611282828988748,
+  "trajectory_states": 2838,
+  "collision_count": 118,
+  "collision_rate": 0.4609375,
+  "collision_ci95": [
+   0.39868895062488297,
+   0.5241008954002297
+  ],
+  "success_count": 138,
+  "success_rate": 0.5390625,
+  "success_ci95": [
+   0.47589910459977025,
+   0.601311049375117
+  ],
+  "failures_by_reason": {
+   "payload_environment": 28,
+   "payload_robot": 90
+  },
+  "colliding_obstacles": {
+   "lid_flap": 4,
+   "upper_arm_link": 90,
+   "cell_ledge": 24
+  },
+  "wall_seconds": 24.771295324899256,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0011010101100001111100110000100010000110100011001110101110010001101101110110010111111011001001010111110100110110010001111001010011001011100111111101011010010101011111101111000100011101001101001101100110110100110111100000101101100110101110011000110000011101",
+  "episode_collision": "1100101010011110000011001111011101111001011100110001010001101110010010001001101000000100110110101000001011001001101110000110101100110100011000000010100101101010100000010000111011100010110010110010011001001011001000011111010010011001010001100111001111100010"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/CC-VPSTO__adapted_/tote_hard_test_02__s3.npy",
+ "trajectory_sha256": "2230c65ab6e2a63f2ea1a37e9666cc01747ff6adcfca950cf1f21c9d6dcca6f8",
+ "task_success_rate": 0.5390625
+}

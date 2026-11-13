@@ -1,0 +1,120 @@
+{
+ "task_id": "rebar_medium_test_01",
+ "family": "rebar",
+ "level": "medium",
+ "split": "test",
+ "label": "Ablation: max-clearance objective",
+ "planner": "crisp",
+ "params": {
+  "objective": "clearance"
+ },
+ "seed": 0,
+ "budget_seconds": 120,
+ "task_sha256": "8a6a0ab2e1b751490495382e9e539b16da62225799337850a3d26a6fb9a8b871",
+ "planning_seconds": 113.56803148705512,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CRISP",
+  "objective": "clearance",
+  "error_model": "combined",
+  "free_goal": true,
+  "samples": 128,
+  "knots": 6,
+  "goal_iterations": 60,
+  "goal_cost_straight": -0.3377163944066483,
+  "goal_cost": -0.3704470452509861,
+  "runs": [
+   {
+    "iterations": 200,
+    "best": -0.36908362699372016
+   }
+  ],
+  "goal_frozen": false,
+  "optimiser": "cmaes",
+  "insertion_states": 104,
+  "straight_risk": 0.2265625,
+  "straight_nominal_margin": 0.009999978252322878,
+  "evaluations": 5525,
+  "optimise_seconds": 35.63826518878341,
+  "candidates_tried": 1,
+  "realisation_failures": [],
+  "chosen_rank": 0,
+  "straight_used": false,
+  "predicted_risk": 0.1015625,
+  "nominal_margin": 0.010999704832618506,
+  "goal_deviation_m": [
+   0.0020420901889862827,
+   0.003826933129223031,
+   -4.265348142589442e-05,
+   -0.003759013686960345,
+   6.101987032469322e-07
+  ],
+  "max_offset_used_m": 0.041801083710709105,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 4.235179118812084,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 252,
+   "waypoints": 3
+  },
+  "validation": null,
+  "certificate": {
+   "draws": 1000,
+   "failures": 107,
+   "risk": 0.107,
+   "confidence": 0.95,
+   "upper_bound": 0.12444768054361084,
+   "scope": "payload-environment contact, keep-in and final-state rules of the executed path"
+  },
+  "wall_seconds": 113.56755249202251,
+  "collision_checks": 26748
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rebar_medium_test_01",
+  "family": "rebar",
+  "level": "medium",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 2156935826,
+  "path_joint_length_rad": 12.57140457444431,
+  "ee_path_length_m": 1.9008225980896287,
+  "payload_min_clearance_m": 0.011011829022868782,
+  "payload_clearance_p05_m": 0.01737451962019712,
+  "trajectory_states": 4413,
+  "collision_count": 25,
+  "collision_rate": 0.09765625,
+  "collision_ci95": [
+   0.06419963564567512,
+   0.14078042983403036
+  ],
+  "success_count": 229,
+  "success_rate": 0.89453125,
+  "success_ci95": [
+   0.8502658256503702,
+   0.9293363614077319
+  ],
+  "failures_by_reason": {
+   "goal_position": 2,
+   "payload_environment": 25
+  },
+  "colliding_obstacles": {
+   "stirrup_0": 18,
+   "tie_hook": 5,
+   "side_clip": 2
+  },
+  "wall_seconds": 85.00344100315124,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111011111110011101111111111111111101111111111111111111111111111111111101110110101101111111111011111111111111111111111111111011111111101101111111111111111110111011110011111111111111011111111011101111111101111111111011111111111110111111111110101111111111101",
+  "episode_collision": "0000000000001100010000000000000000010000000000000000000000000000000000010001001010010000000000100000000000000000000000000000100000000010010000000000000000001000100001100000000000000100000000000010000000010000000000100000000000001000000000001010000000000010"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/Ablation__max-clearance_objective/rebar_medium_test_01__s0.npy",
+ "trajectory_sha256": "3515b1fc88ec6abba004443f9db5e12c393db5eae1e02cb6a060dc67e4efcde8",
+ "task_success_rate": 0.89453125
+}

@@ -9,12 +9,15 @@ ompl         OMPL planners (RRTConnect, BITstar, EITstar, PRM, KPIECE1, STRIDE, 
              margin (obstacle inflation), scenarios/risk (chance-constraint approximation) and a
              clearance-integral objective.  Needs `pip install ompl==1.7.0`.
 guided       Keyframe-guided planner: keyframes from the declared openings + OMPL transfer.
+crisp        Proposed method: chance-optimal insertion (trajectory-level grasp-error risk) + OMPL transfer.
+ccvpsto      CC-VPSTO (Brudermueller et al., IJRR 2026) adapted to grasp error: joint via-points, MC chance constraint.
 """
 import importlib
-from . import guided, ompl_planner, reference, rrt
+from . import ccvpsto, crisp, guided, ompl_planner, reference, rrt
 
 PLANNERS = {'reference': reference.plan, 'reference_nominal': reference.plan, 'rrt_connect': rrt.plan,
-            'ompl': ompl_planner.plan, 'guided': guided.plan}
+            'ompl': ompl_planner.plan, 'guided': guided.plan,
+            'crisp': crisp.plan, 'ccvpsto': ccvpsto.plan}
 
 
 def load_planner(spec):

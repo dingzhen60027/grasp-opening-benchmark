@@ -1,0 +1,122 @@
+{
+ "task_id": "rack_hard_test_05",
+ "family": "rack",
+ "level": "hard",
+ "split": "test",
+ "label": "Ablation: translation-only error model",
+ "planner": "crisp",
+ "params": {
+  "error_model": "translation"
+ },
+ "seed": 0,
+ "budget_seconds": 120,
+ "task_sha256": "eb08d7feef51bd7670c14dec62a4dc43de4ba158184e0b48913beed5130dd1fc",
+ "planning_seconds": 35.04207563586533,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CRISP",
+  "objective": "chance",
+  "error_model": "translation",
+  "free_goal": true,
+  "samples": 128,
+  "knots": 6,
+  "goal_iterations": 60,
+  "goal_cost_straight": 0.007836536840597378,
+  "goal_cost": 0.0008467132945085142,
+  "runs": [
+   {
+    "iterations": 200,
+    "best": 0.0002684129905810446
+   }
+  ],
+  "goal_frozen": false,
+  "optimiser": "cmaes",
+  "insertion_states": 131,
+  "straight_risk": 0.0078125,
+  "straight_nominal_margin": 0.005999986322411652,
+  "evaluations": 5525,
+  "optimise_seconds": 21.0738353645429,
+  "candidates_tried": 1,
+  "realisation_failures": [],
+  "chosen_rank": 0,
+  "straight_used": false,
+  "predicted_risk": 0.0,
+  "nominal_margin": 0.006934044500146886,
+  "goal_deviation_m": [
+   -0.004942096843070259,
+   0.00025097830859970347,
+   0.002313250078169057,
+   -0.0002823254224050178,
+   -0.00042416213862566
+  ],
+  "max_offset_used_m": 0.009102141566307273,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 5.979185572825372,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 2,
+   "waypoints": 2
+  },
+  "validation": null,
+  "certificate": {
+   "draws": 1000,
+   "failures": 282,
+   "risk": 0.282,
+   "confidence": 0.95,
+   "upper_bound": 0.3063632673762763,
+   "scope": "payload-environment contact, keep-in and final-state rules of the executed path"
+  },
+  "wall_seconds": 35.041661746799946,
+  "collision_checks": 3177
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_hard_test_05",
+  "family": "rack",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3286815184,
+  "path_joint_length_rad": 4.245110865617975,
+  "ee_path_length_m": 0.8984299537646943,
+  "payload_min_clearance_m": 0.006959135173534126,
+  "payload_clearance_p05_m": 0.007425656280713829,
+  "trajectory_states": 1166,
+  "collision_count": 80,
+  "collision_rate": 0.3125,
+  "collision_ci95": [
+   0.25623597083627075,
+   0.3731681682204049
+  ],
+  "success_count": 174,
+  "success_rate": 0.6796875,
+  "success_ci95": [
+   0.6187376816733912,
+   0.7364178461457851
+  ],
+  "failures_by_reason": {
+   "payload_environment": 80,
+   "goal_position": 1,
+   "placement_height": 1
+  },
+  "colliding_obstacles": {
+   "bracket_shallow": 29,
+   "target_saddle_1": 10,
+   "bracket_deep": 37,
+   "target_saddle_0": 4
+  },
+  "wall_seconds": 14.757539353333414,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0110111101010110111111111000111110100111010001010101100010011101110110000010110101101101111111011110010111111000111101011011011110111101101111101011110100101100111111011011111111101111101100111110110010111111111101010111110010111101111111010001100111111110",
+  "episode_collision": "1001000010101001000000000111000001011000101110101010011101100010001001111101001010010010000000100001101000000111000010100100100001000010010000000100001011010011000000100100000000010000010011000001000101000000000010101000001101000010000000101110011000000001"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/Ablation__translation-only_error_model/rack_hard_test_05__s0.npy",
+ "trajectory_sha256": "e3abffb6e73f572daf108c2508eac546e6365ce17b5fd0c87c68d6d264f881ad",
+ "task_success_rate": 0.6796875
+}

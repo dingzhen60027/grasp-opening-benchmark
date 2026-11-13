@@ -1,0 +1,37 @@
+{
+  "name": "crisp_dev_v0.4",
+  "description": "Development of the proposed method on the v0.4 DEV split only (3 seeds, 120 s, 256 episodes): CRISP against the keyframe-guided baseline and the adapted CC-VPSTO. The test split is not touched during development.",
+  "output": "results/suite_v0.4/crisp_dev",
+  "split": "dev",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "suite": "data/suite_v0.4",
+  "families": null,
+  "levels": null,
+  "budget_seconds": 120,
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step": 0.0025,
+  "workers": 20,
+  "planners": [
+    {
+      "label": "B6 Keyframe-guided",
+      "planner": "guided",
+      "params": {}
+    },
+    {
+      "label": "CRISP (proposed)",
+      "planner": "crisp",
+      "params": {}
+    },
+    {
+      "label": "CC-VPSTO (adapted)",
+      "planner": "ccvpsto",
+      "params": {}
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+ "task_id": "rack_medium_test_02",
+ "family": "rack",
+ "level": "medium",
+ "split": "test",
+ "label": "Ablation: state-wise risk",
+ "planner": "crisp",
+ "params": {
+  "objective": "statewise"
+ },
+ "seed": 1,
+ "budget_seconds": 120,
+ "task_sha256": "5d8b77c6f19ee0b59f892b85a7153b0b4543bb7928c29cf43cebf9c942f1c847",
+ "planning_seconds": 98.88334286399186,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CRISP",
+  "objective": "statewise",
+  "error_model": "combined",
+  "free_goal": true,
+  "samples": 128,
+  "knots": 6,
+  "goal_iterations": 60,
+  "goal_cost_straight": 0.05898135497811631,
+  "goal_cost": 0.03235377419473919,
+  "runs": [
+   {
+    "iterations": 138,
+    "best": 0.035229656632680115
+   }
+  ],
+  "goal_frozen": false,
+  "optimiser": "cmaes",
+  "insertion_states": 140,
+  "straight_risk": 0.3046875,
+  "straight_nominal_margin": 0.009999984254811786,
+  "evaluations": 4039,
+  "optimise_seconds": 72.01415030751377,
+  "candidates_tried": 7,
+  "realisation_failures": [
+   {
+    "reason": "robot_environment",
+    "state": 75
+   },
+   {
+    "reason": "robot_environment",
+    "state": 75
+   },
+   {
+    "reason": "robot_environment",
+    "state": 74
+   },
+   {
+    "reason": "robot_environment",
+    "state": 75
+   },
+   {
+    "reason": "robot_environment",
+    "state": 75
+   },
+   {
+    "reason": "robot_environment",
+    "state": 74
+   }
+  ],
+  "chosen_rank": 6,
+  "straight_used": false,
+  "predicted_risk": 0.0859375,
+  "nominal_margin": 0.009201876022048331,
+  "goal_deviation_m": [
+   -0.00015136475348372127,
+   0.000616232379992266,
+   -0.0008710173925132001,
+   -2.1243498266310915e-05,
+   -0.000556861242063176
+  ],
+  "max_offset_used_m": 0.020020774690504298,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 11.02202568296343,
+   "raw_waypoints": 4,
+   "shortcut_attempts": 4,
+   "waypoints": 2
+  },
+  "validation": null,
+  "certificate": {
+   "draws": 1000,
+   "failures": 122,
+   "risk": 0.122,
+   "confidence": 0.95,
+   "upper_bound": 0.14035534297036764,
+   "scope": "payload-environment contact, keep-in and final-state rules of the executed path"
+  },
+  "wall_seconds": 98.88313070777804,
+  "collision_checks": 6006
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_medium_test_02",
+  "family": "rack",
+  "level": "medium",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3192939211,
+  "path_joint_length_rad": 4.747439446974005,
+  "ee_path_length_m": 0.9694256643648304,
+  "payload_min_clearance_m": 0.009194813522021493,
+  "payload_clearance_p05_m": 0.009247458465241885,
+  "trajectory_states": 1321,
+  "collision_count": 24,
+  "collision_rate": 0.09375,
+  "collision_ci95": [
+   0.060993999204332176,
+   0.13627843480433852
+  ],
+  "success_count": 223,
+  "success_rate": 0.87109375,
+  "success_ci95": [
+   0.8237544055668911,
+   0.9095791658837531
+  ],
+  "failures_by_reason": {
+   "payload_environment": 24,
+   "goal_position": 3,
+   "placement_height": 6
+  },
+  "colliding_obstacles": {
+   "bracket_deep": 5,
+   "bracket_shallow": 12,
+   "target_saddle_1": 5,
+   "target_saddle_0": 1,
+   "target_guide_0_r": 1
+  },
+  "wall_seconds": 16.943813762627542,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111111111111011111111111101110101111110110111111110111110011111111111011111111110111111111111111111111111111011001111101111111111111111111011111111111001110111111101111110110111011110001111111111110111111111111111111111111111110111110110111101110111110",
+  "episode_collision": "0000000000000000100000000000010001010000001001000000001000001000000000000100000000000000000000000000000000000000000100000010000000000000000000000000000000110001000000000000001001000100001000000000000001000000000000000000000000000000000001001000010001000001"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/Ablation__state-wise_risk/rack_medium_test_02__s1.npy",
+ "trajectory_sha256": "1ca054bebac0ebf84d77416c1f83e986737096ae847959d565dbf6a55f4ea75d",
+ "task_success_rate": 0.87109375
+}

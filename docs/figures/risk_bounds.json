@@ -1,0 +1,213 @@
+{
+ "levels": {
+  "easy": {
+   "trajectory": 0.06362499999999999,
+   "statewise": 0.044,
+   "boole": 1.6691249999999997
+  },
+  "medium": {
+   "trajectory": 0.194875,
+   "statewise": 0.133,
+   "boole": 6.596375
+  },
+  "hard": {
+   "trajectory": 0.420375,
+   "statewise": 0.35650000000000004,
+   "boole": 19.036
+  }
+ },
+ "tasks": [
+  {
+   "task": "rack_easy_dev_00",
+   "level": "easy",
+   "trajectory": 0.103,
+   "statewise": 0.065,
+   "boole": 3.2859999999999996,
+   "states": 149
+  },
+  {
+   "task": "rack_easy_dev_01",
+   "level": "easy",
+   "trajectory": 0.071,
+   "statewise": 0.05,
+   "boole": 2.0500000000000003,
+   "states": 135
+  },
+  {
+   "task": "rack_medium_dev_00",
+   "level": "medium",
+   "trajectory": 0.216,
+   "statewise": 0.098,
+   "boole": 6.328,
+   "states": 131
+  },
+  {
+   "task": "rack_medium_dev_01",
+   "level": "medium",
+   "trajectory": 0.289,
+   "statewise": 0.166,
+   "boole": 11.263,
+   "states": 148
+  },
+  {
+   "task": "rack_hard_dev_00",
+   "level": "hard",
+   "trajectory": 0.504,
+   "statewise": 0.388,
+   "boole": 23.933,
+   "states": 142
+  },
+  {
+   "task": "rack_hard_dev_01",
+   "level": "hard",
+   "trajectory": 0.508,
+   "statewise": 0.406,
+   "boole": 25.864,
+   "states": 147
+  },
+  {
+   "task": "rebar_easy_dev_00",
+   "level": "easy",
+   "trajectory": 0.084,
+   "statewise": 0.05,
+   "boole": 1.792,
+   "states": 113
+  },
+  {
+   "task": "rebar_easy_dev_01",
+   "level": "easy",
+   "trajectory": 0.087,
+   "statewise": 0.059,
+   "boole": 1.889,
+   "states": 118
+  },
+  {
+   "task": "rebar_medium_dev_00",
+   "level": "medium",
+   "trajectory": 0.268,
+   "statewise": 0.226,
+   "boole": 11.357,
+   "states": 124
+  },
+  {
+   "task": "rebar_medium_dev_01",
+   "level": "medium",
+   "trajectory": 0.215,
+   "statewise": 0.177,
+   "boole": 7.744,
+   "states": 105
+  },
+  {
+   "task": "rebar_hard_dev_00",
+   "level": "hard",
+   "trajectory": 0.408,
+   "statewise": 0.38,
+   "boole": 20.397000000000002,
+   "states": 103
+  },
+  {
+   "task": "rebar_hard_dev_01",
+   "level": "hard",
+   "trajectory": 0.459,
+   "statewise": 0.424,
+   "boole": 25.063000000000002,
+   "states": 112
+  },
+  {
+   "task": "lathe_easy_dev_00",
+   "level": "easy",
+   "trajectory": 0.06,
+   "statewise": 0.048,
+   "boole": 1.624,
+   "states": 108
+  },
+  {
+   "task": "lathe_easy_dev_01",
+   "level": "easy",
+   "trajectory": 0.087,
+   "statewise": 0.071,
+   "boole": 2.588,
+   "states": 119
+  },
+  {
+   "task": "lathe_medium_dev_00",
+   "level": "medium",
+   "trajectory": 0.201,
+   "statewise": 0.153,
+   "boole": 7.184,
+   "states": 112
+  },
+  {
+   "task": "lathe_medium_dev_01",
+   "level": "medium",
+   "trajectory": 0.177,
+   "statewise": 0.125,
+   "boole": 5.613,
+   "states": 105
+  },
+  {
+   "task": "lathe_hard_dev_00",
+   "level": "hard",
+   "trajectory": 0.445,
+   "statewise": 0.388,
+   "boole": 21.263,
+   "states": 114
+  },
+  {
+   "task": "lathe_hard_dev_01",
+   "level": "hard",
+   "trajectory": 0.448,
+   "statewise": 0.4,
+   "boole": 21.861,
+   "states": 112
+  },
+  {
+   "task": "tote_easy_dev_00",
+   "level": "easy",
+   "trajectory": 0.009,
+   "statewise": 0.005,
+   "boole": 0.057999999999999996,
+   "states": 52
+  },
+  {
+   "task": "tote_easy_dev_01",
+   "level": "easy",
+   "trajectory": 0.008,
+   "statewise": 0.004,
+   "boole": 0.066,
+   "states": 56
+  },
+  {
+   "task": "tote_medium_dev_00",
+   "level": "medium",
+   "trajectory": 0.097,
+   "statewise": 0.064,
+   "boole": 1.8139999999999998,
+   "states": 59
+  },
+  {
+   "task": "tote_medium_dev_01",
+   "level": "medium",
+   "trajectory": 0.096,
+   "statewise": 0.055,
+   "boole": 1.4679999999999997,
+   "states": 57
+  },
+  {
+   "task": "tote_hard_dev_00",
+   "level": "hard",
+   "trajectory": 0.302,
+   "statewise": 0.231,
+   "boole": 7.1129999999999995,
+   "states": 56
+  },
+  {
+   "task": "tote_hard_dev_01",
+   "level": "hard",
+   "trajectory": 0.289,
+   "statewise": 0.235,
+   "boole": 6.7940000000000005,
+   "states": 59
+  }
+ ]
+}

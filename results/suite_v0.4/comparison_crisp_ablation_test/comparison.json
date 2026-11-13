@@ -1,0 +1,813 @@
+{
+ "name": "v0.4 test split: CRISP ablations",
+ "description": "Each ablation changes one component of CRISP (3 seeds); CRISP itself uses its first 3 seeds here so every row has the same seeds.",
+ "split": "test",
+ "results": [
+  "results/suite_v0.4/crisp"
+ ],
+ "feasibility_sources": {
+  "results/suite_v0.4/crisp": "results/suite_v0.4/validation/goal_feasibility.json"
+ },
+ "seeds": {
+  "CRISP (proposed)": 3,
+  "State-wise risk": 3,
+  "Linearised Boole risk": 3,
+  "CVaR objective": 3,
+  "Max-clearance objective": 3,
+  "Translation-only error model": 3,
+  "Fixed goal pose": 3
+ },
+ "episodes": [
+  256
+ ],
+ "levels": [
+  "easy",
+  "medium",
+  "hard",
+  "all"
+ ],
+ "families": [
+  "rack",
+  "rebar",
+  "lathe",
+  "tote"
+ ],
+ "methods": {
+  "CRISP (proposed)": {
+   "easy": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9537760416666666,
+    "task_success_ci95": [
+     0.93896484375,
+     0.9671237521701389
+    ],
+    "feasible_episode_success": 0.9767162326061435,
+    "collision_given_valid": 0.016221788194444444
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9348958333333334,
+    "task_success_ci95": [
+     0.9141696506076388,
+     0.9520399305555555
+    ],
+    "feasible_episode_success": 0.9665532235306143,
+    "collision_given_valid": 0.04063585069444445
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.8844401041666666,
+    "task_success_ci95": [
+     0.8626302083333334,
+     0.9041924370659721
+    ],
+    "feasible_episode_success": 0.9523503514653155,
+    "collision_given_valid": 0.09320746527777778
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 216,
+    "valid_path": 1.0,
+    "task_success": 0.9243706597222222,
+    "task_success_ci95": [
+     0.9106608072916667,
+     0.936234989872685
+    ],
+    "feasible_episode_success": 0.9652066025340242,
+    "collision_given_valid": 0.05002170138888889
+   }
+  },
+  "State-wise risk": {
+   "easy": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9540473090277778,
+    "task_success_ci95": [
+     0.9401557074652779,
+     0.967502170138889
+    ],
+    "feasible_episode_success": 0.9785397209635388,
+    "collision_given_valid": 0.019422743055555556
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.92919921875,
+    "task_success_ci95": [
+     0.90032958984375,
+     0.9524753146701389
+    ],
+    "feasible_episode_success": 0.961026733098525,
+    "collision_given_valid": 0.040201822916666664
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.8856879340277777,
+    "task_success_ci95": [
+     0.8632269965277778,
+     0.90560302734375
+    ],
+    "feasible_episode_success": 0.948952101040017,
+    "collision_given_valid": 0.08799913194444445
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 216,
+    "valid_path": 1.0,
+    "task_success": 0.9229781539351853,
+    "task_success_ci95": [
+     0.9080747251157408,
+     0.9356558340567129
+    ],
+    "feasible_episode_success": 0.9628395183673604,
+    "collision_given_valid": 0.04920789930555555
+   }
+  },
+  "Linearised Boole risk": {
+   "easy": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.953342013888889,
+    "task_success_ci95": [
+     0.9376614040798611,
+     0.968154568142361
+    ],
+    "feasible_episode_success": 0.9739704164282609,
+    "collision_given_valid": 0.015245225694444444
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9294704861111112,
+    "task_success_ci95": [
+     0.9070638020833334,
+     0.9496541341145833
+    ],
+    "feasible_episode_success": 0.9564775735016681,
+    "collision_given_valid": 0.036458333333333336
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.8805338541666666,
+    "task_success_ci95": [
+     0.8508558485243055,
+     0.9052747938368055
+    ],
+    "feasible_episode_success": 0.9375319749704412,
+    "collision_given_valid": 0.078125
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 216,
+    "valid_path": 1.0,
+    "task_success": 0.9211154513888888,
+    "task_success_ci95": [
+     0.9058512369791666,
+     0.9343894675925927
+    ],
+    "feasible_episode_success": 0.9559933216334566,
+    "collision_given_valid": 0.043276186342592594
+   }
+  },
+  "CVaR objective": {
+   "easy": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9476996527777778,
+    "task_success_ci95": [
+     0.9277316623263889,
+     0.9653862847222223
+    ],
+    "feasible_episode_success": 0.9695352183027929,
+    "collision_given_valid": 0.021104600694444444
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9454752604166666,
+    "task_success_ci95": [
+     0.9285983615451388,
+     0.959365505642361
+    ],
+    "feasible_episode_success": 0.9764979716833541,
+    "collision_given_valid": 0.03331163194444445
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9014756944444443,
+    "task_success_ci95": [
+     0.8771687825520834,
+     0.9212253146701389
+    ],
+    "feasible_episode_success": 0.9555843827661543,
+    "collision_given_valid": 0.0759548611111111
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 216,
+    "valid_path": 1.0,
+    "task_success": 0.9315502025462963,
+    "task_success_ci95": [
+     0.9193960684317131,
+     0.9428896303530094
+    ],
+    "feasible_episode_success": 0.9672058575841004,
+    "collision_given_valid": 0.04345703125
+   }
+  },
+  "Max-clearance objective": {
+   "easy": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9300130208333334,
+    "task_success_ci95": [
+     0.9086886935763889,
+     0.9497083875868055
+    ],
+    "feasible_episode_success": 0.9631205727550128,
+    "collision_given_valid": 0.05984157986111111
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9109700520833334,
+    "task_success_ci95": [
+     0.8973456488715277,
+     0.9244289822048611
+    ],
+    "feasible_episode_success": 0.9490959434294033,
+    "collision_given_valid": 0.07221137152777778
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.8414171006944443,
+    "task_success_ci95": [
+     0.8097764756944446,
+     0.8699015299479166
+    ],
+    "feasible_episode_success": 0.9141574857986544,
+    "collision_given_valid": 0.13264973958333334
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 216,
+    "valid_path": 1.0,
+    "task_success": 0.8941333912037037,
+    "task_success_ci95": [
+     0.8774414062500001,
+     0.9087122034143518
+    ],
+    "feasible_episode_success": 0.9421246673276902,
+    "collision_given_valid": 0.08823423032407407
+   }
+  },
+  "Translation-only error model": {
+   "easy": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9298502604166666,
+    "task_success_ci95": [
+     0.9085245768229167,
+     0.9495442708333334
+    ],
+    "feasible_episode_success": 0.9630663192827905,
+    "collision_given_valid": 0.059895833333333336
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.7937825520833334,
+    "task_success_ci95": [
+     0.7623697916666666,
+     0.82568359375
+    ],
+    "feasible_episode_success": 0.8313600856337778,
+    "collision_given_valid": 0.19807942708333334
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.7012803819444445,
+    "task_success_ci95": [
+     0.6704644097222223,
+     0.7348158094618056
+    ],
+    "feasible_episode_success": 0.8025038599506656,
+    "collision_given_valid": 0.2887912326388889
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 216,
+    "valid_path": 1.0,
+    "task_success": 0.8083043981481483,
+    "task_success_ci95": [
+     0.7793859411168982,
+     0.83427734375
+    ],
+    "feasible_episode_success": 0.8656434216224115,
+    "collision_given_valid": 0.18225549768518517
+   }
+  },
+  "Fixed goal pose": {
+   "easy": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9478624131944443,
+    "task_success_ci95": [
+     0.9316948784722222,
+     0.9632175021701389
+    ],
+    "feasible_episode_success": 0.981759112826475,
+    "collision_given_valid": 0.038140190972222224
+   },
+   "medium": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.9290907118055555,
+    "task_success_ci95": [
+     0.90625,
+     0.9476494683159721
+    ],
+    "feasible_episode_success": 0.9741528220829144,
+    "collision_given_valid": 0.048882378472222224
+   },
+   "hard": {
+    "tasks": 24,
+    "runs": 72,
+    "valid_path": 1.0,
+    "task_success": 0.8349609375,
+    "task_success_ci95": [
+     0.8153211805555555,
+     0.8529188368055555
+    ],
+    "feasible_episode_success": 0.9640911030993324,
+    "collision_given_valid": 0.15364583333333334
+   },
+   "all": {
+    "tasks": 72,
+    "runs": 216,
+    "valid_path": 1.0,
+    "task_success": 0.9039713541666666,
+    "task_success_ci95": [
+     0.887548828125,
+     0.9187644675925924
+    ],
+    "feasible_episode_success": 0.9733343460029071,
+    "collision_given_valid": 0.08022280092592593
+   }
+  }
+ },
+ "pairs": [
+  {
+   "a": "CRISP (proposed)",
+   "b": "State-wise risk",
+   "levels": {
+    "easy": {
+     "tasks": 24,
+     "mean": -0.0002712673611111281,
+     "ci95": [
+      -0.006731499565972222,
+      0.004557291666666639
+     ],
+     "a_higher": 13,
+     "b_higher": 9,
+     "p_wilcoxon": 0.4060330390930176
+    },
+    "medium": {
+     "tasks": 24,
+     "mean": 0.005696614583333338,
+     "ci95": [
+      -0.005426703559027788,
+      0.021322970920138892
+     ],
+     "a_higher": 11,
+     "b_higher": 13,
+     "p_wilcoxon": 0.8333734273910522
+    },
+    "hard": {
+     "tasks": 24,
+     "mean": -0.0012478298611111188,
+     "ci95": [
+      -0.01665581597222222,
+      0.015573459201388867
+     ],
+     "a_higher": 12,
+     "b_higher": 12,
+     "p_wilcoxon": 0.746925950050354
+    },
+    "all": {
+     "tasks": 72,
+     "mean": 0.0013925057870370304,
+     "ci95": [
+      -0.00526303891782407,
+      0.009207266348379603
+     ],
+     "a_higher": 36,
+     "b_higher": 34,
+     "p_wilcoxon": 0.8376652728710521,
+     "p_holm": 0.8376652728710521
+    }
+   }
+  },
+  {
+   "a": "CRISP (proposed)",
+   "b": "Linearised Boole risk",
+   "levels": {
+    "easy": {
+     "tasks": 24,
+     "mean": 0.00043402777777778084,
+     "ci95": [
+      -0.012641059027777768,
+      0.01470269097222221
+     ],
+     "a_higher": 8,
+     "b_higher": 15,
+     "p_wilcoxon": 0.18954229354858398
+    },
+    "medium": {
+     "tasks": 24,
+     "mean": 0.005425347222222214,
+     "ci95": [
+      -0.009769694010416661,
+      0.024035644531249987
+     ],
+     "a_higher": 10,
+     "b_higher": 13,
+     "p_wilcoxon": 0.5399188995361328
+    },
+    "hard": {
+     "tasks": 24,
+     "mean": 0.0039062499999999952,
+     "ci95": [
+      -0.019316948784722242,
+      0.028053114149305537
+     ],
+     "a_higher": 9,
+     "b_higher": 15,
+     "p_wilcoxon": 0.899570107460022
+    },
+    "all": {
+     "tasks": 72,
+     "mean": 0.0032552083333333304,
+     "ci95": [
+      -0.007416901765046295,
+      0.014179597077546275
+     ],
+     "a_higher": 27,
+     "b_higher": 43,
+     "p_wilcoxon": 0.3056714729564657,
+     "p_holm": 0.6113429459129314
+    }
+   }
+  },
+  {
+   "a": "CRISP (proposed)",
+   "b": "CVaR objective",
+   "levels": {
+    "easy": {
+     "tasks": 24,
+     "mean": 0.0060763888888888855,
+     "ci95": [
+      -0.007705349392361131,
+      0.0213772243923611
+     ],
+     "a_higher": 9,
+     "b_higher": 14,
+     "p_wilcoxon": 0.988100528717041
+    },
+    "medium": {
+     "tasks": 24,
+     "mean": -0.010579427083333334,
+     "ci95": [
+      -0.0227878146701389,
+      0.0010308159722222238
+     ],
+     "a_higher": 6,
+     "b_higher": 17,
+     "p_wilcoxon": 0.03838014602661133
+    },
+    "hard": {
+     "tasks": 24,
+     "mean": -0.01703559027777778,
+     "ci95": [
+      -0.040201822916666664,
+      0.007325575086805538
+     ],
+     "a_higher": 5,
+     "b_higher": 19,
+     "p_wilcoxon": 0.008714795112609863
+    },
+    "all": {
+     "tasks": 72,
+     "mean": -0.007179542824074076,
+     "ci95": [
+      -0.01763283058449075,
+      0.0025689019097222205
+     ],
+     "a_higher": 20,
+     "b_higher": 50,
+     "p_wilcoxon": 0.003939972336156258,
+     "p_holm": 0.011819917008468774
+    }
+   }
+  },
+  {
+   "a": "CRISP (proposed)",
+   "b": "Max-clearance objective",
+   "levels": {
+    "easy": {
+     "tasks": 24,
+     "mean": 0.02376302083333333,
+     "ci95": [
+      0.014973958333333329,
+      0.03266330295138887
+     ],
+     "a_higher": 19,
+     "b_higher": 3,
+     "p_wilcoxon": 5.245208740234375e-05
+    },
+    "medium": {
+     "tasks": 24,
+     "mean": 0.023925781249999997,
+     "ci95": [
+      0.010470920138888895,
+      0.03738199869791665
+     ],
+     "a_higher": 20,
+     "b_higher": 4,
+     "p_wilcoxon": 0.0017795562744140625
+    },
+    "hard": {
+     "tasks": 24,
+     "mean": 0.04302300347222222,
+     "ci95": [
+      0.02679985894097222,
+      0.06217447916666665
+     ],
+     "a_higher": 21,
+     "b_higher": 3,
+     "p_wilcoxon": 3.0159950256347656e-05
+    },
+    "all": {
+     "tasks": 72,
+     "mean": 0.030237268518518514,
+     "ci95": [
+      0.022424768518518524,
+      0.03850414134837961
+     ],
+     "a_higher": 60,
+     "b_higher": 10,
+     "p_wilcoxon": 1.111606287275887e-09,
+     "p_holm": 5.558031436379436e-09
+    }
+   }
+  },
+  {
+   "a": "CRISP (proposed)",
+   "b": "Translation-only error model",
+   "levels": {
+    "easy": {
+     "tasks": 24,
+     "mean": 0.023925781249999997,
+     "ci95": [
+      0.01513536241319444,
+      0.032718912760416635
+     ],
+     "a_higher": 20,
+     "b_higher": 3,
+     "p_wilcoxon": 4.029273986816406e-05
+    },
+    "medium": {
+     "tasks": 24,
+     "mean": 0.14111328125,
+     "ci95": [
+      0.11783447265625001,
+      0.16482340494791667
+     ],
+     "a_higher": 24,
+     "b_higher": 0,
+     "p_wilcoxon": 1.1920928955078125e-07
+    },
+    "hard": {
+     "tasks": 24,
+     "mean": 0.18315972222222218,
+     "ci95": [
+      0.14995117187499996,
+      0.21647677951388886
+     ],
+     "a_higher": 24,
+     "b_higher": 0,
+     "p_wilcoxon": 1.1920928955078125e-07
+    },
+    "all": {
+     "tasks": 72,
+     "mean": 0.11606626157407406,
+     "ci95": [
+      0.09675157335069445,
+      0.13693757233796297
+     ],
+     "a_higher": 68,
+     "b_higher": 3,
+     "p_wilcoxon": 4.681795459800776e-13,
+     "p_holm": 2.8090772758804655e-12
+    }
+   }
+  },
+  {
+   "a": "CRISP (proposed)",
+   "b": "Fixed goal pose",
+   "levels": {
+    "easy": {
+     "tasks": 24,
+     "mean": 0.005913628472222224,
+     "ci95": [
+      -0.005589463975694437,
+      0.01540798611111111
+     ],
+     "a_higher": 12,
+     "b_higher": 9,
+     "p_wilcoxon": 0.05950736999511719
+    },
+    "medium": {
+     "tasks": 24,
+     "mean": 0.005805121527777776,
+     "ci95": [
+      -0.009168836805555547,
+      0.024420844184027728
+     ],
+     "a_higher": 11,
+     "b_higher": 12,
+     "p_wilcoxon": 0.9643125534057617
+    },
+    "hard": {
+     "tasks": 24,
+     "mean": 0.049479166666666664,
+     "ci95": [
+      0.0323879665798611,
+      0.0669528537326389
+     ],
+     "a_higher": 21,
+     "b_higher": 3,
+     "p_wilcoxon": 1.633167266845703e-05
+    },
+    "all": {
+     "tasks": 72,
+     "mean": 0.020399305555555556,
+     "ci95": [
+      0.010416666666666675,
+      0.030056875723379627
+     ],
+     "a_higher": 44,
+     "b_higher": 24,
+     "p_wilcoxon": 0.00020274466086842241,
+     "p_holm": 0.0008109786434736897
+    }
+   }
+  }
+ ],
+ "by_family": {
+  "rack": {
+   "easy": {
+    "CRISP (proposed)": 0.9227430555555555,
+    "State-wise risk": 0.9144965277777778,
+    "Linearised Boole risk": 0.9279513888888888,
+    "CVaR objective": 0.9058159722222223,
+    "Max-clearance objective": 0.896484375,
+    "Translation-only error model": 0.896484375,
+    "Fixed goal pose": 0.9012586805555555
+   },
+   "medium": {
+    "CRISP (proposed)": 0.861545138888889,
+    "State-wise risk": 0.8352864583333334,
+    "Linearised Boole risk": 0.8739149305555555,
+    "CVaR objective": 0.896484375,
+    "Max-clearance objective": 0.87109375,
+    "Translation-only error model": 0.7194010416666666,
+    "Fixed goal pose": 0.8582899305555557
+   },
+   "hard": {
+    "CRISP (proposed)": 0.8352864583333335,
+    "State-wise risk": 0.8404947916666666,
+    "Linearised Boole risk": 0.8335503472222222,
+    "CVaR objective": 0.892578125,
+    "Max-clearance objective": 0.7775607638888888,
+    "Translation-only error model": 0.6768663194444445,
+    "Fixed goal pose": 0.7847222222222223
+   }
+  },
+  "rebar": {
+   "easy": {
+    "CRISP (proposed)": 0.9500868055555555,
+    "State-wise risk": 0.9585503472222223,
+    "Linearised Boole risk": 0.9476996527777777,
+    "CVaR objective": 0.9635416666666666,
+    "Max-clearance objective": 0.9010416666666666,
+    "Translation-only error model": 0.9010416666666666,
+    "Fixed goal pose": 0.9652777777777777
+   },
+   "medium": {
+    "CRISP (proposed)": 0.9550781249999999,
+    "State-wise risk": 0.943359375,
+    "Linearised Boole risk": 0.9273003472222223,
+    "CVaR objective": 0.9524739583333334,
+    "Max-clearance objective": 0.9325086805555555,
+    "Translation-only error model": 0.7447916666666666,
+    "Fixed goal pose": 0.9427083333333334
+   },
+   "hard": {
+    "CRISP (proposed)": 0.8960503472222223,
+    "State-wise risk": 0.8806423611111112,
+    "Linearised Boole risk": 0.8927951388888888,
+    "CVaR objective": 0.9203559027777777,
+    "Max-clearance objective": 0.8515625,
+    "Translation-only error model": 0.611328125,
+    "Fixed goal pose": 0.8500434027777778
+   }
+  },
+  "lathe": {
+   "easy": {
+    "CRISP (proposed)": 0.9505208333333334,
+    "State-wise risk": 0.9500868055555555,
+    "Linearised Boole risk": 0.9409722222222222,
+    "CVaR objective": 0.9259982638888888,
+    "Max-clearance objective": 0.9303385416666666,
+    "Translation-only error model": 0.9303385416666666,
+    "Fixed goal pose": 0.9316406249999999
+   },
+   "medium": {
+    "CRISP (proposed)": 0.9503038194444445,
+    "State-wise risk": 0.9544270833333334,
+    "Linearised Boole risk": 0.9303385416666666,
+    "CVaR objective": 0.9503038194444443,
+    "Max-clearance objective": 0.9366319444444445,
+    "Translation-only error model": 0.8079427083333334,
+    "Fixed goal pose": 0.955078125
+   },
+   "hard": {
+    "CRISP (proposed)": 0.8856336805555557,
+    "State-wise risk": 0.8882378472222223,
+    "Linearised Boole risk": 0.8576388888888888,
+    "CVaR objective": 0.8569878472222222,
+    "Max-clearance objective": 0.8253038194444445,
+    "Translation-only error model": 0.7094184027777777,
+    "Fixed goal pose": 0.8370225694444445
+   }
+  },
+  "tote": {
+   "easy": {
+    "CRISP (proposed)": 0.9917534722222222,
+    "State-wise risk": 0.9930555555555555,
+    "Linearised Boole risk": 0.9967447916666669,
+    "CVaR objective": 0.9954427083333334,
+    "Max-clearance objective": 0.9921875,
+    "Translation-only error model": 0.9915364583333334,
+    "Fixed goal pose": 0.9932725694444443
+   },
+   "medium": {
+    "CRISP (proposed)": 0.97265625,
+    "State-wise risk": 0.9837239583333334,
+    "Linearised Boole risk": 0.9863281250000001,
+    "CVaR objective": 0.9826388888888888,
+    "Max-clearance objective": 0.9036458333333334,
+    "Translation-only error model": 0.9029947916666666,
+    "Fixed goal pose": 0.9602864583333334
+   },
+   "hard": {
+    "CRISP (proposed)": 0.9207899305555555,
+    "State-wise risk": 0.933376736111111,
+    "Linearised Boole risk": 0.9381510416666666,
+    "CVaR objective": 0.9359809027777777,
+    "Max-clearance objective": 0.9112413194444445,
+    "Translation-only error model": 0.8075086805555555,
+    "Fixed goal pose": 0.8680555555555555
+   }
+  }
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "task_id": "rack_easy_test_00",
+ "family": "rack",
+ "level": "easy",
+ "split": "test",
+ "label": "Ablation: CVaR objective",
+ "planner": "crisp",
+ "params": {
+  "objective": "cvar"
+ },
+ "seed": 2,
+ "budget_seconds": 120,
+ "task_sha256": "fadbc97861184fa2432fa52f1c7e3dcb690aea229d5bf81cc8febc91ac00d26e",
+ "planning_seconds": 99.50464833062142,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CRISP",
+  "objective": "cvar",
+  "error_model": "combined",
+  "free_goal": true,
+  "samples": 128,
+  "knots": 6,
+  "goal_iterations": 60,
+  "goal_cost_straight": 0.0511305965735484,
+  "goal_cost": 0.046830284767559655,
+  "runs": [
+   {
+    "iterations": 103,
+    "best": 0.05048399822902697
+   }
+  ],
+  "goal_frozen": false,
+  "optimiser": "cmaes",
+  "insertion_states": 153,
+  "straight_risk": 0.1796875,
+  "straight_nominal_margin": 0.011999978271751368,
+  "evaluations": 3218,
+  "optimise_seconds": 72.00762966927141,
+  "candidates_tried": 6,
+  "realisation_failures": [
+   {
+    "reason": "robot_environment",
+    "state": 32
+   },
+   {
+    "reason": "robot_environment",
+    "state": 29
+   },
+   {
+    "reason": "robot_environment",
+    "state": 30
+   },
+   {
+    "reason": "robot_environment",
+    "state": 29
+   },
+   {
+    "reason": "robot_environment",
+    "state": 31
+   }
+  ],
+  "chosen_rank": 5,
+  "straight_used": false,
+  "predicted_risk": 0.09375,
+  "nominal_margin": 0.010921114567274305,
+  "goal_deviation_m": [
+   -0.0015999275173195864,
+   0.0005429721238127587,
+   0.0014931104709455022,
+   0.0002242795036539375,
+   0.0010069620358465325
+  ],
+  "max_offset_used_m": 0.029162074905108613,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 10.088603540323675,
+   "raw_waypoints": 4,
+   "shortcut_attempts": 14,
+   "waypoints": 2
+  },
+  "validation": null,
+  "certificate": {
+   "draws": 1000,
+   "failures": 95,
+   "risk": 0.095,
+   "confidence": 0.95,
+   "upper_bound": 0.1116515364582006,
+   "scope": "payload-environment contact, keep-in and final-state rules of the executed path"
+  },
+  "wall_seconds": 99.50448608212173,
+  "collision_checks": 6439
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_easy_test_00",
+  "family": "rack",
+  "level": "easy",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3729402240,
+  "path_joint_length_rad": 6.005364809083683,
+  "ee_path_length_m": 1.0380634806409965,
+  "payload_min_clearance_m": 0.01362109304793949,
+  "payload_clearance_p05_m": 0.013798642318797781,
+  "trajectory_states": 1688,
+  "collision_count": 12,
+  "collision_rate": 0.046875,
+  "collision_ci95": [
+   0.024452343969436963,
+   0.08044902822855146
+  ],
+  "success_count": 240,
+  "success_rate": 0.9375,
+  "success_ci95": [
+   0.9004864688995705,
+   0.9638572392101775
+  ],
+  "failures_by_reason": {
+   "placement_height": 3,
+   "goal_position": 1,
+   "payload_environment": 12
+  },
+  "colliding_obstacles": {
+   "target_saddle_0": 8,
+   "bracket_deep": 1,
+   "bracket_shallow": 2,
+   "target_guide_0_l": 1
+  },
+  "wall_seconds": 18.482659600675106,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111001111111110111111111110111111111111111111101111111111111111011111111111111111111111111111110110111111111111111111111111111111111111111111111111111111110111111111111111101111111111111111111111110011111111111111111111111111011111010111111011111111111111",
+  "episode_collision": "0000000000000001000000000001000000000000000000010000000000000000100000000000000000000000000000000001000000000000000000000000000000000000000000000000000000001000000000000000010000000000000000000000001100000000000000000000000000100000101000000000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/Ablation__CVaR_objective/rack_easy_test_00__s2.npy",
+ "trajectory_sha256": "b054dc437a68b96d69dfa924a637ec5ed83b94f9f750b867f36cde472784e5fa",
+ "task_success_rate": 0.9375
+}

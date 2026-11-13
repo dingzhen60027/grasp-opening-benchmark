@@ -1,0 +1,142 @@
+{
+ "task_id": "rack_easy_test_00",
+ "family": "rack",
+ "level": "easy",
+ "split": "test",
+ "label": "Ablation: state-wise risk",
+ "planner": "crisp",
+ "params": {
+  "objective": "statewise"
+ },
+ "seed": 2,
+ "budget_seconds": 120,
+ "task_sha256": "fadbc97861184fa2432fa52f1c7e3dcb690aea229d5bf81cc8febc91ac00d26e",
+ "planning_seconds": 97.23171645402908,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CRISP",
+  "objective": "statewise",
+  "error_model": "combined",
+  "free_goal": true,
+  "samples": 128,
+  "knots": 6,
+  "goal_iterations": 60,
+  "goal_cost_straight": 0.0998859767709926,
+  "goal_cost": 0.08087933958325277,
+  "runs": [
+   {
+    "iterations": 106,
+    "best": 0.07658656278581295
+   }
+  ],
+  "goal_frozen": false,
+  "optimiser": "cmaes",
+  "insertion_states": 153,
+  "straight_risk": 0.1796875,
+  "straight_nominal_margin": 0.011999978271751368,
+  "evaluations": 3283,
+  "optimise_seconds": 72.00736196897924,
+  "pre_entry_truncated_at": 2,
+  "candidates_tried": 6,
+  "realisation_failures": [
+   {
+    "reason": "robot_environment",
+    "state": 86
+   },
+   {
+    "reason": "robot_environment",
+    "state": 87
+   },
+   {
+    "reason": "robot_environment",
+    "state": 84
+   },
+   {
+    "reason": "robot_environment",
+    "state": 86
+   },
+   {
+    "reason": "robot_environment",
+    "state": 82
+   }
+  ],
+  "chosen_rank": 5,
+  "straight_used": false,
+  "predicted_risk": 0.09375,
+  "nominal_margin": 0.01097426875388963,
+  "goal_deviation_m": [
+   -0.0012719070703590184,
+   -0.0005974340550968754,
+   -0.0003074361235575541,
+   0.0008559076989996333,
+   -0.0006417485504902558
+  ],
+  "max_offset_used_m": 0.03251501700460504,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 10.487335380166769,
+   "raw_waypoints": 4,
+   "shortcut_attempts": 14,
+   "waypoints": 2
+  },
+  "validation": null,
+  "certificate": {
+   "draws": 1000,
+   "failures": 108,
+   "risk": 0.108,
+   "confidence": 0.95,
+   "upper_bound": 0.12551105751766553,
+   "scope": "payload-environment contact, keep-in and final-state rules of the executed path"
+  },
+  "wall_seconds": 97.23121573682874,
+  "collision_checks": 5968
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_easy_test_00",
+  "family": "rack",
+  "level": "easy",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3729402240,
+  "path_joint_length_rad": 5.1312128543701085,
+  "ee_path_length_m": 0.9962038900609085,
+  "payload_min_clearance_m": 0.013490609544489872,
+  "payload_clearance_p05_m": 0.014392117013503928,
+  "trajectory_states": 1494,
+  "collision_count": 14,
+  "collision_rate": 0.0546875,
+  "collision_ci95": [
+   0.030217175352924473,
+   0.0900547978340569
+  ],
+  "success_count": 238,
+  "success_rate": 0.9296875,
+  "success_ci95": [
+   0.8911506533267348,
+   0.9577987580697637
+  ],
+  "failures_by_reason": {
+   "payload_environment": 14,
+   "placement_height": 4
+  },
+  "colliding_obstacles": {
+   "target_saddle_1": 9,
+   "target_guide_0_l": 4,
+   "target_guide_1_r": 1
+  },
+  "wall_seconds": 35.803921652026474,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111001111111110111111111110111011111111111111101111111111111111011111111111111111111111111111110110111111111111111111111111111111011111111111111111111110110111111111111111101111111111111111111111110011111111111111111111111111011111011111111011111111111111",
+  "episode_collision": "0000100000000001000000000001000100000000000000010000000000000000100000000000000000000000000000000001000000000000000000000000000000100000000000000000000000001000000000000000010000000000000000000000001100000000000000000000000000100000100000000000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/Ablation__state-wise_risk/rack_easy_test_00__s2.npy",
+ "trajectory_sha256": "d0245571fcb15ce1f6ef4224b9e2dc4f630283207d6524754a29654e9691c83e",
+ "task_success_rate": 0.9296875
+}

@@ -1,0 +1,66 @@
+{
+  "name": "crisp_budget_v0.4",
+  "description": "Anytime and sample-size analysis on the v0.4 test split (seed 0). Run after the main test experiment; no setting here is selected on these results.",
+  "suite": "data/suite_v0.4",
+  "output": "results/suite_v0.4/crisp_budget",
+  "split": "test",
+  "families": null,
+  "levels": null,
+  "seeds": [
+    0
+  ],
+  "budget_seconds": 120,
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step": 0.0025,
+  "workers": 20,
+  "planners": [
+    {
+      "label": "CRISP, 30 s budget",
+      "planner": "crisp",
+      "params": {},
+      "budget_seconds": 30
+    },
+    {
+      "label": "CRISP, 60 s budget",
+      "planner": "crisp",
+      "params": {},
+      "budget_seconds": 60
+    },
+    {
+      "label": "CRISP, N = 32 draws",
+      "planner": "crisp",
+      "params": {
+        "samples": 32
+      }
+    },
+    {
+      "label": "CRISP, N = 64 draws",
+      "planner": "crisp",
+      "params": {
+        "samples": 64
+      }
+    },
+    {
+      "label": "CRISP, N = 256 draws",
+      "planner": "crisp",
+      "params": {
+        "samples": 256
+      }
+    },
+    {
+      "label": "CC-VPSTO, 30 s budget",
+      "planner": "ccvpsto",
+      "params": {},
+      "budget_seconds": 30
+    },
+    {
+      "label": "CC-VPSTO, 60 s budget",
+      "planner": "ccvpsto",
+      "params": {},
+      "budget_seconds": 60
+    }
+  ],
+  "estimated_cost": "7 x 72 = 504 runs, about 45 minutes on 20 workers"
+}

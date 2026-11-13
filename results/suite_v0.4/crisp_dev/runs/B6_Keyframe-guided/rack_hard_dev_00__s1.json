@@ -1,0 +1,176 @@
+{
+ "task_id": "rack_hard_dev_00",
+ "family": "rack",
+ "level": "hard",
+ "split": "dev",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 1,
+ "budget_seconds": 120,
+ "task_sha256": "a051302adedbf350e9332ae0d0c895b81bbc4e1c0e8229c8d4d4bb4425feb1d2",
+ "planning_seconds": 16.261578391306102,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 0,
+     "u": 0.9852941176470588
+    }
+   },
+   {
+    "approach_m": 0.07,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 0,
+     "u": 0.9300699300699301
+    }
+   },
+   {
+    "approach_m": 0.1,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 0,
+     "u": 0.8874172185430463
+    }
+   },
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.02,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 0.9926470588235294
+    }
+   },
+   {
+    "approach_m": 0.07,
+    "lift_m": 0.02,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 0.9440559440559441
+    }
+   },
+   {
+    "approach_m": 0.1,
+    "lift_m": 0.02,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 0.8940397350993378
+    }
+   },
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.03,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 1.0
+    }
+   },
+   {
+    "approach_m": 0.07,
+    "lift_m": 0.03,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 0.951048951048951
+    }
+   },
+   {
+    "approach_m": 0.1,
+    "lift_m": 0.03,
+    "keyframes": 3,
+    "failure": {
+     "reason": "robot_self",
+     "segment": 1,
+     "u": 0.9006622516556292
+    }
+   },
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.04,
+    "keyframes": 3,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 5.452568670734763,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 4,
+   "waypoints": 2
+  },
+  "insertion_states": 148,
+  "wall_seconds": 16.261546929366887,
+  "collision_checks": 3874
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_hard_dev_00",
+  "family": "rack",
+  "level": "hard",
+  "split": "dev",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 4133360043,
+  "path_joint_length_rad": 5.613419645410552,
+  "ee_path_length_m": 1.2781952388998459,
+  "payload_min_clearance_m": 0.005997353368144101,
+  "payload_clearance_p05_m": 0.005997772902916188,
+  "trajectory_states": 1564,
+  "collision_count": 133,
+  "collision_rate": 0.51953125,
+  "collision_ci95": [
+   0.45645749966207766,
+   0.5821476182268622
+  ],
+  "success_count": 120,
+  "success_rate": 0.46875,
+  "success_ci95": [
+   0.4063431488972546,
+   0.5318886964551643
+  ],
+  "failures_by_reason": {
+   "payload_environment": 133,
+   "placement_height": 3
+  },
+  "colliding_obstacles": {
+   "bracket_deep": 66,
+   "bracket_shallow": 60,
+   "target_saddle_1": 7
+  },
+  "wall_seconds": 21.655666230246425,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0001111011100101100110011100100110100110011000010010110011000000000000001000111100000011000001010011001011111111110000000011101000011100001101010100011001001011100110011100111101101110101110101011010000111001100101111100000101101100010100110010001010010111",
+  "episode_collision": "1110000100011010001001100011011001011001100111101101001100111111111111110111000011111100111110101100110100000000001111111100010111100011110010101011100110110100011001100011000000010001010001010100101111000110011010000011101010010011101011001101110101101000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/rack_hard_dev_00__s1.npy",
+ "trajectory_sha256": "02f5c73825b41778991d4a57914e48380b90fdde2ca35a1fbef475ec15c9e6bc",
+ "task_success_rate": 0.46875
+}

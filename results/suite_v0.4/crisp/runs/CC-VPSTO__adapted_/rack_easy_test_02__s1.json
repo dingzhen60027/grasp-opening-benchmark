@@ -1,0 +1,88 @@
+{
+ "task_id": "rack_easy_test_02",
+ "family": "rack",
+ "level": "easy",
+ "split": "test",
+ "label": "CC-VPSTO (adapted)",
+ "planner": "ccvpsto",
+ "params": {},
+ "seed": 1,
+ "budget_seconds": 120,
+ "task_sha256": "87747c25a689ff79c8b0a80a41726eac4f0073c9c3f11853da5f3fa9d534a3e8",
+ "planning_seconds": 114.4961601877585,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CC-VPSTO (adapted)",
+  "samples": 100,
+  "eta": 0.05,
+  "beta": 0.05,
+  "k_thresh": 1,
+  "via_points": 5,
+  "iterations": 142,
+  "evaluations": 3431,
+  "optimise_seconds": 71.25748530589044,
+  "violations_warm_start": 11,
+  "violations_best": 7,
+  "chance_feasible": false,
+  "chosen_rank": 0,
+  "candidates_tried": 1,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 6.020398434251547,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 162,
+   "waypoints": 3
+  },
+  "validation": null,
+  "wall_seconds": 114.49573992472142
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_easy_test_02",
+  "family": "rack",
+  "level": "easy",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 275865058,
+  "path_joint_length_rad": 11.762515929925382,
+  "ee_path_length_m": 7.003495374652647,
+  "payload_min_clearance_m": 0.013522023978426004,
+  "payload_clearance_p05_m": 0.015457840215793073,
+  "trajectory_states": 3183,
+  "collision_count": 9,
+  "collision_rate": 0.03515625,
+  "collision_ci95": [
+   0.016199410860957122,
+   0.06568621418387195
+  ],
+  "success_count": 245,
+  "success_rate": 0.95703125,
+  "success_ci95": [
+   0.9244190662295707,
+   0.9783579593956968
+  ],
+  "failures_by_reason": {
+   "payload_environment": 9,
+   "placement_height": 2
+  },
+  "colliding_obstacles": {
+   "target_guide_0_r": 2,
+   "target_saddle_1": 5,
+   "bracket_shallow": 1,
+   "deck_2": 1
+  },
+  "wall_seconds": 51.14499012473971,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111111101111111011111111111111111111111111111110111111111111111111111111111111111111111111111111111111101111111111111111111111111111111111111111111111110111111111111101110111111111111111111111110110111111111111111111111111111111101111011111111111111111",
+  "episode_collision": "0000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000001000000000000010001000000000000000000000001001000000000000000000000000000000010000100000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/CC-VPSTO__adapted_/rack_easy_test_02__s1.npy",
+ "trajectory_sha256": "bb04cac1f0e2b2e22a4fa0fa880d62942acf6e03791cfcb83245586b905ca72d",
+ "task_success_rate": 0.95703125
+}

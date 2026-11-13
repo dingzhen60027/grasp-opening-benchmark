@@ -1,0 +1,85 @@
+{
+ "task_id": "rebar_medium_dev_00",
+ "family": "rebar",
+ "level": "medium",
+ "split": "dev",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 2,
+ "budget_seconds": 120,
+ "task_sha256": "18864861c5527b6e528265ed4c23b3e4391dffec6f7d3e4b7f07bf155ca0e980",
+ "planning_seconds": 8.193172048777342,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 5,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 6.627963339909911,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 3,
+   "waypoints": 2
+  },
+  "insertion_states": 119,
+  "wall_seconds": 8.193141303025186,
+  "collision_checks": 3616
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rebar_medium_dev_00",
+  "family": "rebar",
+  "level": "medium",
+  "split": "dev",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 2692462368,
+  "path_joint_length_rad": 4.872818056347038,
+  "ee_path_length_m": 1.2712984681300799,
+  "payload_min_clearance_m": 0.009994046219481242,
+  "payload_clearance_p05_m": 0.009996041744325931,
+  "trajectory_states": 1379,
+  "collision_count": 64,
+  "collision_rate": 0.25,
+  "collision_ci95": [
+   0.19817606466307527,
+   0.30771329620860344
+  ],
+  "success_count": 190,
+  "success_rate": 0.7421875,
+  "success_ci95": [
+   0.6840320608867545,
+   0.7946401699518099
+  ],
+  "failures_by_reason": {
+   "payload_environment": 64,
+   "goal_position": 2
+  },
+  "colliding_obstacles": {
+   "side_clip": 30,
+   "tie_hook": 34
+  },
+  "wall_seconds": 29.48678097408265,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1110101011111111111110110111110111111011110010001111111010111111001111100111010111101111101111111011011111111011111100111100000000011111000011110111001100101111011011111111111011101111101011111111111111110101111111101010111111011111101111110000011101111011",
+  "episode_collision": "0001010100000000000001001000001000000100001101110000000101000000110000011000101000010000010000000100100000000100000011000001111111100000111100001000110011010000100100000000000100010000010100000000000000001010000000010101000000100000000000001111100010000100"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/rebar_medium_dev_00__s2.npy",
+ "trajectory_sha256": "67a089d9f562fe8a42422264929f8e5388f4cce2b3f3f919b0c68f64f9be5036",
+ "task_success_rate": 0.7421875
+}

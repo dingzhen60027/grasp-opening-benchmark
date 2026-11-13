@@ -1,0 +1,146 @@
+{
+ "task_id": "rack_hard_test_00",
+ "family": "rack",
+ "level": "hard",
+ "split": "test",
+ "label": "Ablation: fixed goal pose",
+ "planner": "crisp",
+ "params": {
+  "free_goal": false
+ },
+ "seed": 0,
+ "budget_seconds": 120,
+ "task_sha256": "4a7d687f41388d7445723e7f0fc0cd5f272775bc014e9c88e4fe9ba99f0b680d",
+ "planning_seconds": 93.14472381770611,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CRISP",
+  "objective": "chance",
+  "error_model": "combined",
+  "free_goal": false,
+  "samples": 128,
+  "knots": 6,
+  "runs": [
+   {
+    "iterations": 192,
+    "best": 0.23308225149747133
+   }
+  ],
+  "goal_frozen": false,
+  "optimiser": "cmaes",
+  "insertion_states": 134,
+  "straight_risk": 0.4609375,
+  "straight_nominal_margin": 0.005999990359256822,
+  "evaluations": 4628,
+  "optimise_seconds": 71.9879789724946,
+  "candidates_tried": 8,
+  "realisation_failures": [
+   {
+    "reason": "robot_environment",
+    "state": 52
+   },
+   {
+    "reason": "robot_environment",
+    "state": 52
+   },
+   {
+    "reason": "robot_environment",
+    "state": 52
+   },
+   {
+    "reason": "robot_environment",
+    "state": 52
+   },
+   {
+    "reason": "robot_environment",
+    "state": 51
+   },
+   {
+    "reason": "robot_environment",
+    "state": 50
+   },
+   {
+    "reason": "robot_environment",
+    "state": 48
+   }
+  ],
+  "chosen_rank": 7,
+  "straight_used": false,
+  "predicted_risk": 0.34375,
+  "nominal_margin": 0.005990247629261663,
+  "goal_deviation_m": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "max_offset_used_m": 0.011554818574318518,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 6.79011545330286,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 2,
+   "waypoints": 2
+  },
+  "validation": null,
+  "certificate": {
+   "draws": 1000,
+   "failures": 291,
+   "risk": 0.291,
+   "confidence": 0.95,
+   "upper_bound": 0.3155640395429371,
+   "scope": "payload-environment contact, keep-in and final-state rules of the executed path"
+  },
+  "wall_seconds": 93.14443089067936,
+  "collision_checks": 3895
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_hard_test_00",
+  "family": "rack",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 412057889,
+  "path_joint_length_rad": 4.454944084960812,
+  "ee_path_length_m": 0.9133064255823324,
+  "payload_min_clearance_m": 0.005983814838962532,
+  "payload_clearance_p05_m": 0.006028178323263957,
+  "trajectory_states": 1234,
+  "collision_count": 65,
+  "collision_rate": 0.25390625,
+  "collision_ci95": [
+   0.2017651275884098,
+   0.31184339693919805
+  ],
+  "success_count": 188,
+  "success_rate": 0.734375,
+  "success_ci95": [
+   0.6757993299857096,
+   0.7874341813660595
+  ],
+  "failures_by_reason": {
+   "payload_environment": 65,
+   "placement_height": 3
+  },
+  "colliding_obstacles": {
+   "bracket_deep": 37,
+   "bracket_shallow": 23,
+   "target_saddle_1": 5
+  },
+  "wall_seconds": 17.010083239525557,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1110111101101111111111111011001001111111101110101001110110011010111111001111110100010111011101111010111110011101011110011101011101110110111110111111001111111111101111011111110111111110101001111110010101110110111101110111011101111101101101111111001101111100",
+  "episode_collision": "0001000010000000000000000100110110000000010001010110001001100101000000110000001010101000100010000101000001100010100001100010100010001001000001000000110000000000010000100000001000000001010110000001101010001001000010001000000010000010010010000000110010000011"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/Ablation__fixed_goal_pose/rack_hard_test_00__s0.npy",
+ "trajectory_sha256": "f3ab53a28400004465fd63d309071c857efb929177d0b65eb5a3b08ef518f6f2",
+ "task_success_rate": 0.734375
+}

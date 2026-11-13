@@ -1,0 +1,150 @@
+{
+ "task_id": "rack_hard_test_05",
+ "family": "rack",
+ "level": "hard",
+ "split": "test",
+ "label": "Ablation: max-clearance objective",
+ "planner": "crisp",
+ "params": {
+  "objective": "clearance"
+ },
+ "seed": 1,
+ "budget_seconds": 120,
+ "task_sha256": "eb08d7feef51bd7670c14dec62a4dc43de4ba158184e0b48913beed5130dd1fc",
+ "planning_seconds": 97.08690090663731,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CRISP",
+  "objective": "clearance",
+  "error_model": "combined",
+  "free_goal": true,
+  "samples": 128,
+  "knots": 6,
+  "goal_iterations": 60,
+  "goal_cost_straight": -0.2483710833647386,
+  "goal_cost": -0.3762632269746581,
+  "runs": [
+   {
+    "iterations": 168,
+    "best": -0.3770470727475516
+   }
+  ],
+  "goal_frozen": false,
+  "optimiser": "cmaes",
+  "insertion_states": 131,
+  "straight_risk": 0.5,
+  "straight_nominal_margin": 0.005999986322411652,
+  "evaluations": 4768,
+  "optimise_seconds": 72.00454810075462,
+  "candidates_tried": 8,
+  "realisation_failures": [
+   {
+    "reason": "robot_environment",
+    "state": 88
+   },
+   {
+    "reason": "robot_environment",
+    "state": 90
+   },
+   {
+    "reason": "robot_environment",
+    "state": 59
+   },
+   {
+    "reason": "robot_environment",
+    "state": 69
+   },
+   {
+    "reason": "robot_environment",
+    "state": 60
+   },
+   {
+    "reason": "robot_environment",
+    "state": 62
+   },
+   {
+    "reason": "robot_environment",
+    "state": 63
+   }
+  ],
+  "chosen_rank": 7,
+  "straight_used": false,
+  "predicted_risk": 0.234375,
+  "nominal_margin": 0.006644261330908449,
+  "goal_deviation_m": [
+   -0.002,
+   0.0004726828268649606,
+   0.0012696495676069687,
+   -0.00017567109734494706,
+   -0.000125792777818006
+  ],
+  "max_offset_used_m": 0.012,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 9.864366571418941,
+   "raw_waypoints": 4,
+   "shortcut_attempts": 4,
+   "waypoints": 2
+  },
+  "validation": null,
+  "certificate": {
+   "draws": 1000,
+   "failures": 291,
+   "risk": 0.291,
+   "confidence": 0.95,
+   "upper_bound": 0.3155640395429371,
+   "scope": "payload-environment contact, keep-in and final-state rules of the executed path"
+  },
+  "wall_seconds": 97.08664264902472,
+  "collision_checks": 5930
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "rack_hard_test_05",
+  "family": "rack",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3286815184,
+  "path_joint_length_rad": 4.3643860193159,
+  "ee_path_length_m": 0.9035943550186867,
+  "payload_min_clearance_m": 0.00665573220041687,
+  "payload_clearance_p05_m": 0.006752207109476504,
+  "trajectory_states": 1218,
+  "collision_count": 71,
+  "collision_rate": 0.27734375,
+  "collision_ci95": [
+   0.22341509016993633,
+   0.33651000944660653
+  ],
+  "success_count": 178,
+  "success_rate": 0.6953125,
+  "success_ci95": [
+   0.6349444578880348,
+   0.7510915548395818
+  ],
+  "failures_by_reason": {
+   "payload_environment": 71,
+   "placement_height": 6,
+   "goal_position": 1
+  },
+  "colliding_obstacles": {
+   "bracket_shallow": 27,
+   "bracket_deep": 40,
+   "target_saddle_1": 4
+  },
+  "wall_seconds": 26.748927714303136,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0110111101010100111111111000111110100111010101010101100010011101110110000010110101101101111111011110010111111010111111011011011110111101111111101011110100101100111111011011111111101111101100111110110010111111111111110110110010111101111111010001100111111110",
+  "episode_collision": "1001000010001011000000000111000001011000101010101010011101100010001001111101001000010010000000100001101000000101000000100100100001000000000000000100001011010001000000100100000000010000010011000001000101000000000000001001001101000010000000001110011000000001"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/Ablation__max-clearance_objective/rack_hard_test_05__s1.npy",
+ "trajectory_sha256": "5ec8a130f45bb212773d7fde727439b762d2fc8a52f428f00acbf9e988e6983f",
+ "task_success_rate": 0.6953125
+}

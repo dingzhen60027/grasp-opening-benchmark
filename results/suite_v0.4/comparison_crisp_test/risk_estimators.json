@@ -1,0 +1,2007 @@
+{
+ "summary": {
+  "CRISP (proposed)": {
+   "trajectory": {
+    "mean": 0.07680555555555556,
+    "mean_ratio_to_observed": 1.027343976777939,
+    "runs_underestimating": 35
+   },
+   "statewise": {
+    "mean": 0.06231944444444445,
+    "mean_ratio_to_observed": 0.8335791001451379,
+    "runs_underestimating": 49
+   },
+   "boole": {
+    "mean": 7.4748472222222215,
+    "mean_ratio_to_observed": 99.98286211901305,
+    "runs_underestimating": 2
+   },
+   "observed": 0.07476128472222222,
+   "runs": 72
+  },
+  "Ablation: state-wise risk": {
+   "trajectory": {
+    "mean": 0.07755555555555554,
+    "mean_ratio_to_observed": 1.010250176678445,
+    "runs_underestimating": 35
+   },
+   "statewise": {
+    "mean": 0.05925000000000001,
+    "mean_ratio_to_observed": 0.7717992932862192,
+    "runs_underestimating": 54
+   },
+   "boole": {
+    "mean": 7.447652777777778,
+    "mean_ratio_to_observed": 97.01423038869258,
+    "runs_underestimating": 0
+   },
+   "observed": 0.07676866319444445,
+   "runs": 72
+  },
+  "Ablation: linearised Boole risk": {
+   "trajectory": {
+    "mean": 0.07695833333333334,
+    "mean_ratio_to_observed": 1.0256659436008677,
+    "runs_underestimating": 33
+   },
+   "statewise": {
+    "mean": 0.06513888888888889,
+    "mean_ratio_to_observed": 0.8681417208966016,
+    "runs_underestimating": 45
+   },
+   "boole": {
+    "mean": 4.421319444444444,
+    "mean_ratio_to_observed": 58.92535068691251,
+    "runs_underestimating": 4
+   },
+   "observed": 0.07503255208333333,
+   "runs": 72
+  }
+ },
+ "runs": [
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_easy_test_00",
+   "level": "easy",
+   "observed": 0.01953125,
+   "trajectory": 0.016,
+   "statewise": 0.016,
+   "boole": 0.19200000000000006
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_easy_test_01",
+   "level": "easy",
+   "observed": 0.0625,
+   "trajectory": 0.041,
+   "statewise": 0.041,
+   "boole": 0.07300000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_easy_test_02",
+   "level": "easy",
+   "observed": 0.046875,
+   "trajectory": 0.045,
+   "statewise": 0.045,
+   "boole": 0.357
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_easy_test_03",
+   "level": "easy",
+   "observed": 0.05859375,
+   "trajectory": 0.046,
+   "statewise": 0.046,
+   "boole": 0.15500000000000003
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_easy_test_04",
+   "level": "easy",
+   "observed": 0.0390625,
+   "trajectory": 0.034,
+   "statewise": 0.034,
+   "boole": 0.18900000000000006
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_easy_test_05",
+   "level": "easy",
+   "observed": 0.0546875,
+   "trajectory": 0.056,
+   "statewise": 0.055,
+   "boole": 0.4750000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_hard_test_00",
+   "level": "hard",
+   "observed": 0.1328125,
+   "trajectory": 0.084,
+   "statewise": 0.08,
+   "boole": 5.482000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_hard_test_01",
+   "level": "hard",
+   "observed": 0.10546875,
+   "trajectory": 0.125,
+   "statewise": 0.109,
+   "boole": 8.389
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_hard_test_02",
+   "level": "hard",
+   "observed": 0.078125,
+   "trajectory": 0.095,
+   "statewise": 0.068,
+   "boole": 4.458
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_hard_test_03",
+   "level": "hard",
+   "observed": 0.07421875,
+   "trajectory": 0.101,
+   "statewise": 0.096,
+   "boole": 2.6719999999999997
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_hard_test_04",
+   "level": "hard",
+   "observed": 0.1796875,
+   "trajectory": 0.202,
+   "statewise": 0.12,
+   "boole": 20.244999999999997
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_hard_test_05",
+   "level": "hard",
+   "observed": 0.0703125,
+   "trajectory": 0.086,
+   "statewise": 0.084,
+   "boole": 5.105
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_medium_test_00",
+   "level": "medium",
+   "observed": 0.02734375,
+   "trajectory": 0.064,
+   "statewise": 0.063,
+   "boole": 1.9480000000000002
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_medium_test_01",
+   "level": "medium",
+   "observed": 0.078125,
+   "trajectory": 0.065,
+   "statewise": 0.059,
+   "boole": 2.421
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_medium_test_02",
+   "level": "medium",
+   "observed": 0.05859375,
+   "trajectory": 0.057,
+   "statewise": 0.057,
+   "boole": 0.093
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_medium_test_03",
+   "level": "medium",
+   "observed": 0.0390625,
+   "trajectory": 0.03,
+   "statewise": 0.03,
+   "boole": 2.429
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_medium_test_04",
+   "level": "medium",
+   "observed": 0.0625,
+   "trajectory": 0.079,
+   "statewise": 0.062,
+   "boole": 4.732000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "lathe_medium_test_05",
+   "level": "medium",
+   "observed": 0.0546875,
+   "trajectory": 0.046,
+   "statewise": 0.046,
+   "boole": 0.20400000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_easy_test_00",
+   "level": "easy",
+   "observed": 0.05078125,
+   "trajectory": 0.091,
+   "statewise": 0.09,
+   "boole": 1.8370000000000002
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_easy_test_01",
+   "level": "easy",
+   "observed": 0.09375,
+   "trajectory": 0.065,
+   "statewise": 0.065,
+   "boole": 0.7100000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_easy_test_02",
+   "level": "easy",
+   "observed": 0.0390625,
+   "trajectory": 0.047,
+   "statewise": 0.046,
+   "boole": 0.659
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_easy_test_03",
+   "level": "easy",
+   "observed": 0.05078125,
+   "trajectory": 0.048,
+   "statewise": 0.048,
+   "boole": 0.47100000000000003
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_easy_test_04",
+   "level": "easy",
+   "observed": 0.0859375,
+   "trajectory": 0.055,
+   "statewise": 0.054,
+   "boole": 0.664
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_easy_test_05",
+   "level": "easy",
+   "observed": 0.09375,
+   "trajectory": 0.06,
+   "statewise": 0.06,
+   "boole": 0.28700000000000003
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_hard_test_00",
+   "level": "hard",
+   "observed": 0.109375,
+   "trajectory": 0.128,
+   "statewise": 0.099,
+   "boole": 25.929
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_hard_test_01",
+   "level": "hard",
+   "observed": 0.11328125,
+   "trajectory": 0.118,
+   "statewise": 0.109,
+   "boole": 6.779
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_hard_test_02",
+   "level": "hard",
+   "observed": 0.30859375,
+   "trajectory": 0.286,
+   "statewise": 0.255,
+   "boole": 22.813
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_hard_test_03",
+   "level": "hard",
+   "observed": 0.125,
+   "trajectory": 0.13,
+   "statewise": 0.102,
+   "boole": 9.687999999999999
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_hard_test_04",
+   "level": "hard",
+   "observed": 0.1875,
+   "trajectory": 0.192,
+   "statewise": 0.106,
+   "boole": 7.784999999999998
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_hard_test_05",
+   "level": "hard",
+   "observed": 0.265625,
+   "trajectory": 0.211,
+   "statewise": 0.126,
+   "boole": 47.45
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_medium_test_00",
+   "level": "medium",
+   "observed": 0.07421875,
+   "trajectory": 0.072,
+   "statewise": 0.065,
+   "boole": 2.2910000000000004
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_medium_test_01",
+   "level": "medium",
+   "observed": 0.10546875,
+   "trajectory": 0.118,
+   "statewise": 0.099,
+   "boole": 6.028
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_medium_test_02",
+   "level": "medium",
+   "observed": 0.26171875,
+   "trajectory": 0.238,
+   "statewise": 0.135,
+   "boole": 45.611
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_medium_test_03",
+   "level": "medium",
+   "observed": 0.1328125,
+   "trajectory": 0.145,
+   "statewise": 0.133,
+   "boole": 4.000000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_medium_test_04",
+   "level": "medium",
+   "observed": 0.08984375,
+   "trajectory": 0.103,
+   "statewise": 0.09,
+   "boole": 6.572000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rack_medium_test_05",
+   "level": "medium",
+   "observed": 0.171875,
+   "trajectory": 0.158,
+   "statewise": 0.135,
+   "boole": 9.024000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_easy_test_00",
+   "level": "easy",
+   "observed": 0.04296875,
+   "trajectory": 0.051,
+   "statewise": 0.051,
+   "boole": 0.322
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_easy_test_01",
+   "level": "easy",
+   "observed": 0.03515625,
+   "trajectory": 0.037,
+   "statewise": 0.037,
+   "boole": 0.037
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_easy_test_02",
+   "level": "easy",
+   "observed": 0.00390625,
+   "trajectory": 0.017,
+   "statewise": 0.017,
+   "boole": 0.131
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_easy_test_03",
+   "level": "easy",
+   "observed": 0.0390625,
+   "trajectory": 0.025,
+   "statewise": 0.025,
+   "boole": 0.025
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_easy_test_04",
+   "level": "easy",
+   "observed": 0.01171875,
+   "trajectory": 0.033,
+   "statewise": 0.033,
+   "boole": 0.039
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_easy_test_05",
+   "level": "easy",
+   "observed": 0.04296875,
+   "trajectory": 0.038,
+   "statewise": 0.038,
+   "boole": 0.096
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_hard_test_00",
+   "level": "hard",
+   "observed": 0.05859375,
+   "trajectory": 0.086,
+   "statewise": 0.086,
+   "boole": 1.2790000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_hard_test_01",
+   "level": "hard",
+   "observed": 0.07421875,
+   "trajectory": 0.115,
+   "statewise": 0.115,
+   "boole": 1.7750000000000004
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_hard_test_02",
+   "level": "hard",
+   "observed": 0.10546875,
+   "trajectory": 0.14,
+   "statewise": 0.072,
+   "boole": 3.4290000000000003
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_hard_test_03",
+   "level": "hard",
+   "observed": 0.46484375,
+   "trajectory": 0.472,
+   "statewise": 0.364,
+   "boole": 22.398999999999997
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_hard_test_04",
+   "level": "hard",
+   "observed": 0.0859375,
+   "trajectory": 0.115,
+   "statewise": 0.115,
+   "boole": 1.2600000000000002
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_hard_test_05",
+   "level": "hard",
+   "observed": 0.0859375,
+   "trajectory": 0.091,
+   "statewise": 0.091,
+   "boole": 0.43999999999999995
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_medium_test_00",
+   "level": "medium",
+   "observed": 0.046875,
+   "trajectory": 0.048,
+   "statewise": 0.048,
+   "boole": 0.24100000000000005
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_medium_test_01",
+   "level": "medium",
+   "observed": 0.03125,
+   "trajectory": 0.034,
+   "statewise": 0.034,
+   "boole": 0.453
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_medium_test_02",
+   "level": "medium",
+   "observed": 0.078125,
+   "trajectory": 0.065,
+   "statewise": 0.065,
+   "boole": 0.171
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_medium_test_03",
+   "level": "medium",
+   "observed": 0.03125,
+   "trajectory": 0.065,
+   "statewise": 0.057,
+   "boole": 0.27
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_medium_test_04",
+   "level": "medium",
+   "observed": 0.046875,
+   "trajectory": 0.018,
+   "statewise": 0.018,
+   "boole": 0.057999999999999996
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "rebar_medium_test_05",
+   "level": "medium",
+   "observed": 0.05078125,
+   "trajectory": 0.041,
+   "statewise": 0.041,
+   "boole": 0.20400000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_easy_test_00",
+   "level": "easy",
+   "observed": 0.0,
+   "trajectory": 0.002,
+   "statewise": 0.002,
+   "boole": 0.002
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_easy_test_01",
+   "level": "easy",
+   "observed": 0.00390625,
+   "trajectory": 0.001,
+   "statewise": 0.001,
+   "boole": 0.001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_easy_test_02",
+   "level": "easy",
+   "observed": 0.00390625,
+   "trajectory": 0.003,
+   "statewise": 0.003,
+   "boole": 0.003
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_easy_test_03",
+   "level": "easy",
+   "observed": 0.01171875,
+   "trajectory": 0.006,
+   "statewise": 0.006,
+   "boole": 0.027999999999999997
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_easy_test_04",
+   "level": "easy",
+   "observed": 0.0078125,
+   "trajectory": 0.002,
+   "statewise": 0.002,
+   "boole": 0.002
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_easy_test_05",
+   "level": "easy",
+   "observed": 0.0,
+   "trajectory": 0.006,
+   "statewise": 0.006,
+   "boole": 0.31300000000000006
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_hard_test_00",
+   "level": "hard",
+   "observed": 0.08203125,
+   "trajectory": 0.088,
+   "statewise": 0.063,
+   "boole": 4.169
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_hard_test_01",
+   "level": "hard",
+   "observed": 0.06640625,
+   "trajectory": 0.079,
+   "statewise": 0.048,
+   "boole": 9.625000000000002
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_hard_test_02",
+   "level": "hard",
+   "observed": 0.02734375,
+   "trajectory": 0.063,
+   "statewise": 0.063,
+   "boole": 2.1210000000000004
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_hard_test_03",
+   "level": "hard",
+   "observed": 0.078125,
+   "trajectory": 0.071,
+   "statewise": 0.071,
+   "boole": 2.364
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_hard_test_04",
+   "level": "hard",
+   "observed": 0.05859375,
+   "trajectory": 0.046,
+   "statewise": 0.046,
+   "boole": 2.32
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_hard_test_05",
+   "level": "hard",
+   "observed": 0.0546875,
+   "trajectory": 0.067,
+   "statewise": 0.067,
+   "boole": 2.3179999999999996
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_medium_test_00",
+   "level": "medium",
+   "observed": 0.01953125,
+   "trajectory": 0.016,
+   "statewise": 0.016,
+   "boole": 0.7300000000000002
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_medium_test_01",
+   "level": "medium",
+   "observed": 0.0078125,
+   "trajectory": 0.011,
+   "statewise": 0.011,
+   "boole": 0.25800000000000006
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_medium_test_02",
+   "level": "medium",
+   "observed": 0.00390625,
+   "trajectory": 0.012,
+   "statewise": 0.012,
+   "boole": 0.4780000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_medium_test_03",
+   "level": "medium",
+   "observed": 0.0234375,
+   "trajectory": 0.016,
+   "statewise": 0.015,
+   "boole": 0.08600000000000001
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_medium_test_04",
+   "level": "medium",
+   "observed": 0.01171875,
+   "trajectory": 0.01,
+   "statewise": 0.009,
+   "boole": 2.4979999999999998
+  },
+  {
+   "label": "Ablation: linearised Boole risk",
+   "task": "tote_medium_test_05",
+   "level": "medium",
+   "observed": 0.00390625,
+   "trajectory": 0.014,
+   "statewise": 0.014,
+   "boole": 0.17300000000000001
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_easy_test_00",
+   "level": "easy",
+   "observed": 0.03515625,
+   "trajectory": 0.025,
+   "statewise": 0.023,
+   "boole": 0.7150000000000001
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_easy_test_01",
+   "level": "easy",
+   "observed": 0.046875,
+   "trajectory": 0.043,
+   "statewise": 0.042,
+   "boole": 1.461
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_easy_test_02",
+   "level": "easy",
+   "observed": 0.03515625,
+   "trajectory": 0.042,
+   "statewise": 0.042,
+   "boole": 0.7990000000000002
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_easy_test_03",
+   "level": "easy",
+   "observed": 0.05859375,
+   "trajectory": 0.045,
+   "statewise": 0.044,
+   "boole": 1.675
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_easy_test_04",
+   "level": "easy",
+   "observed": 0.03515625,
+   "trajectory": 0.03,
+   "statewise": 0.03,
+   "boole": 0.43900000000000006
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_easy_test_05",
+   "level": "easy",
+   "observed": 0.0546875,
+   "trajectory": 0.046,
+   "statewise": 0.04,
+   "boole": 2.282
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_hard_test_00",
+   "level": "hard",
+   "observed": 0.12109375,
+   "trajectory": 0.099,
+   "statewise": 0.089,
+   "boole": 9.942
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_hard_test_01",
+   "level": "hard",
+   "observed": 0.09765625,
+   "trajectory": 0.104,
+   "statewise": 0.096,
+   "boole": 14.498
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_hard_test_02",
+   "level": "hard",
+   "observed": 0.0625,
+   "trajectory": 0.064,
+   "statewise": 0.057,
+   "boole": 4.713
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_hard_test_03",
+   "level": "hard",
+   "observed": 0.09765625,
+   "trajectory": 0.129,
+   "statewise": 0.089,
+   "boole": 11.433
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_hard_test_04",
+   "level": "hard",
+   "observed": 0.1796875,
+   "trajectory": 0.194,
+   "statewise": 0.131,
+   "boole": 34.907000000000004
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_hard_test_05",
+   "level": "hard",
+   "observed": 0.09375,
+   "trajectory": 0.092,
+   "statewise": 0.069,
+   "boole": 12.196000000000002
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_medium_test_00",
+   "level": "medium",
+   "observed": 0.04296875,
+   "trajectory": 0.067,
+   "statewise": 0.059,
+   "boole": 4.319
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_medium_test_01",
+   "level": "medium",
+   "observed": 0.07421875,
+   "trajectory": 0.061,
+   "statewise": 0.051,
+   "boole": 6.606999999999999
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_medium_test_02",
+   "level": "medium",
+   "observed": 0.0234375,
+   "trajectory": 0.016,
+   "statewise": 0.016,
+   "boole": 0.129
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_medium_test_03",
+   "level": "medium",
+   "observed": 0.03125,
+   "trajectory": 0.037,
+   "statewise": 0.034,
+   "boole": 2.8020000000000005
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_medium_test_04",
+   "level": "medium",
+   "observed": 0.06640625,
+   "trajectory": 0.079,
+   "statewise": 0.061,
+   "boole": 12.245
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "lathe_medium_test_05",
+   "level": "medium",
+   "observed": 0.05078125,
+   "trajectory": 0.033,
+   "statewise": 0.033,
+   "boole": 2.5010000000000003
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_easy_test_00",
+   "level": "easy",
+   "observed": 0.1328125,
+   "trajectory": 0.138,
+   "statewise": 0.077,
+   "boole": 25.339000000000002
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_easy_test_01",
+   "level": "easy",
+   "observed": 0.140625,
+   "trajectory": 0.101,
+   "statewise": 0.071,
+   "boole": 7.363999999999999
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_easy_test_02",
+   "level": "easy",
+   "observed": 0.03125,
+   "trajectory": 0.043,
+   "statewise": 0.041,
+   "boole": 1.0060000000000002
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_easy_test_03",
+   "level": "easy",
+   "observed": 0.05859375,
+   "trajectory": 0.055,
+   "statewise": 0.051,
+   "boole": 0.6570000000000001
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_easy_test_04",
+   "level": "easy",
+   "observed": 0.12109375,
+   "trajectory": 0.079,
+   "statewise": 0.062,
+   "boole": 5.341
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_easy_test_05",
+   "level": "easy",
+   "observed": 0.09375,
+   "trajectory": 0.071,
+   "statewise": 0.064,
+   "boole": 2.12
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_hard_test_00",
+   "level": "hard",
+   "observed": 0.2265625,
+   "trajectory": 0.246,
+   "statewise": 0.148,
+   "boole": 56.448
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_hard_test_01",
+   "level": "hard",
+   "observed": 0.09375,
+   "trajectory": 0.089,
+   "statewise": 0.075,
+   "boole": 11.02
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_hard_test_02",
+   "level": "hard",
+   "observed": 0.21875,
+   "trajectory": 0.209,
+   "statewise": 0.149,
+   "boole": 25.669
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_hard_test_03",
+   "level": "hard",
+   "observed": 0.1328125,
+   "trajectory": 0.107,
+   "statewise": 0.074,
+   "boole": 11.332999999999998
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_hard_test_04",
+   "level": "hard",
+   "observed": 0.13671875,
+   "trajectory": 0.171,
+   "statewise": 0.083,
+   "boole": 13.027000000000001
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_hard_test_05",
+   "level": "hard",
+   "observed": 0.2109375,
+   "trajectory": 0.166,
+   "statewise": 0.088,
+   "boole": 30.443
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_medium_test_00",
+   "level": "medium",
+   "observed": 0.12890625,
+   "trajectory": 0.143,
+   "statewise": 0.062,
+   "boole": 8.509
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_medium_test_01",
+   "level": "medium",
+   "observed": 0.1171875,
+   "trajectory": 0.117,
+   "statewise": 0.102,
+   "boole": 9.879000000000001
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_medium_test_02",
+   "level": "medium",
+   "observed": 0.08984375,
+   "trajectory": 0.078,
+   "statewise": 0.074,
+   "boole": 5.558999999999999
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_medium_test_03",
+   "level": "medium",
+   "observed": 0.08203125,
+   "trajectory": 0.115,
+   "statewise": 0.08,
+   "boole": 5.7620000000000005
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_medium_test_04",
+   "level": "medium",
+   "observed": 0.5390625,
+   "trajectory": 0.482,
+   "statewise": 0.429,
+   "boole": 43.179
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rack_medium_test_05",
+   "level": "medium",
+   "observed": 0.14453125,
+   "trajectory": 0.13,
+   "statewise": 0.088,
+   "boole": 16.32
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_easy_test_00",
+   "level": "easy",
+   "observed": 0.0390625,
+   "trajectory": 0.064,
+   "statewise": 0.054,
+   "boole": 3.036
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_easy_test_01",
+   "level": "easy",
+   "observed": 0.0390625,
+   "trajectory": 0.037,
+   "statewise": 0.037,
+   "boole": 0.111
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_easy_test_02",
+   "level": "easy",
+   "observed": 0.00390625,
+   "trajectory": 0.019,
+   "statewise": 0.019,
+   "boole": 0.10200000000000001
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_easy_test_03",
+   "level": "easy",
+   "observed": 0.0390625,
+   "trajectory": 0.027,
+   "statewise": 0.024,
+   "boole": 0.5940000000000001
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_easy_test_04",
+   "level": "easy",
+   "observed": 0.0078125,
+   "trajectory": 0.03,
+   "statewise": 0.029,
+   "boole": 0.6010000000000002
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_easy_test_05",
+   "level": "easy",
+   "observed": 0.04296875,
+   "trajectory": 0.039,
+   "statewise": 0.039,
+   "boole": 0.20900000000000005
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_hard_test_00",
+   "level": "hard",
+   "observed": 0.0859375,
+   "trajectory": 0.129,
+   "statewise": 0.098,
+   "boole": 20.147
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_hard_test_01",
+   "level": "hard",
+   "observed": 0.10546875,
+   "trajectory": 0.135,
+   "statewise": 0.116,
+   "boole": 9.639000000000001
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_hard_test_02",
+   "level": "hard",
+   "observed": 0.08203125,
+   "trajectory": 0.101,
+   "statewise": 0.073,
+   "boole": 7.98
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_hard_test_03",
+   "level": "hard",
+   "observed": 0.11328125,
+   "trajectory": 0.137,
+   "statewise": 0.101,
+   "boole": 13.448999999999998
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_hard_test_04",
+   "level": "hard",
+   "observed": 0.08984375,
+   "trajectory": 0.095,
+   "statewise": 0.07,
+   "boole": 4.73
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_hard_test_05",
+   "level": "hard",
+   "observed": 0.08984375,
+   "trajectory": 0.075,
+   "statewise": 0.071,
+   "boole": 4.648
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_medium_test_00",
+   "level": "medium",
+   "observed": 0.09765625,
+   "trajectory": 0.108,
+   "statewise": 0.069,
+   "boole": 3.8660000000000005
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_medium_test_01",
+   "level": "medium",
+   "observed": 0.03125,
+   "trajectory": 0.033,
+   "statewise": 0.033,
+   "boole": 0.55
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_medium_test_02",
+   "level": "medium",
+   "observed": 0.0625,
+   "trajectory": 0.047,
+   "statewise": 0.04,
+   "boole": 1.9540000000000002
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_medium_test_03",
+   "level": "medium",
+   "observed": 0.0234375,
+   "trajectory": 0.025,
+   "statewise": 0.025,
+   "boole": 0.134
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_medium_test_04",
+   "level": "medium",
+   "observed": 0.0546875,
+   "trajectory": 0.035,
+   "statewise": 0.027,
+   "boole": 1.1380000000000001
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "rebar_medium_test_05",
+   "level": "medium",
+   "observed": 0.06640625,
+   "trajectory": 0.078,
+   "statewise": 0.063,
+   "boole": 10.052
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_easy_test_00",
+   "level": "easy",
+   "observed": 0.0,
+   "trajectory": 0.008,
+   "statewise": 0.004,
+   "boole": 0.22400000000000003
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_easy_test_01",
+   "level": "easy",
+   "observed": 0.00390625,
+   "trajectory": 0.002,
+   "statewise": 0.001,
+   "boole": 0.053
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_easy_test_02",
+   "level": "easy",
+   "observed": 0.01171875,
+   "trajectory": 0.002,
+   "statewise": 0.001,
+   "boole": 0.012
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_easy_test_03",
+   "level": "easy",
+   "observed": 0.015625,
+   "trajectory": 0.009,
+   "statewise": 0.006,
+   "boole": 0.24
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_easy_test_04",
+   "level": "easy",
+   "observed": 0.015625,
+   "trajectory": 0.014,
+   "statewise": 0.012,
+   "boole": 1.013
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_easy_test_05",
+   "level": "easy",
+   "observed": 0.00390625,
+   "trajectory": 0.01,
+   "statewise": 0.01,
+   "boole": 0.423
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_hard_test_00",
+   "level": "hard",
+   "observed": 0.09375,
+   "trajectory": 0.108,
+   "statewise": 0.056,
+   "boole": 10.074000000000002
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_hard_test_01",
+   "level": "hard",
+   "observed": 0.0703125,
+   "trajectory": 0.109,
+   "statewise": 0.058,
+   "boole": 11.663
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_hard_test_02",
+   "level": "hard",
+   "observed": 0.046875,
+   "trajectory": 0.064,
+   "statewise": 0.054,
+   "boole": 6.112
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_hard_test_03",
+   "level": "hard",
+   "observed": 0.06640625,
+   "trajectory": 0.059,
+   "statewise": 0.052,
+   "boole": 4.263999999999999
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_hard_test_04",
+   "level": "hard",
+   "observed": 0.0703125,
+   "trajectory": 0.051,
+   "statewise": 0.047,
+   "boole": 3.2479999999999998
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_hard_test_05",
+   "level": "hard",
+   "observed": 0.0625,
+   "trajectory": 0.083,
+   "statewise": 0.078,
+   "boole": 7.109999999999999
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_medium_test_00",
+   "level": "medium",
+   "observed": 0.0078125,
+   "trajectory": 0.01,
+   "statewise": 0.009,
+   "boole": 0.597
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_medium_test_01",
+   "level": "medium",
+   "observed": 0.0078125,
+   "trajectory": 0.015,
+   "statewise": 0.01,
+   "boole": 0.675
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_medium_test_02",
+   "level": "medium",
+   "observed": 0.01171875,
+   "trajectory": 0.021,
+   "statewise": 0.017,
+   "boole": 1.135
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_medium_test_03",
+   "level": "medium",
+   "observed": 0.015625,
+   "trajectory": 0.01,
+   "statewise": 0.006,
+   "boole": 0.158
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_medium_test_04",
+   "level": "medium",
+   "observed": 0.01953125,
+   "trajectory": 0.022,
+   "statewise": 0.016,
+   "boole": 2.66
+  },
+  {
+   "label": "Ablation: state-wise risk",
+   "task": "tote_medium_test_05",
+   "level": "medium",
+   "observed": 0.0234375,
+   "trajectory": 0.027,
+   "statewise": 0.017,
+   "boole": 0.9920000000000002
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_easy_test_00",
+   "level": "easy",
+   "observed": 0.03515625,
+   "trajectory": 0.024,
+   "statewise": 0.024,
+   "boole": 0.354
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_easy_test_01",
+   "level": "easy",
+   "observed": 0.0546875,
+   "trajectory": 0.049,
+   "statewise": 0.039,
+   "boole": 0.401
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_easy_test_02",
+   "level": "easy",
+   "observed": 0.03125,
+   "trajectory": 0.038,
+   "statewise": 0.038,
+   "boole": 0.40400000000000014
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_easy_test_03",
+   "level": "easy",
+   "observed": 0.046875,
+   "trajectory": 0.045,
+   "statewise": 0.045,
+   "boole": 0.21400000000000002
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_easy_test_04",
+   "level": "easy",
+   "observed": 0.04296875,
+   "trajectory": 0.035,
+   "statewise": 0.035,
+   "boole": 0.502
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_easy_test_05",
+   "level": "easy",
+   "observed": 0.04296875,
+   "trajectory": 0.041,
+   "statewise": 0.041,
+   "boole": 0.3850000000000001
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_hard_test_00",
+   "level": "hard",
+   "observed": 0.140625,
+   "trajectory": 0.109,
+   "statewise": 0.079,
+   "boole": 22.823000000000004
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_hard_test_01",
+   "level": "hard",
+   "observed": 0.27734375,
+   "trajectory": 0.304,
+   "statewise": 0.164,
+   "boole": 13.94
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_hard_test_02",
+   "level": "hard",
+   "observed": 0.0703125,
+   "trajectory": 0.073,
+   "statewise": 0.065,
+   "boole": 9.506
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_hard_test_03",
+   "level": "hard",
+   "observed": 0.08203125,
+   "trajectory": 0.094,
+   "statewise": 0.093,
+   "boole": 10.471999999999998
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_hard_test_04",
+   "level": "hard",
+   "observed": 0.125,
+   "trajectory": 0.144,
+   "statewise": 0.107,
+   "boole": 23.296
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_hard_test_05",
+   "level": "hard",
+   "observed": 0.08984375,
+   "trajectory": 0.101,
+   "statewise": 0.089,
+   "boole": 25.895000000000003
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_medium_test_00",
+   "level": "medium",
+   "observed": 0.0390625,
+   "trajectory": 0.085,
+   "statewise": 0.066,
+   "boole": 5.332000000000002
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_medium_test_01",
+   "level": "medium",
+   "observed": 0.06640625,
+   "trajectory": 0.055,
+   "statewise": 0.044,
+   "boole": 6.052000000000001
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_medium_test_02",
+   "level": "medium",
+   "observed": 0.03125,
+   "trajectory": 0.029,
+   "statewise": 0.026,
+   "boole": 0.388
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_medium_test_03",
+   "level": "medium",
+   "observed": 0.05859375,
+   "trajectory": 0.067,
+   "statewise": 0.053,
+   "boole": 9.673
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_medium_test_04",
+   "level": "medium",
+   "observed": 0.08984375,
+   "trajectory": 0.101,
+   "statewise": 0.063,
+   "boole": 16.786
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "lathe_medium_test_05",
+   "level": "medium",
+   "observed": 0.0625,
+   "trajectory": 0.046,
+   "statewise": 0.046,
+   "boole": 3.089
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_easy_test_00",
+   "level": "easy",
+   "observed": 0.05078125,
+   "trajectory": 0.092,
+   "statewise": 0.09,
+   "boole": 4.2780000000000005
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_easy_test_01",
+   "level": "easy",
+   "observed": 0.109375,
+   "trajectory": 0.076,
+   "statewise": 0.074,
+   "boole": 1.8980000000000001
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_easy_test_02",
+   "level": "easy",
+   "observed": 0.0390625,
+   "trajectory": 0.045,
+   "statewise": 0.043,
+   "boole": 1.02
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_easy_test_03",
+   "level": "easy",
+   "observed": 0.04296875,
+   "trajectory": 0.049,
+   "statewise": 0.047,
+   "boole": 1.1590000000000003
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_easy_test_04",
+   "level": "easy",
+   "observed": 0.08984375,
+   "trajectory": 0.061,
+   "statewise": 0.057,
+   "boole": 1.0940000000000003
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_easy_test_05",
+   "level": "easy",
+   "observed": 0.09375,
+   "trajectory": 0.065,
+   "statewise": 0.065,
+   "boole": 0.8420000000000001
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_hard_test_00",
+   "level": "hard",
+   "observed": 0.4296875,
+   "trajectory": 0.447,
+   "statewise": 0.317,
+   "boole": 100.717
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_hard_test_01",
+   "level": "hard",
+   "observed": 0.109375,
+   "trajectory": 0.105,
+   "statewise": 0.09,
+   "boole": 8.653
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_hard_test_02",
+   "level": "hard",
+   "observed": 0.20703125,
+   "trajectory": 0.201,
+   "statewise": 0.154,
+   "boole": 35.503
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_hard_test_03",
+   "level": "hard",
+   "observed": 0.12109375,
+   "trajectory": 0.122,
+   "statewise": 0.073,
+   "boole": 11.96
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_hard_test_04",
+   "level": "hard",
+   "observed": 0.09375,
+   "trajectory": 0.122,
+   "statewise": 0.092,
+   "boole": 17.988
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_hard_test_05",
+   "level": "hard",
+   "observed": 0.29296875,
+   "trajectory": 0.241,
+   "statewise": 0.17,
+   "boole": 49.837999999999994
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_medium_test_00",
+   "level": "medium",
+   "observed": 0.1015625,
+   "trajectory": 0.106,
+   "statewise": 0.084,
+   "boole": 6.609999999999999
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_medium_test_01",
+   "level": "medium",
+   "observed": 0.12109375,
+   "trajectory": 0.141,
+   "statewise": 0.114,
+   "boole": 9.964000000000002
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_medium_test_02",
+   "level": "medium",
+   "observed": 0.10546875,
+   "trajectory": 0.083,
+   "statewise": 0.06,
+   "boole": 6.862
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_medium_test_03",
+   "level": "medium",
+   "observed": 0.09375,
+   "trajectory": 0.139,
+   "statewise": 0.102,
+   "boole": 13.793999999999999
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_medium_test_04",
+   "level": "medium",
+   "observed": 0.13671875,
+   "trajectory": 0.135,
+   "statewise": 0.079,
+   "boole": 13.940999999999999
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rack_medium_test_05",
+   "level": "medium",
+   "observed": 0.12890625,
+   "trajectory": 0.127,
+   "statewise": 0.086,
+   "boole": 14.043999999999999
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_easy_test_00",
+   "level": "easy",
+   "observed": 0.04296875,
+   "trajectory": 0.059,
+   "statewise": 0.059,
+   "boole": 0.384
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_easy_test_01",
+   "level": "easy",
+   "observed": 0.0390625,
+   "trajectory": 0.037,
+   "statewise": 0.037,
+   "boole": 0.05
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_easy_test_02",
+   "level": "easy",
+   "observed": 0.01171875,
+   "trajectory": 0.022,
+   "statewise": 0.022,
+   "boole": 0.42200000000000004
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_easy_test_03",
+   "level": "easy",
+   "observed": 0.0390625,
+   "trajectory": 0.021,
+   "statewise": 0.021,
+   "boole": 0.05600000000000001
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_easy_test_04",
+   "level": "easy",
+   "observed": 0.0078125,
+   "trajectory": 0.024,
+   "statewise": 0.024,
+   "boole": 0.024
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_easy_test_05",
+   "level": "easy",
+   "observed": 0.04296875,
+   "trajectory": 0.039,
+   "statewise": 0.039,
+   "boole": 0.22700000000000004
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_hard_test_00",
+   "level": "hard",
+   "observed": 0.05859375,
+   "trajectory": 0.093,
+   "statewise": 0.091,
+   "boole": 1.616
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_hard_test_01",
+   "level": "hard",
+   "observed": 0.08203125,
+   "trajectory": 0.11,
+   "statewise": 0.11,
+   "boole": 2.4500000000000006
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_hard_test_02",
+   "level": "hard",
+   "observed": 0.05078125,
+   "trajectory": 0.072,
+   "statewise": 0.07,
+   "boole": 2.089
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_hard_test_03",
+   "level": "hard",
+   "observed": 0.09765625,
+   "trajectory": 0.113,
+   "statewise": 0.113,
+   "boole": 1.8880000000000003
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_hard_test_04",
+   "level": "hard",
+   "observed": 0.07421875,
+   "trajectory": 0.092,
+   "statewise": 0.092,
+   "boole": 1.185
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_hard_test_05",
+   "level": "hard",
+   "observed": 0.08984375,
+   "trajectory": 0.073,
+   "statewise": 0.073,
+   "boole": 1.032
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_medium_test_00",
+   "level": "medium",
+   "observed": 0.046875,
+   "trajectory": 0.051,
+   "statewise": 0.051,
+   "boole": 0.434
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_medium_test_01",
+   "level": "medium",
+   "observed": 0.04296875,
+   "trajectory": 0.035,
+   "statewise": 0.035,
+   "boole": 0.256
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_medium_test_02",
+   "level": "medium",
+   "observed": 0.078125,
+   "trajectory": 0.064,
+   "statewise": 0.064,
+   "boole": 0.123
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_medium_test_03",
+   "level": "medium",
+   "observed": 0.0234375,
+   "trajectory": 0.028,
+   "statewise": 0.028,
+   "boole": 0.06
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_medium_test_04",
+   "level": "medium",
+   "observed": 0.046875,
+   "trajectory": 0.019,
+   "statewise": 0.019,
+   "boole": 0.09999999999999999
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "rebar_medium_test_05",
+   "level": "medium",
+   "observed": 0.0390625,
+   "trajectory": 0.042,
+   "statewise": 0.041,
+   "boole": 0.43500000000000005
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_easy_test_00",
+   "level": "easy",
+   "observed": 0.0,
+   "trajectory": 0.003,
+   "statewise": 0.003,
+   "boole": 0.048
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_easy_test_01",
+   "level": "easy",
+   "observed": 0.0078125,
+   "trajectory": 0.006,
+   "statewise": 0.005,
+   "boole": 0.007
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_easy_test_02",
+   "level": "easy",
+   "observed": 0.01171875,
+   "trajectory": 0.002,
+   "statewise": 0.001,
+   "boole": 0.012
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_easy_test_03",
+   "level": "easy",
+   "observed": 0.0234375,
+   "trajectory": 0.01,
+   "statewise": 0.009,
+   "boole": 0.138
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_easy_test_04",
+   "level": "easy",
+   "observed": 0.0078125,
+   "trajectory": 0.003,
+   "statewise": 0.003,
+   "boole": 0.003
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_easy_test_05",
+   "level": "easy",
+   "observed": 0.0,
+   "trajectory": 0.008,
+   "statewise": 0.008,
+   "boole": 0.4960000000000001
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_hard_test_00",
+   "level": "hard",
+   "observed": 0.10546875,
+   "trajectory": 0.133,
+   "statewise": 0.094,
+   "boole": 13.271999999999998
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_hard_test_01",
+   "level": "hard",
+   "observed": 0.06640625,
+   "trajectory": 0.078,
+   "statewise": 0.058,
+   "boole": 9.995
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_hard_test_02",
+   "level": "hard",
+   "observed": 0.06640625,
+   "trajectory": 0.095,
+   "statewise": 0.077,
+   "boole": 13.729
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_hard_test_03",
+   "level": "hard",
+   "observed": 0.05859375,
+   "trajectory": 0.058,
+   "statewise": 0.057,
+   "boole": 5.906000000000001
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_hard_test_04",
+   "level": "hard",
+   "observed": 0.08984375,
+   "trajectory": 0.064,
+   "statewise": 0.052,
+   "boole": 6.578
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_hard_test_05",
+   "level": "hard",
+   "observed": 0.09765625,
+   "trajectory": 0.115,
+   "statewise": 0.083,
+   "boole": 10.075
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_medium_test_00",
+   "level": "medium",
+   "observed": 0.02734375,
+   "trajectory": 0.027,
+   "statewise": 0.015,
+   "boole": 1.4800000000000004
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_medium_test_01",
+   "level": "medium",
+   "observed": 0.02734375,
+   "trajectory": 0.023,
+   "statewise": 0.023,
+   "boole": 0.45400000000000007
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_medium_test_02",
+   "level": "medium",
+   "observed": 0.01171875,
+   "trajectory": 0.015,
+   "statewise": 0.012,
+   "boole": 1.28
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_medium_test_03",
+   "level": "medium",
+   "observed": 0.02734375,
+   "trajectory": 0.028,
+   "statewise": 0.028,
+   "boole": 7.380000000000001
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_medium_test_04",
+   "level": "medium",
+   "observed": 0.06640625,
+   "trajectory": 0.052,
+   "statewise": 0.041,
+   "boole": 4.206
+  },
+  {
+   "label": "CRISP (proposed)",
+   "task": "tote_medium_test_05",
+   "level": "medium",
+   "observed": 0.01953125,
+   "trajectory": 0.019,
+   "statewise": 0.015,
+   "boole": 0.6220000000000001
+  }
+ ]
+}

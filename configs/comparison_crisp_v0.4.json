@@ -1,0 +1,67 @@
+{
+  "name": "v0.4 test split: proposed method (CRISP) against baselines, a recent comparator and the oracles",
+  "description": "Main results of the paper on the frozen v0.4 test split (72 tasks), all methods on the same 256 grasp-error draws per task. CRISP and CC-VPSTO: 5 seeds; baselines: 5 seeds; oracles: the stored witnesses.",
+  "results": [
+    "results/suite_v0.4/reference",
+    "results/suite_v0.4/baselines",
+    "results/suite_v0.4/crisp"
+  ],
+  "split": "test",
+  "methods": [
+    {
+      "label": "CRISP (proposed)",
+      "name": "CRISP (proposed)"
+    },
+    {
+      "label": "Reference (risk-aware oracle)",
+      "name": "Risk-aware oracle"
+    },
+    {
+      "label": "Reference (straight oracle)",
+      "name": "Straight oracle"
+    },
+    {
+      "label": "CC-VPSTO (adapted)",
+      "name": "CC-VPSTO (adapted)"
+    },
+    {
+      "label": "B6 Keyframe-guided",
+      "name": "B6 Keyframe-guided"
+    },
+    {
+      "label": "B3 RRTConnect + 3 mm margin",
+      "name": "B3 RRTConnect + 3 mm margin"
+    },
+    {
+      "label": "B1 RRTConnect",
+      "name": "B1 RRTConnect"
+    },
+    {
+      "label": "B4 RRTConnect + scenarios (N=8, risk 0.25)",
+      "name": "B4 RRTConnect + scenarios"
+    }
+  ],
+  "pairs": [
+    [
+      "CRISP (proposed)",
+      "B6 Keyframe-guided"
+    ],
+    [
+      "CRISP (proposed)",
+      "CC-VPSTO (adapted)"
+    ],
+    [
+      "CRISP (proposed)",
+      "Risk-aware oracle"
+    ],
+    [
+      "CRISP (proposed)",
+      "Straight oracle"
+    ],
+    [
+      "CC-VPSTO (adapted)",
+      "B6 Keyframe-guided"
+    ]
+  ],
+  "output": "results/suite_v0.4/comparison_crisp_test"
+}

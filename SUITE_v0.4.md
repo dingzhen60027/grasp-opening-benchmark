@@ -128,6 +128,10 @@ Failures to report with the table:
 - **B6 cannot plan `rack_easy_test_03`** in any of its 5 seeds: every insertion attempt ends in an arm self-collision just before the goal, although both witnesses of the task are valid. The baseline was fixed on the dev split (24/24 solved) before the test run and is not tuned on test results.
 - **3 of 360 B1 paths fail the harness's nominal validation** (`lathe_easy_test_02` and `lathe_easy_test_05` with seed 2, `tote_easy_test_00` with seed 4). The planner checks its edges every 5 mrad and the harness every 2.5 mrad; a thin fixture guide or divider lies between the planner's checks. These runs count as planning failures.
 
+### Proposed method
+
+The proposed planner, CRISP, closes the gap without the oracle's privileged information. On the same 72 test tasks and draws it reaches 92.2% [91.0, 93.3]: 95.3 / 92.9 / 88.6 at easy / medium / hard. That is +17.1 points over the keyframe-guided baseline and +1.3 over the risk-aware oracle; at the hard level it is +4.9 above the oracle in every family. Method, comparator (CC-VPSTO), ablations and analyses are in [docs/CRISP.md](docs/CRISP.md).
+
 ## 6. Running
 
 ```bash
@@ -137,6 +141,8 @@ bash tools/python.sh -m gosuite.experiment --config configs/experiment_reference
 bash tools/python.sh -m gosuite.validate --suite data/suite_v0.4 --reference results/suite_v0.4/reference --output results/suite_v0.4/validation
 bash tools/python.sh -m gosuite.experiment --config configs/experiment_baselines_v0.4.json             # full baseline table
 bash tools/python.sh -m gosuite.compare --config configs/comparison_v0.4.json                         # paired main table (Section 5)
+bash tools/python.sh -m gosuite.experiment --config configs/experiment_crisp_v0.4.json                 # CRISP, CC-VPSTO, ablations
+bash tools/python.sh -m gosuite.compare --config configs/comparison_crisp_v0.4.json                   # CRISP main table
 ```
 
 `gosuite.experiment` writes the per-run tables at the end; re-run `python -m gosuite.report <results dir>` after `gosuite.validate` if the validation did not exist yet, so the goal-feasible column is filled from the suite's own flags.
@@ -147,5 +153,5 @@ Plugging in your planner works as in v0.3: `"planner": "your_module:plan"` in a 
 
 - **Simulation and model:** kinematic only, an uncalibrated isotropic error model, and no certificates.
 - **Designed obstacles:** the obstacle layouts are engineered so that lever-arm-aware planning matters. This is deliberate and documented, and the benchmark should be presented that way.
-- **Optimiser as a lower bound:** the risk-aware witness comes from a simple sampling optimiser over a few knots, so it is a lower bound on the achievable success, not the optimum. A better planner can exceed it.
+- **Optimiser as a lower bound:** the risk-aware witness comes from a simple sampling optimiser over a few knots, so it is a lower bound on the achievable success, not the optimum. CRISP exceeds it at the hard level (88.6% vs 83.7%), mainly by choosing the goal pose inside the goal region.
 - **Generation rule:** a geometry is resampled when no executable risk-aware candidate beats the straight path on the planning draws. This selects on the existence of a better path, never on evaluation outcomes or on any baseline's result.

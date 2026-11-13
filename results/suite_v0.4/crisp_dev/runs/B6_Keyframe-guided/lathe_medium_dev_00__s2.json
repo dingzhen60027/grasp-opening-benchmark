@@ -1,0 +1,86 @@
+{
+ "task_id": "lathe_medium_dev_00",
+ "family": "lathe",
+ "level": "medium",
+ "split": "dev",
+ "label": "B6 Keyframe-guided",
+ "planner": "guided",
+ "params": {},
+ "seed": 2,
+ "budget_seconds": 120,
+ "task_sha256": "fcb8c94cf56b347f9ff3c29e5efcaa76dbc0fceb8fc5457b972c637bf11e8141",
+ "planning_seconds": 114.04808215610683,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "transfer_planner": "RRTConnect",
+  "insertion_attempts": [
+   {
+    "approach_m": 0.04,
+    "lift_m": 0.0,
+    "keyframes": 2,
+    "failure": null
+   }
+  ],
+  "margin_m": 0.0,
+  "scenarios": 0,
+  "risk": 0.0,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 8.314294645562768,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 539,
+   "waypoints": 3
+  },
+  "insertion_states": 107,
+  "wall_seconds": 114.04803833086044,
+  "collision_checks": 43442
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_medium_dev_00",
+  "family": "lathe",
+  "level": "medium",
+  "split": "dev",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3735519705,
+  "path_joint_length_rad": 11.35694276211985,
+  "ee_path_length_m": 4.113788286532516,
+  "payload_min_clearance_m": 0.009857372856512905,
+  "payload_clearance_p05_m": 0.009996895321035449,
+  "trajectory_states": 3567,
+  "collision_count": 68,
+  "collision_rate": 0.265625,
+  "collision_ci95": [
+   0.21256581863394053,
+   0.3242006700142904
+  ],
+  "success_count": 187,
+  "success_rate": 0.73046875,
+  "success_ci95": [
+   0.671690988070581,
+   0.7838230544073859
+  ],
+  "failures_by_reason": {
+   "payload_environment": 68,
+   "goal_position": 1
+  },
+  "colliding_obstacles": {
+   "coolant_nozzle": 22,
+   "chip_guard_lip": 28,
+   "front_wall_right": 18
+  },
+  "wall_seconds": 41.72334447875619,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "0101111010101011110101101111111011001000110111101111011111101111011111111011011101111111011111011101111111111010111111111011111010111111010011111111101100101111110001111111011111111110011000100100101010110110111111110111111111010110011010111100110001111110",
+  "episode_collision": "1010000101010100001010010000000100110111001000010000100000010000100000000100100010000000100000100010000000000101000000000100000101000000101100000000010011010000001110000000100000000001100111011011010101001000000000001000000000101001100101000011001110000001"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/B6_Keyframe-guided/lathe_medium_dev_00__s2.npy",
+ "trajectory_sha256": "f5a68f093ce4c8e6d8da60cab4a6ab9fe7bf5be18ba2394ea02bc43abc6620c5",
+ "task_success_rate": 0.73046875
+}

@@ -1,0 +1,85 @@
+{
+ "task_id": "tote_hard_test_00",
+ "family": "tote",
+ "level": "hard",
+ "split": "test",
+ "label": "CC-VPSTO, 60 s budget",
+ "planner": "ccvpsto",
+ "params": {},
+ "seed": 0,
+ "budget_seconds": 60,
+ "task_sha256": "da467c473ed965f199ae366bcfbdfda0c63ef37efd67dc4e5c79f4cf904dc99c",
+ "planning_seconds": 56.996207585558295,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CC-VPSTO (adapted)",
+  "samples": 100,
+  "eta": 0.05,
+  "beta": 0.05,
+  "k_thresh": 1,
+  "via_points": 5,
+  "iterations": 91,
+  "evaluations": 2200,
+  "optimise_seconds": 35.54232958611101,
+  "violations_warm_start": 25,
+  "violations_best": 17,
+  "chance_feasible": false,
+  "chosen_rank": 0,
+  "candidates_tried": 1,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 5.6623142110183835,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 270,
+   "waypoints": 3
+  },
+  "validation": null,
+  "wall_seconds": 56.99537057057023
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "tote_hard_test_00",
+  "family": "tote",
+  "level": "hard",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 3974702705,
+  "path_joint_length_rad": 10.781915827977269,
+  "ee_path_length_m": 4.824649371522866,
+  "payload_min_clearance_m": 0.005356358365125262,
+  "payload_clearance_p05_m": 0.0060229160784724765,
+  "trajectory_states": 2601,
+  "collision_count": 59,
+  "collision_rate": 0.23046875,
+  "collision_ci95": [
+   0.180318563799186,
+   0.28697631839977783
+  ],
+  "success_count": 197,
+  "success_rate": 0.76953125,
+  "success_ci95": [
+   0.7130236816002222,
+   0.819681436200814
+  ],
+  "failures_by_reason": {
+   "payload_environment": 59
+  },
+  "colliding_obstacles": {
+   "cell_ledge": 32,
+   "lid_flap": 27
+  },
+  "wall_seconds": 42.48407484591007,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111101111110101011111101011111000111111111111101111111111111111011110101010000111111110101110110011111111111111010011011101010111011010101100111110111111110110110111110110101001111111110111111111110011011011011110111110111111010101111101111111111111010111",
+  "episode_collision": "0000010000001010100000010100000111000000000000010000000000000000100001010101111000000001010001001100000000000000101100100010101000100101010011000001000000001001001000001001010110000000001000000000001100100100100001000001000000101010000010000000000000101000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/CC-VPSTO__60_s_budget/tote_hard_test_00__s0.npy",
+ "trajectory_sha256": "e98fff5495468b06f4f10c4685fad69533e35f90972e6b837b8fd9573018aa2a",
+ "task_success_rate": 0.76953125
+}

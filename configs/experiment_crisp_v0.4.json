@@ -1,0 +1,107 @@
+{
+  "name": "crisp_v0.4",
+  "description": "Proposed method, recent comparator and ablations on the frozen v0.4 test split (120 s, 256 common evaluation draws). Main rows use 5 seeds, ablations 3. Run once, after development on the dev split was closed.",
+  "output": "results/suite_v0.4/crisp",
+  "split": "test",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "suite": "data/suite_v0.4",
+  "families": null,
+  "levels": null,
+  "budget_seconds": 120,
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step": 0.0025,
+  "workers": 20,
+  "planners": [
+    {
+      "label": "CRISP (proposed)",
+      "planner": "crisp",
+      "params": {}
+    },
+    {
+      "label": "CC-VPSTO (adapted)",
+      "planner": "ccvpsto",
+      "params": {}
+    },
+    {
+      "label": "Ablation: state-wise risk",
+      "planner": "crisp",
+      "params": {
+        "objective": "statewise"
+      },
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "Ablation: linearised Boole risk",
+      "planner": "crisp",
+      "params": {
+        "objective": "linear"
+      },
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "Ablation: CVaR objective",
+      "planner": "crisp",
+      "params": {
+        "objective": "cvar"
+      },
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "Ablation: max-clearance objective",
+      "planner": "crisp",
+      "params": {
+        "objective": "clearance"
+      },
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "Ablation: translation-only error model",
+      "planner": "crisp",
+      "params": {
+        "error_model": "translation"
+      },
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "Ablation: fixed goal pose",
+      "planner": "crisp",
+      "params": {
+        "free_goal": false
+      },
+      "seeds": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "estimated_cost": "2 x 72 x 5 + 6 x 72 x 3 = 2016 runs, about 3 hours on 20 workers"
+}

@@ -1,0 +1,15 @@
+{
+ "note": "Code used for the one-shot test run of CRISP, its comparator and ablations. Development used the dev split only (results/suite_v0.4/crisp_dev, docs/CRISP.md Section 6).",
+ "launched": "2026-11-12T07:27:58",
+ "base_commit": "24844c3694e07a602633d1d626ad22c4be176741",
+ "sha256": {
+  "gosuite/risk.py": "a09ceb0133493dc89eac94c6620fe37bb9bb5f4ba450ee9c8f4d68fe422bbb00",
+  "gosuite/planners/crisp.py": "83fce549e7ae4a3b6d8f39d2d5078dd573f67f655abeb0463c932ff3369a43ba",
+  "gosuite/planners/ccvpsto.py": "71ea002347e6dea173a19c46a90db686f3f42bb23b7c4d75642902bf8a0b5a9d",
+  "gosuite/planners/guided.py": "f49689018807d539942e39aa14a3b26044fc9f692f6a3c925d9fcbc01b13ca0f",
+  "gosuite/planners/ompl_planner.py": "2195a5e4341eff5e85e333f17fa83eff39e79a91a9a1fb30ac2155107d7128b5",
+  "gosuite/evaluate.py": "f504204e992079e01685c2ba57a59afc75fbcf1bcb5e3a6ec26617ae9dd83c52",
+  "gosuite/experiment.py": "e18aa9385665d470ea481d76956cd02d960fc2ac1e88654f18ca329febf65bcf",
+  "configs/experiment_crisp_v0.4.json": "1c7bc77d241ade4d6ee4669cfc689f6b73c921d3b5c0b0f1802a4b7a56fd34b6"
+ }
+}

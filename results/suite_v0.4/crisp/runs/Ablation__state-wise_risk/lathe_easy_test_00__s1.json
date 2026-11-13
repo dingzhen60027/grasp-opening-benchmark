@@ -1,0 +1,119 @@
+{
+ "task_id": "lathe_easy_test_00",
+ "family": "lathe",
+ "level": "easy",
+ "split": "test",
+ "label": "Ablation: state-wise risk",
+ "planner": "crisp",
+ "params": {
+  "objective": "statewise"
+ },
+ "seed": 1,
+ "budget_seconds": 120,
+ "task_sha256": "45f78fcfea65eccb5e8c8508c1cb7cef5513b72bbd7687c77d1d523e116b426d",
+ "planning_seconds": 46.161431456916034,
+ "over_budget": false,
+ "status": "solved",
+ "planner_info": {
+  "method": "CRISP",
+  "objective": "statewise",
+  "error_model": "combined",
+  "free_goal": true,
+  "samples": 128,
+  "knots": 6,
+  "goal_iterations": 60,
+  "goal_cost_straight": 0.04335141659400964,
+  "goal_cost": 0.01653551957829481,
+  "runs": [
+   {
+    "iterations": 200,
+    "best": 0.018227012544904823
+   }
+  ],
+  "goal_frozen": false,
+  "optimiser": "cmaes",
+  "insertion_states": 104,
+  "straight_risk": 0.0546875,
+  "straight_nominal_margin": 0.012,
+  "evaluations": 5525,
+  "optimise_seconds": 32.172122390940785,
+  "candidates_tried": 1,
+  "realisation_failures": [],
+  "chosen_rank": 0,
+  "straight_used": false,
+  "predicted_risk": 0.015625,
+  "nominal_margin": 0.008739360488098669,
+  "goal_deviation_m": [
+   -0.0013415795146165515,
+   0.002798279504808705,
+   0.0007695808364191459,
+   -0.0018278309049485834,
+   0.0032116244773268306
+  ],
+  "max_offset_used_m": 0.04505893668477531,
+  "transfer": {
+   "ompl_status": "Exact solution",
+   "solve_seconds": 5.983337540179491,
+   "raw_waypoints": 3,
+   "shortcut_attempts": 4,
+   "waypoints": 2
+  },
+  "validation": null,
+  "certificate": {
+   "draws": 1000,
+   "failures": 31,
+   "risk": 0.031,
+   "confidence": 0.95,
+   "upper_bound": 0.041610073480079626,
+   "scope": "payload-environment contact, keep-in and final-state rules of the executed path"
+  },
+  "wall_seconds": 46.16116507910192,
+  "collision_checks": 3370
+ },
+ "path_found": true,
+ "execution": {
+  "status": "evaluated",
+  "task_id": "lathe_easy_test_00",
+  "family": "lathe",
+  "level": "easy",
+  "split": "test",
+  "episodes": 256,
+  "uncertainty_scale": 1.0,
+  "mode": "combined",
+  "joint_step_max_rad": 0.0025,
+  "evaluation_seed": 4106369254,
+  "path_joint_length_rad": 5.317818934040676,
+  "ee_path_length_m": 1.1479380803281987,
+  "payload_min_clearance_m": 0.014189787214628118,
+  "payload_clearance_p05_m": 0.015229014605139765,
+  "trajectory_states": 1401,
+  "collision_count": 2,
+  "collision_rate": 0.0078125,
+  "collision_ci95": [
+   0.0009475342881075709,
+   0.027934914204054754
+  ],
+  "success_count": 247,
+  "success_rate": 0.96484375,
+  "success_ci95": [
+   0.934313785816128,
+   0.9838005891390429
+  ],
+  "failures_by_reason": {
+   "payload_environment": 2,
+   "placement_height": 4,
+   "goal_position": 3
+  },
+  "colliding_obstacles": {
+   "chip_guard_lip": 2
+  },
+  "wall_seconds": 17.687391349114478,
+  "qualification": "Discrete kinematic evaluation of a fixed grasp perturbation per episode; no contact dynamics, tracking error or robustness certificate",
+  "episode_success": "1111111111101111111011111101111111111111111110111111111111111111111111111111111111111111111111111101101111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110110111111111111111",
+  "episode_collision": "0000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+ },
+ "nominal_valid": true,
+ "trajectory": "trajectories/Ablation__state-wise_risk/lathe_easy_test_00__s1.npy",
+ "trajectory_sha256": "1050db85bc23607261b342537efddb7aa270fe260408c082fd4a0e6efe8b319e",
+ "task_success_rate": 0.96484375
+}
